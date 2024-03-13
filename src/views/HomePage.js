@@ -10,7 +10,6 @@ import NavbarComponent from "../components/NavbarComponent";
 function HomePage() {
   return (
     <div className="home-page">
-      <NavbarComponent></NavbarComponent>
       <div className="hero-image">
         <img src={heroImage} alt="Image of people" />
       </div>
