@@ -7,7 +7,7 @@ function Navbar() {
     <div className="inter-font">
       <nav class="navbar navbar-expand border-bottom border-2 border-dark-subtle">
         <a class="navbar-brand ms-5" href="#">
-          <img src={Logo} alt="Logo picture" />
+          <img src={Logo} alt="Logo picture" className="me-3" />
           The Everyone Store
         </a>
         <div class="container-fluid justify-content-end flex-row me-3">
