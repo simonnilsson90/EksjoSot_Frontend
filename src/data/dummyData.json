@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Urban Portrait Photoset",
+    "description": "High-resolution photographs suitable for facial recognition and character animation in urban settings.",
+    "category": "Images",
+    "price": 150.00,
+    "usagePermissions": "Educational, Commercial, Creative",
+    "imagePreview": "urban-portrait-preview.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Emotional Reactions Video Collection",
+    "description": "A compilation of video clips showcasing a range of emotions, perfect for behavioral studies and animation.",
+    "category": "Videos",
+    "price": 300.00,
+    "usagePermissions": "Educational, Research",
+    "imagePreview": "emotional-reactions-preview.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Diverse Voice Sample Library",
+    "description": "Voice recordings in various tones and emotions, from professional voice actors. Ideal for voiceover work and AI training.",
+    "category": "Voice",
+    "price": 200.00,
+    "usagePermissions": "Commercial, Creative Use",
+    "imagePreview": "diverse-voice-preview.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Expressive Gestures Dataset",
+    "description": "Video data set of expressive gestures for use in virtual reality and game development.",
+    "category": "Videos",
+    "price": 250.00,
+    "usagePermissions": "Commercial, Creative Use, R&D",
+    "imagePreview": "expressive-gestures-preview.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Multilingual Speech Patterns",
+    "description": "Audio dataset covering speech patterns in multiple languages, suitable for multilingual voice recognition systems.",
+    "category": "Other",
+    "price": 400.00,
+    "usagePermissions": "Educational, Commercial",
+    "imagePreview": "multilingual-speech-preview.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Freelancer Lifestyle Data Set",
+    "description": "Detailed daily activity logs, social media usage, and online purchase history of freelancers in tech industries.",
+    "category": "Behavioral",
+    "price": 480.00,
+    "usagePermissions": "Research, Educational",
+    "imagePreview": "freelancer-lifestyle-preview.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Fitness Enthusiasts Biometric Data",
+    "description": "A compilation of biometric, workout stats, and nutrition data from fitness trackers worn by health-conscious individuals.",
+    "category": "Health",
+    "price": 320.00,
+    "usagePermissions": "Health Research, App Development",
+    "imagePreview": "fitness-enthusiasts-preview.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Daily Commute Patterns Data",
+    "description": "GPS and time log data representing daily commute patterns and modes of transportation in urban areas.",
+    "category": "Geospatial",
+    "price": 290.00,
+    "usagePermissions": "Urban Planning, Traffic Management",
+    "imagePreview": "daily-commute-patterns-preview.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Consumer Spending Habits Dataset",
+    "description": "Transaction data detailing spending habits across different demographics, including product preferences and brand loyalty.",
+    "category": "Other",
+    "price": 550.00,
+    "usagePermissions": "Market Analysis, Economic Research",
+    "imagePreview": "consumer-spending-habits-preview.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Language Learning Progression Data",
+    "description": "Audio recordings and self-assessment reports documenting language learning progress over time.",
+    "category": "Educational",
+    "price": 270.00,
+    "usagePermissions": "Language Education, AI Language Models",
+    "imagePreview": "language-learning-progression-preview.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Lifestyle Blogger Photo Series",
+    "description": "A series of high-definition images featuring a lifestyle blogger in various urban settings, ideal for social media algorithms and analytics.",
+    "category": "Images",
+    "price": 180.00,
+    "usagePermissions": "Commercial, Creative Use",
+    "imagePreview": "lifestyle-blogger-preview.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Fitness Instructor Motion Capture",
+    "description": "3D motion capture data of a fitness instructor performing exercises, perfect for animation and virtual fitness applications.",
+    "category": "Other",
+    "price": 320.00,
+    "usagePermissions": "Educational, Commercial, Creative Use",
+    "imagePreview": "fitness-instructor-motion-capture-preview.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Podcaster Voice Recordings",
+    "description": "A collection of voice recordings from a professional podcaster, covering various topics in a conversational tone.",
+    "category": "Voice",
+    "price": 260.00,
+    "usagePermissions": "Commercial, Podcasting Use",
+    "imagePreview": "podcaster-voice-recordings-preview.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Professional Chef Cooking Demonstrations",
+    "description": "Video dataset featuring a professional chef's cooking demonstrations, useful for culinary education and image recognition in food tech.",
+    "category": ["Videos", "Health"],
+    "price": 450.00,
+    "usagePermissions": "Educational, Commercial Use",
+    "imagePreview": "professional-chef-demonstrations-preview.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Street Performer Expression Set",
+    "description": "A set of images capturing the expressions and movements of street performers, great for cultural studies and entertainment algorithms.",
+    "category": "Images",
+    "price": 210.00,
+    "usagePermissions": "Educational, Creative Use",
+    "imagePreview": "street-performer-expressions-preview.jpg"
+  }
+]
