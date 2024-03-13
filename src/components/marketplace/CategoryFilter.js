@@ -4,7 +4,7 @@ import React from "react";
 import "./CategoryFilter.css";
 
 const CategoryFilter = ({category, onCategoryChange}) => {
-    const categories = ['All', 'Images', 'Videos', 'Voice', 'Other'];
+    const categories = ['All', 'Behavioral', 'Educational', 'Geospatial', 'Health', 'Images', 'Videos', 'Voice', 'Other'];
 
     return (
         <aside className="category-filter">

@@ -1,6 +1,7 @@
 // src/views/MarketPage.js:
 
-import React, { useState } from 'react';
+import React, {useState} from 'react';
+import './MarketPage.css';
 
 import CategoryFilter from '../components/marketplace/CategoryFilter.js';
 import DatasetList from '../components/marketplace/DatasetList.js';
@@ -9,21 +10,35 @@ import dummyData from '../data/dummyData';
 
 const Marketplace = () => {
     const [datasets, setDatasets] = useState(dummyData);
-    const [category, setCategory] = useState('All');
+    const [filters, setFilters] = useState({
+        category: 'All'
+    });
 
     const handleCategoryChange = (newCategory) => {
-        setCategory(newCategory);
-        // When we got a DB, we make an API call here to get the datasets for the selected category
-        const filteredDatasets = dummyData.filter(dataset => dataset.category === newCategory);
+        setFilters({
+            ...filters,
+            category: newCategory
+        });
+        filterDatasets(newCategory);
+    };
+
+
+    const filterDatasets = (category) => {
+        const filteredDatasets = dummyData
+            .filter(dataset =>
+                category === 'All' || dataset.category.includes(category))
         setDatasets(filteredDatasets);
     };
 
     return (
-        <div>
-            <CategoryFilter category={category} onCategoryChange={handleCategoryChange} />
-            <DatasetList datasets={datasets} />
+        <div className="marketplace">
+            <div className="filters-container">
+                <CategoryFilter category={filters.category} onCategoryChange={handleCategoryChange}/>
+            </div>
+            <DatasetList datasets={datasets}/>
         </div>
     );
 };
 
 export default Marketplace;
+
