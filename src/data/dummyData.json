@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Urban Portrait Photoset",
+    "description": "High-resolution photographs suitable for facial recognition and character animation in urban settings.",
+    "category": "Images",
+    "price": 150.00,
+    "usagePermissions": "Educational, Commercial, Creative",
+    "imagePreview": "urban-portrait-preview.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Emotional Reactions Video Collection",
+    "description": "A compilation of video clips showcasing a range of emotions, perfect for behavioral studies and animation.",
+    "category": "Videos",
+    "price": 300.00,
+    "usagePermissions": "Educational, Research",
+    "imagePreview": "emotional-reactions-preview.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Diverse Voice Sample Library",
+    "description": "Voice recordings in various tones and emotions, from professional voice actors. Ideal for voiceover work and AI training.",
+    "category": "Voice",
+    "price": 200.00,
+    "usagePermissions": "Commercial, Creative Use",
+    "imagePreview": "diverse-voice-preview.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Expressive Gestures Dataset",
+    "description": "Video data set of expressive gestures for use in virtual reality and game development.",
+    "category": "Videos",
+    "price": 250.00,
+    "usagePermissions": "Commercial, Creative Use, R&D",
+    "imagePreview": "expressive-gestures-preview.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Multilingual Speech Patterns",
+    "description": "Audio dataset covering speech patterns in multiple languages, suitable for multilingual voice recognition systems.",
+    "category": "Other",
+    "price": 400.00,
+    "usagePermissions": "Educational, Commercial",
+    "imagePreview": "multilingual-speech-preview.jpg"
+  }
+]
