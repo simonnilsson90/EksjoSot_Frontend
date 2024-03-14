@@ -4,40 +4,40 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="inter-font">
-      <nav className="navbar navbar-expand border-bottom border-2 border-dark-subtle">
-        <a className="navbar-brand ms-5" href="#">
-          <img src={Logo} alt="Logo picture" className="me-3" />
+    <div >
+      <nav >
+        <a  href="#">
+          <img src={Logo} alt="Logo picture"  />
           The Everyone Store
         </a>
-        <div className="container-fluid justify-content-end flex-row me-3">
-          <ul className="navbar-nav ml-2">
-            <li className="nav-item active">
-              <a className="nav-link me-3" href="/">
+        <div >
+          <ul >
+            <li >
+              <a  href="/">
                 Home
               </a>
             </li>
-            <li className="nav-item me-3">
-              <a className="nav-link" href="market">
+            <li >
+              <a  href="market">
                 Marketplace
               </a>
             </li>
-            <li className="nav-item me-3">
-              <a className="nav-link" href="#">
+            <li >
+              <a  href="#">
                 Account
               </a>
             </li>
-            <li className="nav-item me-3">
-              <a href="#" className="nav-link">
+            <li >
+              <a href="#" >
                 About Us
               </a>
             </li>
-            <li className="nav-item me-4">
-              <a href="#" className="nav-link">
+            <li >
+              <a href="#" >
                 Contact Us
               </a>
             </li>
-            <li className="nav-item">
+            <li >
               <a href="#" className="me-4">
                 <img src={UserPic} width={40} height={40} alt="User Picture" />
               </a>
