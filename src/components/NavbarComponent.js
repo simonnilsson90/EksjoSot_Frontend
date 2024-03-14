@@ -5,25 +5,25 @@ import React from "react";
 function Navbar() {
   return (
     <div className="inter-font">
-      <nav class="navbar navbar-expand border-bottom border-2 border-dark-subtle">
-        <a class="navbar-brand ms-5" href="#">
+      <nav className="navbar navbar-expand border-bottom border-2 border-dark-subtle">
+        <a className="navbar-brand ms-5" href="#">
           <img src={Logo} alt="Logo picture" className="me-3" />
           The Everyone Store
         </a>
-        <div class="container-fluid justify-content-end flex-row me-3">
-          <ul class="navbar-nav ml-2">
-            <li class="nav-item active">
-              <a class="nav-link me-3" href="#">
+        <div className="container-fluid justify-content-end flex-row me-3">
+          <ul className="navbar-nav ml-2">
+            <li className="nav-item active">
+              <a className="nav-link me-3" href="#">
                 Data Sets
               </a>
             </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#">
+            <li className="nav-item me-3">
+              <a className="nav-link" href="#">
                 Sell Data
               </a>
             </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#">
+            <li className="nav-item me-3">
+              <a className="nav-link" href="#">
                 Account
               </a>
             </li>
