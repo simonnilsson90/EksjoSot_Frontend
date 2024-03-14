@@ -1,15 +1,20 @@
 import React from "react";
-import HomePage from "./views/HomePage";
 import Navbar from "./components/NavbarComponent";
-import "./App.css";
+import HomePage from "./views/HomePage";
+import MarketPage from "./views/MarketPage";
+import './App.css';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <HomePage />
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Navbar/>
+            <Routes>
+                <Route path="/" element={<HomePage/>}/>
+                <Route path="market" element={<MarketPage/>}/>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;

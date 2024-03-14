@@ -13,13 +13,13 @@ function Navbar() {
         <div className="container-fluid justify-content-end flex-row me-3">
           <ul className="navbar-nav ml-2">
             <li className="nav-item active">
-              <a className="nav-link me-3" href="#">
-                Data Sets
+              <a className="nav-link me-3" href="/">
+                Home
               </a>
             </li>
             <li className="nav-item me-3">
-              <a className="nav-link" href="#">
-                Sell Data
+              <a className="nav-link" href="market">
+                Marketplace
               </a>
             </li>
             <li className="nav-item me-3">
