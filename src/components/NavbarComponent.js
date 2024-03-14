@@ -3,47 +3,99 @@ import UserPic from "../assets/images/homepage/user.png";
 import React from "react";
 
 function Navbar() {
+
+  const flex = {
+    display: "flex",
+    justifyContent: "space-between", // Placerar elementen jämnt över hela flex-container
+    alignItems: "center", // Centrerar vertikalt
+    listStyle: "none",
+   
+    
+  };
+  
+
+  const color = {
+    textDecoration: "none",
+    color: "black",
+    alignItems: "center",
+    
+  }
+
+
+
+  const listItemStyle = {
+    margin: "0 10px" // Lägger till 10px avstånd mellan varje listelement
+  };
+
+  const listItemStyle2 = {
+    margin: "0 20px" // Lägger till 10px avstånd mellan varje listelement
+  };
+
+  const logoLinkStyle = {
+    marginRight: "10px", // Lägger till extra marginal till höger om logo-länken
+    
+  };
+
+  const profileStyle = {
+    marginRight: "30px", // Lägger till extra marginal till höger om logo-länken
+    
+  };
+
+  const navbarBrand = {
+    fontSize: "1.3rem",
+    fontWeight: "bold",
+    color: "black",
+
+  }
+
+  const displayAlign = {
+    display: "flex", 
+    alignItems: "center",
+  }
+
+  const border = {
+    borderBottom: "2px solid lightgray"
+  }
+
+
+
   return (
-    <div >
-      <nav >
-        <a  href="#">
-          <img src={Logo} alt="Logo picture"  />
-          The Everyone Store
-        </a>
-        <div >
-          <ul >
-            <li >
-              <a  href="/">
-                Home
+    <div>
+      <nav style={border}>
+        <ul style={flex}>
+          <div>
+           
+            <li style={navbarBrand }>
+              <a style={color} href="#">
+                <img style={logoLinkStyle} src={Logo} alt="Logo picture" />    
+                The Everyone Store
               </a>
             </li>
-            <li >
-              <a  href="market">
-                Marketplace
-              </a>
+         
+          </div>
+          <div style={displayAlign}>
+            <li style={listItemStyle}>
+              <a style={color} href="/">Home</a>
             </li>
-            <li >
-              <a  href="#">
-                Account
-              </a>
+            <li style={listItemStyle}>
+              <a style={color} href="market">Marketplace</a>
             </li>
-            <li >
-              <a href="#" >
-                About Us
-              </a>
+            <li style={listItemStyle}>
+              <a style={color} href="#">Account</a>
             </li>
-            <li >
-              <a href="#" >
-                Contact Us
-              </a>
+            <li style={listItemStyle}>
+              <a style={color} href="#">About Us</a>
             </li>
-            <li >
+            <li style={listItemStyle2}>
+              <a style={color} href="#">Contact Us</a>
+            </li>
+            <li style={{...listItemStyle, ...profileStyle}}>
               <a href="#" className="me-4">
                 <img src={UserPic} width={40} height={40} alt="User Picture" />
               </a>
             </li>
-          </ul>
-        </div>
+          </div>
+        </ul>
       </nav>
     </div>
   );
