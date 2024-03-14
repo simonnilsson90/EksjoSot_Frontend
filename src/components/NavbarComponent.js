@@ -6,46 +6,37 @@ function Navbar() {
 
   const flex = {
     display: "flex",
-    justifyContent: "space-between", // Placerar elementen jämnt över hela flex-container
-    alignItems: "center", // Centrerar vertikalt
+    justifyContent: "space-between", 
+    alignItems: "center", 
     listStyle: "none",
-   
-    
   };
   
-
   const color = {
     textDecoration: "none",
     color: "black",
     alignItems: "center",
-    
   }
 
-
-
   const listItemStyle = {
-    margin: "0 10px" // Lägger till 10px avstånd mellan varje listelement
+    margin: "0 10px" 
   };
 
   const listItemStyle2 = {
-    margin: "0 20px" // Lägger till 10px avstånd mellan varje listelement
+    margin: "0 20px" 
   };
 
   const logoLinkStyle = {
-    marginRight: "10px", // Lägger till extra marginal till höger om logo-länken
-    
+    marginRight: "10px", 
   };
 
   const profileStyle = {
-    marginRight: "30px", // Lägger till extra marginal till höger om logo-länken
-    
+    marginRight: "30px",
   };
 
   const navbarBrand = {
     fontSize: "1.3rem",
     fontWeight: "bold",
     color: "black",
-
   }
 
   const displayAlign = {
@@ -58,7 +49,6 @@ function Navbar() {
   }
 
 
-
   return (
     <div>
       <nav style={border}>
@@ -66,7 +56,7 @@ function Navbar() {
           <div>
            
             <li style={navbarBrand }>
-              <a style={color} href="#">
+              <a style={color} href="/">
                 <img style={logoLinkStyle} src={Logo} alt="Logo picture" />    
                 The Everyone Store
               </a>
