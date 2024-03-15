@@ -9,130 +9,175 @@ import Feedback from "../assets/images/homepage/feedback.png";
 import Help from "../assets/images/homepage/help.png";
 import Invite from "../assets/images/homepage/invite.png";
 import DemoMode from "../assets/images/homepage/demomode.png";
+import "./MyAccount.css";
 
 function MyAccount() {
-  const SeperateDivs = {
-    marginTop: "11%",
-  };
-
-  const SeperateElementsBottom = {
-    marginBottom: "10px",
-    alignItems: "center",
-  };
-  const SeperateIconsFromText = {
-    marginRight: "12px",
-  };
-  const ListStyle = {
-    listStyle: "none",
-  };
-
   return (
-    <div>
-      <ul style={ListStyle}>
-        <li style={SeperateElementsBottom}>
-          <img
-            src={UserPic}
-            width={40}
-            height={40}
-            alt="User Picture"
-            style={SeperateIconsFromText}
-          />
-          <a>My Account</a>
-        </li>
-        <li style={SeperateElementsBottom}>
-          <img
-            src={Home}
-            width={24}
-            height={24}
-            alt="Home Picture"
-            style={SeperateIconsFromText}
-          />
-          <a>Home</a>
-        </li>
-        <li style={SeperateElementsBottom}>
-          <img
-            src={Document}
-            width={24}
-            height={24}
-            alt="Document Picture"
-            style={SeperateIconsFromText}
-          />
-          <a>Reports</a>
-        </li>
-        <li style={SeperateElementsBottom}>
-          <img
-            src={Datasets}
-            width={24}
-            height={24}
-            alt="Datasets Picture"
-            style={SeperateIconsFromText}
-          />
-          <a>Data sets</a>
-        </li>
-        <li style={SeperateElementsBottom}>
-          <img
-            src={TwoPeople}
-            width={24}
-            height={24}
-            alt="People Picture"
-            style={SeperateIconsFromText}
-          />
-          <a>People</a>
-        </li>
-        <li style={SeperateElementsBottom}>
-          <img
-            src={ThreePeople}
-            width={24}
-            height={24}
-            alt="Audience Picture"
-            style={SeperateIconsFromText}
-          />
-          <a>Audiences</a>
-        </li>
-        <div style={SeperateDivs}>
-          <li style={SeperateElementsBottom}>
-            <img
-              src={DemoMode}
-              width={24}
-              height={24}
-              alt="Demo mode Picture"
-              style={SeperateIconsFromText}
-            />
-            <a>Demo mode</a>
-          </li>
-          <li style={SeperateElementsBottom}>
-            <img
-              src={Invite}
-              width={24}
-              height={24}
-              alt="Invite Picture"
-              style={SeperateIconsFromText}
-            />
-            <a>Invite team</a>
-          </li>
-          <li style={SeperateElementsBottom}>
-            <img
-              src={Feedback}
-              width={24}
-              height={24}
-              alt="Feedback Picture"
-              style={SeperateIconsFromText}
-            />
-            <a>Feedback</a>
-          </li>
-          <li style={SeperateElementsBottom}>
-            <img
-              src={Help}
-              width={24}
-              height={24}
-              alt="Help and docs Picture"
-              style={SeperateIconsFromText}
-            />
-            <a>Help and docs</a>
-          </li>
+    <>
+      <div className="parent-div">
+        <div className="display-align">
+          <ul className="list-style">
+            <div className="first-icon">
+              <li className="seperate-elements-bottom">
+                <div className="display-align">
+                  <img
+                    src={UserPic}
+                    width={40}
+                    height={40}
+                    alt="User Picture"
+                    className="seperate-icons-from-text"
+                  />
+                  <a>My Account</a>
+                </div>
+              </li>
+            </div>
+            <li className="seperate-elements-bottom">
+              <div className="display-align">
+                <img
+                  src={Home}
+                  width={24}
+                  height={24}
+                  alt="Home Picture"
+                  className="seperate-icons-from-text"
+                />
+                <a>Home</a>
+              </div>
+            </li>
+            <li className="seperate-elements-bottom">
+              <div className="display-align">
+                <img
+                  src={Document}
+                  width={24}
+                  height={24}
+                  alt="Document Picture"
+                  className="seperate-icons-from-text"
+                />
+                <a>Reports</a>
+              </div>
+            </li>
+            <li className="seperate-elements-bottom">
+              <div className="display-align">
+                <img
+                  src={Datasets}
+                  width={24}
+                  height={24}
+                  alt="Datasets Picture"
+                  className="seperate-icons-from-text"
+                />
+                <a>Data sets</a>
+              </div>
+            </li>
+            <div className="seperate-icons">
+              <li>
+                <div className="display-align">
+                  <img
+                    src={TwoPeople}
+                    width={24}
+                    height={24}
+                    alt="People Picture"
+                    className="seperate-icons-from-text"
+                  />
+                  <a>People</a>
+                </div>
+              </li>
+            </div>
+            <li className="seperate-elements-bottom">
+              <div className="display-align">
+                <img
+                  src={ThreePeople}
+                  width={24}
+                  height={24}
+                  alt="Audience Picture"
+                  className="seperate-icons-from-text"
+                />
+                <a>Audiences</a>
+              </div>
+            </li>
+
+            <div className="seperate-divs">
+              <li className="seperate-elements-bottom">
+                <div className="display-align">
+                  <img
+                    src={DemoMode}
+                    width={24}
+                    height={24}
+                    alt="Demo mode Picture"
+                    className="seperate-icons-from-text"
+                  />
+                  <a>Demo mode</a>
+                </div>
+              </li>
+              <li className="seperate-elements-bottom">
+                <div className="display-align">
+                  <img
+                    src={Invite}
+                    width={24}
+                    height={24}
+                    alt="Invite Picture"
+                    className="seperate-icons-from-text"
+                  />
+                  <a>Invite team</a>
+                </div>
+              </li>
+              <li className="seperate-elements-bottom">
+                <div className="display-align">
+                  <img
+                    src={Feedback}
+                    width={24}
+                    height={24}
+                    alt="Feedback Picture"
+                    className="seperate-icons-from-text"
+                  />
+                  <a>Feedback</a>
+                </div>
+              </li>
+              <li className="seperate-elements-bottom">
+                <div className="display-align">
+                  <img
+                    src={Help}
+                    width={24}
+                    height={24}
+                    alt="Help and docs Picture"
+                    className="seperate-icons-from-text"
+                  />
+                  <a>Help and docs</a>
+                </div>
+              </li>
+            </div>
+          </ul>
         </div>
-      </ul>
-    </div>
+        <div className="padding-left">
+          <h1>Settings</h1>
+          <div className="center-button">
+            <img src={Girl} />
+            <div className="seperate-text">
+              <h3 className="seperate-elements-bottom-v2">Helen</h3>
+              <p className="grey-mail">@gmail.com</p>
+            </div>
+            <div className="container">
+              <button className="start-right">Change photo</button>
+            </div>
+          </div>
+          <p>Name</p>
+          <input placeholder="name..." className="input-fields"></input>
+          <p>Email</p>
+          <input
+            placeholder="email..."
+            type="email"
+            className="input-fields"
+          ></input>
+          <p>Password</p>
+          <input
+            placeholder="password..."
+            type="password"
+            className="input-fields"
+          ></input>
+          <div>
+            <button className="save-button">Save</button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
