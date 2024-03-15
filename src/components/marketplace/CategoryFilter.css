@@ -1,9 +1,8 @@
 .category-filter {
     display: block;
     width: 200px; /* Adjust if necessary */
-    position: fixed;
+    top: 5%;
     left: 0;
-    top: 0;
     padding: 20px;
     background-color: #fff;
 }

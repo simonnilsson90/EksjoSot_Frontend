@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './MarketPage.css'; // You might adjust or remove some custom styles
+import './MarketPage.css';
 
 import CategoryFilter from '../components/marketplace/CategoryFilter.js';
 import DatasetList from '../components/marketplace/DatasetList.js';
@@ -20,6 +20,7 @@ const Marketplace = () => {
         filterDatasets(newCategory);
     };
 
+
     const filterDatasets = (category) => {
         const filteredDatasets = dummyData
             .filter(dataset =>
@@ -28,18 +29,11 @@ const Marketplace = () => {
     };
 
     return (
-        // Use Bootstrap's row and col classes for layout
-        <div className="container-fluid">
-            <div className="row">
-                <div className="col-md-2"> {/* Adjusted for Bootstrap's 12-column grid */}
-                    <div className="filters-container d-flex flex-column align-items-center gap-3"> {/* Bootstrap 5 utility classes */}
-                        <CategoryFilter category={filters.category} onCategoryChange={handleCategoryChange}/>
-                    </div>
-                </div>
-                <div className="col-md-10">
-                    <DatasetList datasets={datasets}/>
-                </div>
+        <div className="marketplace">
+            <div className="filters-container">
+                <CategoryFilter category={filters.category} onCategoryChange={handleCategoryChange}/>
             </div>
+            <DatasetList datasets={datasets}/>
         </div>
     );
 };

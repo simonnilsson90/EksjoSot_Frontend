@@ -26,6 +26,7 @@
   font-size: 38px;
 }
 
+
 .features-section {
   display: flex;
   justify-content: center;
@@ -33,11 +34,13 @@
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 10%;
+
 }
 
 .features-section img {
   width: 60%;
   border-radius: 10%;
+
 }
 
 .features-section h1 {

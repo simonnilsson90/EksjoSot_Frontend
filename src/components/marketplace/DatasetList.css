@@ -1,0 +1,19 @@
+.dataset-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.dataset-item {
+    padding: 15px;
+    text-align: center;
+}
+
+.dataset-item img {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+}
