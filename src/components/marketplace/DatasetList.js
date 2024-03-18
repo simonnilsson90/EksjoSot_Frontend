@@ -1,19 +1,14 @@
-import React from 'react';
+import React from "react";
 import "./DatasetList.css";
-
+import Card from "./DatasetCard";
 const DatasetList = ({ datasets }) => {
-    return (
-        <div className="dataset-list">
-            {datasets.map((dataset) => (
-                <div key={dataset.id} className="dataset-item">
-                    <img src={`/images/marketplace/${dataset.imagePreview}`} alt={dataset.title} />
-                    <h4>{dataset.title}</h4>
-                    <p>{dataset.description}</p>
-                    <p className="price">${dataset.price}</p>
-                </div>
-            ))}
-        </div>
-    );
+  return (
+    <div id="dataset-list">
+      {datasets.map((dataset) => (
+        <Card key={dataset.id} dataset={dataset} />
+      ))}
+    </div>
+  );
 };
 
 export default DatasetList;
