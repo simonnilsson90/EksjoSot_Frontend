@@ -1,0 +1,49 @@
+.category-filter {
+    display: block;
+    width: 200px; /* Adjust if necessary */
+    top: 5%;
+    left: 0;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.category-filter h3 {
+    margin-bottom: 15px;
+    color: #0D141C;
+
+}
+
+.category-filter ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Creates a grid layout */
+    gap: 10px; /* Adjust space between items */
+}
+
+.category-filter li {
+    padding: 0;
+}
+
+.category-filter button {
+    padding: 8px 16px; /* Adjust button padding */
+    border: none;
+    border-radius: 20px; /* Gives the rounded corners */
+    background-color: #f0f0f0; /* Button color */
+    text-align: center;
+    color: #0D141C;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.category-filter button:hover {
+    background-color: #e1e1e1; /* Button hover color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds shadow on hover */
+}
+
+.category-filter button.active {
+    font-weight: bold;
+    color: #fff; /* Active button text color */
+    background-color: #007bff; /* Active button color */
+}
