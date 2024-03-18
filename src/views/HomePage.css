@@ -1,5 +1,6 @@
 .home-page {
   width: 100%;
+  min-height: 100vh;
 }
 
 .hero-image {
@@ -64,6 +65,7 @@ h3 {
 #features-section p {
   width: 80%;
   color: rgb(40, 40, 40);
+  font-size: clamp(0.8rem, 3vw, 2rem);
 }
 
 .features-container {
