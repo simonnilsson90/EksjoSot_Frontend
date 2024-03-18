@@ -1,99 +1,56 @@
 import Logo from "../assets/images/homepage/logo.png";
 import UserPic from "../assets/images/homepage/user.png";
-import React from "react";
-
+import React, { useState } from "react";
+import "./navbar/navbarComponent.css";
 function Navbar() {
-  const flex = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    listStyle: "none",
-  };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const color = {
-    textDecoration: "none",
-    color: "black",
-    alignItems: "center",
-  };
-
-  const listItemStyle = {
-    margin: "0 10px",
-  };
-
-  const listItemStyle2 = {
-    margin: "0 20px",
-  };
-
-  const logoLinkStyle = {
-    marginRight: "10px",
-  };
-
-  const profileStyle = {
-    marginRight: "30px",
-  };
-
-  const navbarBrand = {
-    fontSize: "1.3rem",
-    fontWeight: "bold",
-    color: "black",
-  };
-
-  const displayAlign = {
-    display: "flex",
-    alignItems: "center",
-  };
-
-  const border = {
-    borderBottom: "2px solid lightgray",
-  };
-
+  function toggleMenu() {
+    setIsMenuOpen(!isMenuOpen);
+  }
   return (
-    <div>
-      <nav style={border}>
-        <ul style={flex}>
-          <div>
-            <li style={navbarBrand}>
-              <a style={color} href="/">
-                <img style={logoLinkStyle} src={Logo} alt="Logo picture" />
-                The Everyone Store
-              </a>
-            </li>
-          </div>
-          <div style={displayAlign}>
-            <li style={listItemStyle}>
-              <a style={color} href="/">
-                Home
-              </a>
-            </li>
-            <li style={listItemStyle}>
-              <a style={color} href="market">
-                Marketplace
-              </a>
-            </li>
-            <li style={listItemStyle}>
-              <a style={color} href="myAccount">
-                Account
-              </a>
-            </li>
-            <li style={listItemStyle}>
-              <a style={color} href="#">
-                About Us
-              </a>
-            </li>
-            <li style={listItemStyle2}>
-              <a style={color} href="#">
-                Contact Us
-              </a>
-            </li>
-            <li style={{ ...listItemStyle, ...profileStyle }}>
-              <a href="#" className="me-4">
-                <img src={UserPic} width={40} height={40} alt="User Picture" />
-              </a>
-            </li>
-          </div>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <ul className="navbarContainer">
+        <div id="logoContainer">
+          <li>
+            <a href="/">
+              <img id="logo" src={Logo} alt="Logo picture" />
+              The Everyone Store
+            </a>
+          </li>
+        </div>
+        <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
+          <li className="navbarLink">
+            <a href="/">Home</a>
+          </li>
+          <li className="navbarLink">
+            <a href="market">Marketplace</a>
+          </li>
+
+          <li className="navbarLink">
+            <a href="#">About Us</a>
+          </li>
+          <li className="navbarLink">
+            <a href="#">Contact Us</a>
+          </li>
+          <li className="navbarLink">
+            <a id="userAvatar" href="#" className="me-4">
+              <img src={UserPic} width={40} height={40} alt="User Picture" />
+            </a>
+          </li>
+        </div>
+        <li id="hamburgerMenu">
+          <button
+            onClick={toggleMenu}
+            className={`hamburger-icon ${isMenuOpen ? "active" : ""}`}
+          >
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </button>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
