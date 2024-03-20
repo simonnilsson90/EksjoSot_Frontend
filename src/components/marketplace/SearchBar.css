@@ -1,0 +1,52 @@
+.searchBar {
+ 
+    margin-bottom: 10px;
+    margin-left: 16px;
+    width: 90%;
+    display: flex; /* Använd flexbox för att centrera sökrutan */
+}
+
+.customInput {
+    position: relative;
+    display: inline-block; /* Använd inline-block för att låta input-fältet växa med sitt innehåll */
+    flex: 1; /* Låt sökfältet växa för att fylla resterande utrymme */
+}
+
+.grayIcon {
+    color: rgba(79, 117, 148, 1);
+}
+
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+#searchQueryInput {
+    width: 88%; /* Anpassa bredden för att fylla resterande utrymme */
+    height: 2.8rem;
+    background: rgba(232, 237, 242, 1);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    padding-left: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(79, 117, 148, 1);
+}
+
+#searchQueryInput::placeholder {
+    color: rgba(79, 117, 148, 1);
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 2.5rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+}

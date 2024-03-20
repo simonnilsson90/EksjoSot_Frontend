@@ -5,6 +5,7 @@ import CategoryFilter from "../components/marketplace/CategoryFilter.js";
 import DatasetList from "../components/marketplace/DatasetList.js";
 // Import your mock data
 import dummyData from "../data/dummyData";
+import SearchBar from "../components/marketplace/SearchBar.js";
 
 const Marketplace = () => {
   const [datasets, setDatasets] = useState(dummyData);
@@ -28,7 +29,9 @@ const Marketplace = () => {
   };
 
   return (
+
     <div className="marketplace">
+      
       <div className="filters-container">
         <CategoryFilter
           category={filters.category}
@@ -36,6 +39,7 @@ const Marketplace = () => {
         />
       </div>
       <div id="dataSetContainer">
+      <SearchBar/>
         <DatasetList datasets={datasets} />
       </div>
     </div>
