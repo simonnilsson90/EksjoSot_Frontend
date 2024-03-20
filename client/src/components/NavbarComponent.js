@@ -1,7 +1,7 @@
-import Logo from "../../assets/images/homepage/logo.png";
-import UserPic from "../../assets/images/homepage/user.png";
+import Logo from "../assets/images/homepage/logo.png";
+import UserPic from "../assets/images/homepage/user.png";
 import React, { useState } from "react";
-import "./navbarComponent.css";
+import "./navbar/navbarComponent.css";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,7 +13,7 @@ function Navbar() {
       <ul className="navbarContainer">
         <div id="logoContainer">
           <li>
-            <a href="/public">
+            <a href="/">
               <img id="logo" src={Logo} alt="Logo picture" />
               The Everyone Store
             </a>
@@ -21,7 +21,7 @@ function Navbar() {
         </div>
         <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
           <li className="navbarLink">
-            <a href="/public">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="navbarLink">
             <a href="market">Marketplace</a>
@@ -34,7 +34,7 @@ function Navbar() {
             <a href="#">Contact Us</a>
           </li>
           <li className="navbarLink">
-            <a id="userAvatar" href="myAccount" className="me-4">
+            <a id="userAvatar" href="#" className="me-4">
               <img src={UserPic} width={40} height={40} alt="User Picture" />
             </a>
           </li>
