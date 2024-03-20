@@ -21,7 +21,7 @@ function Navbar() {
         </div>
         <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
           <li className="navbarLink">
-            <a href="/public">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="navbarLink">
             <a href="market">Marketplace</a>
