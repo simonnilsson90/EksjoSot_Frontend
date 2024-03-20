@@ -13,7 +13,7 @@ function Navbar() {
       <ul className="navbarContainer">
         <div id="logoContainer">
           <li>
-            <a href="/public">
+            <a href="/">
               <img id="logo" src={Logo} alt="Logo picture" />
               The Everyone Store
             </a>
