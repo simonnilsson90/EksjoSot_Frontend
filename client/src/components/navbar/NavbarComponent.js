@@ -1,7 +1,7 @@
-import Logo from "../assets/images/homepage/logo.png";
-import UserPic from "../assets/images/homepage/user.png";
+import Logo from "../../assets/images/homepage/logo.png";
+import UserPic from "../../assets/images/homepage/user.png";
 import React, { useState } from "react";
-import "./navbar/navbarComponent.css";
+import "./navbarComponent.css";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -34,7 +34,7 @@ function Navbar() {
             <a href="#">Contact Us</a>
           </li>
           <li className="navbarLink">
-            <a id="userAvatar" href="#" className="me-4">
+            <a id="userAvatar" href="myAccount" className="me-4">
               <img src={UserPic} width={40} height={40} alt="User Picture" />
             </a>
           </li>
