@@ -2,21 +2,26 @@
 
 The Everyone Store is a React.js-based e-commerce platform offering a user-friendly shopping experience with a wide range of products.
 
+
 ## Project Structure
 
 * `theeveryonestore/`
     * `client/` (Frontend codebase)
     * `server/` (Backend codebase)
 
+
+
 ## Getting Started
 
 These instructions will guide you through getting a copy of the project up and running on your local machine for development and testing purposes.
+
 
 ### Prerequisites
 
 Make sure you have the following installed:
 * Node.js (Recommended: the latest stable version)
 * npm (Comes with Node.js)
+
 
 ### Installation
 
@@ -47,6 +52,7 @@ Follow these steps to set up your development environment:
     npm install
     ```
 
+
 ### Configuration
 
 Before running the application, you will need to set up environment variables:
@@ -56,6 +62,7 @@ Before running the application, you will need to set up environment variables:
 2. Place the `.env` file in the `server` directory of your local project.
 
    The `.env` file should contain all the necessary environment variables required for the application to run correctly, including database connection settings and any API keys or secrets.
+
 
 ### Running the Application
 
@@ -87,6 +94,7 @@ To run the backend server:
 
    Ensure the backend is configured to run on a port that does not conflict with the frontend, typically [http://localhost:3001](http://localhost:3001).
 
+
 ## Technologies Used
 
 - Frontend:
@@ -100,6 +108,7 @@ To run the backend server:
     - PostgreSQL for the database (`pg` package)
     - `dotenv` for environment variable management
     - `cors` for enabling Cross-Origin Resource Sharing
+
 
 ## Contributing
 
