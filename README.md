@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# The Everyone Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Everyone Store is a React.js-based e-commerce platform offering a user-friendly shopping experience with a wide range of products.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+* `everyonestore/`
+    * `client/` (Frontend codebase)
+    * `server/` (Backend codebase)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+These instructions will guide you through getting a copy of the project up and running on your local machine for development and testing purposes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have the following installed:
+* Node.js (Recommended: the latest stable version)
+* npm (Comes with Node.js)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+Follow these steps to set up your development environment:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine:
+    ```sh
+    git clone https://github.com/your-repo/everyonestore.git
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the frontend directory:
+    ```sh
+    cd everyonestore/client
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the frontend dependencies:
+    ```sh
+    npm install
+    ```
 
-### `npm run eject`
+4. Navigate to the backend directory:
+    ```sh
+    cd ../server
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Install the backend dependencies:
+    ```sh
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Before running the application, you will need to set up environment variables:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Obtain the `.env` file from the Google Drive location provided by the project maintainers.
 
-## Learn More
+2. Place the `.env` file in the `server` directory of your local project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   The `.env` file should contain all the necessary environment variables required for the application to run correctly, including database connection settings and any API keys or secrets.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Running the Application
 
-### Code Splitting
+To run the frontend of The Everyone Store:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Navigate back to the `client` directory:
+    ```sh
+    cd ../client
+    ```
 
-### Analyzing the Bundle Size
+2. Start the React development server:
+    ```sh
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   The application should now be running and accessible at [http://localhost:3000](http://localhost:3000).
 
-### Making a Progressive Web App
+To run the backend server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Navigate to the `server` directory from the root of the project:
+    ```sh
+    cd everyonestore/server
+    ```
 
-### Advanced Configuration
+2. Start the backend server:
+    ```sh
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   Ensure the backend is configured to run on a port that does not conflict with the frontend, typically [http://localhost:3001](http://localhost:3001).
 
-### Deployment
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Frontend:
+    - React.js
+    - @emotion/react and @emotion/styled for styling
+    - @mui/material for Material UI components
+    - React Router for routing
 
-### `npm run build` fails to minify
+- Backend:
+    - Node.js with Express.js framework
+    - PostgreSQL for the database (`pg` package)
+    - `dotenv` for environment variable management
+    - `cors` for enabling Cross-Origin Resource Sharing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+
+Please read the onboarding document and coding standards document in the google drive for details on the process for submitting pull requests.
+
