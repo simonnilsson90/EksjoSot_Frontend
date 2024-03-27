@@ -19,6 +19,7 @@ function Navbar() {
             </a>
           </li>
         </div>
+       
         <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
           <li className="navbarLink">
             <a href="/">Home</a>

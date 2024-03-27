@@ -82,3 +82,9 @@
 .grey-mail {
   color: rgb(141, 153, 173);
 }
+
+.sideNavLink  {
+  font-weight: normal;
+  text-decoration: none;
+  color: #0d141c;
+}

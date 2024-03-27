@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MyAccount from "./views/MyAccount";
 import Footer from "./components/footer/FooterComponent";
 import ConsentForm from "./components/feature/consent/ConsentForm";
+import DataSetsComponent from "./components/dataSets/dataSetsComponent";
+import Settings from "./components/myAccountSettings/settingsComponent";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="market" element={<MarketPage />} />
         <Route path="myAccount" element={<MyAccount />} />
         <Route path="consentForm" element={<ConsentForm />} />
+        <Route path="dataSetsComponent" element={<DataSetsComponent />} />
+        <Route path="settings" element={<Settings />} />
       </Routes>
       <Footer />
     </BrowserRouter>

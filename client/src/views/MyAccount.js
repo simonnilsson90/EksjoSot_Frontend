@@ -1,6 +1,6 @@
 import UserPic from "../assets/images/homepage/user.png";
 import Datasets from "../assets/images/homepage/datasets.png";
-import Girl from "../assets/images/homepage/girl.png";
+
 import Home from "../assets/images/homepage/home.png";
 import ThreePeople from "../assets/images/homepage/threepeople.png";
 import TwoPeople from "../assets/images/homepage/twopeople.png";
@@ -10,8 +10,19 @@ import Help from "../assets/images/homepage/help.png";
 import Invite from "../assets/images/homepage/invite.png";
 import DemoMode from "../assets/images/homepage/demomode.png";
 import "./MyAccount.css";
+import Settings from "../components/myAccountSettings/settingsComponent";
+import DataSetsComponent from "../components/dataSets/dataSetsComponent";
+import { useState } from "react";
+
 
 function MyAccount() {
+const [activeComponent, setActiveComponent] = useState(null)
+
+
+const handleNavLinkClick = (componentName) => {
+  setActiveComponent(componentName)
+}
+
   return (
     <>
       <div className="parent-div">
@@ -27,7 +38,9 @@ function MyAccount() {
                     alt="User Picture"
                     className="seperate-icons-from-text"
                   />
-                  <a>My Account</a>
+                  <a className="sideNavLink" onClick={() => handleNavLinkClick("MyAccount")}
+                  >My Account</a>
+                 
                 </div>
               </li>
             </div>
@@ -64,7 +77,8 @@ function MyAccount() {
                   alt="Datasets Picture"
                   className="seperate-icons-from-text"
                 />
-                <a>Data sets</a>
+                 <a className="sideNavLink" onClick={() => handleNavLinkClick("DataSets")}>Data sets</a>
+                
               </div>
             </li>
             <div className="seperate-icons">
@@ -146,6 +160,13 @@ function MyAccount() {
             </div>
           </ul>
         </div>
+
+        {activeComponent === "MyAccount" && <Settings />}
+        {activeComponent === "DataSets" && <DataSetsComponent />}
+        
+       
+
+        {/*
         <div className="padding-left">
           <h1>Settings</h1>
           <div className="center-button">
@@ -176,6 +197,10 @@ function MyAccount() {
             <button className="save-button">Save</button>
           </div>
         </div>
+        
+        */}
+      
+        
       </div>
     </>
   );
