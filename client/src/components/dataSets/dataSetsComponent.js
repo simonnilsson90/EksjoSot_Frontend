@@ -9,7 +9,10 @@ function DataSetsComponent(){
 
 
     return (
-        <div className="padding-left" >
+      <div>
+
+     
+        <div className="parentDiv" >
             <h1>My Data sets</h1>
             <div className="searchBar">
             <div className="customInput">
@@ -33,15 +36,14 @@ function DataSetsComponent(){
 </Button>
 </div>
    
-
 </div>
 
 
 <h2>Your data sets</h2>
 
-<div className="dotsFlex"> 
-<div>users</div>
-<BsThreeDots />
+<div className="dotsFlex">
+  <div>users</div>
+  <BsThreeDots className="right-align" />
 </div>
 
 <div className="dotsFlex"> 
@@ -75,6 +77,7 @@ function DataSetsComponent(){
 </div>
 
         </div>
+ </div>
     )
 }
 

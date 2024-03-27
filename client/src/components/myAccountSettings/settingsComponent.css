@@ -31,6 +31,7 @@
   }
   .padding-left {
     padding-left: 10%;
+    width: auto;
   }
   .start-right {
     position: absolute;
@@ -87,5 +88,9 @@
     font-weight: normal;
     text-decoration: none;
     color: #0d141c;
+  }
+
+  .marginParent {
+    margin-left: 108px;
   }
   

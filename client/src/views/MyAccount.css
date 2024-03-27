@@ -28,6 +28,8 @@
 .parent-div {
   display: flex;
   flex-direction: row;
+  margin-right: 16px;
+  
 }
 .padding-left {
   padding-left: 10%;

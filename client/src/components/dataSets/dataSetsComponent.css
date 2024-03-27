@@ -1,3 +1,9 @@
+.parentDiv{
+  
+  margin-left: 108px;
+  
+}
+
 .dataSetsLink  {
     font-weight: normal;
     text-decoration: none;
@@ -49,11 +55,8 @@
     font-weight: bold;
     background-color: rgb(222, 226, 233);
   }
-  @media screen and (max-width: 768px) {
-    .start-right {
-      
-    }
-  }
+  
+  
   .container {
     display: flex;
     justify-content: flex-end;
@@ -100,9 +103,9 @@
  
     margin-bottom: 10px;
     margin-left: -4px;
-  width: 265%;
+  
     display: flex; /* Använd flexbox för att centrera sökrutan */
-    margin-right: 100px;
+    
 }
 
 .customInput {
@@ -158,19 +161,37 @@ label {
   display: flex;
   justify-content: flex-end;
   justify-items: end;
-  width: 250%;
+  right: 0;
+  
  
 }
 
 .buttonMargin {
   margin-right: 10px;
+  right: 0;
+  
  
   
 }
 
-.dotsFlex{
+.dotsFlex {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
+  right: 0;
+  margin-right: 3%;
 }
 
+.dotsFlex .right-align {
+  margin-left: auto; /* Flytta objektet till höger genom att använda "auto" marginalsutrymme till vänster */
+}
   
+.start-right {
+  position: absolute;
+  right: 0;
+  margin-right: 3%;
+  padding: 10px 20px;
+ 
+
+  
+}

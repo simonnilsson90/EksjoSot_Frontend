@@ -7,7 +7,7 @@ function Settings(){
 
     return (
 
-       <div>
+       <div className="marginParent">
 <div className="padding-left">
           <h1>Settings</h1>
           <div className="center-button">
