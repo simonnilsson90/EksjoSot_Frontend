@@ -29,10 +29,7 @@
     display: flex;
     flex-direction: row;
   }
-  .padding-left {
-    padding-left: 10%;
-    width: auto;
-  }
+  
   .start-right {
     position: absolute;
     right: 0;

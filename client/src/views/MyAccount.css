@@ -25,12 +25,14 @@
 .first-icon {
   margin-left: -5%;
 }
+/*
 .parent-div {
   display: flex;
   flex-direction: row;
   margin-right: 16px;
   
 }
+*/
 .padding-left {
   padding-left: 10%;
 }
@@ -89,4 +91,18 @@
   font-weight: normal;
   text-decoration: none;
   color: #0d141c;
+}
+
+
+.parent-div {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* Navigationslistan tar 200px och resten är för komponentinnehållet */
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+}
+
+.content {
+  padding: 20px;
 }

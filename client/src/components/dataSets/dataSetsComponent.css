@@ -1,197 +1,57 @@
-.parentDiv{
-  
-  margin-left: 108px;
-  
+.input-container {
+  display: flex;
 }
 
-.dataSetsLink  {
-    font-weight: normal;
-    text-decoration: none;
-    color: #0d141c;
-  }
-
-  .seperate-divs {
-    display: flex;
-    flex-direction: column;
-    margin-top: 300%;
-  }
-  .seperate-elements-bottom {
-    display: flex;
-    margin-bottom: 10%;
-  }
-  .seperate-icons-from-text {
-    margin-right: 12px;
-  }
-  .list-style {
-    list-style: none;
-  }
-  .display-align {
-    display: flex;
-    align-items: center;
-  }
-  .seperate-icons {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 7%;
-  }
-  .first-icon {
-    margin-left: -5%;
-  }
-  .parent-div {
-    display: flex;
-    flex-direction: row;
-  }
-  .padding-left {
-    padding-left: 10%;
-    width: auto;
-  }
-  .start-right {
-    position: absolute;
-    right: 0;
-    margin-right: 3%;
-    padding: 10px 20px;
-    border-radius: 15px;
-    border: none;
-    font-weight: bold;
-    background-color: rgb(222, 226, 233);
-  }
-  
-  
-  .container {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .center-button {
-    display: flex;
-    align-items: center;
-  }
-  .seperate-text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 8%;
-  }
-  .seperate-elements-bottom-v2 {
-    margin-bottom: -15%;
-  }
-  .save-button {
-    margin-top: 10%;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 15px;
-    background-color: rgb(222, 226, 233);
-  }
-  .input-fields {
-    padding: 10px;
-    padding-right: 150px;
-    border-radius: 10px;
-    border-color: rgb(232, 235, 240);
-    border-style: double;
-    display: flex;
-  }
-  .grey-mail {
-    color: rgb(141, 153, 173);
-  }
-  
-  .sideNavLink  {
-    font-weight: normal;
-    text-decoration: none;
-    color: #0d141c;
-  }
-
-  .searchBar {
- 
-    margin-bottom: 10px;
-    margin-left: -4px;
-  
-    display: flex; /* Använd flexbox för att centrera sökrutan */
-    
-}
-
-.customInput {
-    position: relative;
-    display: inline-block; /* Använd inline-block för att låta input-fältet växa med sitt innehåll */
-    flex: 1; /* Låt sökfältet växa för att fylla resterande utrymme */
-}
-
-.grayIcon {
-    color: rgba(79, 117, 148, 1);
-}
-
-.searchIcon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
+.padding-left {
+  margin-left: -10px;
+  padding-right: 14px; 
+  width: 1200px; 
 }
 
 #searchQueryInput {
-  /*  width: 400%; /* Anpassa bredden för att fylla resterande utrymme */
-    
-    height: 2.8rem;
-    background: rgba(232, 237, 242, 1);
-    outline: none;
-    border: none;
-    border-radius: 1rem;
-    padding: 0 1.5rem;
-    font-size: 1rem;
-    padding-left: 2.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: rgba(79, 117, 148, 1);
-   
-    
+  flex: 1; /* Gör input-elementet flexibelt så att det sträcker sig över hela tillgängliga utrymmet */
+  box-sizing: border-box; /* Inkludera padding och border i elementets totala bredd */
 }
-
-#searchQueryInput::placeholder {
-    color: rgba(79, 117, 148, 1);
-}
-
-label {
-    position: absolute;
-    top: 50%;
-    left: 2.5rem;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
 
 .buttonPos {
   display: flex;
   justify-content: flex-end;
   justify-items: end;
   right: 0;
-  
- 
+  padding-top: 10px;
 }
 
 .buttonMargin {
   margin-right: 10px;
   right: 0;
-  
- 
-  
 }
+
+
 
 .dotsFlex {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   right: 0;
-  margin-right: 3%;
 }
 
-.dotsFlex .right-align {
-  margin-left: auto; /* Flytta objektet till höger genom att använda "auto" marginalsutrymme till vänster */
+.custom-button-gray {
+  color: black !important; /* Ändra textfärgen till svart */
+  border-color: transparent !important; /* Ta bort kantfärgen */
+  background-color: rgba(232, 237, 245, 1) !important;
+  border-radius: 10px !important;
+  text-transform: capitalize !important;
 }
+
+.custom-button-blue {
   
-.start-right {
-  position: absolute;
-  right: 0;
-  margin-right: 3%;
-  padding: 10px 20px;
+  border-radius: 10px !important;
+  text-transform: capitalize !important;
+}
+
+
+
+
+
+  
  
-
-  
-}

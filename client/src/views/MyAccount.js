@@ -13,13 +13,14 @@ import "./MyAccount.css";
 import Settings from "../components/myAccountSettings/settingsComponent";
 import DataSetsComponent from "../components/dataSets/dataSetsComponent";
 import { useState } from "react";
+import CreateData from "../components/createData/CreateDataComponent";
 
 
 function MyAccount() {
-const [activeComponent, setActiveComponent] = useState(null)
+const [activeComponent, setActiveComponent] = useState("MyAccount")
 
 
-const handleNavLinkClick = (componentName) => {
+const handleNewDataClick = (componentName) => {
   setActiveComponent(componentName)
 }
 
@@ -38,7 +39,7 @@ const handleNavLinkClick = (componentName) => {
                     alt="User Picture"
                     className="seperate-icons-from-text"
                   />
-                  <a className="sideNavLink" onClick={() => handleNavLinkClick("MyAccount")}
+                  <a className="sideNavLink" onClick={() => handleNewDataClick("MyAccount")}
                   >My Account</a>
                  
                 </div>
@@ -77,7 +78,7 @@ const handleNavLinkClick = (componentName) => {
                   alt="Datasets Picture"
                   className="seperate-icons-from-text"
                 />
-                 <a className="sideNavLink" onClick={() => handleNavLinkClick("DataSets")}>Data sets</a>
+                 <a className="sideNavLink" onClick={() => handleNewDataClick("DataSets")}>Data sets</a>
                 
               </div>
             </li>
@@ -161,8 +162,12 @@ const handleNavLinkClick = (componentName) => {
           </ul>
         </div>
 
+        
+
         {activeComponent === "MyAccount" && <Settings />}
-        {activeComponent === "DataSets" && <DataSetsComponent />}
+        {activeComponent === "DataSets" && (<DataSetsComponent onNewDataClick={handleNewDataClick}/>
+        )}
+         {activeComponent === "CreateData" && <CreateData />}
           
       </div>
     </>

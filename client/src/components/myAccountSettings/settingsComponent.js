@@ -8,7 +8,7 @@ function Settings(){
     return (
 
        <div className="marginParent">
-<div className="padding-left">
+<div >
           <h1>Settings</h1>
           <div className="center-button">
         <img src={G} />      

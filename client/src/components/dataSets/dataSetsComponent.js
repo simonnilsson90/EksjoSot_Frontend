@@ -5,39 +5,37 @@ import { CiSearch } from "react-icons/ci";
 import { BsThreeDots } from "react-icons/bs";
 
 
-function DataSetsComponent(){
+function DataSetsComponent({ onNewDataClick }){
 
+  const handleCreateNewData = ()  => {
+    onNewDataClick("CreateData")
+  }
 
     return (
-      <div>
 
      
-        <div className="parentDiv" >
-            <h1>My Data sets</h1>
-            <div className="searchBar">
-            <div className="customInput">
-                <CiSearch className="grayIcon  searchIcon" size={24} />
-                <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search data sets" />
-            </div>
-        </div>
+      <div className="padding-left">
+      <h1 className="">My Data sets</h1>
+              
+                <div className="input-container"> 
+                  <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search data sets" />
+                  </div>
 
+                  <div className="buttonPos">
 
-<div className="buttonPos">
-
-<div className="buttonMargin">
-<Button  variant="outlined" disableElevation>
+<div className="buttonMargin ">
+<Button   variant="outlined" disableElevation className="custom-button-gray">
   Import data set
 </Button>
 </div>
 
 <div>
-<Button variant="contained" disableElevation>
+<Button onClick={handleCreateNewData}  variant="contained" disableElevation className="custom-button-blue">
   Create new data set
 </Button>
 </div>
    
 </div>
-
 
 <h2>Your data sets</h2>
 
@@ -75,10 +73,12 @@ function DataSetsComponent(){
 <div>ab tests</div>
 <BsThreeDots />
 </div>
-
-        </div>
  </div>
+      
+          
     )
 }
+
+
 
 export default DataSetsComponent
