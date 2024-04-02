@@ -3,9 +3,10 @@
 }
 
 .padding-left {
-  margin-left: -10px;
-  padding-right: 14px; 
+  margin-left: 120px;
+  padding-right: 30px; 
   width: 1200px; 
+  
 }
 
 #searchQueryInput {
@@ -28,6 +29,7 @@
 
 
 
+
 .dotsFlex {
   display: flex;
   justify-content: space-between;
@@ -40,17 +42,26 @@
   border-color: transparent !important; /* Ta bort kantfärgen */
   background-color: rgba(232, 237, 245, 1) !important;
   border-radius: 10px !important;
-  text-transform: capitalize !important;
+  text-transform: none !important;
 }
 
 .custom-button-blue {
   
   border-radius: 10px !important;
-  text-transform: capitalize !important;
+  text-transform: none !important;
 }
 
+.parent-div {
+  display: flex;
+  flex-direction: row;
+  margin-right: 16px;
+  
+}
 
-
+.parentDiv {
+  display: flex;
+ 
+}
 
 
   

@@ -1,66 +1,73 @@
-import UserPic from "../assets/images/homepage/user.png";
-import Datasets from "../assets/images/homepage/datasets.png";
+import "./sideNavComponent.css";
 
-import Home from "../assets/images/homepage/home.png";
-import ThreePeople from "../assets/images/homepage/threepeople.png";
-import TwoPeople from "../assets/images/homepage/twopeople.png";
-import Document from "../assets/images/homepage/document.png";
-import Feedback from "../assets/images/homepage/feedback.png";
-import Help from "../assets/images/homepage/help.png";
-import Invite from "../assets/images/homepage/invite.png";
-import DemoMode from "../assets/images/homepage/demomode.png";
-import "./MyAccount.css";
-import Settings from "../components/myAccountSettings/settingsComponent";
-import DataSetsComponent from "../components/dataSets/dataSetsComponent";
-import { useState } from "react";
-import CreateData from "../components/createData/CreateDataComponent";
+import { Link, useLocation } from "react-router-dom";
 
-
-function MyAccount() {
-const [activeComponent, setActiveComponent] = useState("MyAccount")
+import React, { useState, useEffect } from "react";
+import UP from "../../../assets/images/homepage/user.png";
+import H from "../../../assets/images/homepage/home.png";
+import DS from "../../../assets/images/homepage/datasets.png";
+import ThreeP from "../../../assets/images/homepage/threepeople.png";
+import TwoP from "../../../assets/images/homepage/twopeople.png";
+import D from "../../../assets/images/homepage/document.png";
+import FB from "../../../assets/images/homepage/feedback.png";
+import HLP from "../../../assets/images/homepage/help.png";
+import I from "../../../assets/images/homepage/invite.png";
+import DM from "../../../assets/images/homepage/demomode.png";
 
 
-const handleNewDataClick = (componentName) => {
-  setActiveComponent(componentName)
-}
 
-  return (
-    <>
-      <div className="parent-div">
+
+function SideNav(){
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState("/myAccount");
+
+  
+
+   
+    return (
+
+       
         <div className="display-align">
           <ul className="list-style">
             <div className="first-icon">
               <li className="seperate-elements-bottom">
                 <div className="display-align">
                   <img
-                    src={UserPic}
+                    src={UP}
                     width={40}
                     height={40}
                     alt="User Picture"
                     className="seperate-icons-from-text"
                   />
-                  <a className="sideNavLink" onClick={() => handleNewDataClick("MyAccount")}
-                  >My Account</a>
+                  <a>My Account</a>
+                 
                  
                 </div>
               </li>
             </div>
             <li className="seperate-elements-bottom">
-              <div className="display-align">
-                <img
-                  src={Home}
-                  width={24}
-                  height={24}
-                  alt="Home Picture"
-                  className="seperate-icons-from-text"
-                />
-                <a>Home</a>
-              </div>
-            </li>
+            <div className={`display-align ${location.pathname === "/myAccount" ? "active-link" : ""}`}>
+    <img
+      src={H}
+      width={24}
+      height={24}
+      alt="Home Picture"
+      className="seperate-icons-from-text"
+    />
+    <Link
+      to="/myAccount"
+      className="nav-link"
+      onClick={() => setActiveLink("/myAccount")}
+    >
+      Home
+    </Link>
+  </div>
+</li>
+
             <li className="seperate-elements-bottom">
               <div className="display-align">
                 <img
-                  src={Document}
+                  src={D}
                   width={24}
                   height={24}
                   alt="Document Picture"
@@ -70,36 +77,45 @@ const handleNewDataClick = (componentName) => {
               </div>
             </li>
             <li className="seperate-elements-bottom">
-              <div className="display-align">
+             
+            <div className={`display-align ${location.pathname === "/myAccount/dataSets" ? "active-link" : ""}`}>
                 <img
-                  src={Datasets}
+                  src={DS}
                   width={24}
                   height={24}
                   alt="Datasets Picture"
                   className="seperate-icons-from-text"
                 />
-                 <a className="sideNavLink" onClick={() => handleNewDataClick("DataSets")}>Data sets</a>
-                
+            
+            <Link 
+              to="/myAccount/dataSets"
+              className="nav-link"
+              onClick={() => setActiveLink("/myAccount/dataSets")}
+            >
+              Data sets
+            </Link>
+         
+           
               </div>
             </li>
             <div className="seperate-icons">
               <li>
                 <div className="display-align">
                   <img
-                    src={TwoPeople}
+                    src={TwoP}
                     width={24}
                     height={24}
                     alt="People Picture"
                     className="seperate-icons-from-text"
                   />
-                  <a>People</a>
+                  <a className="list-style">People</a>
                 </div>
               </li>
             </div>
             <li className="seperate-elements-bottom">
               <div className="display-align">
                 <img
-                  src={ThreePeople}
+                  src={ThreeP}
                   width={24}
                   height={24}
                   alt="Audience Picture"
@@ -113,7 +129,7 @@ const handleNewDataClick = (componentName) => {
               <li className="seperate-elements-bottom">
                 <div className="display-align">
                   <img
-                    src={DemoMode}
+                    src={DM}
                     width={24}
                     height={24}
                     alt="Demo mode Picture"
@@ -125,7 +141,7 @@ const handleNewDataClick = (componentName) => {
               <li className="seperate-elements-bottom">
                 <div className="display-align">
                   <img
-                    src={Invite}
+                    src={I}
                     width={24}
                     height={24}
                     alt="Invite Picture"
@@ -137,7 +153,7 @@ const handleNewDataClick = (componentName) => {
               <li className="seperate-elements-bottom">
                 <div className="display-align">
                   <img
-                    src={Feedback}
+                    src={FB}
                     width={24}
                     height={24}
                     alt="Feedback Picture"
@@ -149,7 +165,7 @@ const handleNewDataClick = (componentName) => {
               <li className="seperate-elements-bottom">
                 <div className="display-align">
                   <img
-                    src={Help}
+                    src={HLP}
                     width={24}
                     height={24}
                     alt="Help and docs Picture"
@@ -161,17 +177,8 @@ const handleNewDataClick = (componentName) => {
             </div>
           </ul>
         </div>
-
-        
-
-        {activeComponent === "MyAccount" && <Settings />}
-        {activeComponent === "DataSets" && (<DataSetsComponent onNewDataClick={handleNewDataClick}/>
-        )}
-         {activeComponent === "CreateData" && <CreateData />}
-          
-      </div>
-    </>
-  );
+      
+    )
+  
 }
-
-export default MyAccount;
+export default SideNav
