@@ -1,38 +1,9 @@
-.seperate-divs {
+
+.parentDiv {
   display: flex;
-  flex-direction: column;
-  margin-top: 300%;
-}
-.seperate-elements-bottom {
-  display: flex;
-  margin-bottom: 10%;
-}
-.seperate-icons-from-text {
-  margin-right: 12px;
-}
-.list-style {
-  list-style: none;
-}
-.display-align {
-  display: flex;
-  align-items: center;
-}
-.seperate-icons {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 7%;
-}
-.first-icon {
-  margin-left: -5%;
-}
-.parent-div {
-  display: flex;
-  flex-direction: row;
-}
-.padding-left {
-  padding-left: 10%;
-}
-.start-right {
+ }
+
+ .start-right {
   position: absolute;
   right: 0;
   margin-right: 3%;
@@ -42,11 +13,7 @@
   font-weight: bold;
   background-color: rgb(222, 226, 233);
 }
-@media screen and (max-width: 768px) {
-  .start-right {
-    
-  }
-}
+
 .container {
   display: flex;
   justify-content: flex-end;
@@ -82,3 +49,15 @@
 .grey-mail {
   color: rgb(141, 153, 173);
 }
+
+.marginParent {
+  margin-left: 108px;
+}
+
+
+
+
+
+
+
+

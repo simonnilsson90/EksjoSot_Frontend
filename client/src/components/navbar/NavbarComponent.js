@@ -2,6 +2,7 @@ import Logo from "../../assets/images/homepage/logo.png";
 import UserPic from "../../assets/images/homepage/user.png";
 import React, { useState } from "react";
 import "./navbarComponent.css";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -19,6 +20,7 @@ function Navbar() {
             </a>
           </li>
         </div>
+       
         <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
           <li className="navbarLink">
             <a href="/">Home</a>
@@ -34,9 +36,10 @@ function Navbar() {
             <a href="#">Contact Us</a>
           </li>
           <li className="navbarLink">
-            <a id="userAvatar" href="myAccount" className="me-4">
-              <img src={UserPic} width={40} height={40} alt="User Picture" />
-            </a>
+          <Link id="userAvatar"  to="/myAccount"  className="me-4">
+          <img src={UserPic} width={40} height={40} alt="User Picture" />
+    </Link>
+            
           </li>
         </div>
         <li id="hamburgerMenu">
