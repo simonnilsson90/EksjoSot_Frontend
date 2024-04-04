@@ -1,0 +1,39 @@
+.marginParent {
+    margin-left: 108px;
+  }
+
+  .parentDiv {
+    display: flex;
+   }
+
+   * {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    background-color: blanchedalmond;
+    padding: 10px;
+    flex: 50%;
+    margin: 4px;
+  }
+  
+  .flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+    margin: 4px;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
