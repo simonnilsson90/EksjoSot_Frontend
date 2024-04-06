@@ -1,9 +1,13 @@
-.marginParent {
+
+.children2 {
     margin-left: 108px;
+   
   }
 
   .parentDiv {
     display: flex;
+   /*  background-color: rgba(247, 250, 252, 1);  */
+  
    }
 
    * {
@@ -15,25 +19,133 @@
     flex-direction: row;
     font-size: 30px;
     text-align: center;
+    
   }
   
   .flex-item-left {
-    background-color: blanchedalmond;
+   /*  */
     padding: 10px;
     flex: 50%;
-    margin: 4px;
+    
+   
   }
   
   .flex-item-right {
-    background-color: dodgerblue;
+   /* background-color: dodgerblue; */
     padding: 10px;
     flex: 50%;
     margin: 4px;
+   
+   
   }
   
   /* Responsive layout - makes a one column-layout instead of two-column layout */
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     .flex-container {
       flex-direction: column;
     }
+   
+
+     
+
+    
+     
   }
+
+
+  .textMargin {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   text-align: left;
+   margin-bottom: -35px;
+  
+  }
+
+  .margin2 {
+    text-align: left;
+    font-size: 32px;
+  }
+
+.smaller {
+  font-size: 16px;
+
+  
+}
+
+.smallerBlue {
+  font-size: 16px;
+  color: rgba(74, 120, 156, 1);
+  
+}
+
+.textMargin2 > p {
+ 
+  text-align: left;
+}
+
+
+.months {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(74, 120, 156, 1);
+  font-size: 13px;
+ margin-right: 34px;
+}
+
+
+.chartContainer {
+  margin-left: -30px; /* Justera värdet efter behov för att flytta diagrammet till vänster */
+}
+
+
+.textMargin .smaller,
+.textMargin .bigger,
+.textMargin .smallerBlue {
+  margin: 0; 
+  padding: 0;
+  
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container-test {
+  display: flex;
+  flex-direction: row;
+ 
+  text-align: center;
+}
+
+.flex-item-left-test {
+  
+
+  flex: 50%;
+  
+}
+
+.flex-item-right-test {
+  
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 1000px) {
+  .flex-container-test {
+    flex-direction: column;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-left-test {
+   
+    display: none; 
+    
+  }
+
+
+}

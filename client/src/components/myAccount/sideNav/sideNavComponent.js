@@ -21,7 +21,9 @@ function SideNav(){
   const location = useLocation();
   const [activeLink, setActiveLink] = useState("/myAccount");
 
- 
+  
+
+   
     return (
 
        
@@ -62,7 +64,7 @@ function SideNav(){
   </div>
 </li>
 
-            <li className="seperate-elements-bottom">
+<li className="seperate-elements-bottom">
             <div className={`display-align ${location.pathname === "/myAccount/reports" ? "active-link" : ""}`}>
                 <img
                   src={D}
