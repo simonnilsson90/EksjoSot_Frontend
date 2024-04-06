@@ -117,7 +117,7 @@ disableAxisListener
   <ChartContainer
       width={550}
       height={345}
-      series={[{ data: uData, label: 'uv', type: 'bar',  color: 'rgba(232, 237, 245, 1)' }]}
+      series={[{ data: uData, label: 'uv', type: 'bar',  color: 'rgba(232, 237, 245, 1)'  }]}
       xAxis={[{ scaleType: 'band', data: xLabels }]}
       
     >
