@@ -1,0 +1,28 @@
+.custom-arrow {
+    position: absolute;
+    top: 50%; /* Adjust as necessary to align vertically */
+    transform: translateY(-50%); /* Centers the arrow vertically */
+    z-index: 25; color: #000;
+   }
+  
+  /* Specific adjustments for left and right arrows */
+  .slick-prev.custom-arrow {
+    left: -50px; /* Adjust as necessary */
+   
+  }
+  
+  .slick-next.custom-arrow {
+    right: -50px; /* Adjust as necessary */
+  }
+  .slider-container {
+    position: relative;
+    padding: 0 40px;
+    max-width: 90%; /* Adjust this value as needed */
+  margin: auto; 
+  }
+
+  .custom-arrow:hover, .custom-arrow:focus {
+    color: #000; 
+  }
+  
+  
