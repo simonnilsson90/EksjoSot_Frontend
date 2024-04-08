@@ -1,9 +1,5 @@
 import PropTypes from 'prop-types';
-import {Box, Typography, Grid} from '@mui/material';
-import { AiFillAudio } from "react-icons/ai";
-import { HiDotsHorizontal } from "react-icons/hi";
-import { FaCamera } from "react-icons/fa";
-import { IoIosFilm } from "react-icons/io";
+import {Box, Typography, Grid, Button} from '@mui/material';
 
 function Item(props) {
   const { sx, ...other } = props;
@@ -42,7 +38,7 @@ Item.propTypes = {
 };
 
 
-const typeIcons = [FaCamera , AiFillAudio , IoIosFilm , HiDotsHorizontal ]
+const typeDescription = ['All', 'Free', 'Paid', 'Custom' ]
 
 export default function CategoriesComponent() {
   return (
@@ -60,13 +56,15 @@ export default function CategoriesComponent() {
           borderRadius: 1,
         }}
       >
-        <Typography level="h1" >Categories</Typography>
+        <Typography level="h1" >Licence</Typography>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-          {typeIcons.map((Icon, i) => (
+          {typeDescription.map((Icon, i) => (
             <Grid item xs={12} key={i}>
               <Item>
-                <Typography></Typography>
-                <Icon />
+                
+                <Button variant="text">
+                    <Typography>{Icon}</Typography>
+                </Button>
               </Item>
              
             </Grid>

@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import {Box, Typography, Grid} from '@mui/material';
-import { AiFillAudio } from "react-icons/ai";
-import { HiDotsHorizontal } from "react-icons/hi";
-import { FaCamera } from "react-icons/fa";
-import { IoIosFilm } from "react-icons/io";
+import { useState } from 'react'
+import {Box, Typography, Grid, Button} from '@mui/material';
+import Slider from '@mui/material/Slider';
+
 
 function Item(props) {
   const { sx, ...other } = props;
@@ -42,9 +41,18 @@ Item.propTypes = {
 };
 
 
-const typeIcons = [FaCamera , AiFillAudio , IoIosFilm , HiDotsHorizontal ]
 
-export default function CategoriesComponent() {
+export default function PriceRange() {
+    const [value, setValue] =useState([0, 10000]);
+    
+function valuetext(value) {
+    return `${value}$`;
+  }
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
     <div style={{ width: '100%' }}>
     
@@ -60,17 +68,22 @@ export default function CategoriesComponent() {
           borderRadius: 1,
         }}
       >
-        <Typography level="h1" >Categories</Typography>
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-          {typeIcons.map((Icon, i) => (
-            <Grid item xs={12} key={i}>
+        <Typography level="h1" >Price Range</Typography>
+        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 12 }}>
+          
+            <Grid item xs={12}>
               <Item>
-                <Typography></Typography>
-                <Icon />
+              <Slider
+        getAriaLabel={() => 'Temperature range'}
+        value={value}
+        onChange={handleChange}
+        valueLabelDisplay="auto"
+        getAriaValueText={valuetext}
+      />
               </Item>
              
             </Grid>
-          ))}
+          
         </Grid>
 
 
