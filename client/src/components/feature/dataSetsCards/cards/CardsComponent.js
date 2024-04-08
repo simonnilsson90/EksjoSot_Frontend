@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Typography, Grid, Box } from '@mui/material';
 
 
-function CardsComponent({index, item}) {
+function CardsComponent({ item}) {
   
   return (
     <Box  mx="auto" mt={4}>

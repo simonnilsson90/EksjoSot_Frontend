@@ -1,11 +1,18 @@
 import React from 'react';
 import Slider from "react-slick";
-import CardsComponent from "./CardsComponent";
-import data from '../../../data/dataArray';
+import CardsComponent from "../cards/CardsComponent";
+import data from '../../../../data/dataArray';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './carousel.css'; 
 import { useTheme } from '@mui/material';
+import { FaCamera } from "react-icons/fa";
+import { IoIosFilm } from "react-icons/io";
+import { AiFillAudio } from "react-icons/ai";
+import { HiDotsHorizontal } from "react-icons/hi";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
+
 
 export default function SimpleSlider() {
   function CustomNextArrow(props) {
@@ -15,7 +22,7 @@ export default function SimpleSlider() {
         className={`${className} custom-arrow`} 
         style={{ ...style, fontSize: '20px' }}
         onClick={onClick}
-      >&#9654;</div>
+      ><IoIosArrowForward /></div>
     );
   }
   
@@ -26,7 +33,7 @@ export default function SimpleSlider() {
         className={`${className} custom-arrow`}
         style={{ ...style, fontSize: '20px' }}
         onClick={onClick}
-      >&#9664;</div>
+      ><IoIosArrowBack /></div>
     );
   }
   
@@ -40,7 +47,7 @@ export default function SimpleSlider() {
     slidesToScroll: 3,
     autoplay: false,
     autoplaySpeed: 5000,
-    cssEase: "ease-in",
+    cssEase: "ease-out",
     arrows: true,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
@@ -72,8 +79,10 @@ export default function SimpleSlider() {
 
   return (
     <div className="content-sliders">
-      {/* Image Slider */}
+
+      {/*  Image Slider */}
       <div className="slider-container">
+      <FaCamera />
         <Slider {...settings}>
           {imageData.map(item => (
             <CardsComponent key={item.id} item={item} />
@@ -83,7 +92,8 @@ export default function SimpleSlider() {
 
       {/* Audio Slider */}
       <div className="slider-container">
-        <Slider {...settings}>
+       <AiFillAudio />
+         <Slider {...settings}>
           {audioData.map(item => (
             <CardsComponent key={item.id} item={item} />
           ))}
@@ -92,6 +102,9 @@ export default function SimpleSlider() {
 
       {/* Video Slider */}
       <div className="slider-container">
+     
+      <IoIosFilm />
+
         <Slider {...settings}>
           {videoData.map(item => (
             <CardsComponent key={item.id} item={item} />
@@ -101,12 +114,13 @@ export default function SimpleSlider() {
 
       {/* Other Slider */}
       <div className="slider-container">
+      <HiDotsHorizontal />
         <Slider {...settings}>
           {otherData.map(item => (
             <CardsComponent key={item.id} item={item} />
           ))}
         </Slider>
-      </div>
+      </div> 
     </div>
   );
 }

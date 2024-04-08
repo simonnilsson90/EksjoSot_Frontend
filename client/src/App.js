@@ -7,8 +7,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MyAccount from "./views/MyAccount";
 import Footer from "./components/footer/FooterComponent";
 import ConsentForm from "./components/feature/consent/ConsentForm";
-import CardsComponent from "./components/feature/cards/CardsComponent";
-import Carousel from "./components/feature/cards/Carousel";
+import CardsComponent from "./components/feature/dataSetsCards/cards/CardsComponent";
+import Carousel from "./components/feature/dataSetsCards/carousel/Carousel";
+import CardsSidebar from "./components/feature/dataSetsCards/sidebar/CategoriesComponent";
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="consentForm" element={<ConsentForm />} />
           <Route path="cardsComponent" element={<CardsComponent />} />
           <Route path="carousel" element={<Carousel />} />
+          <Route path="sidebar" element={<CardsSidebar />} />
       </Routes>
       <Footer />
     </BrowserRouter>
