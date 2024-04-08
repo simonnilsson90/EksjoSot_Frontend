@@ -9,9 +9,7 @@ import Footer from "./components/footer/FooterComponent";
 import ConsentForm from "./components/feature/consent/ConsentForm";
 import CardsComponent from "./components/feature/dataSetsCards/cards/CardsComponent";
 import Carousel from "./components/feature/dataSetsCards/carousel/Carousel";
-import CardsSidebar from "./components/feature/dataSetsCards/sidebar/CategoriesComponent";
-import LicenceComponent from "./components/feature/dataSetsCards/sidebar/LicenceComponent"
-import PriceRange from "./components/feature/dataSetsCards/sidebar/PriceRange";
+import Sidebar from './components/feature/dataSetsCards/sidebar/Sidebar'
 
 
 
@@ -26,9 +24,9 @@ function App() {
         <Route path="consentForm" element={<ConsentForm />} />
           <Route path="cardsComponent" element={<CardsComponent />} />
           <Route path="carousel" element={<Carousel />} />
-          <Route path="sidebar" element={<CardsSidebar />} />
-          <Route path="licence" element={<LicenceComponent />} />
-          <Route path="price" element={<PriceRange />} />
+
+          <Route path="sidebar" element={<Sidebar />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>

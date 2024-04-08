@@ -1,12 +1,15 @@
 import PropTypes from 'prop-types';
-import {Box, Typography, Grid, Button} from '@mui/material';
+import { useState } from 'react'
+import {Box, Typography} from '@mui/material';
+import Slider from '@mui/material/Slider';
+
 
 function Item(props) {
   const { sx, ...other } = props;
   return (
     <Box
       sx={{
-        width: '80%',
+        width: '18%',
         p: 1,
         m: 1,
         bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : 'grey.100'),
@@ -38,11 +41,20 @@ Item.propTypes = {
 };
 
 
-const typeDescription = ['All', 'Free', 'Paid', 'Custom' ]
 
-export default function CategoriesComponent() {
+export default function PriceRange() {
+    const [value, setValue] =useState([0, 10000]);
+    
+function valuetext(value) {
+    return `${value}$`;
+  }
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
-    <div style={{ width: '100%' }}>
+    
     
       <Box
         sx={{
@@ -51,29 +63,28 @@ export default function CategoriesComponent() {
           flexDirection: 'column',
           p: 2,
           m: 1,
+          width: '100vw',
           height: '100vh',
           bgcolor: 'background.paper',
           borderRadius: 1,
         }}
       >
-        <Typography level="h1" >Licence</Typography>
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-          {typeDescription.map((Icon, i) => (
-            <Grid item xs={12} key={i}>
+        <Typography level="h1" >Price Range</Typography>
+       
               <Item>
-                
-                <Button variant="text">
-                    <Typography>{Icon}</Typography>
-                </Button>
+              <Slider
+         getAriaLabel={() => 'Temperature range'}
+       max={10000}
+        value={value}
+        onChange={handleChange}
+        valueLabelDisplay="auto"
+        getAriaValueText={valuetext}
+      />
+       <Typography>
+                ${value[0]} - ${value[1]}
+       </Typography>
               </Item>
-             
-            </Grid>
-          ))}
-        </Grid>
-
-
-       </Box>
-     
-    </div>
+          </Box>
+   
   );
 }
