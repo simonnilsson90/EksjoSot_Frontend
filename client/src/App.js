@@ -1,4 +1,5 @@
 import React from "react";
+import "./global.css";
 import Navbar from "./components/navbar/NavbarComponent";
 import HomePage from "./views/HomePage";
 import MarketPage from "./views/MarketPage";
