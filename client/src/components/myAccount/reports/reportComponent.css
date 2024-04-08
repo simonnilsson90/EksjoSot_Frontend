@@ -4,6 +4,18 @@
    
   }
 
+  .chart{
+    margin-left: -48px;
+    margin-bottom: -60px;
+  }
+
+  .chart2{
+    margin-left: -60px;
+    margin-bottom: -60px;
+    margin-top: 30px;
+    padding-bottom: -60px;
+  }
+
   .parentDiv {
     display: flex;
    /*  background-color: rgba(247, 250, 252, 1);  */
@@ -23,7 +35,7 @@
   }
   
   .flex-item-left {
-   /*  */
+  
     padding: 10px;
     flex: 50%;
     
@@ -33,23 +45,18 @@
   .flex-item-right {
    /* background-color: dodgerblue; */
     padding: 10px;
-    flex: 50%;
-    margin: 4px;
+    
+   margin-left: 10px;
    
    
   }
   
   /* Responsive layout - makes a one column-layout instead of two-column layout */
-  @media (max-width: 1000px) {
+  @media (max-width: 850px) {
     .flex-container {
       flex-direction: column;
     }
-   
-
-     
-
     
-     
   }
 
 
@@ -75,8 +82,7 @@
 
 .smallerBlue {
   font-size: 16px;
-  color: rgba(74, 120, 156, 1);
-  
+  color: rgba(74, 120, 156, 1); 
 }
 
 .textMargin2 > p {
@@ -117,24 +123,23 @@
   display: flex;
   flex-direction: row;
  
-  text-align: center;
+  
 }
 
 .flex-item-left-test {
-  
 
-  flex: 50%;
-  
+  flex: 1px;
+  margin-right: 16px;
 }
 
 .flex-item-right-test {
   
   padding: 10px;
-  flex: 50%;
+  flex: 60%;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 1000px) {
+@media (max-width: 750px) {
   .flex-container-test {
     flex-direction: column;
     margin: auto;

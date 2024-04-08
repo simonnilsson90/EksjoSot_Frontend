@@ -1,11 +1,10 @@
 import SideNav from "../sideNav/sideNavComponent"
 import "./reportComponent.css"
-import { LineChart } from '@mui/x-charts/LineChart';
-import { BarChart } from '@mui/x-charts/BarChart';
+
 import { ChartContainer, BarPlot } from '@mui/x-charts';
 import { LinePlot, MarkPlot } from '@mui/x-charts/LineChart';
-import { green, red } from "@mui/material/colors";
-import { grey } from "@material-ui/core/colors";
+
+
 
 
 function Reports () {
@@ -30,14 +29,6 @@ const months = [
   
 ];
 
-const dataSets = [
-  'Dataset 1',
-  'Dataset 2',
-  'Dataset 3',
-  'Dataset 4',
-  'Dataset 5'
-]
-
 
 
 const uData2 = [240, 139];
@@ -48,22 +39,21 @@ const xLabels2 = [
 ];
 
 
-
     return (
 <>
-<div class="flex-container-test">
+<div className="flex-container-test">
   
-  <div class="flex-item-left-test">
-  <SideNav/> 
+  <div className="flex-item-left-test">
+  <SideNav/>
   </div>
-  <div class="flex-item-right-test"> 
+  <div className="flex-item-right-test"> 
   
   <h2 className=" margin2">Reports</h2>
         <h2 className=" margin2">Data Sets Dashboard</h2>
 
-        <div class="flex-container">
+        <div className="flex-container">
         
-        <div class="flex-item-left">
+        <div className="flex-item-left">
 
 <div className="textMargin">
 <p className="smaller">Usage Over Time</p>
@@ -71,7 +61,7 @@ const xLabels2 = [
 <p className="smallerBlue">Last 6 Months</p>
 </div>
 
-<div style={{ marginLeft: '-48px', marginBottom: '-60px' }}>
+<div className="chart">
 <ChartContainer
 width={550}
 height={320}
@@ -107,13 +97,13 @@ disableAxisListener
 </div>
 
 </div>
-  <div class="flex-item-right">
+  <div className="flex-item-right">
   <div className="textMargin">
   <p className="smaller">Top Selling Datasets</p>
 <p className="smallerBlue">Last 6 Months</p>
   </div>
  
-  <div style={{  marginTop: '30px' ,marginLeft: '-60px', marginBottom: '-60px', paddingBottom: '-60px', }}>
+  <div className="chart2">
   <ChartContainer
       width={550}
       height={345}
@@ -136,7 +126,7 @@ disableAxisListener
 </div>
 </div>
 <h2 className=" margin2">Sales History and Revenue Tracking</h2>
-<div class="flex-container">
+<div className="flex-container">
           <div class="flex-item-left">
 
 <div className="textMargin">
@@ -145,7 +135,7 @@ disableAxisListener
 <p className="smallerBlue">Last 6 Months</p>
 </div>
 
-<div style={{ marginLeft: '-48px', marginBottom: '-60px' }}>
+<div className="chart">
 <ChartContainer
 width={550}
 height={320}
@@ -183,7 +173,7 @@ disableAxisListener
 
 </div>
 
-  <div class="flex-item-right">
+  <div className="flex-item-right">
   <div className="textMargin">
 <p className="smaller">Revenue Sources</p>
 <h2 className="bigger">$20K</h2>
