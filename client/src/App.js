@@ -10,9 +10,6 @@ import ConsentForm from "./components/feature/consent/ConsentForm";
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
 
-
-
-
 function App() {
   return (
     <BrowserRouter>
