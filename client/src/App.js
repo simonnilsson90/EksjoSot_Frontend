@@ -9,6 +9,8 @@ import Footer from "./components/footer/FooterComponent";
 import ConsentForm from "./components/feature/consent/ConsentForm";
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
+import Reports from "./components/myAccount/reports/reportsComponent";
+
 
 
 
@@ -24,6 +26,7 @@ function App() {
         <Route path="consentForm" element={<ConsentForm />} />
         <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
         <Route path="myAccount/dataSets/createDataset" element={<CreateDataset />} />
+        <Route path="myAccount/reports" element={<Reports />} />
         <Route path="termsOfService" element={<ConsentForm/>} />
       </Routes>
       <Footer />

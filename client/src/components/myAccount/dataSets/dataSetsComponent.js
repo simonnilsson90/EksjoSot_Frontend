@@ -57,7 +57,7 @@ function DataSetsComponent({ onNewDataClick }){
     return (
       <>
      
-     <div className="parentDiv"> 
+     <div className="parent-div"> 
           <SideNav/> 
               
           <div className="padding-left">
