@@ -1,4 +1,4 @@
-import Logo from "../../assets/images/homepage/logo.png";
+// import Logo from "../../assets/images/homepage/logo.png";
 import UserPic from "../../assets/images/homepage/user.png";
 import React, { useState } from "react";
 import "./navbarComponent.css";
@@ -12,15 +12,18 @@ function Navbar() {
   return (
     <nav>
       <ul className="navbarContainer">
-        <div id="logoContainer">
-          <li>
-            <a href="/">
-              <img id="logo" src={Logo} alt="Logo" />
-              The Everyone Store
+            <a href="/" id="logoContainer">
+              <img
+                id="logo"
+                src={"/theEveryoneStorelogo.svg"}
+                alt="Logo"
+                width={90}
+                height={90}
+              />
+              <span className="companyName">
+                The<br />EveryOne<br />Store
+              </span>
             </a>
-          </li>
-        </div>
-       
         <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
           {/* <li className="navbarLink">
             <a href="/">Home</a>
