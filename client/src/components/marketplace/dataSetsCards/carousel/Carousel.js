@@ -48,7 +48,7 @@ export default function SimpleSlider() {
     speed: 3000,
     slidesToShow: 4,
     slidesToScroll: 3,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,

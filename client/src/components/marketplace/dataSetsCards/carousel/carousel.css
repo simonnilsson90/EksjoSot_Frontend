@@ -5,6 +5,9 @@
     z-index: 25; color: #000;
    
    }
+   .content-sliders {
+    padding: 0;
+   }
   
   /* Specific adjustments for left and right arrows */
   .slick-prev.custom-arrow {
@@ -22,7 +25,7 @@
   }
   .slider-container {
     position: relative;
-    padding: 0 40px;
+    padding: 0;
     max-width: 80%; /* Adjust this value as needed */
   margin: auto; 
   margin-left: 10;

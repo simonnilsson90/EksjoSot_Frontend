@@ -50,7 +50,8 @@ export default function CategoriesComponent() {
           flexDirection: 'column',
           backgroundColor: 'transparent',
           borderRadius: 1,   
-          width: '90%'       
+          width: '90%',
+          p: 0       
         }}
       >
         <Box sx={{p: 2}}>
