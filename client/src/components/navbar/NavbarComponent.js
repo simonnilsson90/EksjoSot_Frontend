@@ -12,7 +12,6 @@ function Navbar() {
   return (
     <nav>
       <ul className="navbarContainer">
-        
             <a href="/" id="logoContainer">
               <img
                 id="logo"
@@ -25,27 +24,37 @@ function Navbar() {
                 The<br />EveryOne<br />Store
               </span>
             </a>
-        
-
         <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
-          <li className="navbarLink">
+          {/* <li className="navbarLink">
             <a href="/">Home</a>
+          </li> */}
+          <li className="navbarLink">
+            <a href="market">Data Sets</a>
           </li>
           <li className="navbarLink">
-            <a href="market">Marketplace</a>
-          </li>
-
-          <li className="navbarLink">
-            <a href="#">About Us</a>
+            <a href="sellData">Sell Data</a>
           </li>
           <li className="navbarLink">
-            <a href="#">Contact Us</a>
+            <a href="aboutUs">About Us</a>
           </li>
           <li className="navbarLink">
-            <Link id="userAvatar" to="/myAccount" className="me-4">
-              <img src={UserPic} width={40} height={40} alt="User Picture" />
+            <a href="contactUs">Contact Us</a>
+          </li>
+          <li className="navbarLink">
+            <a href="FaQ">FaQ</a>
+          </li>
+          <li className="navbarLink">
+            <Link id="userAvatar"  to="/myAccount"  className="me-4">
+              <img src={UserPic} width={30} height={30} alt="User" />
+              <spam>Log in</spam>
             </Link>
           </li>
+          <li className="navbarLink">
+            <Link id="shoppingBag"  to="/myShopping">
+              <img src={'/shopping-bag.svg'} width={25} height={25} alt="shopping bag" />
+            </Link>
+          </li>
+          
         </div>
         <li id="hamburgerMenu">
           <button
