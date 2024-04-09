@@ -10,15 +10,13 @@ function Item(props) {
   return (
     <Box
       sx={{
-        width: '80%',
-        p: 1,
-        m: 1,
+      
         bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : 'grey.100'),
         color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800'),
         border: '1px solid',
         borderColor: (theme) =>
           theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
-        borderRadius: 2,
+        borderRadius: 3,
         fontSize: '0.875rem',
         fontWeight: '700',
         ...sx,
@@ -42,39 +40,44 @@ Item.propTypes = {
 };
 
 
-const typeIcons = [FaCamera , AiFillAudio , IoIosFilm , HiDotsHorizontal ]
+const typeIcons = [{icon: FaCamera, type: 'Images'} ,{icon: IoIosFilm, type: 'Video'} , {icon: AiFillAudio, type: 'Audio'},  {icon: HiDotsHorizontal, type: 'Other'} ]
 
 export default function CategoriesComponent() {
   return (
-    <div style={{ minWidth: '100%' }}>
-    
-      <Box
+  <Box
         sx={{
           display: 'flex',
-          alignItems: 'flex-start',
           flexDirection: 'column',
-          p: 2,
-          m: 1,
-          bgcolor: 'background.paper',
-          borderRadius: 1,
+          backgroundColor: 'transparent',
+          borderRadius: 1,   
+          width: '90%'       
         }}
       >
-        <Typography level="h1" >Categories</Typography>
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Box sx={{p: 2}}>
+          <Typography level="h1" fontWeight={700}>Categories</Typography>
+        </Box>
+        
           {typeIcons.map((Icon, i) => (
-            <Grid item xs={12} key={i}>
-              <Item>
-                <Typography></Typography>
-                <Icon />
-              </Item>
-             
-            </Grid>
-          ))}
-        </Grid>
+            <Box key={i} sx={{ display: 'flex', alignItems: 'center', width: '90%',  backgroundColor: '#fff', borderColor: 'black',
+            p: 1,
+            m: 1,
+            borderWidth: 1, 
+            borderStyle: 'solid',
+            borderRadius: 2}}>
+              <Box sx={{display: 'flex', mr: 2, ml: 1}}>
+                <Icon.icon />
+              </Box>
+                
+                <Box>
+                   <Typography>{Icon.type}</Typography>
+                </Box>
+               
+              </Box>
+            ))}
+
 
 
        </Box>
-     
-    </div>
+   
   );
 }

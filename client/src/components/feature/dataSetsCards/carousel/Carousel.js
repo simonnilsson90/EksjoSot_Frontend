@@ -10,33 +10,36 @@ import { FaCamera } from "react-icons/fa";
 import { IoIosFilm } from "react-icons/io";
 import { AiFillAudio } from "react-icons/ai";
 import { HiDotsHorizontal } from "react-icons/hi";
-import { IoIosArrowForward } from "react-icons/io";
-import { IoIosArrowBack } from "react-icons/io";
+
 
 
 export default function SimpleSlider() {
-  function CustomNextArrow(props) {
+
+  function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
-        className={`${className} custom-arrow`} 
-        style={{ ...style, fontSize: '20px' }}
+        className={className}
+        style={{ ...style, display: "block", background: "#000",  }}
         onClick={onClick}
-      ><IoIosArrowForward /></div>
+      />
     );
   }
+
   
-  function CustomPrevArrow(props) {
+  function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
-        className={`${className} custom-arrow`}
-        style={{ ...style, fontSize: '20px' }}
+        className={className}
+        style={{ ...style, display: "block", background: "#000",}}
         onClick={onClick}
-      ><IoIosArrowBack /></div>
+      />
     );
   }
   
+
+
   const theme = useTheme();
 
   const settings = {
@@ -45,12 +48,11 @@ export default function SimpleSlider() {
     speed: 3000,
     slidesToShow: 4,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
-    cssEase: "ease-out",
-    arrows: true,
-    nextArrow: <CustomNextArrow />,
-    prevArrow: <CustomPrevArrow />,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+
     responsive: [
       {
         breakpoint: theme.breakpoints.values.xl,
@@ -82,8 +84,8 @@ export default function SimpleSlider() {
 
       {/*  Image Slider */}
       <div className="slider-container">
-      <FaCamera />
-        <Slider {...settings}>
+      <FaCamera size={35}/>
+        <Slider {...settings} >
           {imageData.map(item => (
             <CardsComponent key={item.id} item={item} />
           ))}
@@ -92,7 +94,7 @@ export default function SimpleSlider() {
 
       {/* Audio Slider */}
       <div className="slider-container">
-       <AiFillAudio />
+       <AiFillAudio size={35}/>
          <Slider {...settings}>
           {audioData.map(item => (
             <CardsComponent key={item.id} item={item} />
@@ -103,7 +105,7 @@ export default function SimpleSlider() {
       {/* Video Slider */}
       <div className="slider-container">
      
-      <IoIosFilm />
+      <IoIosFilm size={35}/>
 
         <Slider {...settings}>
           {videoData.map(item => (
@@ -114,7 +116,7 @@ export default function SimpleSlider() {
 
       {/* Other Slider */}
       <div className="slider-container">
-      <HiDotsHorizontal />
+      <HiDotsHorizontal size={35}/>
         <Slider {...settings}>
           {otherData.map(item => (
             <CardsComponent key={item.id} item={item} />

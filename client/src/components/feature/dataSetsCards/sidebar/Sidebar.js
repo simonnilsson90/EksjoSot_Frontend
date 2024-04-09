@@ -11,7 +11,15 @@ import CategoriesComponent from './sidebarComponents/CategoriesComponent';
 export default function Sidebar() {
   return (
     // <div style={{ width: '20%' }}>
-    <Box sx={{ flexGrow: 1, width: '25%' }}>   
+    <Box sx={{ 
+      flexGrow: 1, 
+      width: '100%',
+      height: '100vh',
+      p:0, 
+      bottom:0,
+      pl: 2, 
+      backgroundColor: '#c8b6a1' 
+      }}>   
 <Grid container spacing={1} sx={{ maxHeight: '100vh', overflow: 'hidden' }}>
 <Grid item xs={12}>
 

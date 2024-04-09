@@ -10,6 +10,7 @@ import ConsentForm from "./components/feature/consent/ConsentForm";
 import CardsComponent from "./components/feature/dataSetsCards/cards/CardsComponent";
 import Carousel from "./components/feature/dataSetsCards/carousel/Carousel";
 import Sidebar from './components/feature/dataSetsCards/sidebar/Sidebar'
+import CardsLayoutWithSidebar from "./components/feature/dataSetsCards/CardsLayoutWithSidebar";
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="carousel" element={<Carousel />} />
 
           <Route path="sidebar" element={<Sidebar />} />
+          <Route path="cards" element={<CardsLayoutWithSidebar />} />
 
       </Routes>
       <Footer />

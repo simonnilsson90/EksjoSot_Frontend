@@ -9,14 +9,7 @@ function Item(props) {
   return (
     <Box
       sx={{
-        width: '18%',
-        p: 1,
-        m: 1,
-        bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : 'grey.100'),
-        color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800'),
-        border: '1px solid',
-        borderColor: (theme) =>
-          theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
+        width: '100%',      
         borderRadius: 2,
         fontSize: '0.875rem',
         fontWeight: '700',
@@ -54,24 +47,21 @@ function valuetext(value) {
   };
 
   return (
-    
-    
-      <Box
+     <Box
         sx={{
           display: 'flex',
-          alignItems: 'flex-start',
-          flexDirection: 'column',
-          p: 2,
-          m: 1,
-          width: '100vw',
-          height: '100vh',
-          bgcolor: 'background.paper',
+         flexDirection: 'column',
+          backgroundColor: 'transparent',
           borderRadius: 1,
+          bottom: 0
         }}
       >
-        <Typography level="h1" >Price Range</Typography>
+        <Box sx={{p:2}} >
+           <Typography level="h1" fontWeight={700}>Price Range</Typography>
+        </Box>
        
-              <Item>
+       
+              <Item sx={{p: 2}}>
               <Slider
          getAriaLabel={() => 'Temperature range'}
        max={10000}
@@ -79,8 +69,23 @@ function valuetext(value) {
         onChange={handleChange}
         valueLabelDisplay="auto"
         getAriaValueText={valuetext}
+        sx={{color: '#f28b30', backgroundColor: '#fff', width: '80%','& .MuiSlider-track': {
+          bgcolor: '#f28b30', // Changes track background color
+        },
+        '& .MuiSlider-rail': {
+          color: 'transparent',
+          bgcolor: 'transparent', // Optional: Changes the rail (the part not filled by the track) background color
+        },
+        '& .MuiSlider-thumb': {
+          bgcolor: '#f28b30', // Optional: Changes the thumb color
+        },
+        '& .MuiSlider-root.MuiSlider': {
+          color: 'transparent',
+          bgcolor: '#f28b30',
+        }
+       }}
       />
-       <Typography>
+       <Typography >
                 ${value[0]} - ${value[1]}
        </Typography>
               </Item>

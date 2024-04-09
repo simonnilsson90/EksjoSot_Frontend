@@ -11,35 +11,45 @@ import { Typography, Grid, Box } from '@mui/material';
 function CardsComponent({ item}) {
   
   return (
-    <Box  mx="auto" mt={4}>
-        
-        <div> 
-          <Card sx={{ width: 209 }}>
+  <Card sx={{ 
+  width: '80%', 
+  backgroundColor: '#2F2A29', 
+  mb: 3, 
+  alignItems: 'center', 
+  p: 1, 
+  height: '11em',
+  borderRadius: 2
+}}
+  >
             <CardMedia
               component="img"
               height={94.59}
               image={item.image}
               alt="people"
+              sx={{p: 1, borderRadius: 3, objectFit: 'cover', 
+              display: 'block', 
+              margin: 'auto', 
+              width: '100%', 
+              maxHeight: '100%',}}
+              
             />
-            <Typography variant="body2" color="text.secondary" align='center'>
+            <Typography variant="body2" color="#fff" align='center'>
               {item.description} 
             </Typography>
             <Grid container justifyContent="space-between" alignItems="center">
               <Grid item>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="#fff">
                   {item.price}
                 </Typography>
               </Grid>
               <Grid item>
                 <IconButton aria-label="add to favorites">
-                  <FavoriteIcon />
+                  <FavoriteIcon style={{ color: 'red', fontSize: 20 }}/>
                 </IconButton>
               </Grid>
             </Grid>
           </Card>
-        </div>
-  
-    </Box>
+   
   );
 }
 

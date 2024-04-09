@@ -1,4 +1,4 @@
-import {Box, Typography, Button} from '@mui/material';
+import {Box, Typography, Button, Paper} from '@mui/material';
 import ButtonGroup from '@mui/material/ButtonGroup';
 
 
@@ -10,27 +10,30 @@ export default function CategoriesComponent() {
   
      <Box
         sx={{
-          alignItems: 'flex-start',
-          bgcolor: 'background.paper',
+          alignItems: 'center',
           borderRadius: 1,
-          p: 1,
-
+          backgroundColor: 'transparent',
+          width: '90%'
         }}
       >
-        <Typography level="h1" >Licence</Typography>
-       
-          {typeDescription.map((Label, i) => (
-                         
-              <ButtonGroup size="small" aria-label="Small button group">
-              <Button
-      variant="text"
+        <Box sx={{p: 2}}>
+          <Typography level="h1" fontWeight={700} >Licence</Typography>
+        </Box>
+
+         {typeDescription.map((Label, i) => (
+        <Button
       key={i}
+      variant="outlined"
       sx={{
-        bgcolor: 'primary.main', // Use the theme's primary main color
-        color: 'white', // Text color
+        bgcolor: '#c8b6a1', // Use the theme's primary main color
+        color: '#000', // Text color
+        borderColor: 'white',
+        borderWidth: 1, 
+        borderStyle: 'solid',
         m: 1,
+      
         flexWrap: 'wrap',
-        fontSize: '1rem', // Text size
+        fontSize: '.8rem', // Text size
         '&:hover': {
           bgcolor: 'primary.dark', // Change background color on hover
         },
@@ -39,10 +42,8 @@ export default function CategoriesComponent() {
     >
                     {Label}
                 </Button>
-              </ButtonGroup>  
-             
            
-          ))}
+   ))}
        </Box>
        ) }
  
