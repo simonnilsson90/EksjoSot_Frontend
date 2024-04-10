@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MyAccount from "./views/MyAccount";
 import Footer from "./components/footer/FooterComponent";
 import ConsentForm from "./components/feature/consent/ConsentForm";
-import CardsComponent from "./components/marketplace/dataSetsCards/cards/CardsComponent";
+import CardsComponent from "./components/marketplace/dataSetsCards/cards/mainCardsComponent/CardsComponent";
 import Carousel from "./components/marketplace/dataSetsCards/carousel/Carousel";
 import Sidebar from './components/marketplace/dataSetsCards/sidebar/Sidebar'
 import CardsLayoutWithSidebar from "./components/marketplace/dataSetsCards/CardsLayoutWithSidebar";
