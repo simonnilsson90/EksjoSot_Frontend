@@ -53,7 +53,9 @@ function valuetext(value) {
          flexDirection: 'column',
           backgroundColor: 'transparent',
           borderRadius: 1,
-          bottom: 0
+          bottom: 0,
+          p: 0,
+          heigh: 'auto'
         }}
       >
         <Box sx={{p:2}} >
@@ -63,15 +65,14 @@ function valuetext(value) {
        
               <Item sx={{p: 2}}>
               <Slider
-         getAriaLabel={() => 'Temperature range'}
+         getAriaLabel={() => 'range'}
        max={10000}
         value={value}
         onChange={handleChange}
         valueLabelDisplay="auto"
         getAriaValueText={valuetext}
         sx={{color: '#f28b30', backgroundColor: '#fff', width: '80%','& .MuiSlider-track': {
-          bgcolor: '#f28b30', // Changes track background color
-        },
+          bgcolor: '#f28b30', },
         '& .MuiSlider-rail': {
           color: 'transparent',
           bgcolor: 'transparent', // Optional: Changes the rail (the part not filled by the track) background color
@@ -79,16 +80,22 @@ function valuetext(value) {
         '& .MuiSlider-thumb': {
           bgcolor: '#f28b30', // Optional: Changes the thumb color
         },
-        '& .MuiSlider-root.MuiSlider': {
+        '& .MuiSlider-root': {
           color: 'transparent',
           bgcolor: '#f28b30',
         }
        }}
       />
-       <Typography >
-                ${value[0]} - ${value[1]}
-       </Typography>
-              </Item>
+       
+        <Box sx={{display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '90%',}}>
+          <Typography >${value[0]}</Typography>
+          <Typography>${value[1]}</Typography>
+            </Box>
+       
+          </Item>
           </Box>
    
   );

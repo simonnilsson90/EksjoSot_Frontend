@@ -10,10 +10,13 @@ import { FaCamera } from "react-icons/fa";
 import { IoIosFilm } from "react-icons/io";
 import { AiFillAudio } from "react-icons/ai";
 import { HiDotsHorizontal } from "react-icons/hi";
+import { useMediaQuery } from '@mui/material';
 
 
 
-export default function SimpleSlider() {
+
+export default function Carousel() {
+  const matches = useMediaQuery('(min-width:600px)'); 
 
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -50,8 +53,8 @@ export default function SimpleSlider() {
     slidesToScroll: 3,
     autoplay: false,
     autoplaySpeed: 5000,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: matches ? <SampleNextArrow /> : <></>, 
+    prevArrow: matches ? <SamplePrevArrow /> : <></>, 
 
     responsive: [
       {
@@ -60,15 +63,15 @@ export default function SimpleSlider() {
       },
       {
         breakpoint: theme.breakpoints.values.lg,
-        settings: { slidesToShow: 3 },
+        settings: { slidesToShow: 4 },
       },
       {
         breakpoint: theme.breakpoints.values.md,
-        settings: { slidesToShow: 2 },
+        settings: { slidesToShow: 3 },
       },
       {
         breakpoint: theme.breakpoints.values.sm,
-        settings: { slidesToShow: 1 },
+        settings: { slidesToShow: 2 },
       },
     ],
   };

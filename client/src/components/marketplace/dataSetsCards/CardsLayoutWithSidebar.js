@@ -1,9 +1,12 @@
-import React from 'react'
 import Sidebar from './sidebar/Sidebar'
 import Carousel from './carousel/Carousel'
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import theme from './theme/Theme';
 
 function CardsLayoutWithSidebar({ chidren }) {
   return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
     <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
         <div style={{ flex: 1, minWidth: '25%' }}>
             <Sidebar />
@@ -14,6 +17,8 @@ function CardsLayoutWithSidebar({ chidren }) {
         
         
     </div>
+    </ThemeProvider>
+
   )
 }
 

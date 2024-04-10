@@ -33,18 +33,21 @@ function CardsComponent({ item}) {
               maxHeight: '100%',}}
               
             />
-            <Typography variant="body2" color="#fff" align='center'>
+            <Box sx={{height: '2em', m: .5}}>
+             <Typography variant="body2" color="#fff" align='center'>
               {item.description} 
-            </Typography>
-            <Grid container justifyContent="space-between" alignItems="center">
-              <Grid item>
+            </Typography> 
+            </Box>
+            
+            <Grid container justifyContent="space-between" alignItems="center" sx={{height: '3em'}}>
+              <Grid item sx={{height: '100%'}}>
                 <Typography variant="body2" color="#fff">
                   {item.price}
                 </Typography>
               </Grid>
-              <Grid item>
+              <Grid item sx={{height: '100%'}}>
                 <IconButton aria-label="add to favorites">
-                  <FavoriteIcon style={{ color: 'red', fontSize: 20 }}/>
+                  <FavoriteIcon style={{ color: '#fff',fontSize: 20 }}/>
                 </IconButton>
               </Grid>
             </Grid>

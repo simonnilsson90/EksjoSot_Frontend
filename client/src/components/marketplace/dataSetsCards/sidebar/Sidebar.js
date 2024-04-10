@@ -14,7 +14,7 @@ export default function Sidebar() {
     <Box sx={{ 
       flexGrow: 1, 
       width: '100%',
-      height: '100vh',
+      height: '100%',
       p:0, 
       bottom:0,
       pl: 2, 

@@ -7,22 +7,9 @@
    }
    .content-sliders {
     padding: 0;
+    margin: 1;
    }
   
-  /* Specific adjustments for left and right arrows */
-  .slick-prev.custom-arrow {
-  left: -35px /* Adjust as necessary */
-   
-  }
-
-  .slick-prev, .slick-next {
-    color: 'red';
-}
-
-  
-  .slick-next.custom-arrow {
-    right: -15px; /* Adjust as necessary */
-  }
   .slider-container {
     position: relative;
     padding: 0;
@@ -35,4 +22,15 @@
     color: #000; 
   }
   
+
+.arrowVisible {
+  display: block;
+  background: #000;
+}
+
+.arrowHidden {
+  display: none;
+  background: #000;
+}
+
   
