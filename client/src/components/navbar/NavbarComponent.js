@@ -3,12 +3,34 @@ import UserPic from "../../assets/images/homepage/user.png";
 import React, { useState } from "react";
 import "./navbarComponent.css";
 import { Link } from "react-router-dom";
+import Login from "../login/loginComponent";
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+
+
+
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
 
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
   }
+
+ 
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+
+  const closeDrawer = () => {
+    setOpen(false)
+  }
+
+  
+   
+  
+    
   return (
     <nav>
       <ul className="navbarContainer">
@@ -23,7 +45,7 @@ function Navbar() {
        
         <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
           <li className="navbarLink">
-            <a href="/">Home</a>
+            <a href="/" onClick={closeDrawer}>Home</a>
           </li>
           <li className="navbarLink">
             <a href="market">Marketplace</a>
@@ -35,10 +57,30 @@ function Navbar() {
           <li className="navbarLink">
             <a href="#">Contact Us</a>
           </li>
+       
           <li className="navbarLink">
-          <Link id="userAvatar"  to="/myAccount"  className="me-4">
-          <img src={UserPic} width={40} height={40} alt="User Picture" />
-    </Link>
+         
+         
+    <div>
+   
+     <div>
+      <Button onClick={toggleDrawer(true)}>
+      <img src={UserPic} width={40} height={40} alt="User Picture"
+   
+   />
+      </Button>
+      <Drawer open={open} 
+      onClose={toggleDrawer(false)} 
+      anchor="right">
+         <Box sx={{ width: 390, height:844 }} role="presentation" >
+          
+      
+      <Login onClose={closeDrawer}/>
+   </Box>
+      </Drawer>
+    </div>
+    
+    </div>
             
           </li>
         </div>
