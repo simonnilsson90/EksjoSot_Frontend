@@ -1,7 +1,8 @@
-import Logo from "../../assets/images/homepage/logo.png";
+// import Logo from "../../assets/images/homepage/logo.png";
 import UserPic from "../../assets/images/homepage/user.png";
 import React, { useState } from "react";
 import "./navbarComponent.css";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -11,33 +12,49 @@ function Navbar() {
   return (
     <nav>
       <ul className="navbarContainer">
-        <div id="logoContainer">
-          <li>
-            <a href="/">
-              <img id="logo" src={Logo} alt="Logo picture" />
-              The Everyone Store
+            <a href="/" id="logoContainer">
+              <img
+                id="logo"
+                src={"/theEveryoneStorelogo.svg"}
+                alt="Logo"
+                width={90}
+                height={90}
+              />
+              <span className="companyName">
+                The<br />EveryOne<br />Store
+              </span>
             </a>
-          </li>
-        </div>
         <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
-          <li className="navbarLink">
+          {/* <li className="navbarLink">
             <a href="/">Home</a>
+          </li> */}
+          <li className="navbarLink">
+            <a href="market">Data Sets</a>
           </li>
           <li className="navbarLink">
-            <a href="market">Marketplace</a>
-          </li>
-
-          <li className="navbarLink">
-            <a href="#">About Us</a>
+            <a href="sellData">Sell Data</a>
           </li>
           <li className="navbarLink">
-            <a href="#">Contact Us</a>
+            <a href="aboutUs">About Us</a>
           </li>
           <li className="navbarLink">
-            <a id="userAvatar" href="myAccount" className="me-4">
-              <img src={UserPic} width={40} height={40} alt="User Picture" />
-            </a>
+            <a href="contactUs">Contact Us</a>
           </li>
+          <li className="navbarLink">
+            <a href="FaQ">FaQ</a>
+          </li>
+          <li className="navbarLink">
+            <Link id="userAvatar"  to="/myAccount"  className="me-4">
+              <img src={UserPic} width={30} height={30} alt="User" />
+              <spam>Log in</spam>
+            </Link>
+          </li>
+          <li className="navbarLink">
+            <Link id="shoppingBag"  to="/myShopping">
+              <img src={'/shopping-bag.svg'} width={25} height={25} alt="shopping bag" />
+            </Link>
+          </li>
+          
         </div>
         <li id="hamburgerMenu">
           <button
