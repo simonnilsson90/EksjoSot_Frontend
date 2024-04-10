@@ -98,7 +98,9 @@ onChange={(e) => setPassword(e.target.value)} className="input"></input>
         marginBottom: '10px',
         backgroundColor: 'rgba(242, 139, 48, 1)',
          border: '0px',
-         borderRadius: '0px',}} variant="contained">Create account</Button>
+         borderRadius: '0px',}}
+         className="buttonStyle"
+          variant="contained">Create account</Button>
     </Stack>
 
 
