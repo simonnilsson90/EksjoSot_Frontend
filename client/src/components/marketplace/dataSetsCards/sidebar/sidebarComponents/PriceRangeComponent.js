@@ -2,9 +2,13 @@ import PropTypes from 'prop-types';
 import { useState } from 'react'
 import {Box, Typography} from '@mui/material';
 import Slider from '@mui/material/Slider';
+import { useTheme } from '@mui/material/styles';
+import theme from '../../theme/Theme';
+
 
 
 function Item(props) {
+
   const { sx, ...other } = props;
   return (
     <Box
@@ -21,13 +25,8 @@ function Item(props) {
 }
 
 Item.propTypes = {
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
   sx: PropTypes.oneOfType([
-    PropTypes.arrayOf(
-      PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool]),
-    ),
+    PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool])),
     PropTypes.func,
     PropTypes.object,
   ]),
@@ -37,6 +36,8 @@ Item.propTypes = {
 
 export default function PriceRange() {
     const [value, setValue] =useState([0, 10000]);
+    const theme = useTheme();
+
     
 function valuetext(value) {
     return `${value}$`;
@@ -55,42 +56,44 @@ function valuetext(value) {
           borderRadius: 1,
           bottom: 0,
           p: 0,
-          heigh: 'auto'
+          height: 'auto'
         }}
       >
         <Box sx={{p:2}} >
            <Typography level="h1" fontWeight={700}>Price Range</Typography>
         </Box>
        
-       
-              <Item sx={{p: 2}}>
+       <Item sx={{p: 2}}>
               <Slider
-         getAriaLabel={() => 'range'}
-       max={10000}
-        value={value}
-        onChange={handleChange}
-        valueLabelDisplay="auto"
-        getAriaValueText={valuetext}
-        sx={{color: '#f28b30', backgroundColor: '#fff', width: '80%','& .MuiSlider-track': {
-          bgcolor: '#f28b30', },
-        '& .MuiSlider-rail': {
-          color: 'transparent',
-          bgcolor: 'transparent', // Optional: Changes the rail (the part not filled by the track) background color
-        },
-        '& .MuiSlider-thumb': {
-          bgcolor: '#f28b30', // Optional: Changes the thumb color
-        },
-        '& .MuiSlider-root': {
-          color: 'transparent',
-          bgcolor: '#f28b30',
-        }
-       }}
-      />
+          getAriaLabel={() => 'range'}
+          max={10000}
+          value={value}
+          onChange={handleChange}
+          valueLabelDisplay="auto"
+          getAriaValueText={valuetext}
+          sx={{
+            color: '#f28b30', width: '80%',
+            '& .MuiSlider-track': { bgcolor: theme.palette.primary.main },
+            '& .MuiSlider-rail': {
+                color: 'transparent',
+                bgcolor: 'transparent',
+            },
+            '& .MuiSlider-thumb': {
+                bgcolor: '#f28b30',
+            },
+            '& .MuiSlider-root': {
+                color: 'transparent',
+                bgcolor: '#f28b30',
+            }
+        }}
+    />
        
-        <Box sx={{display: 'flex',
+        <Box sx={{
+        display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        width: '90%',}}>
+        width: '90%',
+        }}>
           <Typography >${value[0]}</Typography>
           <Typography>${value[1]}</Typography>
             </Box>

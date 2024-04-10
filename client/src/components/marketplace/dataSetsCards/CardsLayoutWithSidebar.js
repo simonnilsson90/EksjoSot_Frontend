@@ -7,7 +7,7 @@ function CardsLayoutWithSidebar({ chidren }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-    <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
+    <div style={{ display: 'flex', flexDirection: 'row', width: '100%',  backgroundColor: theme.palette.background.paper, }}>
         <div style={{ flex: 1, minWidth: '25%' }}>
             <Sidebar />
         </div>

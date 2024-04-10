@@ -2,13 +2,11 @@ import {Box, Typography, Grid} from '@mui/material';
 import PriceRange from './sidebarComponents/PriceRangeComponent';
 import LicenceComponent from './sidebarComponents/LicenceComponent';
 import CategoriesComponent from './sidebarComponents/CategoriesComponent';
-
-
-
-
+import { useTheme } from '@mui/material/styles';
 
 
 export default function Sidebar() {
+  const theme = useTheme();
   return (
     // <div style={{ width: '20%' }}>
     <Box sx={{ 
@@ -18,8 +16,7 @@ export default function Sidebar() {
       p:0, 
       bottom:0,
       pl: 2, 
-      backgroundColor: '#c8b6a1' 
-      }}>   
+     }}>   
 <Grid container spacing={1} sx={{ maxHeight: '100vh', overflow: 'hidden' }}>
 <Grid item xs={12}>
 

@@ -26,6 +26,13 @@
 .arrowVisible {
   display: block;
   background: #000;
+  width: '60px';
+        height: '17px;';
+        top: '695px';
+        left: '363px';
+        gap: '0px';
+        opacity:' 0px';
+ 
 }
 
 .arrowHidden {
@@ -33,4 +40,3 @@
   background: #000;
 }
 
-  
