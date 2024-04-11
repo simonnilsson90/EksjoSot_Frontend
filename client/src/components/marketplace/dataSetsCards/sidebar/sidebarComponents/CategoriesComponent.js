@@ -7,40 +7,6 @@ import { IoIosFilm } from "react-icons/io";
 import { useMediaQuery, useTheme } from '@mui/material';
 
 
-//function Item(props) {
-  
-
-  // const { sx, ...other } = props;
-  // return (
-    // <Box
-    //   sx={{
-       
-        // border: '1px solid',
-        // borderColor: (theme) =>
-        //   theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
-        // borderRadius: 3,
-        // fontSize: '0.875rem',
-        // fontWeight: '700',
-        // ...sx,
-//       }}
-//      {...other}
-//     />
-//   );
-// }
-
-// Item.propTypes = {
-//   /**
-//    * The system prop that allows defining system overrides as well as additional CSS styles.
-//    */
-//   sx: PropTypes.oneOfType([
-//     PropTypes.arrayOf(
-//       PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool]),
-//     ),
-//     PropTypes.func,
-//     PropTypes.object,
-//   ]),
-// };
-
 
 const typeIcons = [{icon: FaCamera, type: 'Images'} ,{icon: IoIosFilm, type: 'Video'} , {icon: AiFillAudio, type: 'Audio'},  {icon: HiDotsHorizontal, type: 'Other'} ]
 
@@ -66,11 +32,6 @@ export default function CategoriesComponent() {
           </Typography>
         )}
       </Box>
-
-        {/* <Box sx={{p: 2}}>
-          <Typography level="h1" fontWeight={700}>Categories</Typography>
-        </Box> */}
-        
           {typeIcons.map((Icon, i) => (
             <Grid 
             key={i} 

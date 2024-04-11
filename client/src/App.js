@@ -11,7 +11,7 @@ import CardsComponent from "./components/marketplace/dataSetsCards/cards/mainCar
 import Carousel from "./components/marketplace/dataSetsCards/carousel/Carousel";
 import Sidebar from './components/marketplace/dataSetsCards/sidebar/Sidebar'
 import CardsLayoutWithSidebar from "./components/marketplace/dataSetsCards/CardsLayoutWithSidebar";
-
+import ImagesCardComponent from './components/marketplace/dataSetsCards/cards/sortedByCategoryCards/ImagesCardComponent'
 
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
 
           <Route path="sidebar" element={<Sidebar />} />
           <Route path="cards" element={<CardsLayoutWithSidebar />} />
+          <Route path="imagescard" element={<ImagesCardComponent />} />
 
       </Routes>
       <Footer />
