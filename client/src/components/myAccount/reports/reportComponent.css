@@ -1,0 +1,160 @@
+
+.children2 {
+    margin-left: 108px;
+   
+  }
+
+  .chart{
+    margin-left: -48px;
+    margin-bottom: -60px;
+  }
+
+  .chart2{
+    margin-left: -60px;
+    margin-bottom: -60px;
+    margin-top: 30px;
+    padding-bottom: -60px;
+  }
+
+  .parentDiv {
+    display: flex;
+   /*  background-color: rgba(247, 250, 252, 1);  */
+  
+   }
+
+   * {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  
+  .flex-item-left {
+  
+    padding: 10px;
+    flex: 50%;
+    
+   
+  }
+  
+  .flex-item-right {
+   /* background-color: dodgerblue; */
+    padding: 10px;
+    
+   margin-left: 10px;
+   
+   
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 850px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    
+  }
+
+
+  .textMargin {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   text-align: left;
+   margin-bottom: -35px;
+  
+  }
+
+  .margin2 {
+    text-align: left;
+    font-size: 32px;
+  }
+
+.smaller {
+  font-size: 16px;
+
+  
+}
+
+.smallerBlue {
+  font-size: 16px;
+  color: rgba(74, 120, 156, 1); 
+}
+
+.textMargin2 > p {
+ 
+  text-align: left;
+}
+
+
+.months {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(74, 120, 156, 1);
+  font-size: 13px;
+ margin-right: 34px;
+}
+
+
+.chartContainer {
+  margin-left: -30px; /* Justera värdet efter behov för att flytta diagrammet till vänster */
+}
+
+
+.textMargin .smaller,
+.textMargin .bigger,
+.textMargin .smallerBlue {
+  margin: 0; 
+  padding: 0;
+  
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container-test {
+  display: flex;
+  flex-direction: row;
+ 
+  
+}
+
+.flex-item-left-test {
+
+  flex: 1px;
+  margin-right: 16px;
+}
+
+.flex-item-right-test {
+  
+  padding: 10px;
+  flex: 60%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 750px) {
+  .flex-container-test {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-left-test {
+   
+    display: none; 
+    
+  }
+
+
+}
