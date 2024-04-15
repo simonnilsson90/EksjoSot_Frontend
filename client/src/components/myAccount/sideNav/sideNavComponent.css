@@ -1,0 +1,63 @@
+.active-link {
+  background-color: rgba(232, 237, 245, 1);
+  border-radius: 10px 
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  list-style: none;
+  padding-right: 40px;
+  width: 135px;
+}
+
+.list-style {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  list-style: none;
+}
+
+
+
+
+  .display-align {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  .first-icon {
+    margin-left: -5%;
+  }
+  .seperate-elements-bottom {
+    display: flex;
+    margin-bottom: 10%;
+  
+  }
+
+  .seperate-icons-from-text {
+    margin-right: 12px;
+  }
+  
+  .seperate-icons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+  }
+
+  .seperate-elements-bottom-v2 {
+    margin-bottom: -15%;
+  }
+
+  .seperate-divs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300%;
+  }
+
+  .list-style Link {
+    text-decoration: none; /* Ta bort understrykning */
+    color: inherit; /* Ärv textfärg från förälderelementet */
+    cursor: pointer; /* Visa pekare vid hovring */
+  }
