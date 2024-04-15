@@ -16,6 +16,7 @@ import ImagesCardComponent from './components/marketplace/dataSetsCards/cards/so
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
 import Reports from "./components/myAccount/reports/reportsComponent";
+import ForgotPassword from "./components/forgotPassword/forgotPasswordComponent";
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
         <Route path="myAccount/dataSets/createDataset" element={<CreateDataset />} />
         <Route path="myAccount/reports" element={<Reports />} />
+        <Route path="forgot" element={<ForgotPassword/>} />
 
       </Routes>
       <Footer />

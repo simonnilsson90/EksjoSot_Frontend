@@ -7,6 +7,7 @@ import { useState } from "react";
 
 
 import Background from "../../assets/images/homepage/login-background.png"
+import { Link } from "react-router-dom";
 
 
 
@@ -63,12 +64,16 @@ onChange={(e) => setPassword(e.target.value)} className="input"></input>
        borderWidth: '1px' }}  {...label}  />
 
     <p className="rpassword"  >Remember Password</p>
-     <a className="remember" href="#">Forgot Password?</a>
+    
+     <div>
+     <Link className="remember"
+     to="/forgot">
+     Forgot Password?
+     </Link>
+     </div>
+    
 
 </div>
-
-
-    
 
 
 
