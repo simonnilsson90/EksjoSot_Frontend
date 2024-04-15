@@ -9,16 +9,12 @@ import MyAccount from "./components/myAccount/MyAccount";
 import Footer from "./components/footer/FooterComponent";
 import ConsentForm from "./components/feature/consent/ConsentForm";
 
-
 import CardsLayoutWithSidebar from "./components/marketplace/dataSetsCards/CardsLayoutWithSidebar";
-import ImagesCardComponent from './components/marketplace/dataSetsCards/cards/sortedByCategoryCards/ImagesCardComponent'
+import ImagesCardComponent from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/ImagesCardComponent";
 
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
 import Reports from "./components/myAccount/reports/reportsComponent";
-import ForgotPassword from "./components/forgotPassword/forgotPasswordComponent";
-
-
 
 function App() {
   return (
@@ -30,15 +26,15 @@ function App() {
         <Route path="myAccount" element={<MyAccount />} />
         <Route path="consentForm" element={<ConsentForm />} />
 
-          <Route path="cards" element={<CardsLayoutWithSidebar />} />
-          <Route path="imagescard" element={<ImagesCardComponent />} />
-
+        <Route path="cards" element={<CardsLayoutWithSidebar />} />
+        <Route path="imagescard" element={<ImagesCardComponent />} />
 
         <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
-        <Route path="myAccount/dataSets/createDataset" element={<CreateDataset />} />
+        <Route
+          path="myAccount/dataSets/createDataset"
+          element={<CreateDataset />}
+        />
         <Route path="myAccount/reports" element={<Reports />} />
-        <Route path="forgot" element={<ForgotPassword/>} />
-
       </Routes>
       <Footer />
     </BrowserRouter>
