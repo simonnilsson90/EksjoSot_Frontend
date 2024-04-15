@@ -1,4 +1,3 @@
-import Logo from "../../assets/images/homepage/logo.png";
 import UserPic from "../../assets/images/homepage/user.png";
 import React, {useState} from "react";
 import "./navbarComponent.css";
@@ -29,7 +28,7 @@ function Navbar() {
     return (
         <nav>
             <ul className="navbarContainer">
-                <a href="/" id="logoContainer">
+                <Link to ="/" id="logoContainer">
                     <img
                         id="logo"
                         src={"/theEveryoneStorelogo.svg"}
@@ -40,37 +39,40 @@ function Navbar() {
                     <span className="companyName">
                         The<br/>EveryOne<br/>Store
                     </span>
-                </a>
+                </Link>
                 <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
                     <li className="navbarLink">
-                        <a href="/" onClick={closeDrawer}>Home</a>
+                        <Link to="/" onClick={closeDrawer}>Home</Link>
                     </li>
                     <li className="navbarLink">
-                        <a href="market">Marketplace</a>
+                        <Link to="/market">Marketplace</Link>
                     </li>
 
                     <li className="navbarLink">
-                        <a href="#">About Us</a>
+                        <Link to="/aboutUs">About Us</Link>
                     </li>
                     <li className="navbarLink">
-                        <a href="#">Contact Us</a>
+                        <Link to="/contactUs">Contact Us</Link>
                     </li>
                     <li className="navbarLink">
-                        <a href="FaQ">FaQ</a>
+                        <Link to="/FaQ">FaQ</Link>
                     </li>
                     <li className="navbarLink">
-                        <Button onClick={toggleDrawer(true)}>
-                            <img src={UserPic} width={40} height={40} alt="User Picture"/>
-                            <p>Login</p>
-                        </Button>
-                        <Drawer open={open}
-                                onClose={toggleDrawer(false)}
-                                anchor="right">
-                            <Box sx={{width: 390, height: 844}} role="presentation">
-                                <Login onClose={closeDrawer}/>
-                            </Box>
-                        </Drawer>
-
+                        <Link to="/LogIn">
+                            <Button onClick={toggleDrawer(true)}>
+                                <img src={UserPic} width={30} height={30} alt="User"/>
+                                <p>Login</p>
+                            </Button>
+                            <Drawer open={open}
+                                    onClose={toggleDrawer(false)}
+                                    anchor="right">
+                                <Box sx={{width: 390, height: 844}} role="presentation">
+                                    <Login onClose={closeDrawer}/>
+                                </Box>
+                            </Drawer>
+                        </Link>
+                    </li>
+                    <li>
                         <Link id="shoppingBag" to="/myShopping">
                             <img src={'/shopping-bag.svg'} width={25} height={25} alt="shopping bag"/>
                         </Link>
