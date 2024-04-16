@@ -54,24 +54,35 @@ function Login({ onClose }) {
                   Please enter the email address you used to create your account
                   and we will send you a link to reset your password.
                 </p>
-                <form>
-                  <p>Email</p>
-                  <input type="email" className="input"></input>
+              
+              <div className="formParent">
+
+             
+                <form className="form">
+                  <p className="smallText">Email</p>
+                  <input type="emailForgot" className="input"></input>
                   <br />
+                  <div className="alignForgotButton">
                   <Button
                     sx={{
                       textTransform: "none",
-                      width: "30%",
+                      width: "40%",
                       color: "black",
                       backgroundColor: "rgba(242, 139, 48, 1)",
                       border: "0px",
                       borderRadius: "0px",
+                      marginTop: "15%",
+                      
+                      
                     }}
                     type="submit"
                   >
                     Submit
                   </Button>
+                  </div>
+                  
                 </form>
+                </div>
               </div>
             </>
           ) : (

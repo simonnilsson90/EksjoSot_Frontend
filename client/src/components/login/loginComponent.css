@@ -136,3 +136,32 @@
   width: 2px;
   margin-left: 25px;
 }
+
+
+
+.form {
+    margin-top: 25%;
+    width: 100%;
+}
+
+.emailForgot {
+    font-size: 9px;
+    width: 1
+    
+}
+
+.formParent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.submitForgot{
+    margin-top: 10%;
+}
+
+.alignForgotButton {
+    text-align: center;
+ 
+}
