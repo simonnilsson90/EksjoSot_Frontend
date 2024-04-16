@@ -7,8 +7,6 @@ import { useState } from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 import Background from "../../assets/images/homepage/login-background.png";
-import { Link } from "react-router-dom";
-import { RiH1 } from "react-icons/ri";
 
 function Login({ onClose }) {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -54,7 +52,7 @@ function Login({ onClose }) {
                   Please enter the email address you used to create your account
                   and we will send you a link to reset your password.
                 </p>
-              
+
                 <div className="formParent">
                   <form className="form">
                     <p className="smallText">Email</p>
@@ -169,20 +167,18 @@ function Login({ onClose }) {
                   Create account
                 </Button>
               </Stack>
-              <a className="policy" href="#">
+              <a className="policy" href="/endpoint">
                 Private policy
               </a>
             </>
           )}
         </div>
       </div>
-      <div className={forgotPassword ? "line forgotPasswordLine" : "line"}></div>
+      <div
+        className={forgotPassword ? "line forgotPasswordLine" : "line"}
+      ></div>
 
-      <img
-        src={Background}
-        alt="Background"
-        className="backgroundImg"
-      />
+      <img src={Background} alt="Background" className="backgroundImg" />
     </div>
   );
 }
