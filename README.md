@@ -51,18 +51,7 @@ Follow these steps to set up your development environment:
     ```sh
     npm install
     ```
-
-
-### Configuration
-
-Before running the application, you will need to set up environment variables:
-
-1. Obtain the `.env` file from the Google Drive location provided by the project maintainers.
-
-2. Place the `.env` file in the `server` directory of your local project.
-
-   The `.env` file should contain all the necessary environment variables required for the application to run correctly, including database connection settings and any API keys or secrets.
-
+    
 
 ### Running the Application
 
