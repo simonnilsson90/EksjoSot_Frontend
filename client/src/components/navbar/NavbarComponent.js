@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
 
     function toggleMenu() {
         setIsMenuOpen(!isMenuOpen);

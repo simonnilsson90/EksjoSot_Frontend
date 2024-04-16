@@ -24,7 +24,7 @@ import Reports from "./components/myAccount/reports/reportsComponent";
 
 //layouts
 import RootLayout from "./layouts/RootLayout";
-import Login from "./components/login/loginComponent";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,7 +33,7 @@ const router = createBrowserRouter(
       <Route path="market" element={<MarketPage />} />
       {/* <Route path="contacUs" element={<ContactUs />} /> */}
       {/* <Route path="FaQ" element={<FaQ />} /> */}
-      <Route path="LogIn" element={<Login />} /> 
+     
       {/* <Route path="shopping-bag" element={<Shopping />} /> */}
 
       <Route path="myAccount" element={<MyAccount />} />
