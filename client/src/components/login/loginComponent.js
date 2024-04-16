@@ -55,33 +55,28 @@ function Login({ onClose }) {
                   and we will send you a link to reset your password.
                 </p>
               
-              <div className="formParent">
-
-             
-                <form className="form">
-                  <p className="smallText">Email</p>
-                  <input type="emailForgot" className="input"></input>
-                  <br />
-                  <div className="alignForgotButton">
-                  <Button
-                    sx={{
-                      textTransform: "none",
-                      width: "40%",
-                      color: "black",
-                      backgroundColor: "rgba(242, 139, 48, 1)",
-                      border: "0px",
-                      borderRadius: "0px",
-                      marginTop: "15%",
-                      
-                      
-                    }}
-                    type="submit"
-                  >
-                    Submit
-                  </Button>
-                  </div>
-                  
-                </form>
+                <div className="formParent">
+                  <form className="form">
+                    <p className="smallText">Email</p>
+                    <input type="emailForgot" className="input"></input>
+                    <br />
+                    <div className="alignForgotButton">
+                      <Button
+                        sx={{
+                          textTransform: "none",
+                          width: "40%",
+                          color: "black",
+                          backgroundColor: "rgba(242, 139, 48, 1)",
+                          border: "0px",
+                          borderRadius: "0px",
+                          marginTop: "15%",
+                        }}
+                        type="submit"
+                      >
+                        Submit
+                      </Button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </>
@@ -122,9 +117,7 @@ function Login({ onClose }) {
                   }}
                   {...label}
                 />
-
                 <p className="rpassword">Remember Password</p>
-
                 <div className="fpassword">
                   <Button
                     sx={{
@@ -182,18 +175,16 @@ function Login({ onClose }) {
             </>
           )}
         </div>
-
-        <img
-          src={Background}
-          width={250}
-          height={504}
-          alt="Background"
-          className="backgroundPos"
-        />
-
-        <div className="line"></div>
       </div>
+      <div className={forgotPassword ? "line forgotPasswordLine" : "line"}></div>
+
+      <img
+        src={Background}
+        alt="Background"
+        className="backgroundImg"
+      />
     </div>
   );
 }
+
 export default Login;
