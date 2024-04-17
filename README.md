@@ -7,9 +7,6 @@ The Everyone Store is a React.js-based e-commerce platform offering a user-frien
 
 * `theeveryonestore/`
     * `client/` (Frontend codebase)
-    * `server/` (Backend codebase)
-
-
 
 ## Getting Started
 
