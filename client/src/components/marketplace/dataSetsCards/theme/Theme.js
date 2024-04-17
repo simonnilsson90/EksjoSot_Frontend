@@ -2,8 +2,17 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,      // extra-small screens
+      sm: 600,    // small screens
+      md: 900,    // medium screens
+      lg: 1200,   // large screens
+      xl: 1536,   // extra-large screens
+    },
+  },
   typography: {
-    fontFamily: "'Montserrat', Arial, Helvetica, sans-serif",
+    fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
     fontSize: 16, // Assuming the base size is 16px for --font-size-base
     h1: { fontSize: '6rem' }, // --font-size-xxl
     h2: { fontSize: '4rem' }, // --font-sieze-xl
