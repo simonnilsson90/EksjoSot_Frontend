@@ -43,7 +43,7 @@ const router = createBrowserRouter(
       <Route path="consentForm" element={<ConsentForm />} />
 
       <Route path="marketplace" element={<MarketplaceLayout />} >
-        <Route path="carousel" element={<Carousel />} />
+        <Route index element={<Carousel />} />
         <Route path="images" element={<ImagesPage />} />
         <Route path="audio" element={<AudioPage />} />
         <Route path="video" element={<VideoPage />} />
