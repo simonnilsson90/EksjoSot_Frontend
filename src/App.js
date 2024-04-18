@@ -13,13 +13,20 @@ import {
 import MyAccount from "./components/myAccount/MyAccount";
 
 import ConsentForm from "./components/feature/consent/ConsentForm";
-
-import CardsLayoutWithSidebar from "./components/marketplace/dataSetsCards/CardsLayoutWithSidebar";
-import ImagesCardComponent from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/ImagesCardComponent";
-
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
 import Reports from "./components/myAccount/reports/reportsComponent";
+// Marketplace routes
+import Carousel from "./components/marketplace/carousel/Carousel";
+import MarketplaceLayout from './components/marketplace/marketplaceLayout/MarketplaceLayout';
+import ImagesPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/ImagesPage";
+import VideoPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/VideoPage";
+import AudioPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/AudioPage";
+import OtherPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/OtherPage";
+import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
+import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
+import Reports from "./components/myAccount/reports/reportsComponent";
+
 
 //layouts
 import RootLayout from "./layouts/RootLayout";
@@ -36,8 +43,15 @@ const router = createBrowserRouter(
 
       <Route path="myAccount" element={<MyAccount />} />
       <Route path="consentForm" element={<ConsentForm />} />
-      <Route path="cards" element={<CardsLayoutWithSidebar />} />
-      <Route path="imagescard" element={<ImagesCardComponent />} />
+
+      <Route path="marketplace" element={<MarketplaceLayout />} >
+        <Route path="carousel" element={<Carousel />} />
+        <Route path="images" element={<ImagesPage />} />
+        <Route path="audio" element={<AudioPage />} />
+        <Route path="video" element={<VideoPage />} />
+        <Route path="other" element={<OtherPage />} />
+        </Route>
+
       <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
       <Route
         path="myAccount/dataSets/createDataset"

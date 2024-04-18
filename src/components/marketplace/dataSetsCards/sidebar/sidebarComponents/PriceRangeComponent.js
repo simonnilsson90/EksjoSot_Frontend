@@ -3,7 +3,6 @@ import { useState } from 'react'
 import {Box, Typography} from '@mui/material';
 import Slider from '@mui/material/Slider';
 import { useTheme } from '@mui/material/styles';
-import theme from '../../theme/Theme';
 
 
 
@@ -35,7 +34,7 @@ Item.propTypes = {
 
 
 export default function PriceRange() {
-    const [value, setValue] =useState([0, 10000]);
+    const [value, setValue] =useState([0, 1000]);
     const theme = useTheme();
 
     
@@ -94,8 +93,8 @@ function valuetext(value) {
         alignItems: 'center',
         width: '90%',
         }}>
-          <Typography >${value[0]}</Typography>
-          <Typography>${value[1]}</Typography>
+          <Typography >{value[0]}</Typography>
+          <Typography>{value[1]}</Typography>
             </Box>
        
           </Item>

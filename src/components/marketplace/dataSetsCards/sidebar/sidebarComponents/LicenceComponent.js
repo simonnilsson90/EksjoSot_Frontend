@@ -1,49 +1,33 @@
-import {Box, Typography, Button, Paper} from '@mui/material';
-import ButtonGroup from '@mui/material/ButtonGroup';
+import {Box, Typography, Button} from '@mui/material';
+import ResponsiveButton from '../../../customIcons/ResponsiveButton';
 
 
 
-
-export default function CategoriesComponent() {
+export default function LicenceComponent() {
   const typeDescription = ['All', 'Free', 'Paid', 'Custom' ]
   return (
-  
-     <Box
+ 
+      <Box
         sx={{
           alignItems: 'center',
           borderRadius: 1,
           backgroundColor: 'transparent',
-          width: '90%'
+          width: '90%',
         }}
       >
-        <Box sx={{p: 2}}>
-          <Typography level="h1" fontWeight={700} >Licence</Typography>
+        <Box sx={{ p: 2 }}>
+          <Typography level="h1" fontWeight={700}>Licence</Typography>
         </Box>
-
-         {typeDescription.map((Label, i) => (
-        <Button
-      key={i}
-      variant="outlined"
-      sx={{
-        bgcolor: '#c8b6a1', // Use the theme's primary main color
-        color: '#000', // Text color
-        borderColor: 'white',
-        borderWidth: 1, 
-        borderStyle: 'solid',
-        m: 1,
-      
-        flexWrap: 'wrap',
-        fontSize: '.8rem', // Text size
-        '&:hover': {
-          bgcolor: 'primary.dark', // Change background color on hover
-        },
         
-      }}
-    >
-                    {Label}
-                </Button>
-           
-   ))}
-       </Box>
-       ) }
+        {typeDescription.map((label, i) => (
+          <ResponsiveButton
+            key={i}
+            label={label}
+            variant="outlined"
+            fullWidth={true}
+          />
+        ))}
+      </Box>
+       ) 
+      }
  
