@@ -2,6 +2,12 @@
 
 The Everyone Store is a React.js-based e-commerce platform offering a user-friendly shopping experience with a wide range of products.
 
+
+## Project Structure
+
+* `theeveryonestore/`
+    * `client/` (Frontend codebase)
+
 ## Getting Started
 
 These instructions will guide you through getting a copy of the project up and running on your local machine for development and testing purposes.
@@ -23,21 +29,26 @@ Follow these steps to set up your development environment:
     git clone https://github.com/theeveryonestore/TheEveryoneStore.git
     ```
 
-2. Install the frontend dependencies:
+2. Navigate to the frontend directory:
+    ```sh
+    cd everyonestore/client
+    ```
+
+3. Install the frontend dependencies:
     ```sh
     npm install
     ```
 
-### Configuration
+4. Navigate to the backend directory:
+    ```sh
+    cd ../server
+    ```
 
-Before running the application, you will need to set up environment variables:
-
-1. Obtain the `.env` file from the Google Drive location provided by the project maintainers.
-
-2. Place the `.env` file in the `server` directory of your local project.
-
-   The `.env` file should contain all the necessary environment variables required for the application to run correctly, including database connection settings and any API keys or secrets.
-
+5. Install the backend dependencies:
+    ```sh
+    npm install
+    ```
+    
 
 ### Running the Application
 
