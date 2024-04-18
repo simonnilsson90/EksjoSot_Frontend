@@ -31,6 +31,7 @@ export default function Sidebar() {
 
 <Grid container spacing={10} sx={{ maxHeight: '100vh', overflow: 'hidden', p: 3}}>
 <Grid item xs={12}>
+
 <CategoriesComponent />
 </Grid>
 
@@ -39,6 +40,7 @@ export default function Sidebar() {
 </Grid>
 <Grid item xs={12}>
 <PriceRange />
+
 </Grid>
 
 </Grid>

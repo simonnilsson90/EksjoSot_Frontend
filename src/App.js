@@ -11,6 +11,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import MyAccount from "./components/myAccount/MyAccount";
+
 import ConsentForm from "./components/feature/consent/ConsentForm";
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
@@ -22,6 +23,10 @@ import ImagesPage from "./components/marketplace/dataSetsCards/cards/sortedByCat
 import VideoPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/VideoPage";
 import AudioPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/AudioPage";
 import OtherPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/OtherPage";
+import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
+import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
+import Reports from "./components/myAccount/reports/reportsComponent";
+
 
 //layouts
 import RootLayout from "./layouts/RootLayout";
@@ -35,6 +40,7 @@ const router = createBrowserRouter(
       {/* <Route path="FaQ" element={<FaQ />} /> */}
 
       {/* <Route path="shopping-bag" element={<Shopping />} /> */}
+
       <Route path="myAccount" element={<MyAccount />} />
       <Route path="consentForm" element={<ConsentForm />} />
 
