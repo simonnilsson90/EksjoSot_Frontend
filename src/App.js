@@ -23,9 +23,7 @@ import ImagesPage from "./components/marketplace/dataSetsCards/cards/sortedByCat
 import VideoPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/VideoPage";
 import AudioPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/AudioPage";
 import OtherPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/OtherPage";
-import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
-import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
-import Reports from "./components/myAccount/reports/reportsComponent";
+
 
 
 //layouts
