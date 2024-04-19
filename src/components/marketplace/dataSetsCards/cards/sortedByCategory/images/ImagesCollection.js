@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
-import { Typography, Grid, Box, IconButton, CardActions } from '@mui/material';
+import { Typography, Grid, Box, CardActions } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import data from '../../../../../../data/dataArray';
 import { FaCamera } from "react-icons/fa";
@@ -30,7 +30,7 @@ function ImagesCollection() {
       }}>
     <Grid container spacing={5}  >  
     <Grid item xs={12} sx={{ height: '100%' }}>
-    <ResponsiveIcon Icon={FaCamera} style={{ marginTop: '25px', marginLeft: '20px'}} text={<Typography sx={{ fontWeight: 'bold' }}>Images</Typography>}
+    <ResponsiveIcon Icon={FaCamera} style={{ marginTop: '25px', marginLeft: '20px'}} text={<Typography sx={{ fontWeight: 'bold' }}>IMAGES</Typography>}
     textStyle={{fontSize: theme.typography.body1.fontSize}}/>
     </Grid>
                
