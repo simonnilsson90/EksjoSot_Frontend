@@ -25,7 +25,10 @@ function ImagesCollection() {
 
 
   return (
-    <Grid container spacing={5} sx={{position: 'reltive', width: '100%', justifyContent: 'center', mb: 5, overflow: 'scroll'}} >  
+    <Box sx={{
+      position: 'reltive', width: '90%', m: 5, pb: 10, mt: 2, mr: 5
+      }}>
+    <Grid container spacing={5}  >  
     <Grid item xs={12} sx={{ height: '100%' }}>
     <ResponsiveIcon Icon={FaCamera} style={{ marginTop: '25px', marginLeft: '20px'}} text={<Typography sx={{ fontWeight: 'bold' }}>Images</Typography>}
     textStyle={{fontSize: theme.typography.body1.fontSize}}/>
@@ -33,14 +36,14 @@ function ImagesCollection() {
                
       {imageData.map((item, i) => (
         
-        <Grid item xs={10} sm={6} md={4} key={i}>
+        <Grid item xs={12} sm={6} md={4} lg={2.3} key={i} overflow-y={'hidden'} display={'block'}>
   <Card 
     sx={{ 
-        maxWidth: 209, 
+        width: 'auto',
         borderRadius: 3, 
         overflow: 'hidden', 
         objectFit: 'cover', 
-        height: 230, 
+        height: 250, 
         alignItems: 'center', 
         bgcolor: theme.palette.background.default,
         mb: 3, 
@@ -64,7 +67,7 @@ function ImagesCollection() {
         {item.description} 
         </Typography>
       </CardContent>
-      <Box sx={{display: 'flex',  mt: 2, justifyContent: 'space-between'}}>
+      <Box sx={{display: 'flex',  mt: 12, justifyContent: 'space-between', bottom: 2}}>
         <CardContent>
       <Typography sx={{color: "primary.main"}} >
         {item.price}
@@ -89,6 +92,7 @@ function ImagesCollection() {
         </Grid>
       ))}
     </Grid>
+    </Box>
   );
 }
 

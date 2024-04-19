@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
-import { Box } from '@mui/material'
+import { Box } from '@mui/material'
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 // ResponsiveIconComponent that takes an Icon and props

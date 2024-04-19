@@ -16,7 +16,7 @@ const typeIcons = [
 
 export default function CategoriesComponent() {
   const theme = useTheme();
-  const matchesArrows = useMediaQuery(theme.breakpoints.up('sm'));
+  // const matchesArrows = useMediaQuery(theme.breakpoints.up('sm'));
   const matchesTypeTypography = useMediaQuery(theme.breakpoints.up('md'));
 
   return (
@@ -30,11 +30,11 @@ export default function CategoriesComponent() {
         p: 0
       }}
     >
-      {matchesArrows && (
+      {/* {matchesArrows && ( */}
         <Typography level="h1" fontWeight={700} sx={{ p: 2 }}>
           Categories
         </Typography>
-      )}
+      {/* )} */}
       {typeIcons.map((item, i) => (
         <Link to={item.path} key={i} style={{ textDecoration: 'none', color: 'inherit' }}>
           <Grid 
