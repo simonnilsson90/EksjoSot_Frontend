@@ -3,27 +3,14 @@ import CardMedia from '@mui/material/CardMedia';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Typography, Grid, Box } from '@mui/material';
-import data from '../../../../../data/dataArray';
-import { FaCamera } from "react-icons/fa";
-
+import data from '../../../../../../data/dataArray';
 
 function ImagesCardComponent() {
-  const imageData = data.filter(item => item.type === 'Images');
+  const videoData = data.filter(item => item.type === 'Video');
 
   return (
     <Grid container spacing={3}> 
-    <Grid>
-       <Grid sx={{display: 'flex', mr: 2, ml: 1}}>
-                <FaCamera />
-              </Grid>
-                
-                <Grid sx={{display: 'flex', mr: 2, ml: 1}}>
-                <Typography>Images</Typography>
-                </Grid>
-    </Grid>
-                 
-               
-      {imageData.map((item, i) => (
+      {vidioData.map((item, i) => (
         <Grid item xs={12} sm={4} md={3} key={i}> 
           <Card
             sx={{

@@ -3,7 +3,7 @@ import CardMedia from '@mui/material/CardMedia';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Typography, Grid, Box } from '@mui/material';
-import data from '../../../../../data/dataArray';
+import data from '../../../../../../data/dataArray';
 
 function VideoPage() {
   const videoData = data.filter(item => item.type === 'Video');

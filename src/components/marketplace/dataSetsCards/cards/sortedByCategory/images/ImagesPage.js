@@ -3,10 +3,10 @@ import CardMedia from '@mui/material/CardMedia';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Typography, Grid, Box } from '@mui/material';
-import data from '../../../../../data/dataArray';
+import data from '../../../../../../data/dataArray';
 import { FaCamera } from "react-icons/fa";
-import theme from '../../theme/Theme';
-import ResponsiveIcon from '../../../customIcons/ResponsiveIcon';
+import theme from '../../../theme/Theme';
+import ResponsiveIcon from '../../../../customIcons/ResponsiveIcon';
 
 
 export default function ImagesPage() {

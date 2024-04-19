@@ -29,7 +29,7 @@ const typeDescription = ['Images', 'Video', 'Audio', 'Other']
     arrows: true,
     dots: false,
     infinite: true,
-    speed: 3000,
+    speed: 700,
     slidesToShow: 4,
     slidesToScroll: 3,
     autoplay: false,
