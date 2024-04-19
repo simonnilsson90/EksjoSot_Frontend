@@ -30,11 +30,10 @@ export default function VideoCollection() {
       }}>
     <Grid container spacing={5}  >  
     <Grid item xs={12} sx={{ height: '100%' }}>
-    <ResponsiveIcon Icon={IoIosFilm} style={{ marginTop: '25px', marginLeft: '20px'}} text={<Typography sx={{ fontWeight: 'bold' }}>IMAGES</Typography>}
-    textStyle={{fontSize: theme.typography.body1.fontSize}}/> 
-    <Typography>das ist ein test</Typography> 
+    <ResponsiveIcon Icon={IoIosFilm} style={{ marginTop: '25px', marginLeft: '20px'}} text={<Typography sx={{ fontWeight: 'bold' }}>VIDEO</Typography>}
+    textStyle={{fontSize: theme.typography.body1.fontSize}}/>  
     </Grid>
-               
+                
       {videoData.map((item, i) => (
       
         <Grid item xs={12} sm={6} md={4} lg={2.3} key={i} overflow-y={'hidden'} display={'block'}>

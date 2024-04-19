@@ -20,6 +20,7 @@ import Reports from "./components/myAccount/reports/reportsComponent";
 import Carousel from "./components/marketplace/carousel/Carousel";
 import MarketplaceLayout from './components/marketplace/marketplaceLayout/MarketplaceLayout';
 import ImagesCollection from "./components/marketplace/dataSetsCards/cards/sortedByCategory/images/ImagesCollection";
+import VideoCollection from "./components/marketplace/dataSetsCards/cards/sortedByCategory/video/VideoCollection";
 import VideoPage from "./components/marketplace/dataSetsCards/cards/sortedByCategory/video/VideoPage";
 import AudioPage from "./components/marketplace/dataSetsCards/cards/sortedByCategory/audio/AudioPage";
 import OtherPage from "./components/marketplace/dataSetsCards/cards/sortedByCategory/other/OtherPage";
@@ -46,7 +47,7 @@ const router = createBrowserRouter(
         <Route index element={<Carousel />} />
         <Route path="images" element={<ImagesCollection />} />
         <Route path="audio" element={<AudioPage />} />
-        <Route path="video" element={<VideoPage />} />
+        <Route path="video" element={<VideoCollection />} />
         <Route path="other" element={<OtherPage />} />
         </Route>
 
