@@ -15,7 +15,7 @@ import { Typography } from "@mui/material";
 import { PrevArrow, NextArrow } from "../customIcons/CustonArrows";
 
 
-export default function carousel1() {
+export default function carousel() {
     // Filtered data
   const imageData = data.filter(item => item.type === 'Images');
   const audioData = data.filter(item => item.type === 'Audio');

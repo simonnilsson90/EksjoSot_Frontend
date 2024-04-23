@@ -19,13 +19,8 @@ import Reports from "./components/myAccount/reports/reportsComponent";
 // Marketplace routes
 import Carousel from "./components/marketplace/carousel/Carousel";
 import MarketplaceLayout from './components/marketplace/marketplaceLayout/MarketplaceLayout';
-import ImagesCollection from "./components/marketplace/dataSetsCards/cards/sortedByCategory/images/ImagesCollection";
-import VideoCollection from "./components/marketplace/dataSetsCards/cards/sortedByCategory/video/VideoCollection";
-import VideoPage from "./components/marketplace/dataSetsCards/cards/sortedByCategory/video/VideoPage";
-import AudioPage from "./components/marketplace/dataSetsCards/cards/sortedByCategory/audio/AudioPage";
-import OtherPage from "./components/marketplace/dataSetsCards/cards/sortedByCategory/other/OtherPage";
-
-
+import CategoryDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByCategory/CategoryDisplay'
+import LicenceDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByLicence/LicenceDisplay'
 
 //layouts
 import RootLayout from "./layouts/RootLayout";
@@ -45,11 +40,11 @@ const router = createBrowserRouter(
 
       <Route path="marketplace" element={<MarketplaceLayout />} >
         <Route index element={<Carousel />} />
-        <Route path="images" element={<ImagesCollection />} />
-        <Route path="audio" element={<AudioPage />} />
-        <Route path="video" element={<VideoCollection />} />
-        <Route path="other" element={<OtherPage />} />
-        </Route>
+        <Route path='category' element={<CategoryDisplay />} />
+        <Route path="category/:categoryType" element={<CategoryDisplay />} />
+        <Route path='licence' element={<LicenceDisplay />} />
+        <Route path="licence/:licenceType" element={<LicenceDisplay />} />
+      </Route>
 
       <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
       <Route
