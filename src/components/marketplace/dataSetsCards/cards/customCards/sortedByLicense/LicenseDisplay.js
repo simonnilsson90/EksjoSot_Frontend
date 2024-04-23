@@ -15,13 +15,36 @@ const video = IoIosFilm
 const image = FaCamera
 const other = HiDotsHorizontal
 
-export default function CategoryDisplay() {
+export default function LicenseDisplay() {
   const [favorite, setFavorite] = useState({});
-  const { categoryType } = useParams();
+  const { license } = useParams();
+
+  if (!license) {
+    console.error('licenseType is undefined');
+    return <Typography variant="h6">Invalid license type specified.</Typography>;
+  }
   
-  const filteredData = data.filter(item => item.type.toLowerCase() === categoryType.toLowerCase())
-   
-  console.log("Category Type from URL:", categoryType);
+  const filteredData = data.filter(item => {
+    // Ensure there is always a valid price string to work with.
+    const price = item.price || '';
+    
+    // Handling different license types.
+    switch (license.toLowerCase()) {
+      case 'all':
+        return true; // Return all items.
+      case 'free':
+        return price.toLowerCase() === 'free'; // Return items that are explicitly marked as free.
+      case 'paid':
+        return !price.toLowerCase().includes('free'); // Return items that do not include the word "free".
+      default:
+        return price.toLowerCase().includes(license.toLowerCase()); // For any other license type, return items that include the license keyword in their price.
+    }
+  });
+  
+  
+
+  console.log("license Type from URL:", license);
+  console.log("Filtered Data:", filteredData);
 
   const toggleFavorite = (i) => {
     setFavorite(prevFavorite => ({
@@ -32,7 +55,7 @@ export default function CategoryDisplay() {
 
   // Check if there's any data to display
   if (!filteredData.length) {
-    return <Typography variant="h5" sx={{ mt: 4, textAlign: 'center' }}>No data available for this category.</Typography>;
+    return <Typography variant="h5" sx={{ mt: 4, textAlign: 'center' }}>No data available for this license.</Typography>;
   }
 
   

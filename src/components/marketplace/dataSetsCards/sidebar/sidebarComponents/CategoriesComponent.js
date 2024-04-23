@@ -6,7 +6,7 @@ import { IoIosFilm } from "react-icons/io";
 import { useMediaQuery, useTheme } from '@mui/material';
 import ResponsiveIcon from '../../../customIcons/ResponsiveIcon';
 import { useStore } from '../../../stateManagement/store';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 
 
 
@@ -47,7 +47,14 @@ export default function CategoriesComponent() {
           Categories
         </Typography>
       {typeIcons.map((item, index) => (
-  <Link to={`/marketplace/category/${item.type.toLowerCase()}`} key={index} style={{textDecoration: 'none', color: 'inherit' }}>
+  <NavLink 
+  to={`/marketplace/category/${item.type.toLowerCase()}`} 
+  key={index} 
+  style={({ isActive }) => ({
+    textDecoration: 'none',
+    color: isActive ? '#a96120' : 'inherit'  // Conditional color change
+  })}
+  >
            <Grid container
             onClick={() => handleSortByCategory(item.type)}
             sx={{ display: 'flex', 
@@ -70,7 +77,7 @@ export default function CategoriesComponent() {
             }
             
           </Grid>            
-          </Link>
+          </NavLink>
 
         ))}
     </Box>

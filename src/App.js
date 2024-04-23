@@ -17,8 +17,7 @@ import Reports from "./components/myAccount/reports/reportsComponent";
 import Carousel from "./components/marketplace/carousel/Carousel";
 import MarketplaceLayout from './components/marketplace/marketplaceLayout/MarketplaceLayout';
 import CategoryDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByCategory/CategoryDisplay'
-import LicenceDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByLicence/LicenceDisplay'
-
+import LicenseDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByLicense/LicenseDisplay'
 //layouts
 import RootLayout from "./layouts/RootLayout";
 
@@ -38,8 +37,8 @@ const router = createBrowserRouter(
         <Route index element={<Carousel />} />
         <Route path='category' element={<CategoryDisplay />} />
         <Route path="category/:categoryType" element={<CategoryDisplay />} />
-        <Route path='licence' element={<LicenceDisplay />} />
-        <Route path="licence/:licenceType" element={<LicenceDisplay />} />
+        <Route path='license' element={<LicenseDisplay />} />
+        <Route path="license/:license" element={<LicenseDisplay />} />
       </Route>
 
       <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
