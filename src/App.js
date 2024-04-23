@@ -1,8 +1,6 @@
 import React from "react";
 import "./global.css";
-
 import HomePage from "./views/HomePage";
-import MarketPage from "./views/MarketPage";
 import "./App.css";
 import {
   createBrowserRouter,
@@ -11,7 +9,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import MyAccount from "./components/myAccount/MyAccount";
-
 import ConsentForm from "./components/feature/consent/ConsentForm";
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
@@ -29,7 +26,6 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<HomePage />} />
-      <Route path="market" element={<MarketPage />} />
       {/* <Route path="contacUs" element={<ContactUs />} /> */}
       {/* <Route path="FaQ" element={<FaQ />} /> */}
 
