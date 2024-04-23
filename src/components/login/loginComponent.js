@@ -5,8 +5,10 @@ import Checkbox from "@mui/material/Checkbox";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-
+import Drawer from "@mui/material/Drawer";
+import Box from "@mui/material/Box";
 import Background from "../../assets/images/homepage/login-background.png";
+import SignUp from "../signUp/SignUp";
 
 function Login({ onClose }) {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -14,6 +16,7 @@ function Login({ onClose }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [forgotPassword, setForgotPassword] = useState(false);
+  const [signUpOpen, setSignUpOpen] = useState(false);
 
   const toggleForgotPasswordMenu = () => {
     setForgotPassword(!forgotPassword);
@@ -24,6 +27,15 @@ function Login({ onClose }) {
     console.log("password", password),
     onClose
   );
+
+  const toggleSignUpDrawer = () => {
+    setSignUpOpen(!signUpOpen);
+  };
+
+  const closeDrawer = () => {
+    setSignUpOpen(false);
+  }
+  
 
   return (
     <div className="loginBody">
@@ -85,6 +97,9 @@ function Login({ onClose }) {
                   <CloseIcon fontSize="large" className="close" />
                 </Button>
               </div>
+
+            {!signUpOpen && 
+            <>
               <p className=" headline">Sign in to The Everyone Store</p>
               <div className="smallText">
                 <p>Welcome back to The Everyone Store!</p>
@@ -150,7 +165,8 @@ function Login({ onClose }) {
                 <p>Join our community and create your account</p>
                 <p>to access exclusive data sets and resources. </p>
               </div>
-              <Stack marginTop={2} spacing={2} direction="row">
+             
+             <Stack marginTop={2} spacing={2} direction="row">
                 <Button
                   sx={{
                     textTransform: "none",
@@ -161,23 +177,38 @@ function Login({ onClose }) {
                     border: "0px",
                     borderRadius: "0px",
                   }}
+                  onClick={toggleSignUpDrawer}
                   className="buttonStyle"
                   variant="contained"
-                >
+                  >
                   Create account
                 </Button>
-              </Stack>
+                <Drawer 
+                  open={signUpOpen} 
+                  onClose={closeDrawer} anchor="right">
+                  <Box sx={{ width: 390, height: 844 }} role="presentation">
+                    <SignUp onClose={closeDrawer} />
+                  </Box>
+              </Drawer>
+            </Stack>
+              
+              
               <a className="policy" href="/endpoint">
                 Private policy
               </a>
-            </>
+          </>
+          }
+
+          {signUpOpen &&
+            <SignUp onClose={setSignUpOpen} />
+          }
+          </>
           )}
         </div>
       </div>
       <div
         className={forgotPassword ? "line forgotPasswordLine" : "line"}
       ></div>
-
       <img src={Background} alt="Background" className="backgroundImg" />
     </div>
   );

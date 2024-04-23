@@ -28,9 +28,12 @@ import OtherPage from "./components/marketplace/dataSetsCards/cards/sortedByCate
 
 //layouts
 import RootLayout from "./layouts/RootLayout";
+// import Login from "./components/login/loginComponent";
+ import SignUp, { signUpAction } from "./components/signUp/SignUp";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    <>
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<HomePage />} />
       <Route path="market" element={<MarketPage />} />
@@ -38,7 +41,6 @@ const router = createBrowserRouter(
       {/* <Route path="FaQ" element={<FaQ />} /> */}
 
       {/* <Route path="shopping-bag" element={<Shopping />} /> */}
-
       <Route path="myAccount" element={<MyAccount />} />
       <Route path="consentForm" element={<ConsentForm />} />
 
@@ -48,15 +50,16 @@ const router = createBrowserRouter(
         <Route path="audio" element={<AudioPage />} />
         <Route path="video" element={<VideoPage />} />
         <Route path="other" element={<OtherPage />} />
-        </Route>
+      </Route>
 
       <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
-      <Route
-        path="myAccount/dataSets/createDataset"
-        element={<CreateDataset />}
-      />
+      <Route path="myAccount/dataSets/createDataset"element={<CreateDataset />} />
       <Route path="myAccount/reports" element={<Reports />} />
     </Route>
+
+    {/* <Route path="LogIn" element={<Login /> } />  */}
+    <Route path="SignUp" element={<SignUp />} action={signUpAction} />
+    </>
   )
 );
 
