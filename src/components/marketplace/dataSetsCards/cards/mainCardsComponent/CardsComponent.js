@@ -47,7 +47,10 @@ export default function CardsComponent({ item }) {
         component="img"
         image={item.image}
         alt="faces"
-        sx={{ borderRadius: 3, objectFit: 'cover', maxWidth: 168, maxHeight: 95 }}
+        sx={{ borderRadius: 3, 
+          objectFit: 'cover', 
+          width: '100%', 
+          maxHeight: 95 }}
       />
      <Typography variant="body2" sx={{color: 'text.primary', mt: 3,fontFamily: 'fontFamily', fontSize: (theme) => theme.typography.body1.fontSize}} >
         {item.description} 

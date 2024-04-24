@@ -1,8 +1,6 @@
 import React from "react";
 import "./global.css";
-
 import HomePage from "./views/HomePage";
-import MarketPage from "./views/MarketPage";
 import "./App.css";
 import {
   createBrowserRouter,
@@ -11,7 +9,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import MyAccount from "./components/myAccount/MyAccount";
-
 import ConsentForm from "./components/feature/consent/ConsentForm";
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
@@ -19,13 +16,8 @@ import Reports from "./components/myAccount/reports/reportsComponent";
 // Marketplace routes
 import Carousel from "./components/marketplace/carousel/Carousel";
 import MarketplaceLayout from './components/marketplace/marketplaceLayout/MarketplaceLayout';
-import ImagesPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/ImagesPage";
-import VideoPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/VideoPage";
-import AudioPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/AudioPage";
-import OtherPage from "./components/marketplace/dataSetsCards/cards/sortedByCategoryCards/OtherPage";
-
-
-
+import CategoryDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByCategory/CategoryDisplay'
+import LicenseDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByLicense/LicenseDisplay'
 //layouts
 import RootLayout from "./layouts/RootLayout";
 // import Login from "./components/login/loginComponent";
@@ -36,7 +28,6 @@ const router = createBrowserRouter(
     <>
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<HomePage />} />
-      <Route path="market" element={<MarketPage />} />
       {/* <Route path="contacUs" element={<ContactUs />} /> */}
       {/* <Route path="FaQ" element={<FaQ />} /> */}
 

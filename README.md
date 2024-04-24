@@ -3,11 +3,6 @@
 The Everyone Store is a React.js-based e-commerce platform offering a user-friendly shopping experience with a wide range of products.
 
 
-## Project Structure
-
-* `theeveryonestore/`
-    * `client/` (Frontend codebase)
-
 ## Getting Started
 
 These instructions will guide you through getting a copy of the project up and running on your local machine for development and testing purposes.
