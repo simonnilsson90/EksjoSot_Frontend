@@ -20,8 +20,9 @@ export default function LicenceComponent() {
     setClicked(true)
     if(license.toLowerCase() === 'custom') {
       setCustomClicked(true)
-    }
-    console.log('cusomClicked')
+      navigate(`/marketplace/licence/custom`)
+     }
+    
   }
 
 

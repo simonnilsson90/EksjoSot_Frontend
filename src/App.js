@@ -20,6 +20,7 @@ import CategoryDisplay from './components/marketplace/dataSetsCards/cards/custom
 import LicenseDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByLicense/LicenseDisplay'
 //layouts
 import RootLayout from "./layouts/RootLayout";
+import PriceRangeDisplay from "./components/marketplace/dataSetsCards/cards/customCards/sortedByPriceRange/PriceRangeDisplay";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -39,6 +40,8 @@ const router = createBrowserRouter(
         <Route path="category/:categoryType" element={<CategoryDisplay />} />
         <Route path='license' element={<LicenseDisplay />} />
         <Route path="license/:license" element={<LicenseDisplay />} />
+        <Route path='license' element={<LicenseDisplay />} />
+        <Route path="license/:custom" element={<PriceRangeDisplay />} />
       </Route>
 
       <Route path="myAccount/dataSets" element={<DataSetsComponent />} />

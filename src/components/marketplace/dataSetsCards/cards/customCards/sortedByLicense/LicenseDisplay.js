@@ -9,6 +9,7 @@ import { FaCamera } from "react-icons/fa";
 import { IoIosFilm } from "react-icons/io";
 import { AiFillAudio } from "react-icons/ai";
 import { HiDotsHorizontal } from "react-icons/hi";
+import { useStore } from '../../../../stateManagement/store';
 
 const audio = AiFillAudio
 const video = IoIosFilm
@@ -18,6 +19,9 @@ const other = HiDotsHorizontal
 export default function LicenseDisplay() {
   const [favorite, setFavorite] = useState({});
   const { license } = useParams();
+  const { value } = useStore(state => ({
+    value: state.value
+  }))
 
   if (!license) {
     console.error('licenseType is undefined');
@@ -25,21 +29,19 @@ export default function LicenseDisplay() {
   }
   
   const filteredData = data.filter(item => {
-    // Ensure there is always a valid price string to work with.
-    const price = item.price || '';
-    
-    // Handling different license types.
+    const price = item.price.toLowerCase() === 'free' ? 0 : parseInt(item.price.replace(/[^0-9]/g, ''), 10) || 0;
+    const numericPrice = parseInt(price, 10);  
     switch (license.toLowerCase()) {
       case 'all':
-        return true; // Return all items.
+        return true;
       case 'free':
-        return price.toLowerCase() === 'free'; // Return items that are explicitly marked as free.
+        return price.toLowerCase() === 'free';
       case 'paid':
-        return !price.toLowerCase().includes('free'); // Return items that do not include the word "free".
-        case 'custom':
-          return true;
+        return numericPrice > 0;
+      case 'custom':
+        return numericPrice >= value[0] && numericPrice <= value[1];  // Filter items within the selected price range
       default:
-        return price.toLowerCase().includes(license.toLowerCase()); // For any other license type, return items that include the license keyword in their price.
+        return item.price.toLowerCase().includes(license.toLowerCase());
     }
   });
   

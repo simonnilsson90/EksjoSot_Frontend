@@ -9,19 +9,26 @@ import { FaCamera } from "react-icons/fa";
 import { IoIosFilm } from "react-icons/io";
 import { AiFillAudio } from "react-icons/ai";
 import { HiDotsHorizontal } from "react-icons/hi";
+import { useStore } from '../../../../stateManagement/store';
 
-const audio = AiFillAudio
-const video = IoIosFilm
-const image = FaCamera
-const other = HiDotsHorizontal
 
-export default function CategoryDisplay() {
+
+export default function PriceRangeDisplay() {
   const [favorite, setFavorite] = useState({});
-  const { categoryType } = useParams();
+  const { license } = useParams();
+  const { value } = useStore()
+
+  if (!license) {
+    console.error('licenseType is undefined');
+    return <Typography variant="h6">Invalid license type specified.</Typography>;
+  }
   
-  const filteredData = data.filter(item => item.type.toLowerCase() === categoryType.toLowerCase())
-   
-  console.log("Category Type from URL:", categoryType);
+  const filteredData = data.filter(item => item.price.toLowerCase() === value)
+  
+  
+
+  console.log("license Type from URL:", license);
+  console.log("Filtered Data:", filteredData);
 
   const toggleFavorite = (i) => {
     setFavorite(prevFavorite => ({
@@ -32,7 +39,7 @@ export default function CategoryDisplay() {
 
   // Check if there's any data to display
   if (!filteredData.length) {
-    return <Typography variant="h5" sx={{ mt: 4, textAlign: 'center' }}>No data available for this category.</Typography>;
+    return <Typography variant="h5" sx={{ mt: 4, textAlign: 'center' }}>No data available for this license.</Typography>;
   }
 
   

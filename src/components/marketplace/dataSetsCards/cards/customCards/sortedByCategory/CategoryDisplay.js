@@ -11,7 +11,7 @@ import { AiFillAudio } from "react-icons/ai";
 import { HiDotsHorizontal } from "react-icons/hi";
 
 const categoryIcons = {
-  images: FaCamera,  // Assuming 'images' is a category type in your data
+  images: FaCamera, 
   video: IoIosFilm,
   audio: AiFillAudio,
   other: HiDotsHorizontal

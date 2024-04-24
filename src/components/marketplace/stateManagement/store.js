@@ -21,6 +21,9 @@ export const useStore = create(set => ({
   // Price range value
   value: [0, 300],
   setValue: value => set({value}),
+
+  // State for marking items as favorite
+
   
 }));
 
