@@ -10,10 +10,12 @@ import { IoIosFilm } from "react-icons/io";
 import { AiFillAudio } from "react-icons/ai";
 import { HiDotsHorizontal } from "react-icons/hi";
 
-const audio = AiFillAudio
-const video = IoIosFilm
-const image = FaCamera
-const other = HiDotsHorizontal
+const categoryIcons = {
+  images: FaCamera,  // Assuming 'images' is a category type in your data
+  video: IoIosFilm,
+  audio: AiFillAudio,
+  other: HiDotsHorizontal
+};
 
 export default function CategoryDisplay() {
   const [favorite, setFavorite] = useState({});
@@ -22,6 +24,8 @@ export default function CategoryDisplay() {
   const filteredData = data.filter(item => item.type.toLowerCase() === categoryType.toLowerCase())
    
   console.log("Category Type from URL:", categoryType);
+
+  const iconComponent = categoryIcons[categoryType.toLowerCase() || HiDotsHorizontal]
 
   const toggleFavorite = (i) => {
     setFavorite(prevFavorite => ({
@@ -44,13 +48,12 @@ export default function CategoryDisplay() {
       }}>
             
    <Grid container spacing={5}>
-        <Grid item xs={12} sx={{ height: '5%' }}>
-          {/* <ResponsiveIcon Icon={filteredData.icon} style={{ marginTop: '25px', marginLeft: '20px'}} text={ */}
-          <Typography sx={{ fontWeight: 'bold' }}>{filteredData.type}</Typography>
-        {/* }
-          textStyle={{fontSize: theme.typography.body1.fontSize}}/> */}
 
+        <Grid item xs={12} sx={{ height: '5%', mt: 2, mb: 5 }}>
+          <ResponsiveIcon Icon={iconComponent} style={{ marginTop: '25px', marginLeft: '20px'}} 
+          text={ <Typography sx={{ fontWeight: 'bold', textTransform: 'uppercase', ml: 5 }}>{categoryType}</Typography> } />
         </Grid>   
+
         {filteredData.map((item, i) => (
           <Grid item xs={12} sm={6} md={4} lg={2.3} key={i}>
             <Card sx={{ 
@@ -60,7 +63,7 @@ export default function CategoryDisplay() {
               objectFit: 'cover', 
               height: 250, 
               alignItems: 'center', 
-              bgcolor: theme.palette.background.default,
+              bgcolor:  theme.palette.background.default,
               mb: 3, 
               mt: 3,
               ml: 3,

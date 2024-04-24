@@ -36,6 +36,8 @@ export default function LicenseDisplay() {
         return price.toLowerCase() === 'free'; // Return items that are explicitly marked as free.
       case 'paid':
         return !price.toLowerCase().includes('free'); // Return items that do not include the word "free".
+        case 'custom':
+          return true;
       default:
         return price.toLowerCase().includes(license.toLowerCase()); // For any other license type, return items that include the license keyword in their price.
     }

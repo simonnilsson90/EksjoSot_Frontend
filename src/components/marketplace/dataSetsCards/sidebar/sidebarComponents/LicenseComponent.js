@@ -2,11 +2,12 @@ import {Box, Typography, Button} from '@mui/material';
 import ResponsiveButton from '../../../customIcons/ResponsiveButton';
 import { useStore } from '../../../stateManagement/store';
 import { useNavigate, Link } from 'react-router-dom';
+import StyledNavLink from '../../../customIcons/StyledNavLink';
 
 
 
 export default function LicenceComponent() {
-  const { setActiveLicense } = useStore();
+  const { setActiveLicense, setClicked, setCustomClicked } = useStore();
   const navigate = useNavigate();
 
 
@@ -16,6 +17,11 @@ export default function LicenceComponent() {
     setActiveLicense(license);
     navigate(`/marketplace/licence/${license.toLowerCase()}`)
     console.log('license clicked!')
+    setClicked(true)
+    if(license.toLowerCase() === 'custom') {
+      setCustomClicked(true)
+    }
+    console.log('cusomClicked')
   }
 
 
@@ -30,22 +36,21 @@ export default function LicenceComponent() {
         }}
       >
         <Box sx={{ p: 2 }}>
-          <Typography level="h1" fontWeight={700}>Licence</Typography>
+          <Typography level="h1" sx={{fontWeight: 700, textTransform: 'uppercase'}} >License</Typography>
         </Box>
         
         {typeDescription.map((item, i) => (
-        <Link 
+        <StyledNavLink 
         to={`/marketplace/license/${item.license.toLowerCase()}`} 
         key={i} 
-        style={{textDecoration: 'none', color: 'inherit' 
-        }}>
+        >
           <ResponsiveButton
           label={item.license}
           onClick={() => handleSortByLicense(item.license)}
           variant="outlined"
           fullWidth={true}
         />
-        </Link>
+        </StyledNavLink>
         ))}
         
       </Box>

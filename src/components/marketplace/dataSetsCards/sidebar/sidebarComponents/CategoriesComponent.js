@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Box, Typography, Grid } from '@mui/material';
 import { AiFillAudio } from "react-icons/ai";
 import { HiDotsHorizontal } from "react-icons/hi";
@@ -7,6 +8,7 @@ import { useMediaQuery, useTheme } from '@mui/material';
 import ResponsiveIcon from '../../../customIcons/ResponsiveIcon';
 import { useStore } from '../../../stateManagement/store';
 import { useNavigate, NavLink } from 'react-router-dom';
+import StyledNavLink from '../../../customIcons/StyledNavLink';
 
 
 
@@ -19,7 +21,8 @@ const typeIcons = [
 ];
 
 export default function CategoriesComponent() {
-  const { setActiveCategory } = useStore();
+
+  const { clicked, setClicked, setActiveCategory } = useStore();
   const navigate = useNavigate();
 
   const theme = useTheme();
@@ -29,6 +32,7 @@ export default function CategoriesComponent() {
     setActiveCategory(type);
     navigate(`/marketplace/category/${type.toLowerCase()}`);
     console.log('handleSortByCategory clicked!')
+    setClicked(true)
   }
 
 
@@ -37,23 +41,20 @@ export default function CategoriesComponent() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: 'transparent',
+        backgroundColor: 'inherit' ,
         borderRadius: 1,
         width: '90%',
         p: 0,
+        // shadow: clicked ? '10px 5px 5px #a96120' : 'inherit'
         }}
     >
-        <Typography level="h1" fontWeight={700} sx={{ p: 2 }}>
+        <Typography level="h1" fontWeight={700} sx={{ p: 2, textTransform: 'uppercase' }}>
           Categories
         </Typography>
       {typeIcons.map((item, index) => (
-  <NavLink 
+  <StyledNavLink 
   to={`/marketplace/category/${item.type.toLowerCase()}`} 
   key={index} 
-  style={({ isActive }) => ({
-    textDecoration: 'none',
-    color: isActive ? '#a96120' : 'inherit'  // Conditional color change
-  })}
   >
            <Grid container
             onClick={() => handleSortByCategory(item.type)}
@@ -61,11 +62,12 @@ export default function CategoriesComponent() {
             alignItems: 'center', 
             width: '90%',  
             backgroundColor: '#fff', 
-            borderColor: 'black',
+            borderColor: clicked ? '#a96120' : 'black',
             p: 1,
             m: 1,
             borderWidth: 1, 
-            borderStyle: 'solid',
+            borderStyle: clicked ? '#a96120 solid 5px' : 'solid',
+
             borderRadius: 2}}
           >
             <Grid sx={{ display: 'flex', mr: 4, ml: 2 }}>
@@ -77,7 +79,7 @@ export default function CategoriesComponent() {
             }
             
           </Grid>            
-          </NavLink>
+          </StyledNavLink>
 
         ))}
     </Box>

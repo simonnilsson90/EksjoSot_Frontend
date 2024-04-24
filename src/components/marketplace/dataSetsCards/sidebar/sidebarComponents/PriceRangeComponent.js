@@ -3,6 +3,7 @@ import { useState } from 'react'
 import {Box, Typography} from '@mui/material';
 import Slider from '@mui/material/Slider';
 import { useTheme } from '@mui/material/styles';
+import { useStore } from '../../../stateManagement/store';
 
 
 
@@ -34,9 +35,14 @@ Item.propTypes = {
 
 
 export default function PriceRange() {
-    const [value, setValue] =useState([0, 1000]);
-    const theme = useTheme();
 
+  const theme = useTheme();
+ 
+  const { value, setValue } = useStore( state => ({
+    value: state.value,
+    setValue: state.setValue
+  }));
+ 
     
 function valuetext(value) {
     return `${value}$`;
@@ -59,13 +65,13 @@ function valuetext(value) {
         }}
       >
         <Box sx={{p:2}} >
-           <Typography level="h1" fontWeight={700}>Price Range</Typography>
+           <Typography level="h1" sx={{fontWeight: 700, textTransform: 'uppercase'}}>Price Range</Typography>
         </Box>
        
        <Item sx={{p: 2}}>
               <Slider
-          getAriaLabel={() => 'range'}
-          max={10000}
+          getAriaLabel={() => 'Price range'}
+          max={300}
           value={value}
           onChange={handleChange}
           valueLabelDisplay="auto"
