@@ -36,11 +36,11 @@ const router = createBrowserRouter(
       <Route path="consentForm" element={<ConsentForm />} />
 
       <Route path="marketplace" element={<MarketplaceLayout />} >
-        <Route path="carousel" element={<Carousel />} />
-        <Route path="images" element={<ImagesPage />} />
-        <Route path="audio" element={<AudioPage />} />
-        <Route path="video" element={<VideoPage />} />
-        <Route path="other" element={<OtherPage />} />
+      <Route index element={<Carousel />} />
+        <Route path='category' element={<CategoryDisplay />} />
+        <Route path="category/:categoryType" element={<CategoryDisplay />} />
+        <Route path='license' element={<LicenseDisplay />} />
+        <Route path="license/:license" element={<LicenseDisplay />} />
       </Route>
 
       <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
