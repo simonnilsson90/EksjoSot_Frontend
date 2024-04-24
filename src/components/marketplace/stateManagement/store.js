@@ -15,8 +15,8 @@ export const useStore = create(set => ({
   setClicked: (clicked) => set({ clicked }),
 
   //state when custom license is clicked
-  customClicked: false,
-  setCustomClicked: (customClicked) => set({ customClicked }),
+  customLicenseClicked: false,
+  setCustomLicenseClicked: (customLicenseClicked) => set({ customLicenseClicked }),
 
   // Price range value
   value: [0, 300],

@@ -7,7 +7,10 @@ import StyledNavLink from '../../../customIcons/StyledNavLink';
 
 
 export default function LicenceComponent() {
-  const { setActiveLicense, setClicked, setCustomClicked } = useStore();
+  const { setActiveLicense, setClicked } = useStore();
+  const { setCustomLicenseClicked } = useStore(state => 
+    ({ setCustomLicenseClicked: state.setCustomLicenseClicked
+    }));
   const navigate = useNavigate();
 
 
@@ -17,12 +20,12 @@ export default function LicenceComponent() {
     setActiveLicense(license);
     navigate(`/marketplace/licence/${license.toLowerCase()}`)
     console.log('license clicked!')
-    setClicked(true)
+    setClicked(true) 
     if(license.toLowerCase() === 'custom') {
-      setCustomClicked(true)
-      navigate(`/marketplace/licence/custom`)
-     }
-    
+      setCustomLicenseClicked(true)
+    } else {
+      setCustomLicenseClicked(false)
+    }
   }
 
 

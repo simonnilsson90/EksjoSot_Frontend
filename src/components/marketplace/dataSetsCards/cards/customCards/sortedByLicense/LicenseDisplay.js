@@ -11,11 +11,6 @@ import { AiFillAudio } from "react-icons/ai";
 import { HiDotsHorizontal } from "react-icons/hi";
 import { useStore } from '../../../../stateManagement/store';
 
-const audio = AiFillAudio
-const video = IoIosFilm
-const image = FaCamera
-const other = HiDotsHorizontal
-
 export default function LicenseDisplay() {
   const [favorite, setFavorite] = useState({});
   const { license } = useParams();
@@ -29,27 +24,27 @@ export default function LicenseDisplay() {
   }
   
   const filteredData = data.filter(item => {
-    const price = item.price.toLowerCase() === 'free' ? 0 : parseInt(item.price.replace(/[^0-9]/g, ''), 10) || 0;
-    const numericPrice = parseInt(price, 10);  
+    let numericPrice = 0  
+    if(item.price.toLowerCase() === 'free') {
+      numericPrice = 0
+    } else if (item.price.includes('$')) {
+      numericPrice = parseInt(item.price.replace(/\$/g, ''), 10);
+    }
+
     switch (license.toLowerCase()) {
       case 'all':
         return true;
       case 'free':
-        return price.toLowerCase() === 'free';
+        return numericPrice === 0;
       case 'paid':
         return numericPrice > 0;
       case 'custom':
-        return numericPrice >= value[0] && numericPrice <= value[1];  // Filter items within the selected price range
+        return numericPrice >= value[0] && numericPrice <= value[1];  
       default:
         return item.price.toLowerCase().includes(license.toLowerCase());
     }
   });
   
-  
-
-  console.log("license Type from URL:", license);
-  console.log("Filtered Data:", filteredData);
-
   const toggleFavorite = (i) => {
     setFavorite(prevFavorite => ({
       ...prevFavorite,
