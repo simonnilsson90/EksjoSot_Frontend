@@ -49,7 +49,7 @@ function Navbar() {
             </Link>
           </li>
           <li className="navbarLink">
-            <Link to="/market">Marketplace</Link>
+            <Link to="/marketplace">Marketplace</Link>
           </li>
 
           <li className="navbarLink">

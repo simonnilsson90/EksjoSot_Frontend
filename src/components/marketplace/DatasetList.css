@@ -1,6 +1,0 @@
-#dataset-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Adjust the gap between cards */
-  margin: 20px;
-}

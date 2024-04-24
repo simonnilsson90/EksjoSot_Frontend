@@ -11,29 +11,39 @@ function randomNum() {
 }
 
 const images = [img__1, img__2, img__3, img__4, img__5, img__6,img__7];
+const getRandomPrice = () => {
+  // 20% chance the item is free
+  return Math.random() < 0.2 ? "Free" : `${Math.floor(Math.random() * 150 + 50)}$`;
+};
+
+const getRandomSeller = () => {
+  const sellers = ["Alice", "Bob", "Charlie", "Dana", "Eli", "Faith", "George", "Hannah"];
+  return sellers[Math.floor(Math.random() * sellers.length)];
+};
+
 
 const data = [
-    { "description": "Celebrity Photoshoots", "type": "Images", "price": "100$", "image": images[randomNum()] },
-    { "description": "Fashion Show Clips", "type": "Video", "price": "150$", "image": images[randomNum()] },
-    { "description": "Street Food Documentary", "type": "Video", "price": "80$", "image": images[randomNum()] },
-    { "description": "Animal Soundscapes", "type": "Audio", "price": "120$", "image": images[randomNum()]},
-    { "description": "Nature Scenery Wallpapers", "type": "Images", "price": "90$", "image": images[randomNum()] },
-    { "description": "Sports Event Highlights", "type": "Video", "price": "110$", "image": images[randomNum()] },
-    { "description": "City Skyline Timelapses", "type": "Video", "price": "130$", "image": images[randomNum()]},
-    { "description": "Vintage Car Engine Sounds", "type": "Audio", "price": "70$", "image": images[randomNum()]},
-    { "description": "Movie Soundtracks", "type": "Audio", "price": "140$", "image": images[randomNum()]},
-    { "description": "Cartoon Character Designs", "type": "Images", "price": "100$", "image": images[randomNum()]},
-    { "description": "Abstract Digital Art", "type": "Other", "price": "160$", "image": images[randomNum()] },
-    { "description": "Historical Landmark Guides", "type": "Other", "price": "180$", "image": images[randomNum()]},
-    { "description": "Music Artist Interviews", "type": "Video", "price": "200$", "image": images[randomNum()]},
-    { "description": "Travel Destination Podcasts", "type": "Audio", "price": "100$", "image": images[randomNum()] },
-    { "description": "Technology Gadgets Review", "type": "Video", "price": "150$", "image": images[randomNum()] },
-    { "description": "Wildlife Photography Collection", "type": "Images", "price": "120$", "image": images[randomNum()]},
-    { "description": "Space Exploration VR Experiences", "type": "Other", "price": "90$", "image": images[randomNum()]},
-    { "description": "Fantasy Creature Illustrations", "type": "Images", "price": "110$", "image": images[randomNum()] },
-    { "description": "Famous Landscape Posters", "type": "Images", "price": "130$", "image": images[randomNum()]},
-    { "description": "Cultural Festival Recordings", "type": "Audio", "price": "70$", "image": images[randomNum()]}
-  ];
-  
+  { "description": "Celebrity Photoshoots", "type": "Images", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Fashion Show Clips", "type": "Video", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Street Food Documentary", "type": "Video", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Animal Soundscapes", "type": "Audio", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Nature Scenery Wallpapers", "type": "Images", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Sports Event Highlights", "type": "Video", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "City Skyline Timelapses", "type": "Video", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Vintage Car Engine Sounds", "type": "Audio", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Movie Soundtracks", "type": "Audio", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Cartoon Character Designs", "type": "Images", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Abstract Digital Art", "type": "Other", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Historical Landmark Guides", "type": "Other", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Music Artist Interviews", "type": "Video", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Travel Destination Podcasts", "type": "Audio", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Technology Gadgets Review", "type": "Video", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Wildlife Photography Collection", "type": "Images", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Space Exploration VR Experiences", "type": "Other", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Fantasy Creature Illustrations", "type": "Images", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Famous Landscape Posters", "type": "Images", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() },
+  { "description": "Cultural Festival Recordings", "type": "Audio", "image": images[randomNum()], "price": getRandomPrice(), "seller": getRandomSeller() }
+];
+
 
 export default data;
