@@ -62,8 +62,8 @@ function Navbar() {
             <Link to="/FaQ">FaQ</Link>
           </li>
           <li className="navbarLink">
-            <Button onClick={toggleDrawer(true)}>
-              <img src={UserPic} width={30} height={30} alt="User" />
+            <Button className="navbarLinkLogIn" onClick={toggleDrawer(true)}>
+              <img src={UserPic} width={25} height={25} alt="User" />
               <p>Login</p>
             </Button>
             <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
