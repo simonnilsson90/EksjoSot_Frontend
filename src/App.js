@@ -20,21 +20,23 @@ import CategoryDisplay from './components/marketplace/dataSetsCards/cards/custom
 import LicenseDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByLicense/LicenseDisplay'
 //layouts
 import RootLayout from "./layouts/RootLayout";
+// import Login from "./components/login/loginComponent";
+ import SignUp, { signUpAction } from "./components/signUp/SignUp";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    <>
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<HomePage />} />
       {/* <Route path="contacUs" element={<ContactUs />} /> */}
       {/* <Route path="FaQ" element={<FaQ />} /> */}
 
       {/* <Route path="shopping-bag" element={<Shopping />} /> */}
-
       <Route path="myAccount" element={<MyAccount />} />
       <Route path="consentForm" element={<ConsentForm />} />
 
       <Route path="marketplace" element={<MarketplaceLayout />} >
-        <Route index element={<Carousel />} />
+      <Route index element={<Carousel />} />
         <Route path='category' element={<CategoryDisplay />} />
         <Route path="category/:categoryType" element={<CategoryDisplay />} />
         <Route path='license' element={<LicenseDisplay />} />
@@ -42,12 +44,13 @@ const router = createBrowserRouter(
        </Route>
 
       <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
-      <Route
-        path="myAccount/dataSets/createDataset"
-        element={<CreateDataset />}
-      />
+      <Route path="myAccount/dataSets/createDataset"element={<CreateDataset />} />
       <Route path="myAccount/reports" element={<Reports />} />
     </Route>
+
+    {/* <Route path="LogIn" element={<Login /> } />  */}
+    <Route path="SignUp" element={<SignUp />} action={signUpAction} />
+    </>
   )
 );
 

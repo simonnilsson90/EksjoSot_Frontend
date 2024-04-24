@@ -1,0 +1,102 @@
+.form {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.buttonStyle {
+    background-color: rgba(242, 139, 48, 1);
+    color: "black";
+    margin-top: 40px;
+    text-transform: none !important;
+    width: 100%;
+}
+
+.buttonStyle:hover {
+    background-color: rgba(200, 100, 50, 1);
+}
+
+.close {
+    color: white;
+}
+
+.headline {
+    font-size: 14px;
+    margin: auto;
+    margin-top: 23px;
+}
+
+.smallText {
+    font-size: 10px;
+    margin-top: 19px;
+}
+
+.input {
+    height: 34px;
+    margin-top: 1px;
+    width: 100%;
+}
+
+.name { 
+    font-size: 9px;
+    margin-top: 30px;
+}
+
+.email {
+    font-size: 9px;
+    margin-top: 30px;
+}
+
+.password {
+    font-size: 9px;
+    margin-top: 30px;
+}
+
+.passwordContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.passwordIcons {
+    color: black;
+    font-size: larger;
+    position: absolute;
+    right: 10%;
+    padding-top: 2px;
+}
+
+.rePassword {
+    font-size: 9px;
+    margin-top: 30px;
+}
+
+.groupStyle {
+    padding-top: var(--padding-s);
+}
+
+.forgot {
+    align-items: center;
+    display: flex;
+    font-size: 9px;
+    justify-content: space-between;
+    padding-top: var(--padding-base);
+    width: 100%;
+}
+
+.policy {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 9px;
+    padding-top: var(--padding-base);
+}
+
+.clickRemember {
+    align-items: center;
+    display: flex;
+}
+
+.checkbox {
+    color: var(--c-light-text);
+    background-color: transparent;
+}
+
