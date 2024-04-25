@@ -13,9 +13,6 @@ export const signUpAction = async ({ request }) => {
   const data = await request.formData();
 
   const submission = {
-    username: data.get("username"),
-    firstName: data.get("firstName"),
-    lastName: data.get("lastName"),
     email: data.get("email"),
     password: data.get("password"),
     password_confirmation: data.get("password_confirmation"),
@@ -90,32 +87,13 @@ const SignUp = ({ onClose }) => {
 
         <Form method="post" action="/SignUp" className={Styles.form}>
           <div>
-            <span className={Styles.name}>User Name</span>
+            <span className={Styles.name}>
+              User Name (Not needed right now)
+            </span>
             <input
               type="text"
               name="username"
               id="username"
-              required
-              className={Styles.input}
-            />
-          </div>
-          <div>
-            <span className={Styles.name}>First Name</span>
-            <input
-              type="text"
-              name="firstName"
-              id="firstName"
-              required
-              className={Styles.input}
-            />
-          </div>
-          <div>
-            <span className={Styles.name}>Last Name</span>
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              required
               className={Styles.input}
             />
           </div>
