@@ -8,20 +8,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-
 import MyAccount from "./components/myAccount/MyAccount";
 import ConsentForm from "./components/feature/consent/ConsentForm";
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
 import Reports from "./components/myAccount/reports/reportsComponent";
-
-//layouts
 import RootLayout from "./layouts/RootLayout";
-
-//pages
 import HomePage from "./views/HomePage";
-
-      // Marketplace routes
 import Carousel from "./components/marketplace/carousel/Carousel";
 import MarketplaceLayout from './components/marketplace/marketplaceLayout/MarketplaceLayout';
 import CategoryDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByCategory/CategoryDisplay'
@@ -41,11 +34,9 @@ const router = createBrowserRouter(
       <Route path="about" element={<AboutUs />} />
       <Route path="contactUs" element={<ContactUs />} />
       <Route path="FaQ" element={<Faq />} />
-
-      <Route path="myShopping" element={<Shopping />} /> 
+      <Route path="myShopping" element={<Shopping />} />
       <Route path="myAccount" element={<MyAccount />} />
       <Route path="consentForm" element={<ConsentForm />} />
-
       <Route path="marketplace" element={<MarketplaceLayout />} >
       <Route index element={<Carousel />} />
         <Route path='category' element={<CategoryDisplay />} />
@@ -55,11 +46,11 @@ const router = createBrowserRouter(
        </Route>
 
       <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
-      <Route path="myAccount/dataSets/createDataset"element={<CreateDataset />} />
+      <Route path="myAccount/dataSets/createDataset" element={<CreateDataset />} />
       <Route path="myAccount/reports" element={<Reports />} />
     </Route>
 
-    
+
     <Route path="SignUp" element={<SignUp />} action={signUpAction} />
     </>
   )
