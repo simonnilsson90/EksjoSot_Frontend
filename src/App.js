@@ -1,6 +1,5 @@
 import React from "react";
 import "./global.css";
-import HomePage from "./views/HomePage";
 import "./App.css";
 import {
   createBrowserRouter,
@@ -8,30 +7,42 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+
+
 import MyAccount from "./components/myAccount/MyAccount";
 import ConsentForm from "./components/feature/consent/ConsentForm";
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
 import Reports from "./components/myAccount/reports/reportsComponent";
-// Marketplace routes
+
+//layouts
+import RootLayout from "./layouts/RootLayout";
+
+//pages
+import HomePage from "./views/HomePage";
+
+      // Marketplace routes
 import Carousel from "./components/marketplace/carousel/Carousel";
 import MarketplaceLayout from './components/marketplace/marketplaceLayout/MarketplaceLayout';
 import CategoryDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByCategory/CategoryDisplay'
 import LicenseDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByLicense/LicenseDisplay'
-//layouts
-import RootLayout from "./layouts/RootLayout";
-// import Login from "./components/login/loginComponent";
- import SignUp, { signUpAction } from "./components/signUp/SignUp";
+
+import AboutUs from "./components/aboutUs/AboutUs";
+import ContactUs from "./components/contact/ContactUs"
+import Faq from "./components/faq/Faq"
+import SignUp, { signUpAction } from "./components/signUp/SignUp";
+import Shopping from "./components/shopping/Shopping"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<HomePage />} />
-      {/* <Route path="contacUs" element={<ContactUs />} /> */}
-      {/* <Route path="FaQ" element={<FaQ />} /> */}
+      <Route path="about" element={<AboutUs />} />
+      <Route path="contactUs" element={<ContactUs />} />
+      <Route path="FaQ" element={<Faq />} />
 
-      {/* <Route path="shopping-bag" element={<Shopping />} /> */}
+      <Route path="myShopping" element={<Shopping />} /> 
       <Route path="myAccount" element={<MyAccount />} />
       <Route path="consentForm" element={<ConsentForm />} />
 
@@ -48,7 +59,7 @@ const router = createBrowserRouter(
       <Route path="myAccount/reports" element={<Reports />} />
     </Route>
 
-    {/* <Route path="LogIn" element={<Login /> } />  */}
+    
     <Route path="SignUp" element={<SignUp />} action={signUpAction} />
     </>
   )
