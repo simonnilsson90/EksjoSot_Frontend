@@ -13,12 +13,12 @@ import ConsentForm from "./components/feature/consent/ConsentForm";
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
 import Reports from "./components/myAccount/reports/reportsComponent";
+import ContactUs from "./components/feature/contact/ContactUs";
 // Marketplace routes
-import Carousel from "./components/marketplace/carousel/Carousel";
+import Carousel from "./components/marketplace/dataSetCards/carousel/Carousel";
 import MarketplaceLayout from './components/marketplace/marketplaceLayout/MarketplaceLayout';
-import CategoryDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByCategory/CategoryDisplay'
-import LicenseDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByLicense/LicenseDisplay'
-import ContactUs from './components/feature/contact/ContactUs'
+import FilteredCategory from './components/marketplace/dataSetCards/FilteredCategory'
+import FilteredLicense from './components/marketplace/dataSetCards/FilteredLicense'
 //layouts
 import RootLayout from "./layouts/RootLayout";
 // import Login from "./components/login/loginComponent";
@@ -38,10 +38,10 @@ const router = createBrowserRouter(
 
       <Route path="marketplace" element={<MarketplaceLayout />} >
       <Route index element={<Carousel />} />
-        <Route path='category' element={<CategoryDisplay />} />
-        <Route path="category/:categoryType" element={<CategoryDisplay />} />
-        <Route path='license' element={<LicenseDisplay />} />
-        <Route path="license/:license" element={<LicenseDisplay />} />
+        <Route path='category' element={<FilteredCategory />} />
+        <Route path="category/:categoryType" element={<FilteredCategory />} />
+        <Route path='license' element={<FilteredLicense />} />
+        <Route path="license/:license" element={<FilteredLicense />} />
        </Route>
 
       <Route path="myAccount/dataSets" element={<DataSetsComponent />} />

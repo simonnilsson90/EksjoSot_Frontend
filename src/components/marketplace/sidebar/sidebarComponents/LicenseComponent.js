@@ -1,8 +1,8 @@
 import {Box, Typography, Button} from '@mui/material';
-import ResponsiveButton from '../../../customIcons/ResponsiveButton';
-import { useStore } from '../../../stateManagement/store';
+import ResponsiveButton from '../../customIcons/ResponsiveButton';
+import { useStore } from '../../stateManagement/store';
 import { useNavigate, Link } from 'react-router-dom';
-import StyledNavLink from '../../../customIcons/StyledNavLink';
+import StyledNavLink from '../../customIcons/StyledNavLink';
 
 
 

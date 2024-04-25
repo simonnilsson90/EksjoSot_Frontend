@@ -4,9 +4,9 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
-import theme from '../../theme/Theme';
+import theme from '../theme/Theme';
 import { Box } from '@mui/material';
-import HeartIcon from '../../../customIcons/HeartIcon';
+import HeartIcon from '../customIcons/HeartIcon';
 
 
 export default function CardsComponent({ item }) {

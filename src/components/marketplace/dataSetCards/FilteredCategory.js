@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Card, CardMedia, Typography, Grid, Box, CardActions, CardContent } from '@mui/material';
-import data from '../../../../../../data/dataArray'; // Ensure path is correct
-import HeartIcon from '../../../../customIcons/HeartIcon';
+import data from '../../../data/dataArray';
+import HeartIcon from '../customIcons/HeartIcon';
 import { useParams } from 'react-router-dom';
-import theme from '../../../theme/Theme';
-import ResponsiveIcon from '../../../../customIcons/ResponsiveIcon';
+import theme from '../theme/Theme';
+import ResponsiveIcon from '../customIcons/ResponsiveIcon';
 import { FaCamera } from "react-icons/fa";
 import { IoIosFilm } from "react-icons/io";
 import { AiFillAudio } from "react-icons/ai";
