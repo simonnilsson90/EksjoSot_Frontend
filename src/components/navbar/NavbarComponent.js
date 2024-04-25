@@ -53,7 +53,7 @@ function Navbar() {
           </li>
 
           <li className="navbarLink">
-            <Link to="/aboutUs">About Us</Link>
+            <Link to="/about">About Us</Link>
           </li>
           <li className="navbarLink">
             <Link to="/contactUs">Contact Us</Link>
@@ -73,7 +73,7 @@ function Navbar() {
             </Drawer>
           </li>
           <li>
-            <Link id="shoppingBag" to="/myShopping">
+            <Link to="/myShopping">
               <img
                 src={"/shopping-bag.svg"}
                 width={25}
