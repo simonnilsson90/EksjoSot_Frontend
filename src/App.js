@@ -18,6 +18,7 @@ import Carousel from "./components/marketplace/carousel/Carousel";
 import MarketplaceLayout from './components/marketplace/marketplaceLayout/MarketplaceLayout';
 import CategoryDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByCategory/CategoryDisplay'
 import LicenseDisplay from './components/marketplace/dataSetsCards/cards/customCards/sortedByLicense/LicenseDisplay'
+import ContactUs from './components/feature/contact/ContactUs'
 //layouts
 import RootLayout from "./layouts/RootLayout";
 // import Login from "./components/login/loginComponent";
@@ -28,7 +29,7 @@ const router = createBrowserRouter(
     <>
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<HomePage />} />
-      {/* <Route path="contacUs" element={<ContactUs />} /> */}
+      <Route path="contactUs" element={<ContactUs />} /> 
       {/* <Route path="FaQ" element={<FaQ />} /> */}
 
       {/* <Route path="shopping-bag" element={<Shopping />} /> */}
