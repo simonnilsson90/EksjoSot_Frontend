@@ -7,7 +7,7 @@ import LicenceComponent from './sidebarComponents/LicenseComponent';
 import CategoriesComponent from './sidebarComponents/CategoriesComponent';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useStore } from '../../stateManagement/store';
+import { useStore } from '../stateManagement/store';
 
 export default function Sidebar() {
   const { customLicenseClicked } = useStore(state => ({ customLicenseClicked: state.customLicenseClicked }));

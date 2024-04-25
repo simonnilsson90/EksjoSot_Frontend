@@ -1,18 +1,18 @@
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
-import data from '../../../data/dataArray';
+import data from '../../../../data/dataArray';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './carousel.css'; 
-import ResponsiveIcon from '../customIcons/ResponsiveIcon';
+import ResponsiveIcon from '../../customIcons/ResponsiveIcon';
 import { FaCamera } from "react-icons/fa";
 import { IoIosFilm } from "react-icons/io";
 import { AiFillAudio } from "react-icons/ai";
 import { HiDotsHorizontal } from "react-icons/hi";
-import CardsComponent from "../dataSetsCards/cards/mainCardsComponent/CardsComponent";
-import theme from '../dataSetsCards/theme/Theme';
+import MainCardComponent from '../MainCardComponent'
+import theme from '../../theme/Theme'
 import { Typography } from "@mui/material";
-import { PrevArrow, NextArrow } from "../customIcons/CustonArrows";
+import { PrevArrow, NextArrow } from "../../customIcons/CustonArrows";
 
 
 export default function carousel() {
@@ -79,7 +79,7 @@ textStyle={{fontSize: theme.typography.body1.fontSize}}/>
       
         <Slider {...settings} >
           {imageData.map((item, index) => (
-            <CardsComponent key={index} item={item} />
+            <MainCardComponent key={index} item={item} />
           ))}
         </Slider>
       </div>
@@ -90,7 +90,7 @@ textStyle={{fontSize: theme.typography.body1.fontSize}}/>
 textStyle={{fontSize: theme.typography.body1.fontSize}}/>
          <Slider {...settings}>
           {audioData.map((item, index) => (
-            <CardsComponent key={index} item={item} />
+            <MainCardComponent key={index} item={item} />
           ))}
         </Slider>
       </div>
@@ -103,7 +103,7 @@ textStyle={{fontSize: theme.typography.body1.fontSize}}/>
 
         <Slider {...settings}>
           {videoData.map((item, index) => (
-            <CardsComponent key={index} item={item} />
+            <MainCardComponent key={index} item={item} />
           ))}
         </Slider>
       </div>
@@ -117,7 +117,7 @@ textStyle={{fontSize: theme.typography.body1.fontSize}}/>
       textStyle={{fontSize: theme.typography.body1.fontSize}}/>
         <Slider {...settings}>
           {otherData.map((item, index) => (
-            <CardsComponent key={index} item={item} />
+            <MainCardComponent key={index} item={item} />
           ))}
         </Slider>
       </div> 

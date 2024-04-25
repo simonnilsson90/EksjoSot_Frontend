@@ -5,10 +5,10 @@ import { HiDotsHorizontal } from "react-icons/hi";
 import { FaCamera } from "react-icons/fa";
 import { IoIosFilm } from "react-icons/io";
 import { useMediaQuery, useTheme } from '@mui/material';
-import ResponsiveIcon from '../../../customIcons/ResponsiveIcon';
-import { useStore } from '../../../stateManagement/store';
+import ResponsiveIcon from '../../customIcons/ResponsiveIcon';
+import { useStore } from '../../stateManagement/store';
 import { useNavigate, NavLink } from 'react-router-dom';
-import StyledNavLink from '../../../customIcons/StyledNavLink';
+import StyledNavLink from '../../customIcons/StyledNavLink';
 
 
 

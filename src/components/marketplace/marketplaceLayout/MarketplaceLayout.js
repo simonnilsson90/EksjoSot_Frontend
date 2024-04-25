@@ -1,6 +1,6 @@
-import Sidebar from "../dataSetsCards/sidebar/Sidebar"
+import Sidebar from "../sidebar/Sidebar"
 import { ThemeProvider, CssBaseline } from '@mui/material';
-import theme from "../dataSetsCards/theme/Theme";
+import theme from "../theme/Theme";
 import { Outlet } from 'react-router-dom';
 
 

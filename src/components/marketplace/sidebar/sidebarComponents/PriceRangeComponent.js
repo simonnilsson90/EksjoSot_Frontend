@@ -3,7 +3,7 @@ import { useState } from 'react'
 import {Box, Typography} from '@mui/material';
 import Slider from '@mui/material/Slider';
 import { useTheme } from '@mui/material/styles';
-import { useStore } from '../../../stateManagement/store';
+import { useStore } from '../../stateManagement/store';
 
 
 
