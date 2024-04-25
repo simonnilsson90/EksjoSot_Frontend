@@ -1,0 +1,48 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #C8B6A1
+
+    ;
+  }
+  
+  .img-container {
+    height: 30vh;
+    width: 80%; /* or min-width if you always want at least 80% width */
+    display: flex; /* Makes it a flex container */
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    overflow: hidden; /* Ensures no overflow if the image is too large */
+  }
+  
+  .img-container img {
+    margin-top: 30px;
+    width: 100%; /* makes the image take the full width of its container */
+    height: 100%; /* makes the image take the full height of its container */
+    object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+  }
+  
+  .content {
+    min-height: 70vh; 
+    justify-content: center;
+    margin: 30px;
+    display: flex;
+  }
+  .content li{
+    list-style-type: disc;
+    list-style-position: outside;
+ }
+ .content li span{
+
+ }
+  
+.mission, .offer{
+    margin: 25px;
+    padding: 15px;
+    text-align: left;
+    max-width: 40%;
+}

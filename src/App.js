@@ -13,6 +13,7 @@ import ConsentForm from "./components/feature/consent/ConsentForm";
 import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
 import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
 import Reports from "./components/myAccount/reports/reportsComponent";
+import AboutUs from './components/feature/aboutUs/AboutUs'
 // Marketplace routes
 import Carousel from "./components/marketplace/carousel/Carousel";
 import MarketplaceLayout from './components/marketplace/marketplaceLayout/MarketplaceLayout';
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
     <>
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<HomePage />} />
+      <Route path="aboutUs" element={<AboutUs />} />
       {/* <Route path="contacUs" element={<ContactUs />} /> */}
       {/* <Route path="FaQ" element={<FaQ />} /> */}
 
