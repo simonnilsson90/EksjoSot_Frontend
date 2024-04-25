@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Grid, Drawer, IconButton, AppBar, Toolbar } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import PriceRange from './sidebarComponents/PriceRangeComponent';
@@ -7,9 +7,11 @@ import LicenceComponent from './sidebarComponents/LicenseComponent';
 import CategoriesComponent from './sidebarComponents/CategoriesComponent';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { useStore } from '../../stateManagement/store';
 
 export default function Sidebar() {
-  const theme = useTheme();
+  const { customLicenseClicked } = useStore(state => ({ customLicenseClicked: state.customLicenseClicked }));
+ const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm')); // Adjusts to less than 600px
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -26,9 +28,11 @@ export default function Sidebar() {
         <Grid item xs={12}>
           <LicenceComponent />
         </Grid>
-        <Grid item xs={12}>
+        {customLicenseClicked && 
+          <Grid item xs={12}>
           <PriceRange />
-        </Grid>
+          </Grid>
+          }
       </Grid>
     </Box>
   );
@@ -88,7 +92,8 @@ export default function Sidebar() {
               <LicenceComponent />
             </Grid>
             <Grid item xs={12}>
-              <PriceRange />
+            {customLicenseClicked && 
+              <PriceRange />}
             </Grid>
           </Grid>
         </Box>

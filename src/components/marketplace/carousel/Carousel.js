@@ -78,8 +78,8 @@ const typeDescription = ['Images', 'Video', 'Audio', 'Other']
 textStyle={{fontSize: theme.typography.body1.fontSize}}/>
       
         <Slider {...settings} >
-          {imageData.map(item => (
-            <CardsComponent key={item.id} item={item} />
+          {imageData.map((item, index) => (
+            <CardsComponent key={index} item={item} />
           ))}
         </Slider>
       </div>
@@ -89,8 +89,8 @@ textStyle={{fontSize: theme.typography.body1.fontSize}}/>
       <ResponsiveIcon Icon={AiFillAudio} style={{ marginTop: '15px', marginLeft: '20px'}} text={<Typography sx={{ fontWeight: 'bold' }}>{typeDescription[1].toUpperCase()}</Typography>}
 textStyle={{fontSize: theme.typography.body1.fontSize}}/>
          <Slider {...settings}>
-          {audioData.map(item => (
-            <CardsComponent key={item.id} item={item} />
+          {audioData.map((item, index) => (
+            <CardsComponent key={index} item={item} />
           ))}
         </Slider>
       </div>
@@ -102,8 +102,8 @@ textStyle={{fontSize: theme.typography.body1.fontSize}}/>
 textStyle={{fontSize: theme.typography.body1.fontSize}}/>
 
         <Slider {...settings}>
-          {videoData.map(item => (
-            <CardsComponent key={item.id} item={item} />
+          {videoData.map((item, index) => (
+            <CardsComponent key={index} item={item} />
           ))}
         </Slider>
       </div>
@@ -116,8 +116,8 @@ textStyle={{fontSize: theme.typography.body1.fontSize}}/>
 
       textStyle={{fontSize: theme.typography.body1.fontSize}}/>
         <Slider {...settings}>
-          {otherData.map(item => (
-            <CardsComponent key={item.id} item={item} />
+          {otherData.map((item, index) => (
+            <CardsComponent key={index} item={item} />
           ))}
         </Slider>
       </div> 

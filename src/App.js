@@ -41,7 +41,7 @@ const router = createBrowserRouter(
         <Route path="category/:categoryType" element={<CategoryDisplay />} />
         <Route path='license' element={<LicenseDisplay />} />
         <Route path="license/:license" element={<LicenseDisplay />} />
-      </Route>
+       </Route>
 
       <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
       <Route path="myAccount/dataSets/createDataset"element={<CreateDataset />} />

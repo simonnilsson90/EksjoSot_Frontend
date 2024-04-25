@@ -90,8 +90,8 @@ export default function Carousel() {
       <div className="slider-container">
       <FaCamera size={35}/>
         <Slider {...settings} >
-          {imageData.map(item => (
-            <CardsComponent key={item.id} item={item} />
+          {imageData.map(item, index => (
+            <CardsComponent key={index} item={item} />
           ))}
         </Slider>
       </div>

@@ -9,15 +9,14 @@ import { FaCamera } from "react-icons/fa";
 import { IoIosFilm } from "react-icons/io";
 import { AiFillAudio } from "react-icons/ai";
 import { HiDotsHorizontal } from "react-icons/hi";
-
-const audio = AiFillAudio
-const video = IoIosFilm
-const image = FaCamera
-const other = HiDotsHorizontal
+import { useStore } from '../../../../stateManagement/store';
 
 export default function LicenseDisplay() {
   const [favorite, setFavorite] = useState({});
   const { license } = useParams();
+  const { value } = useStore(state => ({
+    value: state.value
+  }))
 
   if (!license) {
     console.error('licenseType is undefined');
@@ -25,27 +24,27 @@ export default function LicenseDisplay() {
   }
   
   const filteredData = data.filter(item => {
-    // Ensure there is always a valid price string to work with.
-    const price = item.price || '';
-    
-    // Handling different license types.
+    let numericPrice = 0  
+    if(item.price.toLowerCase() === 'free') {
+      numericPrice = 0
+    } else if (item.price.includes('$')) {
+      numericPrice = parseInt(item.price.replace(/\$/g, ''), 10);
+    }
+
     switch (license.toLowerCase()) {
       case 'all':
-        return true; // Return all items.
+        return true;
       case 'free':
-        return price.toLowerCase() === 'free'; // Return items that are explicitly marked as free.
+        return numericPrice === 0;
       case 'paid':
-        return !price.toLowerCase().includes('free'); // Return items that do not include the word "free".
+        return numericPrice > 0;
+      case 'custom':
+        return numericPrice >= value[0] && numericPrice <= value[1];  
       default:
-        return price.toLowerCase().includes(license.toLowerCase()); // For any other license type, return items that include the license keyword in their price.
+        return item.price.toLowerCase().includes(license.toLowerCase());
     }
   });
   
-  
-
-  console.log("license Type from URL:", license);
-  console.log("Filtered Data:", filteredData);
-
   const toggleFavorite = (i) => {
     setFavorite(prevFavorite => ({
       ...prevFavorite,
