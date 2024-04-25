@@ -1,9 +1,11 @@
 // ResponsiveButton.js
 import React from 'react';
 import { Button, useTheme } from '@mui/material';
+import { useStore } from '../stateManagement/store';
 
 const ResponsiveButton = ({ label, ...props }) => {
   const theme = useTheme();
+  const { clicked } = useStore()
 
   return (
     <Button
@@ -14,6 +16,7 @@ const ResponsiveButton = ({ label, ...props }) => {
         borderColor: 'white',
         borderWidth: 1,
         borderStyle: 'solid',
+        boxShadow: 'clicked ? #a96120 :  white',
         m: 1,
         flexWrap: 'wrap',
         '&:hover': {

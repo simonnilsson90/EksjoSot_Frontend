@@ -24,7 +24,7 @@ function Navbar() {
   };
 
   return (
-    <nav>
+    <nav className="nav">
       <ul className="navbarContainer">
         <Link to="/" id="logoContainer">
           <img

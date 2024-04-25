@@ -7,7 +7,7 @@ import StyledNavLink from '../../../customIcons/StyledNavLink';
 
 
 export default function LicenceComponent() {
-  const { setActiveLicense, setClicked } = useStore();
+  const { setActiveLicense, setClicked, clicked } = useStore();
   const { setCustomLicenseClicked } = useStore(state => 
     ({ setCustomLicenseClicked: state.setCustomLicenseClicked
     }));
