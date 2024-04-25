@@ -24,10 +24,12 @@
 }
 
 #linksContainer {
+  font-size: 14px;
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 #userAvatar {
   display: flex;
   align-items: center;
@@ -37,12 +39,21 @@
 }
 
 .navbarLink a {
-  font-weight: normal;
   text-decoration: none;
   color: #0d141c;
+  font-weight: 500;
 }
 
+.navbarLinkLogIn{
+  gap: 5px;
+}
 
+.navbarLink p {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #0d141c;
+}
 
 .hamburger-icon {
   background: none;
@@ -51,6 +62,7 @@
   padding: 10px;
   z-index: 1;
 }
+
 .bar {
   width: 25px;
   height: 3px;
@@ -58,11 +70,13 @@
   margin: 5px 0;
   transition: 0.4s;
 }
+
 #hamburgerMenu {
   display: none;
   align-items: center;
 }
-@media (max-width: 750px) {
+
+@media (max-width: 850px) {
   #linksContainer {
     flex-direction: column;
     display: flex;
@@ -76,9 +90,11 @@
     opacity: 0;
     align-items: normal;
   }
+
   #hamburgerMenu {
     display: flex;
   }
+
   .hamburger-icon.active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
   }
@@ -90,6 +106,7 @@
   .hamburger-icon.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+
   #linksContainer.open {
     background: linear-gradient(
       180deg,
