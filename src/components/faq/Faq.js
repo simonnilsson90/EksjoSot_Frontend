@@ -54,19 +54,19 @@ export default function CustomizedAccordions() {
   };
 
   return (
-    <Box sx={{ height: '100vh', backgroundColor: theme.palette.background.paper}} >
+    <Box sx={{ height: '100vh', backgroundColor: theme.palette.background.paper }} >
       <Box>
-        <img src={image} alt='connecting people' style={{width: '100%', height: '30vh'}}/>
+        <img src={image} alt='connecting people' style={{ width: '100%', height: '30vh' }} />
       </Box>
-      
-      <Box sx={{justifyContent: 'center', alignContent: 'center', display: 'flex', m: 3}} >
+
+      <Box sx={{ justifyContent: 'center', alignContent: 'center', display: 'flex', m: 3 }} >
         <Typography variant='h4'>
-        Frequently Asked Questions (FAQ)
+          Frequently Asked Questions (FAQ)
         </Typography>
       </Box>
-      <Box sx={{justifyContent: 'center', alignContent: 'center', display: 'flex', m: 3}}>
+      <Box sx={{ justifyContent: 'center', alignContent: 'center', display: 'flex', m: 3 }}>
         <Typography variant='body2'>
-        Welcome to our FAQ page! Here, we've compiled a list of commonly asked questions to help you better understand how our marketplace works and how you can make the most of our services. Whether you're a creator looking to sell your digital products or a customer eager to discover unique digital assets, our FAQ section is here to provide you with quick and clear answers.
+          Welcome to our FAQ page! Here, we've compiled a list of commonly asked questions to help you better understand how our marketplace works and how you can make the most of our services. Whether you're a creator looking to sell your digital products or a customer eager to discover unique digital assets, our FAQ section is here to provide you with quick and clear answers.
         </Typography>
       </Box>
 
