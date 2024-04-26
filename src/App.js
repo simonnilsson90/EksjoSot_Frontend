@@ -24,6 +24,7 @@ import AboutUs from "./components/aboutUs/AboutUs";
 import Faq from "./components/faq/Faq"
 import SignUp, {signUpAction} from "./components/signUp/SignUp";
 import Shopping from "./components/shopping/Shopping";
+import FaQ from './components/faq/Faq'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -36,6 +37,7 @@ const router = createBrowserRouter(
                 <Route path="myShopping" element={<Shopping/>}/>
                 <Route path="myAccount" element={<MyAccount/>}/>
                 <Route path="consentForm" element={<ConsentForm/>}/>
+                <Route path="faq" element={<FaQ/>}/>
                 <Route path="marketplace" element={<MarketplaceLayout/>}>
                     <Route index element={<Carousel/>}/>
                     <Route path='category' element={<FilteredCategory/>}/>
