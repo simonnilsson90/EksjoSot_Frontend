@@ -130,3 +130,8 @@
   border: 2px solid orange;
   padding: 5px;
 }
+
+.navbarLink a:hover {
+  background-color: rgb(253, 241, 215);
+  padding: 3px;
+}
