@@ -1,7 +1,7 @@
 import UserPic from "../../assets/images/homepage/user.png";
 import React, { useState } from "react";
 import "./navbarComponent.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Login from "../login/loginComponent";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -24,6 +24,7 @@ function Navbar() {
   };
 
   return (
+    <>
     <nav className="nav">
       <ul className="navbarContainer">
         <Link to="/" id="logoContainer">
@@ -95,6 +96,39 @@ function Navbar() {
         </li>
       </ul>
     </nav>
+    <nav className="nav">
+      <ul className="navbarContainer">
+        <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
+          <li className="navbarLink">
+            <NavLink to="/profile">Profile</NavLink>
+          </li>
+
+          <li className="navbarLink">
+            <NavLink to="/favourites">Favourites</NavLink>
+          </li>
+          <li className="navbarLink">
+            <NavLink to="/purchases">Purchases</NavLink>
+          </li>
+          <li className="navbarLink">
+            <NavLink to="/sellings">Sellings</NavLink>
+          </li>
+          <li className="navbarLink">
+            <NavLink to="/membership">Membership</NavLink>
+          </li>
+        </div>
+        <li id="hamburgerMenu">
+          <button
+            onClick={toggleMenu}
+            className={`hamburger-icon ${isMenuOpen ? "active" : ""}`}
+          >
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    </>
   );
 }
 

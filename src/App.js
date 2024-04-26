@@ -25,6 +25,12 @@ import Faq from "./components/faq/Faq"
 import SignUp, {signUpAction} from "./components/signUp/SignUp";
 import Shopping from "./components/shopping/Shopping";
 
+import ProfileAccount from "./components/myAccount/profileAccount/ProfileAccount";
+import Favourites from "./components/myAccount/favourites/Favourites";
+import Purchases from "./components/myAccount/purchases/Purchases";
+import Sellings from "./components/myAccount/sellings/Sellings";
+import Membership from "./components/myAccount/membership/Membership";
+
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
@@ -46,6 +52,12 @@ const router = createBrowserRouter(
                 <Route path="myAccount/dataSets" element={<DataSetsComponent/>}/>
                 <Route path="myAccount/dataSets/createDataset" element={<CreateDataset/>}/>
                 <Route path="myAccount/reports" element={<Reports/>}/>
+
+                <Route path="profile" element={<ProfileAccount/>} />
+                <Route path="favourites" element={<Favourites/>} />
+                <Route path="purchases" element={<Purchases/>} />
+                <Route path="sellings" element={<Sellings/>} />
+                <Route path="membership" element={<Membership/>} />
             </Route>
             <Route path="SignUp" element={<SignUp/>} action={signUpAction}/>
         </>

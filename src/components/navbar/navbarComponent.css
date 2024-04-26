@@ -122,3 +122,11 @@
     transition: opacity 0.5s ease, right 0.8s ease;
   }
 }
+
+
+
+
+.navbarLink a.active {
+  border: 2px solid orange;
+  padding: 5px;
+}
