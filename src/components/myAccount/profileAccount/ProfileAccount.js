@@ -1,10 +1,16 @@
-import React from 'react'
-import Styles from './profileAccount.module.css'
+import React from "react";
+import Styles from "./profileAccount.module.css";
 
 function ProfileAccount() {
   return (
-    <div><div className={Styles.title}>PROFILE page is under construction</div></div>
-  )
+    <>
+      <wrap>
+        <div id="profilescroll" className={Styles.title}>
+          PROFILE page is under construction
+        </div>
+      </wrap>
+    </>
+  );
 }
 
-export default ProfileAccount
+export default ProfileAccount;

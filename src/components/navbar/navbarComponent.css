@@ -5,6 +5,7 @@
   height: 50px;
   margin-right: 40px;
 }
+
 .nav {
   background-color: #fff !important;
 }
@@ -47,7 +48,12 @@
   font-weight: 500;
 }
 
-.navbarLinkLogIn{
+.navbarLink a.active {
+  border: 2px solid orange;
+  padding: 5px;
+}
+
+.navbarLinkLogIn {
   gap: 5px;
 }
 
@@ -121,17 +127,4 @@
     opacity: 1;
     transition: opacity 0.5s ease, right 0.8s ease;
   }
-}
-
-
-
-
-.navbarLink a.active {
-  border: 2px solid orange;
-  padding: 5px;
-}
-
-.navbarLink a:hover {
-  background-color: rgb(253, 241, 215);
-  padding: 3px;
 }
