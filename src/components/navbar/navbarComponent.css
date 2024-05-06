@@ -5,6 +5,7 @@
   height: 50px;
   margin-right: 40px;
 }
+
 .nav {
   background-color: #fff !important;
 }
@@ -47,7 +48,12 @@
   font-weight: 500;
 }
 
-.navbarLinkLogIn{
+.navbarLink a.active {
+  border: 2px solid orange;
+  padding: 5px;
+}
+
+.navbarLinkLogIn {
   gap: 5px;
 }
 
