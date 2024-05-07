@@ -14,7 +14,7 @@ import axios from 'axios';
 function Login({ onClose }) {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [forgotPassword, setForgotPassword] = useState(false);
   const [signUpOpen, setSignUpOpen] = useState(false);
@@ -30,16 +30,16 @@ function Login({ onClose }) {
     //console.log("password", password),
    
     try { 
-        if (!username || !password) { 
-            setError('Please enter both username and password.'); 
+        if (!email || !password) { 
+            setError('Please enter both email and password.'); 
             return; 
         } 
 
-        const response = await axios.post('http://localhost:8000/users/signin', { username, password }); 
+        const response = await axios.post('http://localhost:8000/users/signin', { email, password }); 
         console.log('Login successful:', response.data); 
     } catch (error) { 
         console.error('Login failed:', error.response ? error.response.data : error.message); 
-        setError('Invalid username or password.'); 
+        setError('Invalid email or password.'); 
     } 
 }; 
 
@@ -192,8 +192,8 @@ function Login({ onClose }) {
               </div>
               <p className="email">Email</p>
               <input
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="input"
               ></input>
               <p className="passwordInput">Password</p>
