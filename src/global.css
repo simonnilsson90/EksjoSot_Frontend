@@ -1,45 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
+  /* padding */
 
-    /* padding */
+  --padding-base: 16px;
 
-    --padding-base: 16px;
+  --padding-s: calc(var(--padding-base) * 0.5);
+  --padding-m: calc(var(--padding-base) * 1.5);
+  --padding-l: calc(var(--padding-base) * 2);
+  --padding-xl: calc(var(--padding-base) * 4);
 
-    --padding-s: calc(var(--padding-base)*.5); 
-    --padding-m: calc(var(--padding-base)*1.5);
-    --padding-l: calc(var(--padding-base)*2);
-    --padding-xl: calc(var(--padding-base)*4);
-  
-    /* font-size */
-  
-    --font-size-base: 1rem;
+  /* font-size */
 
-    --font-size-s: calc(var(--font-size-base)*.8); 
-    --font-size-m: calc(var(--font-size-base)*1.6); 
-    --font-size-l: calc(var(--font-size-base)*2); 
-    --font-sieze-xl: calc(var(--font-size-base)*4); 
-    --font-size-xxl: calc(var(--font-size-base)*6); 
-  
-    /* colours */
+  --font-size-base: 1rem;
 
-    --c-dark-bg: #2F2A29;
-    --c-light-bg: #C8B6A1;
-    --c-orange: #F28B30;
-    --c-light-text: #FFFFFF;
-    --c-dark-text: #000000;
+  --font-size-s: calc(var(--font-size-base) * 0.8);
+  --font-size-m: calc(var(--font-size-base) * 1.6);
+  --font-size-l: calc(var(--font-size-base) * 2);
+  --font-sieze-xl: calc(var(--font-size-base) * 4);
+  --font-size-xxl: calc(var(--font-size-base) * 6);
+
+  /* colours */
+
+  --c-dark-bg: #2f2a29;
+  --c-light-bg: #c8b6a1;
+  --c-orange: #f28b30;
+  --c-light-text: #ffffff;
+  --c-dark-text: #000000;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-  
+
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }

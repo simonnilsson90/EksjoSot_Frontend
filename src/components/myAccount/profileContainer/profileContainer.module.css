@@ -1,0 +1,48 @@
+.myAccountContainer {
+  background-color: rgba(47, 42, 41, 1);
+  color: var(--c-light-text);
+  height: 100%;
+  position: absolute;
+}
+
+.parent {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: var(--padding-m) 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: var(--padding-s);
+  padding-bottom: var(--padding-l);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-m);
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--c-light-text);
+}
+
+.menu a.active {
+  border: 2px solid var(--c-orange);
+}
+
+.menu a:hover {
+  color: var(--c-orange);
+}
+
+.exit {
+  padding-top: var(--padding-xl);
+  font-size: 12px;
+}
