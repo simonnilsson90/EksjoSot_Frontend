@@ -21,7 +21,7 @@ export default function Sidebar() {
 
   const drawerContent = (
     <Box sx={{ width: 250 }} role="presentation" onClick={handleDrawerToggle} color={'#000'}>
-      <Grid container spacing={2} sx={{ maxHeight: '100vh', overflow: 'auto', p: 3 }}>
+      <Grid container spacing={2} sx={{ maxHeight: '100vh', overflow: 'auto', p: 0 }}>
         <Grid item xs={12}>
           <CategoriesComponent />
         </Grid>
