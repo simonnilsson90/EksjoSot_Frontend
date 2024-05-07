@@ -9,6 +9,7 @@ import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
 import Background from "../../assets/images/homepage/login-background.png";
 import SignUp from "../signUp/SignUp";
+import axios from 'axios';
 
 function Login({ onClose }) {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -17,16 +18,31 @@ function Login({ onClose }) {
   const [password, setPassword] = useState("");
   const [forgotPassword, setForgotPassword] = useState(false);
   const [signUpOpen, setSignUpOpen] = useState(false);
+  const [error, setError] = useState();
 
   const toggleForgotPasswordMenu = () => {
     setForgotPassword(!forgotPassword);
   };
 
-  const handleLogin = () => (
-    console.log("Username", username),
-    console.log("password", password),
-    onClose
-  );
+
+  const handleLogin = async () => { 
+    //console.log("Username", username),
+    //console.log("password", password),
+   
+    try { 
+        if (!username || !password) { 
+            setError('Please enter both username and password.'); 
+            return; 
+        } 
+
+        const response = await axios.post('http://localhost:8000/users/signin', { username, password }); 
+        console.log('Login successful:', response.data); 
+    } catch (error) { 
+        console.error('Login failed:', error.response ? error.response.data : error.message); 
+        setError('Invalid username or password.'); 
+    } 
+}; 
+
 
   const toggleSignUpDrawer = () => {
     setSignUpOpen(!signUpOpen);
@@ -35,8 +51,74 @@ function Login({ onClose }) {
   const closeDrawer = () => {
     setSignUpOpen(false);
   }
-  
 
+  /*
+  export const signUpAction = async ({ request }) => {
+    const data = await request.formData();
+  
+    const email = data.get("email")
+  const password = data.get("password")
+  const confirmPassword = data.get("password_confirmation")
+  
+  if(password !== confirmPassword) {
+    return { error: "Passwords do not match"}
+  }
+  
+  
+    const submission = {
+      email: data.get("email"),
+      password: data.get("password"),
+    };
+  
+    console.log("Submission:", submission);
+  
+    const response = await fetch("http://localhost:8000/users/create", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+      body: JSON.stringify(submission),
+    });
+  
+    console.log("Response:", response);
+  
+    if (!response.ok) {
+      throw Error("Could not create a new user");
+    }
+  
+    console.log("Response status:", response.status);
+  
+    return response.json();
+  };
+  
+  const SignUp = () => {
+    const [error, setError] = useState("");
+    const [show, setShow] = useState(false);
+    const [showConfirmation, setShowConfirmation] = useState(false);
+  
+    const navigate = useNavigate();
+  
+    const handleShow = () => {
+      setShow(!show);
+    };
+  
+    const handleShowConfirmation = () => {
+      setShowConfirmation(!showConfirmation);
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+    
+      try {
+        const redirectUrl = await signUpAction({ request: { formData } });
+        console.log("User created successfully");
+        navigate(redirectUrl); 
+      } catch (error) {
+        setError(error.message);
+      }
+    };
+*/
   return (
     <div className="loginBody">
       <div className="parentDiv">
