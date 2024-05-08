@@ -4,7 +4,7 @@ import HomeCard from "../components/homeCard/homeCard.js";
 
 import heroImage from "../assets/images/homepage/hero-image-for-homepage.png";
 
-function HomePage({ card }) {
+function HomePage() {
   return (
     <div className={Styles.homePage}>
       <div className={Styles.heroImage}>
@@ -17,7 +17,7 @@ function HomePage({ card }) {
           models
         </h3>
       </div>
-      <HomeCard card={card} />
+      <HomeCard />
     </div>
   );
 }
