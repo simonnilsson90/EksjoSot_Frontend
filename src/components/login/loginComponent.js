@@ -26,8 +26,7 @@ function Login({ onClose }) {
 
 
   const handleLogin = async () => { 
-    //console.log("Username", username),
-    //console.log("password", password),
+   
    
     try { 
         if (!email || !password) { 
@@ -52,73 +51,6 @@ function Login({ onClose }) {
     setSignUpOpen(false);
   }
 
-  /*
-  export const signUpAction = async ({ request }) => {
-    const data = await request.formData();
-  
-    const email = data.get("email")
-  const password = data.get("password")
-  const confirmPassword = data.get("password_confirmation")
-  
-  if(password !== confirmPassword) {
-    return { error: "Passwords do not match"}
-  }
-  
-  
-    const submission = {
-      email: data.get("email"),
-      password: data.get("password"),
-    };
-  
-    console.log("Submission:", submission);
-  
-    const response = await fetch("http://localhost:8000/users/create", {
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-      body: JSON.stringify(submission),
-    });
-  
-    console.log("Response:", response);
-  
-    if (!response.ok) {
-      throw Error("Could not create a new user");
-    }
-  
-    console.log("Response status:", response.status);
-  
-    return response.json();
-  };
-  
-  const SignUp = () => {
-    const [error, setError] = useState("");
-    const [show, setShow] = useState(false);
-    const [showConfirmation, setShowConfirmation] = useState(false);
-  
-    const navigate = useNavigate();
-  
-    const handleShow = () => {
-      setShow(!show);
-    };
-  
-    const handleShowConfirmation = () => {
-      setShowConfirmation(!showConfirmation);
-    };
-  
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      const formData = new FormData(e.target);
-    
-      try {
-        const redirectUrl = await signUpAction({ request: { formData } });
-        console.log("User created successfully");
-        navigate(redirectUrl); 
-      } catch (error) {
-        setError(error.message);
-      }
-    };
-*/
   return (
     <div className="loginBody">
       <div className="parentDiv">
