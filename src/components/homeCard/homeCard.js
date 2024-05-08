@@ -15,22 +15,22 @@ const ContentCard = ({ imagesSrc, alt, content }) => {
 
   return (
     <div className={Styles.cardContent}>
-    <div className={Styles.cardHeader} onMouseEnter={handleMouseEnter}>
+      <div className={Styles.cardHeader} onMouseEnter={handleMouseEnter}>
         <img src={imagesSrc} alt={alt} />
-    </div>
+      </div>
 
-    {expand && (
+      {expand && (
         <div className={Styles.cardExtended} onMouseLeave={handleMouseLeave}>
-        {content}
+          {content}
         </div>
-    )}
+      )}
     </div>
   );
 };
 
 function HomeCard() {
   return (
-    <div className={Styles.homeCardBody} >
+    <div className={Styles.homeCardBody}>
       <div className={Styles.featuresSection}>
         <h1>What can you do with personal data sets?</h1>
         <h3>
@@ -38,18 +38,14 @@ function HomeCard() {
         </h3>
 
         <div className={Styles.featuresContainer}>
-        
-            {DataSetInfo.map(
-              (card) => (
-                <ContentCard
-                  key={card.id}
-                  imagesSrc={card.imagesSrc}
-                  alt={card.alt}
-                  content={card.content}
-                />
-              )
-            )}
-        
+          {DataSetInfo.map((card) => (
+            <ContentCard
+              key={card.id}
+              imagesSrc={card.imagesSrc}
+              alt={card.alt}
+              content={card.content}
+            />
+          ))}
         </div>
       </div>
     </div>
