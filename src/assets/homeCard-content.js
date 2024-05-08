@@ -10,15 +10,15 @@ const DataSetInfo = [
     id: 2,
     content:
       "Chose from specific characteristics like age, ethnicity, voice accent, and more to build diverse and realistic AI personalities. Whether for training simulations, customer service bots, or entertainment, our data enriches your AI applications with depth and authenticity.",
-    imagesSrc: "/images/img2.png",
-    alt: "caucasian woman face",
+    imagesSrc: "/images/img3.png",
+    alt: "old caucasian man face",
   },
   {
     id: 3,
     content:
       "Customize how your AI interacts and appears, enhancing realism in simulations, virtual assistants, or any application that benefits from genuine human traits",
-    imagesSrc: "/images/img3.png",
-    alt: "old caucasian man face",
+    imagesSrc: "/images/img2.png",
+    alt: "caucasian woman face",
   },
   {
     id: 4,
