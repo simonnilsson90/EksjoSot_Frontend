@@ -20,10 +20,10 @@ import FilteredCategory from "./components/marketplace/dataSetCards/FilteredCate
 import FilteredLicense from "./components/marketplace/dataSetCards/FilteredLicense";
 import RootLayout from "./layouts/RootLayout";
 import HomePage from "./views/HomePage";
-import AboutUs from "./components/aboutUs/AboutUs";
-import Faq from "./components/faq/Faq";
+import AboutUs from "./views/AboutUs";
+import Faq from "./views/Faq";
 import SignUp, { signUpAction } from "./components/signUp/SignUp";
-import Shopping from "./components/shopping/Shopping";
+import Shopping from "./views/Shopping";
 
 import ProfileAccount from "./components/myAccount/profileAccount/ProfileAccount";
 import Favourites from "./components/myAccount/favourites/Favourites";
