@@ -9,24 +9,39 @@ import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
 import Background from "../../assets/images/homepage/login-background.png";
 import SignUp from "../signUp/SignUp";
+import axios from 'axios';
 
 function Login({ onClose }) {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [forgotPassword, setForgotPassword] = useState(false);
   const [signUpOpen, setSignUpOpen] = useState(false);
+  const [error, setError] = useState();
 
   const toggleForgotPasswordMenu = () => {
     setForgotPassword(!forgotPassword);
   };
 
-  const handleLogin = () => (
-    console.log("Username", username),
-    console.log("password", password),
-    onClose
-  );
+
+  const handleLogin = async () => { 
+   
+   
+    try { 
+        if (!email || !password) { 
+            setError('Please enter both email and password.'); 
+            return; 
+        } 
+
+        const response = await axios.post('http://localhost:8000/users/signin', { email, password }); 
+        console.log('Login successful:', response.data); 
+    } catch (error) { 
+        console.error('Login failed:', error.response ? error.response.data : error.message); 
+        setError('Invalid email or password.'); 
+    } 
+}; 
+
 
   const toggleSignUpDrawer = () => {
     setSignUpOpen(!signUpOpen);
@@ -35,7 +50,6 @@ function Login({ onClose }) {
   const closeDrawer = () => {
     setSignUpOpen(false);
   }
-  
 
   return (
     <div className="loginBody">
@@ -110,8 +124,8 @@ function Login({ onClose }) {
               </div>
               <p className="email">Email</p>
               <input
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="input"
               ></input>
               <p className="passwordInput">Password</p>
