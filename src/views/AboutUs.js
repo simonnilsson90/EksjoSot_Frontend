@@ -1,4 +1,4 @@
-import Image from '../../assets/images/homepage/connecting.webp'
+import Image from '../assets/images/homepage/connecting.webp'
 import './aboutUs.css'
 
 export default function Index() {
