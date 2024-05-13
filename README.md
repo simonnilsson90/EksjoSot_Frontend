@@ -26,7 +26,7 @@ Follow these steps to set up your development environment:
 
 2. Navigate to the correct directory:
     ```sh
-    cd everyonestoreFrontend\Frontend
+    cd /Frontend
     ```
 
 3. Install the frontend dependencies:
