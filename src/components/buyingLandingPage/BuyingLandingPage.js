@@ -1,5 +1,6 @@
 import React from "react";
 import Styles from "./buyingLandingPage.module.css";
+import { Link } from "react-router-dom";
 
 function BuyingLandingPage() {
   return (
@@ -7,7 +8,9 @@ function BuyingLandingPage() {
       <div className={Styles.component}>
         <div className={Styles.buyingHeader}>
           <div className={Styles.buyingButton}>
-            BUY IN THE <br></br> MARKETPLACE
+            <Link to="marketplace">
+                BUY IN THE <br></br> MARKETPLACE
+            </Link>
           </div>
         </div>
         <div className={Styles.right}>
