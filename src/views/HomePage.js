@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./HomePage.module.css";
 import HomeCard from "../components/homeCard/homeCard.js";
+import BuyingLandingPage from "../components/buyingLandingPage/BuyingLandingPage.js"
 
 import heroImage from "../assets/images/homepage/hero-image-for-homepage.png";
 
@@ -18,6 +19,7 @@ function HomePage() {
         </h3>
       </div>
       <HomeCard />
+      <BuyingLandingPage />
     </div>
   );
 }
