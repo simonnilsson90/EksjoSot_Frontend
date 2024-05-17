@@ -1,3 +1,8 @@
+.wrap {
+  position: relative;
+  top: 581px;
+}
+
 .buyingBody {
   background-color: var(--c-light-bg);
   padding: var(--padding-l);
@@ -31,6 +36,8 @@
 .buyingHeader {
   padding: var(--padding-xl);
   margin: var(--padding-xl);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .buyingButton {
@@ -98,6 +105,11 @@
 .buyingComponent p {
   line-height: 2.5;
 }
+@media screen and (max-width: 1160px) {
+  .buyingHeader {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 1107px) {
   .left {
@@ -110,22 +122,24 @@
 
   .imagesGrid {
     padding: var(--padding-s);
-    
   }
 }
 
 @media screen and (max-width: 964px) {
-    .imagesGrid {
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-        grid-auto-rows: 150px;
-      }
-
-    .buyingHeader {
-        margin: 0px;
-    }
+  .imagesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-auto-rows: 150px;
   }
 
+  .buyingHeader {
+    margin: 0px;
+  }
+}
+
 @media screen and (max-width: 870px) {
+  .wrap {
+    top: 800px;
+  }
   .squareDecoration {
     width: 70%;
     height: 700px;
@@ -133,29 +147,28 @@
 }
 
 @media screen and (max-width: 810px) {
-    .buyingComponent {
-        flex-direction: column;
-    }
-    
-    .left {
-        width: 100%;
-    }
+  .buyingComponent {
+    flex-direction: column;
+  }
 
-    .right {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 642px) {
-    .buyingHeader {
-        padding: var(--padding-m);
-    }
+  .buyingHeader {
+    padding: var(--padding-m);
+  }
 }
-
 
 @media screen and (max-width: 612px) {
   .right {
@@ -170,6 +183,10 @@
 }
 
 @media screen and (max-width: 570px) {
+  .wrap {
+    top: 650px;
+  }
+
   .imagesGrid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows: 150px;
@@ -181,21 +198,24 @@
 
   .right {
     display: inline;
-}
+  }
 
-.right p {
+  .right p {
     text-align: left;
-}
+  }
 
-.buyingHeader {
+  .buyingHeader {
     display: flex;
     justify-content: flex-end;
     padding-right: 0px;
-}
-
+  }
 }
 
 @media screen and (max-width: 410px) {
+  .wrap {
+    top: 500px;
+  }
+
   .imagesGrid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-auto-rows: 100px;

@@ -26,15 +26,18 @@ function HomePage() {
       <div className={Styles.cards}>
         <HomeCard />
       </div>
+      <div className={Styles.components}>
 
-      {/* <div className={Styles.buying}>
+
+      <div className={Styles.buying}>
         <BuyingLandingPage />
-      </div> */}
+      </div>
 
       <div className={Styles.selling}>
         <SellingLandingPage />
       </div>
       
+      </div>
     </div>
   );
 }

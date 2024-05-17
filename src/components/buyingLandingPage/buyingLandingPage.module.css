@@ -1,3 +1,7 @@
+.wrap {
+  position: relative;
+}
+
 .buyingBody {
   background-color: var(--c-light-bg);
   padding: var(--padding-l);
@@ -18,8 +22,6 @@
   border-radius: 10px;
   top: 5px;
 } */
-
-
 
 .buyingBody img {
   width: 100%;
@@ -48,8 +50,8 @@
 }
 
 .buyingBody a {
-    text-decoration: none;
-    color: var(--c-dark-text);
+  text-decoration: none;
+  color: var(--c-dark-text);
 }
 
 .right {
