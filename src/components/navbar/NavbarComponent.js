@@ -57,6 +57,10 @@ function Navbar() {
             </li>
 
             <li className="navbarLink">
+              <Link to="/sellings">Sell Data</Link>
+            </li>
+
+            <li className="navbarLink">
               <Link to="/about">About Us</Link>
             </li>
             <li className="navbarLink">
