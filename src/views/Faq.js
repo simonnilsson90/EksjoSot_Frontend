@@ -6,20 +6,21 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary'
 import MuiAccordionDetails from '@mui/material/AccordionDetails'
 import Typography from '@mui/material/Typography'
 import { Box } from '@mui/material'
-import image from '../../assets/images/homepage/connecting.webp'
-import theme from '../marketplace/theme/Theme'
 
 const Accordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ theme }) => ({
-  border: `1px solid ${theme.palette.divider}`,
+  <MuiAccordion disableGutters elevation={1} square {...props} />
+))(() => ({
+  border: '1px solid #ddd',
   '&:not(:last-child)': {
     borderBottom: 0,
   },
   '&::before': {
     display: 'none',
   },
-  backgroundColor: '#C8B6A1',
+  backgroundColor: '#f9f9f9',
+  boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
+  borderRadius: '4px',
+  marginBottom: '10px',
 }))
 
 const AccordionSummary = styled((props) => (
@@ -27,22 +28,19 @@ const AccordionSummary = styled((props) => (
     expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
     {...props}
   />
-))(({ theme }) => ({
-  backgroundColor:
-    theme.palette.mode === 'dark'
-      ? 'rgba(255, 255, 255, .05)'
-      : 'rgba(0, 0, 0, .03)',
+))(() => ({
+  backgroundColor: '#e0e0e0',
   flexDirection: 'row-reverse',
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
     transform: 'rotate(90deg)',
   },
   '& .MuiAccordionSummary-content': {
-    marginLeft: theme.spacing(1),
+    marginLeft: '8px',
   },
 }))
 
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  padding: theme.spacing(2),
+const AccordionDetails = styled(MuiAccordionDetails)(() => ({
+  padding: '16px',
   borderTop: '1px solid rgba(0, 0, 0, .125)',
 }))
 
@@ -54,38 +52,24 @@ export default function CustomizedAccordions() {
   }
 
   return (
-    <Box
-      sx={{ height: '100vh', backgroundColor: theme.palette.background.paper }}
-    >
-      <Box>
-        <img
-          src={image}
-          alt="connecting people"
-          style={{ width: '100%', height: '30vh' }}
-        />
-      </Box>
-
+    <Box sx={{ padding: '20px', backgroundColor: '#fafafa' }}>
       <Box
         sx={{
-          justifyContent: 'center',
-          alignContent: 'center',
-          display: 'flex',
-          m: 3,
+          textAlign: 'center',
+          marginBottom: '20px',
         }}
       >
-        <Typography variant="h4">
+        <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
           FAQ for Buyers at The Everyone Store
         </Typography>
       </Box>
       <Box
         sx={{
-          justifyContent: 'center',
-          alignContent: 'center',
-          display: 'flex',
-          m: 3,
+          textAlign: 'center',
+          marginBottom: '20px',
         }}
       >
-        <Typography variant="body2">
+        <Typography variant="body1">
           Welcome to our FAQ page! Here, we've compiled a list of commonly asked
           questions to help you better understand how our marketplace works and
           how you can make the most of our services. Whether you're a creator
@@ -100,7 +84,7 @@ export default function CustomizedAccordions() {
         onChange={handleChange('panel1')}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>
+          <Typography variant="h6">
             How Can I Purchase Datasets from The Everyone Store?
           </Typography>
         </AccordionSummary>
@@ -119,7 +103,7 @@ export default function CustomizedAccordions() {
         onChange={handleChange('panel2')}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>What Types of Datasets Are Available?</Typography>
+          <Typography variant="h6">What Types of Datasets Are Available?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -127,14 +111,8 @@ export default function CustomizedAccordions() {
             AI modeling needs, including but not limited to:
             <ul>
               <li>Images and Videos: For computer vision projects.</li>
-              <li>
-                Text and Documents: Ideal for natural language processing and
-                analysis.
-              </li>
-              <li>
-                Voice Recordings: Perfect for speech recognition and generation
-                models.
-              </li>
+              <li>Text and Documents: Ideal for natural language processing and analysis.</li>
+              <li>Voice Recordings: Perfect for speech recognition and generation models.</li>
               <li>Sensor Data: Useful for IoT applications and more.</li>
             </ul>
             Our catalog is constantly expanding, ensuring you have access to the
@@ -147,7 +125,7 @@ export default function CustomizedAccordions() {
         onChange={handleChange('panel3')}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>How Are the Datasets Priced?</Typography>
+          <Typography variant="h6">How Are the Datasets Priced?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -163,8 +141,8 @@ export default function CustomizedAccordions() {
         expanded={expanded === 'panel4'}
         onChange={handleChange('panel4')}
       >
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Can I Preview a Dataset Before Purchasing?</Typography>
+        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
+          <Typography variant="h6">Can I Preview a Dataset Before Purchasing?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -179,8 +157,8 @@ export default function CustomizedAccordions() {
         expanded={expanded === 'panel5'}
         onChange={handleChange('panel5')}
       >
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>What is Your Refund Policy?</Typography>
+        <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
+          <Typography variant="h6">What is Your Refund Policy?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -196,10 +174,8 @@ export default function CustomizedAccordions() {
         expanded={expanded === 'panel6'}
         onChange={handleChange('panel6')}
       >
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>
-            How Do I Know the Datasets Are Ethically Sourced?
-          </Typography>
+        <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
+          <Typography variant="h6">How Do I Know the Datasets Are Ethically Sourced?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -215,8 +191,8 @@ export default function CustomizedAccordions() {
         expanded={expanded === 'panel7'}
         onChange={handleChange('panel7')}
       >
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>
+        <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
+          <Typography variant="h6">
             Is There Support Available for Integrating Datasets Into My Project?
           </Typography>
         </AccordionSummary>
@@ -233,8 +209,8 @@ export default function CustomizedAccordions() {
         expanded={expanded === 'panel8'}
         onChange={handleChange('panel8')}
       >
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Can I Request Custom Datasets?</Typography>
+        <AccordionSummary aria-controls="panel8d-content" id="panel8d-header">
+          <Typography variant="h6">Can I Request Custom Datasets?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -250,8 +226,8 @@ export default function CustomizedAccordions() {
         expanded={expanded === 'panel9'}
         onChange={handleChange('panel9')}
       >
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Can I Request Custom Datasets?</Typography>
+        <AccordionSummary aria-controls="panel9d-content" id="panel9d-header">
+          <Typography variant="h6">Can I Request Custom Datasets?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -267,8 +243,8 @@ export default function CustomizedAccordions() {
         expanded={expanded === 'panel10'}
         onChange={handleChange('panel10')}
       >
-        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>How Can I Stay Informed About New Datasets?</Typography>
+        <AccordionSummary aria-controls="panel10d-content" id="panel10d-header">
+          <Typography variant="h6">How Can I Stay Informed About New Datasets?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -284,8 +260,8 @@ export default function CustomizedAccordions() {
         expanded={expanded === 'panel11'}
         onChange={handleChange('panel11')}
       >
-        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>
+        <AccordionSummary aria-controls="panel11d-content" id="panel11d-header">
+          <Typography variant="h6">
             What Makes The Everyone Store the Go-To Platform for AI Datasets?
           </Typography>
         </AccordionSummary>
@@ -305,10 +281,8 @@ export default function CustomizedAccordions() {
         expanded={expanded === 'panel12'}
         onChange={handleChange('panel12')}
       >
-        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography>
-            Can I Share or Resell the Datasets I Purchase?
-          </Typography>
+        <AccordionSummary aria-controls="panel12d-content" id="panel12d-header">
+          <Typography variant="h6">Can I Share or Resell the Datasets I Purchase?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -321,8 +295,6 @@ export default function CustomizedAccordions() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-
-      
     </Box>
   )
 }
