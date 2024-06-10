@@ -1,300 +1,40 @@
-import * as React from 'react'
-import { styled } from '@mui/material/styles'
-import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp'
-import MuiAccordion from '@mui/material/Accordion'
-import MuiAccordionSummary from '@mui/material/AccordionSummary'
-import MuiAccordionDetails from '@mui/material/AccordionDetails'
-import Typography from '@mui/material/Typography'
-import { Box } from '@mui/material'
+import { useState } from 'react';
+import {buyerFAQ} from '../data/buyerFAQ';
+import {sellerFAQ} from '../data/sellerFAQ';
+import './faq.css'
 
-const Accordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={1} square {...props} />
-))(() => ({
-  border: '1px solid #ddd',
-  '&:not(:last-child)': {
-    borderBottom: 0,
-  },
-  '&::before': {
-    display: 'none',
-  },
-  backgroundColor: '#f9f9f9',
-  boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
-  borderRadius: '4px',
-  marginBottom: '10px',
-}))
+const Accordion = ({ faqs, title }) => {
+  const [activeIndex, setActiveIndex] = useState(null);
 
-const AccordionSummary = styled((props) => (
-  <MuiAccordionSummary
-    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
-    {...props}
-  />
-))(() => ({
-  backgroundColor: '#e0e0e0',
-  flexDirection: 'row-reverse',
-  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-    transform: 'rotate(90deg)',
-  },
-  '& .MuiAccordionSummary-content': {
-    marginLeft: '8px',
-  },
-}))
-
-const AccordionDetails = styled(MuiAccordionDetails)(() => ({
-  padding: '16px',
-  borderTop: '1px solid rgba(0, 0, 0, .125)',
-}))
-
-export default function CustomizedAccordions() {
-  const [expanded, setExpanded] = React.useState('panel1')
-
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false)
-  }
+  const toggleAccordion = index => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   return (
-    <Box sx={{ padding: '20px', backgroundColor: '#fafafa' }}>
-      <Box
-        sx={{
-          textAlign: 'center',
-          marginBottom: '20px',
-        }}
-      >
-        <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
-          FAQ for Buyers at The Everyone Store
-        </Typography>
-      </Box>
-      <Box
-        sx={{
-          textAlign: 'center',
-          marginBottom: '20px',
-        }}
-      >
-        <Typography variant="body1">
-          Welcome to our FAQ page! Here, we've compiled a list of commonly asked
-          questions to help you better understand how our marketplace works and
-          how you can make the most of our services. Whether you're a creator
-          looking to sell your digital products or a customer eager to discover
-          unique digital assets, our FAQ section is here to provide you with
-          quick and clear answers.
-        </Typography>
-      </Box>
+    <div className="accordion">
+      <h2 className='faq-title'>{title}</h2>
+      {faqs.map((faq, index) => (
+        <div key={index} className="accordion-item">
+          <div className="accordion-title" onClick={() => toggleAccordion(index)}>
+            <h3>{faq.question}</h3>
+            <span>{activeIndex === index ? '-' : '+'}</span>
+          </div>
+          <div className={`accordion-content ${activeIndex === index ? 'active' : ''}`}>
+            <p>{faq.answer}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-      <Accordion
-        expanded={expanded === 'panel1'}
-        onChange={handleChange('panel1')}
-      >
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography variant="h6">
-            How Can I Purchase Datasets from The Everyone Store?
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Purchasing datasets is straightforward. Simply create a buyer
-            account on The Everyone Store, browse our extensive collection of
-            datasets across various categories, and select the ones that fit
-            your project needs. Our platform facilitates secure transactions and
-            instant access to datasets once your purchase is complete.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel2'}
-        onChange={handleChange('panel2')}
-      >
-        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography variant="h6">What Types of Datasets Are Available?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            We offer a rich diversity of datasets suitable for a wide range of
-            AI modeling needs, including but not limited to:
-            <ul>
-              <li>Images and Videos: For computer vision projects.</li>
-              <li>Text and Documents: Ideal for natural language processing and analysis.</li>
-              <li>Voice Recordings: Perfect for speech recognition and generation models.</li>
-              <li>Sensor Data: Useful for IoT applications and more.</li>
-            </ul>
-            Our catalog is constantly expanding, ensuring you have access to the
-            high-quality data needed for cutting-edge AI development.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel3'}
-        onChange={handleChange('panel3')}
-      >
-        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography variant="h6">How Are the Datasets Priced?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Pricing is based on the dataset's category, quality, and
-            comprehensiveness. We strive for transparency and fairness in our
-            pricing model to ensure you get the best value for your investment.
-            Standard and premium categories are clearly marked, helping you make
-            informed decisions based on your project budget and requirements.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel4'}
-        onChange={handleChange('panel4')}
-      >
-        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography variant="h6">Can I Preview a Dataset Before Purchasing?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Yes, we offer previews for most of our datasets, allowing you to
-            assess their relevance and quality before making a purchase. These
-            previews provide a snapshot of the dataset’s structure and content,
-            ensuring it meets your needs.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel5'}
-        onChange={handleChange('panel5')}
-      >
-        <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
-          <Typography variant="h6">What is Your Refund Policy?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            At The Everyone Store, we prioritize customer satisfaction. If a
-            dataset does not meet the described standards or is not as expected,
-            we offer a refund or exchange policy within a certain period after
-            purchase. Please refer to our detailed refund policy for more
-            information.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel6'}
-        onChange={handleChange('panel6')}
-      >
-        <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
-          <Typography variant="h6">How Do I Know the Datasets Are Ethically Sourced?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            We are committed to ethical data practices. All datasets on The
-            Everyone Store are sourced from contributors who agree to our strict
-            ethical guidelines, ensuring the data is collected and shared
-            responsibly. We perform due diligence to maintain high ethical
-            standards across our platform.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel7'}
-        onChange={handleChange('panel7')}
-      >
-        <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
-          <Typography variant="h6">
-            Is There Support Available for Integrating Datasets Into My Project?
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Absolutely! Our team is available to assist you with any queries
-            related to dataset integration. Whether you need technical support
-            or advice on best practices for utilizing the datasets, we’re here
-            to help ensure your project's success.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel8'}
-        onChange={handleChange('panel8')}
-      >
-        <AccordionSummary aria-controls="panel8d-content" id="panel8d-header">
-          <Typography variant="h6">Can I Request Custom Datasets?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Yes, if you have specific requirements that our existing datasets do
-            not meet, The Everyone Store offers a custom dataset request
-            service. Contact us with your specifications, and we will work with
-            our network of contributors to source or create datasets tailored to
-            your project needs.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel9'}
-        onChange={handleChange('panel9')}
-      >
-        <AccordionSummary aria-controls="panel9d-content" id="panel9d-header">
-          <Typography variant="h6">Can I Request Custom Datasets?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Yes, if you have specific requirements that our existing datasets do
-            not meet, The Everyone Store offers a custom dataset request
-            service. Contact us with your specifications, and we will work with
-            our network of contributors to source or create datasets tailored to
-            your project needs.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel10'}
-        onChange={handleChange('panel10')}
-      >
-        <AccordionSummary aria-controls="panel10d-content" id="panel10d-header">
-          <Typography variant="h6">How Can I Stay Informed About New Datasets?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Stay ahead of the curve by subscribing to The Everyone Store’s
-            newsletter. You’ll receive updates on new dataset arrivals, special
-            offers, and insights into AI development trends. You can also
-            customize your subscription preferences to receive notifications
-            about datasets relevant to your interests.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel11'}
-        onChange={handleChange('panel11')}
-      >
-        <AccordionSummary aria-controls="panel11d-content" id="panel11d-header">
-          <Typography variant="h6">
-            What Makes The Everyone Store the Go-To Platform for AI Datasets?
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            The Everyone Store stands out for its comprehensive dataset
-            collection, ethical sourcing, transparent pricing, and exceptional
-            support. By choosing us, you’re not just acquiring data; you’re
-            investing in a partnership that supports your AI projects from
-            conception to completion. Our commitment to innovation, quality, and
-            ethical practices makes us the preferred choice for AI developers
-            worldwide.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        expanded={expanded === 'panel12'}
-        onChange={handleChange('panel12')}
-      >
-        <AccordionSummary aria-controls="panel12d-content" id="panel12d-header">
-          <Typography variant="h6">Can I Share or Resell the Datasets I Purchase?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            The datasets you purchase from The Everyone Store are for your
-            personal or organizational use, depending on the license you choose
-            at the time of purchase. Redistribution, sharing, or reselling the
-            datasets without explicit permission from The Everyone Store is
-            prohibited. Please review the specific license agreement for each
-            dataset to understand the full scope of permissible use.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-    </Box>
-  )
-}
+const Faq = ({ buyerFAQs, sellerFAQs }) => {
+  return (
+    <div className="faq-container">
+      <Accordion faqs={buyerFAQ} title="Buyer FAQs" />
+      <Accordion faqs={sellerFAQ} title="Seller FAQs" />
+    </div>
+  );
+};
+
+export default Faq;
