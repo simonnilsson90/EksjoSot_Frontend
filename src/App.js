@@ -20,16 +20,16 @@ import FilteredCategory from "./components/marketplace/dataSetCards/FilteredCate
 import FilteredLicense from "./components/marketplace/dataSetCards/FilteredLicense";
 import RootLayout from "./layouts/RootLayout";
 import HomePage from "./views/HomePage";
-import AboutUs from "./components/aboutUs/AboutUs";
-import Faq from "./components/faq/Faq";
+import AboutUs from "./views/AboutUs";
+import Faq from "./views/Faq";
 import SignUp, { signUpAction } from "./components/signUp/SignUp";
-import Shopping from "./components/shopping/Shopping";
+import Shopping from "./views/Shopping";
 
-import ProfileAccount from "./components/myAccount/profileAccount/ProfileAccount";
-import Favourites from "./components/myAccount/favourites/Favourites";
-import Purchases from "./components/myAccount/purchases/Purchases";
-import Sellings from "./components/myAccount/sellings/Sellings";
-import Membership from "./components/myAccount/membership/Membership";
+import ProfileAccount from "./views/ProfileAccount";
+import Favourites from "./views/Favourites";
+import Purchases from "./views/Purchases";
+import Sellings from "./views/Sellings";
+import Membership from "./views/Membership";
 import ProfileContainer from "./components/myAccount/profileContainer/ProfileContainer";
 
 const router = createBrowserRouter(
@@ -37,6 +37,7 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<RootLayout />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="sellings" element={<Sellings />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="contactUs" element={<ContactUs />} />
         <Route path="FaQ" element={<Faq />} />
