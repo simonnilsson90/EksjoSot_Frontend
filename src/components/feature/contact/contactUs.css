@@ -15,6 +15,10 @@
   .contact-info {
     margin-right: 20px;
   }
+
+  .contact-info h1 {
+    margin-bottom: 30px;
+  }
   
   .contact-form {
     display: flex;
