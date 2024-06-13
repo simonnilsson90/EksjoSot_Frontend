@@ -22,6 +22,8 @@ import RootLayout from "./layouts/RootLayout";
 import HomePage from "./views/HomePage";
 import AboutUs from "./views/AboutUs";
 import Faq from "./views/Faq";
+import buyerFAQ from "./data/buyerFAQ";
+import sellerFAQ from "./data/sellerFAQ";
 import SignUp, { signUpAction } from "./components/signUp/SignUp";
 import Shopping from "./views/Shopping";
 
