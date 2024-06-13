@@ -1,5 +1,4 @@
 import './contactUs.css';
-import contactImage from '../../../assets/images/homepage/contact.webp';
 
 export default function ContactUs() {
   return (
@@ -7,7 +6,6 @@ export default function ContactUs() {
         <div className='contact-content'>
             <div className='contact-info'>
                 <h1>Contact Us</h1>
-                <p>Have questions? We'd love to hear from you. Complete the form and we will get back to you as soon as possible.</p>
                 <form className='contact-form'>
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" name="name" required />
@@ -22,9 +20,7 @@ export default function ContactUs() {
                 </form>
             </div>
         </div>
-        <div className='contact-image-container'>
-            <img src={contactImage} alt='Contact Us' />
-        </div>
+        
     </div>
   )
 }
