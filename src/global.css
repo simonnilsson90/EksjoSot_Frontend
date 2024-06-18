@@ -24,9 +24,11 @@
 
   --c-dark-bg: #2f2a29;
   --c-light-bg: #c8b6a1;
+  --c-mellan-bg: #957367;
   --c-orange: #f28b30;
   --c-light-text: #ffffff;
   --c-dark-text: #000000;
+
 }
 
 * {
