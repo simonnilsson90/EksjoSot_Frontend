@@ -1,0 +1,43 @@
+
+.content-sliders {
+  align-items: center;
+  overflow: scroll;
+  height: 100vh;
+  width: 100%;
+  margin-top: 3;
+  }
+
+.slider-container {
+  position: relative;
+  max-width: 95%; 
+  margin: 0 auto;  /* Center the slider in the middle of its parent */
+  padding: 20px 40px;
+}
+
+
+.slick-arrow.slick-prev, .slick-arrow.slick-next {
+
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 100%;
+  color: black;
+  opacity: 1;
+
+}
+
+svg.slick-arrow.slick-prev {
+  left: -50px; /* Adjust this value to push the arrow further left outside the cards */
+  z-index: 200;
+}
+
+svg.slick-arrow.slick-next {
+  right: -20px; /* Adjust if necessary to align the next arrow */
+}
+
+
+.slick-arrow.slick-prev:before, .slick-arrow.slick-next:before {
+  font-size: 24px;
+  color: black;
+  opacity: 1;
+}

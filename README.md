@@ -3,11 +3,6 @@
 The Everyone Store is a React.js-based e-commerce platform offering a user-friendly shopping experience with a wide range of products.
 
 
-## Project Structure
-
-* `theeveryonestore/`
-    * `client/` (Frontend codebase)
-
 ## Getting Started
 
 These instructions will guide you through getting a copy of the project up and running on your local machine for development and testing purposes.
@@ -26,25 +21,15 @@ Follow these steps to set up your development environment:
 
 1. Clone the repository to your local machine:
     ```sh
-    git clone https://github.com/theeveryonestore/TheEveryoneStore.git
+    git clone https://github.com/The-Everytone-Store/Frontend.git
     ```
 
-2. Navigate to the frontend directory:
+2. Navigate to the correct directory:
     ```sh
-    cd everyonestore/client
+    cd /Frontend
     ```
 
 3. Install the frontend dependencies:
-    ```sh
-    npm install
-    ```
-
-4. Navigate to the backend directory:
-    ```sh
-    cd ../server
-    ```
-
-5. Install the backend dependencies:
     ```sh
     npm install
     ```
@@ -54,7 +39,7 @@ Follow these steps to set up your development environment:
 
 To run the frontend of The Everyone Store:
 
-1. Navigate back to the `client` directory:
+1. Make sure you are in the correct directory:
     ```sh
     cd ../client
     ```
@@ -88,12 +73,6 @@ To run the backend server:
     - @emotion/react and @emotion/styled for styling
     - @mui/material for Material UI components
     - React Router for routing
-
-- Backend:
-    - Node.js with Express.js framework
-    - PostgreSQL for the database (`pg` package)
-    - `dotenv` for environment variable management
-    - `cors` for enabling Cross-Origin Resource Sharing
 
 
 ## Contributing

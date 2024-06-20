@@ -1,0 +1,204 @@
+.parentDiv {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  z-index: 1;
+  
+  
+}
+
+.backgroundImg {
+    position: absolute;
+   width: 75%;
+    height: 89%;
+    top: 0;
+margin-left: 25%;
+margin-top: 20%;
+    z-index: 0; /* Set behind other content */
+     /* Make sure the image covers the entire container */
+  }
+
+.buttonStyle {
+  background-color: rgba(242, 139, 48, 1);
+  margin-top: 40px;
+  width: 100%;
+  color: "black";
+  text-transform: none !important;
+}
+
+.buttonStyle:hover {
+  background-color: rgba(200, 100, 50, 1);
+}
+
+.loginBody {
+  background-color: #2b2f32;
+  color: white;
+  height: 100%;
+  position: absolute;
+ 
+  
+}
+
+.headline {
+  margin: auto;
+  margin-top: 23px;
+  font-size: 14px;
+}
+
+.headline2 {
+  margin: auto;
+  margin-top: 39px;
+  font-size: 14px;
+}
+
+.input {
+  height: 34px;
+  margin-top: 1px;
+  width: 100%;
+}
+
+.check {
+  margin-top: 6px;
+}
+
+.forgot {
+  display: flex;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.remember {
+  color: white;
+  right: 32px;
+  position: absolute;
+  padding-top: 12px;
+  font-size: 9px;
+}
+
+.password {
+  left: 31px;
+  position: absolute;
+}
+
+.policy {
+  margin-top: 10px;
+  color: white;
+  padding-left: 265px;
+  font-size: 9px;
+}
+
+.smallText {
+  font-size: 10px;
+  margin-top: 19px;
+}
+
+.email {
+  margin-top: 30px;
+  font-size: 9px;
+}
+
+.passwordInput {
+  margin-top: 18px;
+  font-size: 9px;
+}
+
+.rpassword {
+  font-size: 9px;
+  align-content: center;
+  margin-right: 32%;
+}
+
+.fpasswordpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.fpassword {
+  display: flex;
+  justify-content: end;
+}
+
+.closeButtonContainer {
+  display: flex;
+  justify-content: end;
+  padding-top: 18px;
+}
+
+.close {
+  color: white;
+}
+
+.arrow {
+  color: white;
+}
+
+.iconArrow {
+  display: flex;
+  margin-right: 65%;
+}
+
+.backgroundPos {
+  margin-top: -372px;
+  margin-left: 130px;
+  position: absolute ;
+  bottom: 0;
+}
+
+.line {
+    background-color: rgba(242, 139, 48, 1);
+    max-height: fit-content;
+    height: 15%;
+    width: 2px;
+    margin-left: 15%;
+    position: absolute ;
+    bottom: 0;
+  }
+  
+  .forgotPasswordLine {  /* New class */
+    background-color: rgba(242, 139, 48, 1);
+    max-height: fit-content;
+    height: 40%;
+    width: 2px;
+    margin-left: 15%;
+    position: absolute ;
+    bottom: 0;
+  }
+
+
+
+.form {
+    margin-top: 25%;
+    width: 100%;
+}
+
+.emailForgot {
+    font-size: 9px;
+    width: 1
+    
+}
+
+.formParent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.submitForgot{
+    margin-top: 10%;
+}
+
+.alignForgotButton {
+    text-align: center;
+ 
+}
+
+.imagePos {
+    display: flex;
+    margin-bottom: 0;
+}
