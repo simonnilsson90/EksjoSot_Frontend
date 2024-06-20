@@ -10,7 +10,7 @@
   --padding-l: calc(var(--padding-base) * 2);
   --padding-xl: calc(var(--padding-base) * 4);
 
-  /* font-size */
+  /* font-size 
 
   --font-size-base: 1rem;
 
@@ -19,6 +19,8 @@
   --font-size-l: calc(var(--font-size-base) * 2);
   --font-sieze-xl: calc(var(--font-size-base) * 4);
   --font-size-xxl: calc(var(--font-size-base) * 6);
+
+  */
 
   /* colours */
 
@@ -43,3 +45,7 @@ body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   min-height: 100vh;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

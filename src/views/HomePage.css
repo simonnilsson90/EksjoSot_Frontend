@@ -1,32 +1,13 @@
-.homePage {
-  width: 100%;
-  min-height: 100vh;
+
+
+.border-sot {
+  --tw-border-opacity: 1;
+  border-color: rgba(224, 95, 51, var(--tw-border-opacity));
 }
 
-.heroImage {
-  width: 100%;
+
+
+.bg-sot {
+  background-color: #2b2f32 !important;
 }
 
-.heroImage img {
-  width: 100%;
-}
-
-.heroText {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  margin-top: 8%;
-  top: 13%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: gray 4px 4px 8px;
-}
-
-.heroText h1 {
-  font-size: 2.5vw;
-}
-
-h3 {
-  font-size: 2vw;
-}

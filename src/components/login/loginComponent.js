@@ -90,7 +90,7 @@ function Login({ onClose }) {
                           textTransform: "none",
                           width: "40%",
                           color: "black",
-                          backgroundColor: "rgba(242, 139, 48, 1)",
+                          backgroundColor: "#e05f33",
                           border: "0px",
                           borderRadius: "0px",
                           marginTop: "15%",
@@ -114,21 +114,15 @@ function Login({ onClose }) {
 
             {!signUpOpen && 
             <>
-              <p className=" headline">Sign in to The Everyone Store</p>
-              <div className="smallText">
-                <p>Welcome back to The Everyone Store!</p>
-                <p>
-                  Sign in to your account to continue exploring our diverse{" "}
-                </p>
-                <p>collection of human data and resources.</p>
-              </div>
+              <p className=" headline">Logga in</p>
+             
               <p className="email">Email</p>
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="input"
               ></input>
-              <p className="passwordInput">Password</p>
+              <p className="passwordInput">Lösenord</p>
               <input
                 value={password}
                 type="password"
@@ -144,7 +138,7 @@ function Login({ onClose }) {
                   }}
                   {...label}
                 />
-                <p className="rpassword">Remember Password</p>
+                <p className="rpassword">Kom ihåg lösenordet</p>
                 <div className="fpassword">
                   <Button
                     sx={{
@@ -155,7 +149,7 @@ function Login({ onClose }) {
                     }}
                     onClick={toggleForgotPasswordMenu}
                   >
-                    Forgot Password?
+                    Glömt lösenord?
                   </Button>
                 </div>
               </div>
@@ -163,7 +157,7 @@ function Login({ onClose }) {
                 <Button
                   sx={{
                     color: "black",
-                    backgroundColor: "rgba(242, 139, 48, 1)",
+                    backgroundColor: "#e05f33",
                     border: "0px",
                     borderRadius: "0px",
                   }}
@@ -171,13 +165,13 @@ function Login({ onClose }) {
                   className="buttonStyle"
                   variant="contained"
                 >
-                  Login
+                  Logga in
                 </Button>
               </Stack>
-              <p className=" headline2">New to The Everyone Store?</p>
+              <p className=" headline2">Ny kund?</p>
               <div className="smallText">
-                <p>Join our community and create your account</p>
-                <p>to access exclusive data sets and resources. </p>
+                <p>skapa konto för att se </p>
+                <p>dina beställningar. </p>
               </div>
              
              <Stack marginTop={2} spacing={2} direction="row">
@@ -187,7 +181,7 @@ function Login({ onClose }) {
                     width: "100%",
                     color: "black",
                     marginBottom: "10px",
-                    backgroundColor: "rgba(242, 139, 48, 1)",
+                    backgroundColor: "#e05f33",
                     border: "0px",
                     borderRadius: "0px",
                   }}
@@ -195,7 +189,7 @@ function Login({ onClose }) {
                   className="buttonStyle"
                   variant="contained"
                   >
-                  Create account
+                  Skapa konto
                 </Button>
                 <Drawer 
                   open={signUpOpen} 
@@ -208,7 +202,7 @@ function Login({ onClose }) {
               
               
               <a className="policy" href="/endpoint">
-                Private policy
+                Privat policy
               </a>
           </>
           }
@@ -220,10 +214,8 @@ function Login({ onClose }) {
           )}
         </div>
       </div>
-      <div
-        className={forgotPassword ? "line forgotPasswordLine" : "line"}
-      ></div>
-      <img src={Background} alt="Background" className="backgroundImg" />
+     
+     
     </div>
   );
 }

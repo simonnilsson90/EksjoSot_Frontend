@@ -75,13 +75,11 @@ const SignUp = () => {
   return (
     <div className={Styles.signupContainer}>
       <div className={Styles.parent}>
-        <p className={Styles.headline}>Sign Up for The EveryOne Store</p>
+        <p className={Styles.headline}>Skapa konto hos Sotarna i Eksjö</p>
         <p className={Styles.smallText}>
-          Unlock the full potential of The EveryOne Store by creating your
-          account today.
+          Se dina bokningar och fakturor.
           <br />
-          Join our community of creators, innovators and visionaries to access
-          exclusive data sets and resources.
+          Allt samlade på samma ställe.
         </p>
 
         <Form method="post" action="/SignUp" className={Styles.form}>
@@ -100,7 +98,7 @@ const SignUp = () => {
             <div className={Styles.passwordContainer}>
               <input
                 type={show ? "text" : "password"}
-                name="password"
+                name="lösenord"
                 id="password"
                 required
                 className={Styles.input}
@@ -111,7 +109,7 @@ const SignUp = () => {
             </div>
           </div>
           <div className={Styles.groupStyle}>
-            <span className={Styles.rePassword}>Re-enter Password</span>
+            <span className={Styles.rePassword}>Upprepa lösenordet</span>
             <div className={Styles.passwordContainer}>
               <input
                 type={showConfirmation ? "text" : "password"}
@@ -131,7 +129,7 @@ const SignUp = () => {
                 textTransform: "none",
                 width: "100%",
                 color: "black",
-                backgroundColor: "rgba(242, 139, 48, 1)",
+                backgroundColor: "#e05f33",
                 border: "0px",
                 borderRadius: "0px",
                 marginTop: "15px",
@@ -139,7 +137,7 @@ const SignUp = () => {
               type="submit"
               className={Styles.buttonStyle}
             >
-              Create account
+              Skapa konto
             </Button>
           </div>
           {/* {data && data.error && <p>{data.error}</p>} */}

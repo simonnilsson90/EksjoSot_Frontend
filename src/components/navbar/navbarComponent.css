@@ -1,22 +1,23 @@
 .navbarContainer {
   display: flex;
   justify-content: space-between;
-  list-style: none;
-  height: 50px;
+ 
+  height: 80px;
   margin-right: 40px;
 }
 
 .nav {
-  background-color: #fff !important;
+  background-color: #2b2f32 !important;
 }
+
+
 
 #logoContainer {
   display: flex;
   align-items: center;
-  font-weight: bold;
-  font-size: 1rem;
+  
   text-decoration: none;
-  color: #0d141c;
+  color: whitesmoke;
 }
 
 #logo {
@@ -25,10 +26,11 @@
 
 .companyName {
   line-height: 1;
+ 
 }
 
 #linksContainer {
-  font-size: 14px;
+  font-size: 22px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -43,9 +45,9 @@
 }
 
 .navbarLink a {
-  text-decoration: none;
-  color: #0d141c;
-  font-weight: 500;
+  
+  color: whitesmoke;
+  
 }
 
 .navbarLink a.active {
@@ -58,10 +60,9 @@
 }
 
 .navbarLink p {
-  font-size: 14px;
-  text-transform: capitalize;
+  
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  color: #0d141c;
+  color: whitesmoke;
 }
 
 .hamburger-icon {
@@ -75,7 +76,7 @@
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #0d141c;
+  background-color: whitesmoke;
   margin: 5px 0;
   transition: 0.4s;
 }

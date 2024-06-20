@@ -1,6 +1,7 @@
 import UserPic from "../../assets/images/homepage/user.png";
 import React, { useState } from "react";
 import "./navbarComponent.css";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 import { Link } from "react-router-dom";
 
@@ -8,7 +9,9 @@ import Login from "../login/loginComponent";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import { SiIconify } from "react-icons/si";
+
+
+
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,55 +32,54 @@ function Navbar() {
   return (
     <>
       <nav className="nav">
-        <ul className="navbarContainer">
+        <ul className="navbarContainer ">
           <Link to="/" id="logoContainer">
-            <img
-              id="logo"
-              src={"/theEveryoneStorelogo.svg"}
-              alt="Logo"
-              width={90}
-              height={90}
-            />
-            <span className="companyName">
-              The
+          <img
+                  src={"/eksjo-logo-2.png"}
+                  width={60}
+                  height={60}
+                  alt="shopping bag"
+                />
+            <span className="companyName text-lg ml-2">
+              Sotning
               <br />
-              EveryOne
+             & Ventilation
               <br />
-              Store
+              Eksjö AB
             </span>
           </Link>
           <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
-            <li className="navbarLink">
+            <li className="navbarLink ">
               <Link to="/" onClick={closeDrawer}>
-                Home
+                Hem
               </Link>
             </li>
             <li className="navbarLink">
-              <Link to="/marketplace">Marketplace</Link>
+              <Link to="/tjanster">Tjänster</Link>
             </li>
 
             <li className="navbarLink">
-              <Link to="/sellings">Sell Data</Link>
+              <Link to="/taxor">Taxor</Link>
             </li>
 
             <li className="navbarLink">
-              <Link to="/about">About Us</Link>
+              <Link to="/om">Om oss</Link>
             </li>
             <li className="navbarLink">
-              <Link to="/contactUs">Contact Us</Link>
+              <Link to="/kontakt">Kontakt</Link>
             </li>
             <li className="navbarLink">
-              <Link to="/FaQ">FaQ</Link>
+              <Link to="/FaQ">Hållbarhet</Link>
             </li>
             <li className="navbarLink">
-              <Link to="/My-Account-Menu">
-                <SiIconify />
+              <Link to="/besiktningar">Besiktningar
+                
               </Link>
             </li>
             <li className="navbarLink">
               <Button className="navbarLinkLogIn" onClick={toggleDrawer(true)}>
-                <img src={UserPic} width={25} height={25} alt="User" />
-                <p>Login</p>
+              
+              <AccountCircleIcon style={{ fontSize: 25, color: 'white' }} />
               </Button>
               <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
                 <Box sx={{ width: 390, height: 844 }} role="presentation">
@@ -85,16 +87,7 @@ function Navbar() {
                 </Box>
               </Drawer>
             </li>
-            <li>
-              <Link to="/myShopping">
-                <img
-                  src={"/shopping-bag.svg"}
-                  width={25}
-                  height={25}
-                  alt="shopping bag"
-                />
-              </Link>
-            </li>
+           
           </div>
           <li id="hamburgerMenu">
             <button

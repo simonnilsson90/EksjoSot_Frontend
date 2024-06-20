@@ -11,8 +11,12 @@ const Footer = () => {
         <div>Docs</div>
         <div>API</div>
         <div>FAQ</div>
-        <div>Terms of Service</div>
+        <div id="copyright-container">
+        <span>@2024</span>
+        <a href="/">Sotarna i Eksjö</a>
       </div>
+      </div>
+      {/* 
       <div id="socials-container">
         <div id="socials-links">
           <div className="socials-icon">
@@ -36,6 +40,8 @@ const Footer = () => {
         <span>@2023</span>
         <a href="/">The Everyone Store</a>
       </div>
+      */}
+      
     </div>
   );
 };

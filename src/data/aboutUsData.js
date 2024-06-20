@@ -1,16 +1,16 @@
 const aboutUsData = {
-    title: "About Us",
-    description: "Welcome to the forefront of digital innovation at The Everyone Store, where we transform personal data into powerful creative tools. Our platform is not just a marketplace; it’s a revolutionary approach to how data can enhance digital creation across various sectors including education, entertainment, marketing, and beyond.",
+    title: "Om oss",
+    description: "Välkommen till Sotning & Ventilation Eksjö AB, ett företag som styrs med järnhand av Emanuel Nattvarg",
     vision: {
-      title: "Our Vision",
+      title: "Vår vision",
       content: "Founded by Karl Lillrud, an accomplished entrepreneur and one of the world's top 10 thought leaders on AI, our company is built on the promise of integrity, innovation, and inspiration. Karl's journey from a visionary to a leading authority in AI and digital commerce is driven by a passion to empower creators and innovators around the globe. With over two decades of experience in pushing the boundaries of technology and business, Karl has shaped The Everyone Store to reflect his commitment to excellence and ethical practices."
     },
     whatWeDo: {
-      title: "What We Do",
-      content: "At The Everyone The Everyone Store, we specialize in curating extensive libraries of high-quality human data sets including images, videos, and voice recordings. Each data set is meticulously verified for quality and comes with clear usage permissions, ensuring that our users—ranging from filmmakers and game developers to AI researchers—can find the perfect assets to bring their visions to life."
+      title: "Vad vi gör",
+      content: "På Eksjö sot gör vi vad fan vi vill med era skorstenar, och det finns ingenting ni kan göra för att stoppa oss!"
     },
     howWeStandOut: {
-      title: "How We Stand Out",
+      title: "Hur vi skiljer oss från andra sotare",
       items: [
         "Quality Assurance: Every data set on our platform undergoes rigorous checks to ensure authenticity and reliability.",
         "Diverse Offerings: From emotional voice recordings to dynamic facial expressions, our diverse range of data sets caters to various creative needs.",
@@ -18,7 +18,7 @@ const aboutUsData = {
       ]
     },
     ourCulture: {
-      title: "Our Culture",
+      title: "Vår kultur",
       content: "Our team at The Everyone Store is a vibrant tapestry of skilled individuals who share a common goal: to revolutionize how data is used in digital content creation. We are thinkers, creators, and innovators, dedicated to providing an environment where ideas can flourish and lead to groundbreaking solutions. Our work culture promotes continuous learning, creativity, and a proactive approach to solving challenges."
     },
     communityOutreach: {
