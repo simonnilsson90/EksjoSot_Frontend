@@ -1,4 +1,4 @@
-npm 
+
 import React, { useState } from "react";
 import "./navbarComponent.css";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
