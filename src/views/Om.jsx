@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutUsData from '../data/aboutUsData'; 
-import { FaCheckCircle } from 'react-icons/fa'; 
+
 import './aboutUs.css';
 
 const OmPage  = () => {

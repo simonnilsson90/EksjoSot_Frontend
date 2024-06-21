@@ -1,4 +1,4 @@
-import UserPic from "../../assets/images/homepage/user.png";
+npm 
 import React, { useState } from "react";
 import "./navbarComponent.css";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';

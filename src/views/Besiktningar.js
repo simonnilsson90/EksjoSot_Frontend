@@ -1,7 +1,6 @@
 import React from 'react';
 
 import besiktningarData from '../data/besiktningarData';
-import { FaCheckCircle } from 'react-icons/fa'; 
 import './aboutUs.css';
 
 const BesiktningarPage  = () => {
