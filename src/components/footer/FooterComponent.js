@@ -7,8 +7,8 @@ import XIcon from "../../assets/icons/x_icon.svg";
 const Footer = () => {
   return (
     <div id="footer-container">
-      <div id="links-container">
-        <div>Docs</div>
+      <div className="text-gray-100" id="links-container">
+        <div >Kontakt</div>
         <div>API</div>
         <div>FAQ</div>
         <div id="copyright-container">
