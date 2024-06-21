@@ -10,10 +10,8 @@ import {
 
 import MyAccount from "./components/myAccount/MyAccount";
 import ConsentForm from "./components/feature/consent/ConsentForm";
-import DataSetsComponent from "./components/myAccount/dataSets/dataSetsComponent";
-import CreateDataset from "./components/myAccount/createDataset/createDatasetComponent";
-import Reports from "./components/myAccount/reports/reportsComponent";
-import Carousel from "./components/marketPlace/dataSetCards/carousel/Carousel";
+
+
 import FilteredCategory from "./components/marketPlace/dataSetCards/FilteredCategory";
 import FilteredLicense from "./components/marketPlace/dataSetCards/FilteredLicense";
 import RootLayout from "./layouts/RootLayout";
@@ -50,20 +48,15 @@ const router = createBrowserRouter(
         <Route path="myAccount" element={<MyAccount />} />
         <Route path="consentForm" element={<ConsentForm />} />
         <Route path="tjanster" element={<Tjanster />}>
-        
-
-          <Route index element={<Carousel />} />
+      
           <Route path="category" element={<FilteredCategory />} />
           <Route path="category/:categoryType" element={<FilteredCategory />} />
           <Route path="license" element={<FilteredLicense />} />
           <Route path="license/:license" element={<FilteredLicense />} />
         </Route>
-        <Route path="myAccount/dataSets" element={<DataSetsComponent />} />
-        <Route
-          path="myAccount/dataSets/createDataset"
-          element={<CreateDataset />}
-        />
-        <Route path="myAccount/reports" element={<Reports />} />
+
+       
+      
 
         <Route path="My-Account-Menu" element={<ProfileContainer />}>
           <Route path="profile" element={<ProfileAccount />} />
