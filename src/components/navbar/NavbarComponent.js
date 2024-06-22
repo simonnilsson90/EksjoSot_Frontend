@@ -69,7 +69,7 @@ function Navbar() {
               <Link to="/kontakt">Kontakt</Link>
             </li>
             <li className="navbarLink">
-              <Link to="/FaQ">Hållbarhet</Link>
+              <Link to="/hallbarhet">Hållbarhet</Link>
             </li>
             <li className="navbarLink">
               <Link to="/besiktningar">Besiktningar
@@ -89,7 +89,7 @@ function Navbar() {
             </li>
            
           </div>
-          <li id="hamburgerMenu">
+          <li  id="hamburgerMenu">
             <button
               onClick={toggleMenu}
               className={`hamburger-icon ${isMenuOpen ? "active" : ""}`}

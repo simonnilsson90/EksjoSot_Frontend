@@ -19,6 +19,7 @@ import Taxor from "./views/Taxor";
 import Kontakt from "./views/Kontakt";
 import OmPage from "./views/Om";
 import BesiktningarPage from "./views/Besiktningar";
+import HallbarhetPage from "./views/Hallbarhet";
 
 
 
@@ -33,17 +34,14 @@ const router = createBrowserRouter(
         <Route path="besiktningar" element={<BesiktningarPage />} />
         <Route path="myAccount" element={<MyAccount />} />
         <Route path="tjanster" element={<Tjanster />}>
-      
-         
+    
         </Route>
 
-
+        <Route path="hallbarhet" element={<HallbarhetPage />}/>
 
         <Route path="My-Account-Menu" element={<ProfileContainer />}>
           <Route path="profile" element={<ProfileAccount />} />
        
-          
-
       
         </Route>
       </Route>
