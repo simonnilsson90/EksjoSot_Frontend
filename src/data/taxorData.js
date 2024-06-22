@@ -1,16 +1,16 @@
-const aboutUsData = {
-    title: "Om oss",
-    description: "Välkommen till Sotning & Ventilation Eksjö AB, ett företag som styrs med järnhand av Emanuel Nattvarg",
+const taxorData = {
+    title: "SOTNINGSTAXAN",
+    description: "Sotningsavgiften är en kommunal avgift beslutad med stöd av Lagen om skydd mot olyckor (3 kap 6 §). Avgiften är uppdelad i tre delmoment: 1) grundavgift, 2) objektsavgift3) ev. tilläggsavgifter. Taxan förutsätter att fördelning av avgifter skall ske så att alla kommunmedlemmar som befinner sig i motsvarande läge skall betala samma avgifter. Det kallas likställighetsprincipen och är en del av kommunallagen (2 kap 3 §).",
     vision: {
-      title: "Vilka är vi?",
-      content: "Sotning & ventilation i Eksjö AB grundades 2022 och har sedan dess bedrivit sotningsverksamhet. Bolaget ägs idag av 3 aktörer inom sotningsbranschen med en sammanlagd erfarenhet om nära 50 år. Samtliga inom ägarkretsen är behöriga skorstensfejarmästare och brandskyddskontrollanter enligt lagen (2003:778) om skydd mot olyckor."
+      title: "GRUNDAVGIFT",
+      content: "Grundavgiften eller inställelseavgiften skall täcka de indirekta kostnader som en förrättning medför. Exempel på dessa kostnader är transportkostnader, diarieföring, föredragningar, avgiftsdebitering. personalomkostnader, utbildning, lokalkostnader, kapitalkostnader, datadrift och administrationskostnader. Avgiften härstammar från en beräkningsgrund från 1974, senast reviderad 1987. Objektsavgift. Taxan bygger på att det första objektet vid varje besök bär den största andelen av de direkta kostnader besöket medför. Exempel på dessa kostnader är direkta personalkostnader, material och utrustning, försäkringar, förberedelser och rapportering. Tillkommande objekt vid samma besök bär en mindre del av totalkostnaden eftersom t ex förflyttningar inom fastigheten täcks av kostnaden för det första objektet."
     },
     whatWeDo: {
-      title: "Vad vi gör",
+      title: "TILLÄGGSAVGIFTER",
       content: "Vi är medlemmar i Sveriges Skorstensfejarmästares Riksförbund och har avtal att utföras sotningstjänster i Eksjö och Västerviks kommuner. Vår främsta uppgift är att förebygga bränder i samhället och det gör vi genom lagstadgad sotning och brandskyddskontroll enligt LSO, Lagen om skydd mot olyckor."
     },
     howWeStandOut: {
-      title: "Hur vi skiljer oss från andra sotare",
+      title: "BESLUT OM TAXAN",
       items: [
         "Quality Assurance: Every data set on our platform undergoes rigorous checks to ensure authenticity and reliability.",
         "Diverse Offerings: From emotional voice recordings to dynamic facial expressions, our diverse range of data sets caters to various creative needs.",
@@ -18,15 +18,15 @@ const aboutUsData = {
       ]
     },
     ourCulture: {
-      title: "Vår kultur",
+      title: "TAXEHÖJNING",
       content: "Our team at The Everyone Store is a vibrant tapestry of skilled individuals who share a common goal: to revolutionize how data is used in digital content creation. We are thinkers, creators, and innovators, dedicated to providing an environment where ideas can flourish and lead to groundbreaking solutions. Our work culture promotes continuous learning, creativity, and a proactive approach to solving challenges."
     },
     communityOutreach: {
-      title: "Community and Outreach",
+      title: "HISTORISKA TAXOR",
       content: "We believe in giving back to the community and actively participate in educational initiatives, workshops, and seminars that educate about the ethical creation and use of AI-generated content. By partnering with platforms like YouTube and TikTok, we extend our reach and influence, ensuring that our contributions make a difference."
     },
     whyChooseUs: {
-      title: "Why Choose Us?",
+      title: "HUR BESTÄMS TAXAN",
       content: "Choosing The Everyone Store means partnering with a leader recognized globally for innovative solutions in digital commerce and AI. Under Karl Lillrud’s guidance, our platform not only provides access to high-quality data but also fosters a responsible approach to its use. Here, creativity meets technology, powered by an ethos that values both innovation and integrity."
     },
     joinOurJourney: {
@@ -39,5 +39,5 @@ const aboutUsData = {
     }
   };
   
-  export default aboutUsData;
+  export default taxorData;
   

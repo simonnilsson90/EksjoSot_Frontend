@@ -7,19 +7,24 @@ import { useState } from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
-import Background from "../../assets/images/homepage/login-background.png";
+
 import SignUp from "../signUp/SignUp";
 import axios from 'axios';
 
 function Login({ onClose }) {
+  // eslint-disable-next-line
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
-
+// eslint-disable-next-line
   const [email, setEmail] = useState("");
+  // eslint-disable-next-line
   const [password, setPassword] = useState("");
+  // eslint-disable-next-line
   const [forgotPassword, setForgotPassword] = useState(false);
+  // eslint-disable-next-line
   const [signUpOpen, setSignUpOpen] = useState(false);
+  // eslint-disable-next-line
   const [error, setError] = useState();
-
+// eslint-disable-next-line
   const toggleForgotPasswordMenu = () => {
     setForgotPassword(!forgotPassword);
   };

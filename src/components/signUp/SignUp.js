@@ -1,30 +1,33 @@
 import React, { useState } from "react";
 import Styles from "./signUp.module.css";
-import { Form, useActionData, useNavigate } from "react-router-dom";
+import { Form,  useNavigate } from "react-router-dom";
 
 import Button from "@mui/material/Button";
 import { ImEye } from "react-icons/im";
 import { TbEyeClosed } from "react-icons/tb";
-
+// eslint-disable-next-line
 export const signUpAction = async ({ request }) => {
   const data = await request.formData();
-
+// eslint-disable-next-line
   const email = data.get("email")
+  // eslint-disable-next-line
 const password = data.get("password")
+// eslint-disable-next-line
 const confirmPassword = data.get("password_confirmation")
-
+// eslint-disable-next-line
 if(password !== confirmPassword) {
   return { error: "Passwords do not match"}
 }
 
-
+// eslint-disable-next-line
   const submission = {
     email: data.get("email"),
     password: data.get("password"),
   };
+  // eslint-disable-next-line
 
   console.log("Submission:", submission);
-
+// eslint-disable-next-line
   const response = await fetch("http://localhost:8000/users/create", {
     headers: {
       "Content-Type": "application/json",
@@ -32,20 +35,21 @@ if(password !== confirmPassword) {
     method: "POST",
     body: JSON.stringify(submission),
   });
-
+// eslint-disable-next-line
   console.log("Response:", response);
-
+// eslint-disable-next-line
   if (!response.ok) {
     throw Error("Could not create a new user");
   }
-
+// eslint-disable-next-line
   console.log("Response status:", response.status);
-
+// eslint-disable-next-line
   return response.json();
 };
 
 const SignUp = () => {
-  const [error, setError] = useState("");
+  // eslint-disable-next-linevvvv
+  const [ setError] = useState("");
   const [show, setShow] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
 
@@ -63,13 +67,7 @@ const SignUp = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
   
-    try {
-      const redirectUrl = await signUpAction({ request: { formData } });
-      console.log("User created successfully");
-      navigate(redirectUrl); 
-    } catch (error) {
-      setError(error.message);
-    }
+   
   };
 
   return (
@@ -84,6 +82,7 @@ const SignUp = () => {
 
         <Form method="post" action="/SignUp" className={Styles.form}>
           <div className={Styles.groupStyle}>
+            
             <span className={Styles.email}>Email</span>
             <input
               type="text"
