@@ -49,7 +49,7 @@ function Navbar() {
             </span>
           </Link>
           <div id="linksContainer" className={isMenuOpen ? "open" : ""}>
-            <li className="navbarLink ">
+            <li className="navbarLink mt-8 lg:mt-0 md:mt-0 border-t-4 border-gray-100 lg:border-none md:border-none ">
               <Link to="/" onClick={closeDrawer}>
                 Hem
               </Link>
