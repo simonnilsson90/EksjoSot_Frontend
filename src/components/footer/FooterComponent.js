@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div id="footer-container">
       <div className="text-gray-100" id="links-container">
-        <div >Kontakt</div>
+        <a href="/kontakt" >Kontakt</a>
       
         <div id="copyright-container">
         <span>@2024</span>

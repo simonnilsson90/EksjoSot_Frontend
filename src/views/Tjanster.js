@@ -1,7 +1,7 @@
 import React from "react";
 
 import tjansterData from "../data/tjansterData";
-import "./HomePage.css";
+
 
 const TjansterPage= () => {
     return (

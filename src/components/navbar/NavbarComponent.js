@@ -65,9 +65,7 @@ function Navbar() {
             <li className="navbarLink  lg:mt-0 md:mt-0 border-b-2 border-gray-100 lg:border-none md:border-none ">
               <Link to="/om">Om oss</Link>
             </li>
-            <li className="navbarLink lg:mt-0 md:mt-0 border-b-2 border-gray-100 lg:border-none md:border-none ">
-              <Link to="/kontakt">Kontakt</Link>
-            </li>
+            
             <li className="navbarLink  lg:mt-0 md:mt-0 border-b-2 border-gray-100 lg:border-none md:border-none ">
               <Link to="/hallbarhet">Hållbarhet</Link>
             </li>
