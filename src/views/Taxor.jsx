@@ -5,11 +5,12 @@ const TaxorPage = () => {
     return (
       <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: "url('/sot-2.jpeg')",  }}>
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent"> 
-  <header className="header text-white">
+      
+  <header className="header text-gray-100">
       <h1>{taxorData.title}</h1>
       <p>{taxorData.description}</p>
   </header>
-
+  <div className="flex flex-col lg:flex-row lg:flex-wrap p-4 gap-4">   
   <div className="content-grid ">
       <div className="vision section bg-sot text-gray-100">
           <div>
@@ -54,18 +55,7 @@ const TaxorPage = () => {
               <p>{taxorData.whyChooseUs.content}</p>
           </div>
       </div>
-{/*
-      <div className="join-our-journey section">
-          <div>
-              <h2>{besiktningarData.joinOurJourney.title}</h2>
-              <p>{besiktningarData.joinOurJourney.content}</p>
-          </div>
       </div>
-
-    <footer className="footer">
-          <h2>{besiktningarData.finalMessage.title}</h2>
-          <p>{besiktningarData.finalMessage.content}</p>
-      </footer> */} 
   </div>
 </div>
 </div>

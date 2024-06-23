@@ -35,7 +35,7 @@ function HomePage() {
             </span>
           </div>
 
-          <div style={{ backgroundColor: "#2b2f32" }} className=" lg:mt-80 mt-48 rounded-lg mx-5 lg:ml-0 p-2 lg:w-3/7 text-gray-100 lg:text-3xl text-xl font-semibold">
+          <div style={{ backgroundColor: "#2b2f32" }} className=" lg:mt-80 mt-36 rounded-lg mx-5 lg:ml-0 p-2 lg:w-3/7 text-gray-100 lg:text-3xl text-xl font-semibold">
             <h2 className="border-b-2 border-sot">Våra tjänster</h2>
             <ul className="lg:text-xl text-base mt-2 space-y-1">
               <li>-Rengöring av eldstäder, imkanaler och fläktar</li>
