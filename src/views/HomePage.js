@@ -2,6 +2,7 @@ import React from "react";
 import "./HomePage.css";
 import './aboutUs.css';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';  
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
               <p className="lg:text-4xl md:text-4xl text-2xl font-bold">
                 Expert på sotning i din kommun
                 <span className="block border-b-2 border-sot"></span>
+                <Link to={"/boka"}> 
                 <Button
                   variant="contained"
                   sx={{
@@ -31,6 +33,7 @@ function HomePage() {
                 >
                   Boka tid
                 </Button>
+                </Link>
               </p>
             </span>
           </div>
