@@ -4,6 +4,8 @@ import './aboutUs.css';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';  
 
+// ok
+
 function HomePage() {
   return (
     <div className="relative h-screen bg-cover bg-top bg-fixed" style={{ backgroundImage: "url('/sunrise_sotare.jpeg')" }}>
