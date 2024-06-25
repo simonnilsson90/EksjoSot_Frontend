@@ -22,8 +22,6 @@ import BesiktningarPage from "./views/Besiktningar";
 import HallbarhetPage from "./views/Hallbarhet";
 import BokaPage from "./views/BokaPage";
 
-
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -33,24 +31,18 @@ const router = createBrowserRouter(
         <Route path="om" element={<OmPage />} />
         <Route path="kontakt" element={<Kontakt />} />
         <Route path="boka" element={<BokaPage />} />
-        
         <Route path="besiktningar" element={<BesiktningarPage />} />
         <Route path="myAccount" element={<MyAccount />} />
-        <Route path="tjanster" element={<Tjanster />}>
-    
-        </Route>
-
-        <Route path="hallbarhet" element={<HallbarhetPage />}/>
-
+        <Route path="tjanster" element={<Tjanster />} />
+        <Route path="hallbarhet" element={<HallbarhetPage />} />
         <Route path="My-Account-Menu" element={<ProfileContainer />}>
           <Route path="profile" element={<ProfileAccount />} />
-       
-      
         </Route>
       </Route>
       <Route path="SignUp" element={<SignUp />} action={signUpAction} />
     </>
-  )
+  ),
+  { basename: "/EksjoSot_Frontend" } 
 );
 
 function App() {
