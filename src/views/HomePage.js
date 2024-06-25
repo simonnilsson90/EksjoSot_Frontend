@@ -13,12 +13,12 @@ function HomePage() {
   return (
     <div className="relative h-screen bg-cover bg-top bg-fixed"  style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sunrise_sotare.jpeg)` }}>
       <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-transparent to-transparent">
-        <div className="flex flex-col md:items-center items-center lg:items-start lg:pl-12 lg:pr-4 pt-36">
+        <div className="flex flex-col md:items-center items-center lg:items-start lg:pl-12 lg:pr-4 pt-36 mb-4">
           <div className="text-center md:text-center lg:text-left lg:absolute lg:right-12 lg:top-24">
             <span className="text-4xl lg:text-6xl md:text-5xl text-white">
               <p className="font-semibold">Välkommen till EksjöSot</p>
           
-              <img src="sunrise_sotare.jpeg" alt="" width={20} />
+              
               <p className="lg:text-4xl md:text-4xl text-2xl font-bold">
                 Expert på sotning i din kommun
                 <span className="block border-b-2 border-sot"></span>
@@ -45,18 +45,23 @@ function HomePage() {
             </span>
           </div>
 
-          <div style={{ backgroundColor: "#2b2f32" }} className=" lg:mt-80 mt-36 lg:rounded-lg lg:mx-5 w-full lg:w-2/5 lg:ml-0 p-2  text-gray-100 lg:text-3xl text-xl font-semibold">
+          <div style={{ backgroundColor: "#2b2f32" }} className=" lg:mt-80 mt-4 lg:rounded-lg lg:mx-5 w-full lg:w-2/5 lg:ml-0 p-2  text-gray-100 lg:text-3xl text-xl font-semibold">
             <h2 className="border-b-2 border-sot">Våra tjänster</h2>
-            <ul className="lg:text-xl text-base mt-2 space-y-1">
-              <li>-Rengöring av eldstäder, imkanaler och fläktar</li>
-              <li>-Besiktningar vid överlåtelse, nyinstallationer, status</li>
-              <li>-Sotning och brandskyddskontroller enligt LSO</li>
-              <li>-Övriga tjänster inom området</li>
+            <ul className="lg:text-xl text-sm  mt-2 space-y-1">
+              <li className="flex  "><p className=" my-auto mr-1 mt-1">*</p> <p></p>Rengöring av eldstäder, imkanaler och fläktar</li>
+              <li className="flex  "><p className=" my-auto mr-1 mt-1">*</p> <p></p> Besiktningar vid överlåtelse, nyinstallationer, status</li>
+              
+              <li>* Sotning och brandskyddskontroller</li>
+              <li>* Övriga tjänster inom området</li>
             </ul>
           </div>
         </div>
-        <Footer/>
+       
+      
       </div>
+      <div className=" bottom-0 absolute w-full">
+        <Footer/>
+        </div>
     </div>
   );
 }

@@ -62,12 +62,13 @@ export default function BokaPage() {
   };
 
   return (
-    <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
+    <div className="  relative h-dvh bg-cover bg-fixed  " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent"> 
-        <div className=' justify-center flex flex-col align-middle items-center '>
+        <div className=' pb-20 justify-center flex flex-col align-middle items-center '>
           <h1 className='mt-10 text-gray-100 text-4xl'>Boka tid</h1>
+        
           <div className=' bg-sot px-4 rounded-md pb-4  '> 
-            <div className=' mx-auto m-6 w-80 flex flex-col  '>
+            <div className=' mx-auto mt-6 mb-4 w-80 flex flex-col  '>
               <Box sx={{ minWidth: 40 }}>
                 <FormControl fullWidth>
                 <div className=' text-gray-100'>

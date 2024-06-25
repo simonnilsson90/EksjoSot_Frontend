@@ -14,6 +14,13 @@ import MenuItem from '@mui/material/MenuItem';
 import { Image } from 'mui-image';
 import { Link } from 'react-router-dom';  
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { FaRegUser } from "react-icons/fa";
+
+/*
+npm run build
+npm run deploy
+
+*/
 
 const pages = [
   { name: 'Tjänster', link: '/tjanster' },
@@ -134,10 +141,13 @@ function NavBar() {
           </Box>
 
           <Link to={"/"}>
+        
           <Image
             width={50}
             src={`${process.env.PUBLIC_URL}/eksjo-new-logo.png`}
             sx={{
+              borderRadius: '100%',
+              borderColor: 'grey.100',
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               fontFamily: 'monospace',
@@ -148,6 +158,7 @@ function NavBar() {
               
             }}
           />
+          
           </Link>
           <Link to={"/"}>
           <Typography
@@ -191,9 +202,9 @@ function NavBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar sx={{ bgcolor: 'white', color: 'black', width: 40, height: 40 }}>
-                  <AccountCircleIcon sx={{ fontSize: 32 }} />
-                </Avatar>
+                
+                <FaRegUser className='text-white' />
+             
               </IconButton>
             </Tooltip>
             <Menu
