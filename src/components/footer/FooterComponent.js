@@ -9,7 +9,6 @@ const Footer = () => {
         <a href="/kontakt" >Kontakt</a>
       
         <div id="copyright-container">
-        <span>@2024</span>
         <a href="/">Sotarna i Eksjö</a>
       </div>
       </div>
