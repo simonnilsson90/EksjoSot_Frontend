@@ -62,13 +62,16 @@ export default function BokaPage() {
   return (
     <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: "url('/sot-2.jpeg')" }}>
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent"> 
-        <div className=' justify-center flex flex-col align-middle items-center'>
+        <div className=' justify-center flex flex-col align-middle items-center '>
           <h1 className='mt-10 text-gray-100 text-4xl'>Boka tid</h1>
-          <div className=' bg-sot px-4 rounded-md'> 
-            <div className=' mx-auto m-6 w-80 flex flex-col '>
+          <div className=' bg-sot px-4 rounded-md pb-4  '> 
+            <div className=' mx-auto m-6 w-80 flex flex-col  '>
               <Box sx={{ minWidth: 40 }}>
                 <FormControl fullWidth>
+                <div className=' text-gray-100'>
                   <InputLabel sx={{ color: "white" }} id="demo-simple-select-label">Val av tjänst</InputLabel>
+           </div>
+                  
                   <Select 
                     sx={{ color: "white" }}
                     labelId="demo-simple-select-label"
@@ -88,7 +91,10 @@ export default function BokaPage() {
             <div className='mb-6'>
               <div className='flex flex-col space-y-2'>
                 <FormControl defaultValue="" required>
-                  <Label sx={{ color: "white" }}>Namn</Label>
+                  <div className=' text-gray-100'>
+                  <Label >Namn</Label>
+                  </div>
+                 
                   <StyledInput
                     placeholder="För och efternamn"
                     value={fullName}
@@ -97,7 +103,9 @@ export default function BokaPage() {
                   <HelperText />
                 </FormControl>
                 <FormControl defaultValue="" required>
+                <div className=' text-gray-100'>
                   <Label sx={{ color: "white" }}>Önskemål om datum/tid</Label>
+                  </div>
                   <StyledInput
                     placeholder="Välj datum/tid"
                     value={dateDesired}
@@ -106,7 +114,9 @@ export default function BokaPage() {
                   <HelperText />
                 </FormControl>
                 <FormControl defaultValue="" required>
+                <div className=' text-gray-100'>
                   <Label sx={{ color: "white" }}>Adress</Label>
+                  </div>
                   <StyledInput
                     placeholder="Din adress"
                     value={adress}
@@ -115,7 +125,9 @@ export default function BokaPage() {
                   <HelperText />
                 </FormControl>
                 <FormControl defaultValue="" required>
+                <div className=' text-gray-100'>
                   <Label sx={{ color: "white" }}>Telefon</Label>
+                  </div>
                   <StyledInput
                     placeholder="Ditt telefonnummer"
                     value={phone}
@@ -125,7 +137,9 @@ export default function BokaPage() {
                 </FormControl>
                 <Box>
                   <FormControl defaultValue="" required>
+                  <div className=' text-gray-100'>
                     <Label sx={{ color: "white" }}>E-post</Label>
+                    </div>
                     <StyledInput
                       placeholder="Din E-post"
                       value={email}
@@ -137,7 +151,9 @@ export default function BokaPage() {
               </div>
               <div className='mt-4'>
                 <Box>
+                <div className=' text-gray-100'>
                   <Label sx={{ color: "white" }}>Ärende</Label>
+                  </div>
                   <TextField
                     id="outlined-multiline-static"
                     label="Beskriv ditt ärende"
@@ -165,7 +181,7 @@ export default function BokaPage() {
                   width: "20rem",
                   color: "white",
                   marginBottom: "2px",
-                  backgroundColor: "#2b2f32",
+                  backgroundColor: "rgb(224, 95, 51)",
                   border: "0px",
                   fontSize: "1.4rem",
                   lineHeight: "2rem",

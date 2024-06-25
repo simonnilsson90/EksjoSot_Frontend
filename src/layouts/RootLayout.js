@@ -11,8 +11,10 @@ function RootLayout() {
         <main>
           <Outlet />
         </main>
-
-      <Footer />
+<div className=" mt-20">
+< Footer />
+</div>
+      
     </div>
   )
 }
