@@ -1,20 +1,19 @@
 import React from "react";
-import "./footerComponent.css";
-
 
 const Footer = () => {
   return (
-    <div id="footer-container">
-      <div className="text-gray-100" id="links-container">
-        <a href="/kontakt" >Kontakt</a>
-      
-        <div id="copyright-container">
-        <a href="/">Sotarna i Eksjö</a>
+    <footer className="mt-auto bg-gray-900 text-gray-100">
+      <div className="container mx-auto py-4 px-4 flex justify-between items-center">
+        <div>
+          <a href="/kontakt" className="text-white hover:text-gray-300 mr-4">
+            Kontakt
+          </a>
+        </div>
+        <div className="text-white">
+          <span>&copy; {new Date().getFullYear()} Sotarna i Eksjö</span>
+        </div>
       </div>
-      </div>
-     
-      
-    </div>
+    </footer>
   );
 };
 

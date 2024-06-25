@@ -1,3 +1,5 @@
+//  <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
+
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
@@ -60,7 +62,7 @@ export default function BokaPage() {
   };
 
   return (
-    <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: "url('/sot-2.jpeg')" }}>
+    <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent"> 
         <div className=' justify-center flex flex-col align-middle items-center '>
           <h1 className='mt-10 text-gray-100 text-4xl'>Boka tid</h1>
@@ -301,4 +303,3 @@ const grey = {
   800: '#303740',
   900: '#1C2025',
 };
-

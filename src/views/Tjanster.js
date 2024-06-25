@@ -1,11 +1,12 @@
 import React from "react";
+import Footer from "../components/footer/FooterComponent";
 
 import tjansterData from "../data/tjansterData";
 
 
 const TjansterPage= () => {
     return (
-      <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: "url('/sot-2.jpeg')",  }}>
+        <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent"> 
   <header className="header text-white">
       <h1>{tjansterData.title}</h1>
@@ -56,19 +57,9 @@ const TjansterPage= () => {
               <p>{tjansterData.whyChooseUs.content}</p>
           </div>
       </div>
-{/*
-      <div className="join-our-journey section">
-          <div>
-              <h2>{besiktningarData.joinOurJourney.title}</h2>
-              <p>{besiktningarData.joinOurJourney.content}</p>
-          </div>
-      </div>
 
-    <footer className="footer">
-          <h2>{besiktningarData.finalMessage.title}</h2>
-          <p>{besiktningarData.finalMessage.content}</p>
-      </footer> */} 
   </div>
+  <Footer/>
 </div>
 </div>
     );

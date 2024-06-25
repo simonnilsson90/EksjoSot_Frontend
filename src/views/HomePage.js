@@ -3,17 +3,22 @@ import "./HomePage.css";
 import './aboutUs.css';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';  
+import Footer from "../components/footer/FooterComponent";
 
-// ok
+
+
+
 
 function HomePage() {
   return (
-    <div className="relative h-screen bg-cover bg-top bg-fixed" style={{ backgroundImage: "url('/sunrise_sotare.jpeg')" }}>
+    <div className="relative h-screen bg-cover bg-top bg-fixed"  style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sunrise_sotare.jpeg)` }}>
       <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-transparent to-transparent">
         <div className="flex flex-col md:items-center items-center lg:items-start lg:pl-12 lg:pr-4 pt-36">
           <div className="text-center md:text-center lg:text-left lg:absolute lg:right-12 lg:top-24">
             <span className="text-4xl lg:text-6xl md:text-5xl text-white">
               <p className="font-semibold">Välkommen till EksjöSot</p>
+          
+              <img src="sunrise_sotare.jpeg" alt="" width={20} />
               <p className="lg:text-4xl md:text-4xl text-2xl font-bold">
                 Expert på sotning i din kommun
                 <span className="block border-b-2 border-sot"></span>
@@ -50,6 +55,7 @@ function HomePage() {
             </ul>
           </div>
         </div>
+        <Footer/>
       </div>
     </div>
   );

@@ -1,16 +1,17 @@
 import React from "react";
 import taxorData from "../data/taxorData";
+import Footer from "../components/footer/FooterComponent";
 
 const TaxorPage = () => { 
     return (
-      <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: "url('/sot-2.jpeg')",  }}>
+        <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent"> 
       
   <header className="header text-gray-100">
       <h1>{taxorData.title}</h1>
       <p>{taxorData.description}</p>
   </header>
-  <div className="flex flex-col lg:flex-row lg:flex-wrap p-4 gap-4">   
+  <div className="flex flex-col lg:flex-row lg:flex-wrap p-4 gap-4 mb-10 pb-10">   
   <div className="content-grid ">
       <div className="vision section bg-sot text-gray-100">
           <div>
@@ -57,6 +58,7 @@ const TaxorPage = () => {
       </div>
       </div>
   </div>
+  <Footer />
 </div>
 </div>
     );

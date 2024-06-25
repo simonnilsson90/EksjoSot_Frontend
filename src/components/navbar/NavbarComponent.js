@@ -57,7 +57,7 @@ function NavBar() {
          
           <Image
             width={50}
-            src="/eksjo-new-logo.png"
+            src={`${process.env.PUBLIC_URL}/eksjo-new-logo.png`}
             sx={{
               mr: 1,
               display: { xs: 'none', md: 'flex' },
@@ -136,7 +136,7 @@ function NavBar() {
           <Link to={"/"}>
           <Image
             width={50}
-            src="/eksjo-new-logo.png"
+            src={`${process.env.PUBLIC_URL}/eksjo-new-logo.png`}
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
