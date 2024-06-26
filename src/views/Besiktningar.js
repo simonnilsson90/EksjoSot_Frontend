@@ -6,8 +6,8 @@ import Footer from "../components/footer/FooterComponent";
 
 const BesiktningarPage  = () => {
     return (
-        <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent"> 
+        <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
+      <div className=" bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen"> 
         <header className="header text-gray-100 ">
             <h1>{besiktningarData.title}</h1>
             <p>{besiktningarData.description}</p>

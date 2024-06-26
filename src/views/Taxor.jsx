@@ -4,12 +4,12 @@ import Footer from "../components/footer/FooterComponent";
 
 const TaxorPage = () => { 
     return (
-        <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent"> 
+        <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
+      <div className=" bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen"> 
       
-  <header className="header text-gray-100">
-      <h1>{taxorData.title}</h1>
-      <p>{taxorData.description}</p>
+  <header className="header  text-gray-100">
+      <h1>Sotningstaxa</h1>
+      <p className=" mx-auto">{taxorData.description}</p>
   </header>
   <div className="flex flex-col lg:flex-row lg:flex-wrap p-4 gap-4 mb-10 pb-10">   
   <div className="content-grid ">

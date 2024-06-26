@@ -6,8 +6,8 @@ import tjansterData from "../data/tjansterData";
 
 const TjansterPage= () => {
     return (
-        <div className="relative h-dvh bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent"> 
+        <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
+      <div className=" bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen"> 
   <header className="header text-white">
       <h1>{tjansterData.title}</h1>
       <p>{tjansterData.description}</p>

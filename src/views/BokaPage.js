@@ -22,11 +22,6 @@ export default function BokaPage() {
   const [email, setEmail] = React.useState('');
   const [message, setMessage] = React.useState('');
 
-  /*
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
-  */
 
   const handleSubmit = async () => {
     const data = {
@@ -62,17 +57,21 @@ export default function BokaPage() {
   };
 
   return (
-    <div className="  relative h-dvh bg-cover bg-fixed  " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent"> 
+    <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
+      <div className=" bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen"> 
         <div className=' pb-20 justify-center flex flex-col align-middle items-center '>
           <h1 className='mt-10 text-gray-100 text-4xl'>Boka tid</h1>
         
           <div className=' bg-sot px-4 rounded-md pb-4  '> 
             <div className=' mx-auto mt-6 mb-4 w-80 flex flex-col  '>
-              <Box sx={{ minWidth: 40 }}>
+            <div className=' text-gray-100'>
+                  <Label >Välj tjänst</Label>
+                  </div>
+              <Box sx={{ minWidth: 40,backgroundColor: "white"  }}>
+            
                 <FormControl fullWidth>
                 <div className=' text-gray-100'>
-                  <InputLabel sx={{ color: "white" }} id="demo-simple-select-label">Val av tjänst</InputLabel>
+                  <InputLabel sx={{ color: "black", backgroundColor: "white" }} id="demo-simple-select-label">Välj tjänst</InputLabel>
            </div>
                   
                   <Select 
@@ -93,7 +92,7 @@ export default function BokaPage() {
             </div>
             <div className='mb-6'>
               <div className='flex flex-col space-y-2'>
-                <FormControl defaultValue="" required>
+                <FormControl  defaultValue="" required>
                   <div className=' text-gray-100'>
                   <Label >Namn</Label>
                   </div>
@@ -105,6 +104,7 @@ export default function BokaPage() {
                   />
                   <HelperText />
                 </FormControl>
+
                 <FormControl defaultValue="" required>
                 <div className=' text-gray-100'>
                   <Label sx={{ color: "white" }}>Önskemål om datum/tid</Label>
