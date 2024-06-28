@@ -6,7 +6,11 @@ import { Link } from 'react-router-dom';
 import Footer from "../components/footer/FooterComponent";
 
 
+/*
+npm run build
+npm run deploy
 
+*/
 
 
 function HomePage() {
@@ -16,21 +20,21 @@ function HomePage() {
 
    
         <div className="flex flex-col md:items-center items-center lg:items-start lg:pl-12 lg:pr-4 pt-36 mb-4">
-          <div className="text-center md:text-center lg:text-left lg:absolute lg:right-12 lg:top-24">
-            <span className="text-4xl lg:text-6xl md:text-5xl text-white">
+          <div className="text-center md:text-center lg:text-left lg:absolute lg:right-12 lg:top-36">
+            <span className="text-3xl lg:text-6xl md:text-5xl text-white">
               <p className="font-semibold">Välkommen till EksjöSot</p>
           
               
-              <p className="lg:text-4xl md:text-4xl text-2xl font-bold">
+              <p className="lg:text-4xl md:text-4xl text-xl font-bold">
                 Expert på sotning i din kommun
                 <span className="block border-b-2 border-sot mt-1"></span>
-                <Link to={"/boka"}> 
+                <Link to={"/kontakt"}> 
                 <Button
                   variant="contained"
                   sx={{
                     marginTop: "1rem",
                     textTransform: "none",
-                    width: "10rem",
+                    width: "14rem",
                     color: "white",
                     marginBottom: "2px",
                     backgroundColor: "#2b2f32",
@@ -40,7 +44,7 @@ function HomePage() {
                     borderRadius: "0.5rem"
                   }}
                 >
-                  Boka tid
+                  Kontakta oss
                 </Button>
                 </Link>
               </p>

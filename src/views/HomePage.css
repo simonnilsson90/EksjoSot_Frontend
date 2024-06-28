@@ -2,7 +2,7 @@
 
 .border-sot {
   --tw-border-opacity: 1;
-  border-color: rgba(224, 95, 51, var(--tw-border-opacity));
+  border-color: rgba(43,44,50, var(--tw-border-opacity));
 }
 
 
@@ -17,5 +17,9 @@
 
 .bg-sotOrange {
   background-color: rgb(224, 95, 51) !important;
+}
+
+.text-sotOrange {
+  color: rgb(224, 95, 51) !important;
 }
 

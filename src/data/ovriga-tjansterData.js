@@ -1,5 +1,5 @@
 const tjansterData = {
-    title: "Tjänster",
+    title: "Övriga Tjänster",
     description: "Vi på sotningsdistriktet kan göra så mycket mer än bara sota och utföra besiktningar. Det finns några andra tjänster du kan beställa från oss:",
     vision: {
       title: "EXTRASOTNING PÅ TUR",

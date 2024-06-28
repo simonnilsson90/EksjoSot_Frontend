@@ -27,8 +27,8 @@ const pages = [
   { name: 'Taxor', link: '/taxor' },
   { name: 'Om oss', link: '/om' },
   { name: 'Hållbarhet', link: '/hallbarhet' },
-  { name: 'Besiktningar', link: '/besiktningar' },
-  { name: 'Boka', link: '/boka' },
+  { name: 'Besiktningar', link: '/tjanster/besiktningar' },
+//  { name: 'Boka', link: '/boka' },
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -185,7 +185,9 @@ function NavBar() {
           </Typography>
           </Link>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+       
+     
+       <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page.name}
@@ -198,6 +200,28 @@ function NavBar() {
               </Button>
             ))}
           </Box>
+
+          <Box sx={{ flexGrow: 0 }}>
+          <Image
+            width={50}
+            src={`${process.env.PUBLIC_URL}/sveriges-sk.png`}
+            sx={{
+              borderRadius: '100%',
+              borderColor: 'grey.100',
+              mr: 2,
+            
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.0rem',
+              color: 'inherit',
+              textDecoration: 'none',
+              
+            }}
+          />
+
+            </Box>
+       
+             {/* 
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
@@ -230,6 +254,9 @@ function NavBar() {
               ))}
             </Menu>
           </Box>
+
+         */}
+
         </Toolbar>
       </Container>
      

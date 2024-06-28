@@ -16,11 +16,13 @@ import ProfileAccount from "./views/ProfileAccount";
 import ProfileContainer from "./components/myAccount/profileContainer/ProfileContainer";
 import Tjanster from "./views/Tjanster";
 import Taxor from "./views/Taxor";
-import Kontakt from "./views/Kontakt";
 import OmPage from "./views/Om";
 import BesiktningarPage from "./views/Besiktningar";
 import HallbarhetPage from "./views/Hallbarhet";
 import BokaPage from "./views/BokaPage";
+import KontaktPage from "./views/Kontakt";
+import OvrigaTjansterPage from "./views/ovriga-tjanster";
+import SotningPage from "./views/sotning";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,11 +31,13 @@ const router = createBrowserRouter(
         <Route path="/" element={<HomePage />} />
         <Route path="taxor" element={<Taxor />} />
         <Route path="om" element={<OmPage />} />
-        <Route path="kontakt" element={<Kontakt />} />
+        <Route path="kontakt" element={<KontaktPage />} />
         <Route path="boka" element={<BokaPage />} />
-        <Route path="besiktningar" element={<BesiktningarPage />} />
+        <Route path="tjanster/besiktningar" element={<BesiktningarPage />} />
+        <Route path="tjanster/sotning/rengorning" element={<SotningPage />} />
         <Route path="myAccount" element={<MyAccount />} />
         <Route path="tjanster" element={<Tjanster />} />
+        <Route path="tjanster/ovriga-tjanster" element={<OvrigaTjansterPage  />} />
         <Route path="hallbarhet" element={<HallbarhetPage />} />
         <Route path="My-Account-Menu" element={<ProfileContainer />}>
           <Route path="profile" element={<ProfileAccount />} />

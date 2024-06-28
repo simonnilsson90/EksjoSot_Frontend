@@ -9,14 +9,16 @@
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: start;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 30px;
  padding-top: 60px;
  
 }
 
 .header h1 {
-  font-size: 3em;
+  font-size: 2em;
   color: whitesmoke;
 }
 
@@ -26,7 +28,7 @@
   max-width: 800px;
   margin: auto;
   text-align: start;
-  padding-left: 20px;
+  
 }
 
 .content-grid {
@@ -44,7 +46,7 @@
 
 .section {
   padding: 30px;
-  border-radius: 15px;
+
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
@@ -63,7 +65,7 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
-  border-radius: 15px;
+  
   z-index: -1;
 }
 
@@ -120,4 +122,10 @@
 .border-sot {
   --tw-border-opacity: 1;
   border-color: rgba(224, 95, 51, var(--tw-border-opacity));
+}
+
+.border-sotOrange {
+  --tw-border-opacity: 1;
+  border-color: rgba(224, 95, 51, var(--tw-border-opacity));
+  
 }

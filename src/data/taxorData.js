@@ -1,16 +1,16 @@
 const taxorData = {
-    title: "SOTNINGSTAXAN",
+    title: "Sotningstan",
     description: "Sotningsavgiften är en kommunal avgift beslutad med stöd av Lagen om skydd mot olyckor (3 kap 6 §). Avgiften är uppdelad i tre delmoment: 1) grundavgift, 2) objektsavgift3) ev. tilläggsavgifter. Taxan förutsätter att fördelning av avgifter skall ske så att alla kommunmedlemmar som befinner sig i motsvarande läge skall betala samma avgifter. Det kallas likställighetsprincipen och är en del av kommunallagen (2 kap 3 §).",
     vision: {
-      title: "GRUNDAVGIFT",
+      title: "grundavgift",
       content: "Grundavgiften eller inställelseavgiften skall täcka de indirekta kostnader som en förrättning medför. Exempel på dessa kostnader är transportkostnader, diarieföring, föredragningar, avgiftsdebitering. personalomkostnader, utbildning, lokalkostnader, kapitalkostnader, datadrift och administrationskostnader. Avgiften härstammar från en beräkningsgrund från 1974, senast reviderad 1987. Objektsavgift. Taxan bygger på att det första objektet vid varje besök bär den största andelen av de direkta kostnader besöket medför. Exempel på dessa kostnader är direkta personalkostnader, material och utrustning, försäkringar, förberedelser och rapportering. Tillkommande objekt vid samma besök bär en mindre del av totalkostnaden eftersom t ex förflyttningar inom fastigheten täcks av kostnaden för det första objektet."
     },
     whatWeDo: {
-      title: "TILLÄGGSAVGIFTER",
+      title: "TIlläggsavgifter",
       content: "Vi är medlemmar i Sveriges Skorstensfejarmästares Riksförbund och har avtal att utföras sotningstjänster i Eksjö och Västerviks kommuner. Vår främsta uppgift är att förebygga bränder i samhället och det gör vi genom lagstadgad sotning och brandskyddskontroll enligt LSO, Lagen om skydd mot olyckor."
     },
     howWeStandOut: {
-      title: "BESLUT OM TAXAN",
+      title: "Beslut om taxan",
       items: [
         "Quality Assurance: Every data set on our platform undergoes rigorous checks to ensure authenticity and reliability.",
         "Diverse Offerings: From emotional voice recordings to dynamic facial expressions, our diverse range of data sets caters to various creative needs.",
