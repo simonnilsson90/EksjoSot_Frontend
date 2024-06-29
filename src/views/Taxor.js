@@ -17,11 +17,10 @@ const TaxorPage = () => {
   <div className="flex flex-col lg:flex-row lg:flex-wrap p-4 gap-4 mb-10 pb-10">   
   
  
-  <div className=" section bg-sot text-gray-100 lg:mx-16 mx-4 ">
+  <div className=" section bg-white text-black lg:mx-16 mx-4 ">
           
-          <h1 className="lg:text-4xl text-4xl border-sotOrange  border-b-2 pb-2 mb-6 ">Sotningstaxa</h1>  
-          <Card >
-            <CardContent className=" pl-4 pb-2">
+          <h1 className="lg:text-4xl text-4xl text-start pb-2 mb-6 ">Sotningstaxa</h1>  
+         
             <h2 className='text-2xl mb-2 mt-4'>{taxorData.whatWeDo.title}</h2>
               <p className="mb-4">{taxorData.whatWeDo.content}</p>
               <div>
@@ -43,8 +42,7 @@ const TaxorPage = () => {
              
           </div>
 
-            </CardContent>
-            </Card> 
+          
              
         
       </div>

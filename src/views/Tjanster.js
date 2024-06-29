@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 
 const TjansterPage= () => {
     return (
-        <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
+        <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)` }} >
       <div className=" bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen  pt-10"> 
   
       <div className="     text-white p-6 mx-6 space-y-2 bg-sot "  >
@@ -17,9 +17,9 @@ const TjansterPage= () => {
       <p className=" lg:text-2xl  text-center">Vi gör inte mer än absolut nödvändigt, men vi gör det bra</p>
   </div>
 
-  <div className="content-grid mt-4 ">
+  <div className=" mt-4 ">
     
-      <div className="vision section bg-sot text-gray-100">
+      <div className="vision section bg-sot text-gray-100 m-6 lg:w-1/2 ">
           <div>
               <h2>Sotning/rengöring</h2>
               <p>Rengöring är viktigt bla bala sfff</p>
@@ -46,7 +46,7 @@ const TjansterPage= () => {
           </div>
       </div>
 
-      <div className="what-we-do section bg-sot text-gray-100">
+      <div className="what-we-do section bg-sot text-gray-100 m-6 lg:w-1/2">
           <div>
               <h2>Besiktningar vid överlåtelse, nyinstallationer, status</h2>
               <p>khasdkfgaskdhfkjasdf</p>
@@ -72,7 +72,7 @@ const TjansterPage= () => {
           </div>
       </div>
 
-      <div className="how-we-stand-out section bg-sot text-gray-100">
+      <div className="how-we-stand-out section bg-sot text-gray-100 m-6 lg:w-1/2 lg:end-0 lg:absolute lg:right-0">
           <div>
               <h2>Sotning och brandskyddskontroller</h2>
               <p>Brandskyd bababab lär mer</p>
@@ -98,7 +98,7 @@ const TjansterPage= () => {
           </div>
       </div>
 
-      <div className="our-culture section bg-sot text-gray-100">
+      <div className="our-culture section bg-sot text-gray-100 m-6 lg:w-1/2">
           <div>
               <h2>Övriga tjänster inom området</h2>
               <p>sdfkjshdfkhskdfhkjsdf läs mer</p>
@@ -123,7 +123,7 @@ const TjansterPage= () => {
                 </Link>
           </div>
       </div>
-      <div className="what-we-do section bg-sot text-gray-100">
+      <div className="what-we-do section bg-sot text-gray-100 m-6 lg:w-1/2">
                 <div>
 <h2 className=' text-xl mb-2'>Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer?</h2>
 <ul>
