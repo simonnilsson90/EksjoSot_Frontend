@@ -23,6 +23,7 @@ npm run deploy
 */
 
 const pages = [
+ // { name: 'Hem', link: '/' },
   { name: 'Tjänster', link: '/tjanster' },
   { name: 'Taxor', link: '/taxor' },
   { name: 'Om oss', link: '/om' },
@@ -52,6 +53,9 @@ function NavBar() {
   };
 
   return (
+   
+
+   
     <AppBar
       sx={{
         backgroundColor: '#2b2f32 !important;',
@@ -261,6 +265,8 @@ function NavBar() {
       </Container>
      
     </AppBar>
+
+   
   );
 }
 

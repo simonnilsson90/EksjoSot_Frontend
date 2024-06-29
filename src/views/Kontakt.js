@@ -11,28 +11,31 @@ const KontaktPage = () => {
       
       <div className="rounded-lg text-white p-6 mx-6 space-y-2 bg-sot" >
         <h1 className="lg:text-4xl text-4xl border-sotOrange  border-b-2 mb-6   ">Kontakta oss</h1>
-        <Card sx={{ minWidth: 275 }}>
+        <Card >
           <CardContent>
-            <div className=" lg:flex">
-<div className=" w-3/4 ">
+            <div className=" lg:flex lg:space-x-10 lg:mr-20 ">
+<div id="kundtjast ">
 <h2 className="text-lg  ">Kundtjänst</h2>
   <p>I kundtjänsten arbetar</p>
   <p>Agnetha, Emma och Isolde.</p>
   <p>tel. 010 – 410 25 60</p>
   <p>epost: info@eksjosot.se</p>
-
-<h2 className="text-lg mt-4">Emanuel Nattvarg</h2>
+  </div>
+  <div id="male">
+<h2 className="text-lg ">Emanuel Nattvarg</h2>
 <p className="">Emanuel är brandskydds-</p>
             <p>kontrollant och besiktningsman.</p>
             <p>tel: 010 – 410 25 72</p>
             <p>epost: emanuel@eksjosot.se</p>
-            <h2 className="text-lg    mt-4">Torbjörn Levin Forss</h2>
+            </div>
+            <div>
+            <h2 className="text-lg    ">Torbjörn Levin Forss</h2>
             <p>Torbjörn arbetar med sotning</p>
             <p>och besiktningar.</p>
             <p>tel: 010 – 410 25 73</p>
             <p>epost: torbjorn@eksjosot.se</p>
             </div>
-
+            
 
             <div>
 <h2 className="text-lg ">Öppetider</h2>
@@ -45,8 +48,10 @@ const KontaktPage = () => {
           </CardContent>
         </Card>
         </div>
-      
+      <div className=" w-full mt-10 lg:bottom-0 lg:fixed">
       <Footer/>
+      </div>
+     
     </div>
   </div>
    

@@ -20,8 +20,8 @@ const TaxorPage = () => {
   <div className=" section bg-sot text-gray-100 lg:mx-16 mx-4 ">
           
           <h1 className="lg:text-4xl text-4xl border-sotOrange  border-b-2 pb-2 mb-6 ">Sotningstaxa</h1>  
-          <Card sx={{ minWidth: 275 }}>
-            <Card className=" pl-4 pb-2">
+          <Card >
+            <CardContent className=" pl-4 pb-2">
             <h2 className='text-2xl mb-2 mt-4'>{taxorData.whatWeDo.title}</h2>
               <p className="mb-4">{taxorData.whatWeDo.content}</p>
               <div>
@@ -43,7 +43,7 @@ const TaxorPage = () => {
              
           </div>
 
-            </Card>
+            </CardContent>
             </Card> 
              
         
@@ -51,7 +51,7 @@ const TaxorPage = () => {
 
 
   </div>
-  <div className=" bottom-0 fixed w-full"> 
+  <div className="  w-full"> 
   <Footer />
   </div>
  

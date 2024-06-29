@@ -13,7 +13,7 @@ const HallbarhetPage = () => {
                     <div className="section bg-sot text-gray-100 lg:mx-16 mx-4">
                         <div>
                             <h1 className="lg:text-4xl text-4xl border-sotOrange border-b-2 pb-2 mb-6">Hållbarhet</h1>
-                            <Card sx={{ minWidth: 275 }}>
+                            <Card >
                                 <CardContent >
                                     <p className='mb-1'>
                                         Hos oss är hållbarhet en central del av vårt dagliga arbete. Vi arbetar aktivt för att främja en hållbar framtid genom flera viktiga initiativ:
@@ -34,7 +34,7 @@ const HallbarhetPage = () => {
                                        <div>
                                        <Image
                                        
-                                       width={50}
+                                       width={120}
                                   
                                        src={`${process.env.PUBLIC_URL}/kommunal.png`}
                                        sx={{
@@ -71,7 +71,7 @@ const HallbarhetPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='bottom-0 fixed w-full'>
+                <div className=' w-full'>
                     <Footer />
                 </div>
             </div>

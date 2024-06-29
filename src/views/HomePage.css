@@ -5,6 +5,11 @@
   border-color: rgba(43,44,50, var(--tw-border-opacity));
 }
 
+.border-sotDark {
+  --tw-border-opacity: 1;
+  border-color: rgba(43, 47, 50, var(--tw-border-opacity));
+}
+
 
 
 .bg-sot {

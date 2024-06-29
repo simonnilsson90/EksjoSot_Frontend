@@ -18,7 +18,7 @@ const OmPage  = () => {
             
                 <div>
                 <h1 className="lg:text-4xl text-4xl border-sotOrange  border-b-2 pb-2 mb-6">{aboutUsData.title}</h1>
-                <Card sx={{ minWidth: 275 }}>
+                <Card >
       <CardContent>
       <p className='mb-1'>{aboutUsData.vision.content}</p>
                     
@@ -52,11 +52,8 @@ const OmPage  = () => {
 
         </div>
 
-       
-
-       
-
-        <div className=' bottom-0 fixed w-full' >
+      
+        <div className='  w-full' >
         <Footer/>
         </div>
        
