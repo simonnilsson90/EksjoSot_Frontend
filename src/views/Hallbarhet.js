@@ -7,7 +7,7 @@ import './aboutUs.css';
 
 const HallbarhetPage = () => {
     return (
-        <div className="min-h-screen bg-cover bg-fixed" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }}>
+        <div className="min-h-screen bg-cover bg-fixed" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)` }}>
                 <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10">
                 <div className="flex flex-col lg:flex-row lg:flex-wrap p-4 gap-4 mb-10 pb-10">
                     <div className="section bg-sot text-gray-100 lg:mx-16 mx-4">
@@ -34,7 +34,7 @@ const HallbarhetPage = () => {
                                        <div>
                                        <Image
                                        
-                                       width={120}
+                                       width={350}
                                   
                                        src={`${process.env.PUBLIC_URL}/kommunal.png`}
                                        sx={{

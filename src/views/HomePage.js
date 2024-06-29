@@ -15,7 +15,7 @@ npm run deploy
 
 function HomePage() {
   return (
-<div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sunrise_sotare.jpeg)` }} >
+<div className="min-h-screen bg-cover bg-fixed bg-left-top  " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimney-sweep.jpg)` }} >
 <div className=" bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen"> 
 
    
@@ -51,7 +51,7 @@ function HomePage() {
             </span>
           </div>
 
-          <div style={{ backgroundColor: "#2b2f32" }} className=" lg:mt-72 mt-12 lg:mx-5 w-full lg:w-2/5 lg:ml-0 p-2  text-gray-100 lg:text-3xl text-xl font-semibold">
+          <div style={{ backgroundColor: "#2b2f32" }} className=" lg:mt-72 mt-12 lg:mx-5 w-full lg:w-2/5 lg:ml-0 p-4  text-gray-100 lg:text-3xl text-xl font-semibold">
             <h2 className="border-b-2 border-sot">Våra tjänster</h2>
             <ul className="lg:text-xl text-sm  mt-2 space-y-1">
               <li className="flex  "><p className=" my-auto mr-1 mt-1">*</p> <p></p>Rengöring av eldstäder, imkanaler och fläktar</li>

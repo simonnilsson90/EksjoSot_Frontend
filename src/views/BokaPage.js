@@ -57,7 +57,7 @@ export default function BokaPage() {
   };
 
   return (
-    <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
+    <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)` }} >
       <div className=" bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen"> 
         <div className=' pb-20 justify-center flex flex-col align-middle items-center '>
           <h1 className='mt-10 text-gray-100 text-4xl'>Boka tid</h1>

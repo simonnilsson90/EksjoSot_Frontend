@@ -6,7 +6,7 @@ import './aboutUs.css';
 
 const KontaktPage = () => { 
   return (
-    <div className="min-h-screen bg-cover bg-fixed" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }}>
+    <div className="min-h-screen bg-cover bg-fixed" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)` }}>
     <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10">
       
       <div className="rounded-lg text-white p-6 mx-6 space-y-2 bg-sot" >
@@ -48,7 +48,7 @@ const KontaktPage = () => {
           </CardContent>
         </Card>
         </div>
-      <div className=" w-full mt-10 lg:bottom-0 lg:fixed">
+      <div className=" w-full mt-20 ">
       <Footer/>
       </div>
      
