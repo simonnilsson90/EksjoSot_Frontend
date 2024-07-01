@@ -4,15 +4,46 @@ import Image from 'mui-image';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import './aboutUs.css';
+import { useEffect } from 'react';
 
 const HallbarhetPage = () => {
+    useEffect(() => {
+        const updateBackground = () => {
+            const element = document.getElementById('background-element');
+            if (window.innerWidth >= 1024) { // 1024px motsvarar 'lg' i Tailwind CSS
+                element.style.backgroundImage = `url(${process.env.PUBLIC_URL}/chimneys.jpg)`;
+                element.classList.add('bg-cover', 'bg-fixed');
+            } else {
+                element.style.backgroundImage = 'none';
+                element.classList.remove('bg-cover', 'bg-fixed');
+            }
+        };
+    
+        updateBackground(); // Kör en gång vid laddning
+        window.addEventListener('resize', updateBackground); // Lägg till eventlyssnare för att hantera förändringar i storlek
+        
+        return () => {
+          window.removeEventListener('resize', updateBackground); // Ta bort eventlyssnaren vid nedmontering
+      };
+    }, []);
     return (
-        <div className="min-h-screen bg-cover bg-fixed" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)` }}>
-                <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10">
+        <div id="background-element" className="min-h-screen bg-sot">
+      <div className="lg:bg-gradient-to-b lg:from-black/70 lg:via-transparent lg:to-transparent lg:min-h-screen pt-10">
+
+         
+  
+  
+      <div className="flex flex-col lg:flex-row lg:flex-wrap p-4 gap-4 mb-10 pb-10 lg:mb-16">  
+
+<div className="     text-white px-10  space-y-2 lg:mt-4 lg:mb-4  "  >
+ <h1 className="lg:text-4xl text-4xl border-sotOrange lg:border-none lg:border-b-0  border-b-2 text-start ">Hållbarhet</h1>
+
+</div> 
+ 
                 <div className="flex flex-col lg:flex-row lg:flex-wrap p-4 gap-4 mb-10 pb-10">
                     <div className="section bg-sot text-gray-100 lg:mx-16 mx-4">
                         <div>
-                            <h1 className="lg:text-4xl text-4xl border-sotOrange border-b-2 pb-2 mb-6">Hållbarhet</h1>
+                       
                             <Card >
                                 <CardContent >
                                     <p className='mb-1'>
@@ -70,6 +101,7 @@ const HallbarhetPage = () => {
                             </Card>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div className=' w-full'>
                     <Footer />

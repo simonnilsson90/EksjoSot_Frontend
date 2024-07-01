@@ -2,26 +2,65 @@ import React from "react";
 import Footer from "../components/footer/FooterComponent";
 import { Link } from 'react-router-dom';  
 import Button from '@mui/material/Button';
+import { useEffect } from 'react';
+import Image from "mui-image";
 /*
 
 
 */
 
 const TjansterPage= () => {
-    return (
-        <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
-      <div className=" bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen  pt-10"> 
-  
-      <div className="     text-white p-6 mx-6 space-y-2 bg-sot "  >
-      <h1 className="lg:text-4xl text-4xl border-sotOrange  border-b-2 pb-2 ">Tjänster</h1>
-      <p className=" lg:text-2xl  text-center">Vi gör inte mer än absolut nödvändigt, men vi gör det bra</p>
-  </div>
+  useEffect(() => {
+    const updateBackground = () => {
+        const element = document.getElementById('background-element');
+        if (window.innerWidth >= 1024) { // 1024px motsvarar 'lg' i Tailwind CSS
+            element.style.backgroundImage = `url(${process.env.PUBLIC_URL}/chimneys.jpg)`;
+            element.classList.add('bg-cover', 'bg-fixed');
+        } else {
+            element.style.backgroundImage = 'none';
+            element.classList.remove('bg-cover', 'bg-fixed');
+        }
+    };
 
-  <div className="content-grid mt-4 ">
+    updateBackground(); // Kör en gång vid laddning
+    window.addEventListener('resize', updateBackground); // Lägg till eventlyssnare för att hantera förändringar i storlek
     
-      <div className="vision section bg-sot text-gray-100">
-          <div>
-              <h2>Sotning/rengöring</h2>
+    return () => {
+      window.removeEventListener('resize', updateBackground); // Ta bort eventlyssnaren vid nedmontering
+  };
+}, []);
+    return (
+      <div id="background-element" className="min-h-screen bg-sot">
+      <div className="lg:bg-gradient-to-b lg:from-black/70 lg:via-transparent lg:to-transparent lg:min-h-screen pt-10">
+
+         
+  
+  
+      <div className="     text-white px-12  space-y-2 lg:mt-5  "  >
+      <h1 className="lg:text-4xl text-4xl border-sotOrange lg:border-none lg:border-b-0  border-b-2 text-start ">Tjänster</h1>
+      <p className=" lg:text-2xl  text-start">Vi gör inte mer än absolut nödvändigt, men vi gör det bra</p>
+  </div>
+ 
+  <div className="content-grid lg:mt-12 lg:mx-9 mx-auto  ">
+    
+      <div className="  section bg-sot text-gray-100">
+
+
+
+      <div className='lg:hidden  '> 
+      <Image 
+  src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
+  style={{
+    width: '100%', // Sätt bredden till 100% av föräldraelementet
+    height: '10%', // Definiera en fast höjd
+    objectFit: 'cover', // Klipp bilden för att täcka området
+    objectPosition: 'top' // Centrera bilden
+  }}
+/>
+</div>
+
+      
+              <h2 className="mt-2 lg:mt-0">Sotning/rengöring</h2>
               <p>Rengöring är viktigt bla bala sfff</p>
               <Link to={"/tjanster/sotning/rengorning"}> 
                 <Button
@@ -43,12 +82,23 @@ const TjansterPage= () => {
                  Läs mer
                 </Button>
                 </Link>
-          </div>
+          
       </div>
 
       <div className="what-we-do section bg-sot text-gray-100">
           <div>
-              <h2>Besiktningar vid överlåtelse, nyinstallationer, status</h2>
+          <div className='lg:hidden'> 
+      <Image 
+ src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
+  style={{
+    width: '100%', // Sätt bredden till 100% av föräldraelementet
+    height: '10%', // Definiera en fast höjd
+    objectFit: 'cover', // Klipp bilden för att täcka området
+    objectPosition: 'top' // Centrera bilden
+  }}
+/>
+</div>
+              <h2 className="mt-2 lg:mt-0">Besiktningar vid överlåtelse, nyinstallationer, status</h2>
               <p>khasdkfgaskdhfkjasdf</p>
               <Link to={"/tjanster/besiktningar"}> 
                 <Button
@@ -74,7 +124,18 @@ const TjansterPage= () => {
 
       <div className="how-we-stand-out section bg-sot text-gray-100">
           <div>
-              <h2>Sotning och brandskyddskontroller</h2>
+          <div className='lg:hidden'> 
+      <Image 
+   src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
+  style={{
+    width: '100%', // Sätt bredden till 100% av föräldraelementet
+    height: '10%', // Definiera en fast höjd
+    objectFit: 'cover', // Klipp bilden för att täcka området
+    objectPosition: 'top' // Centrera bilden
+  }}
+/>
+</div>
+              <h2 className="mt-2 lg:mt-0">Sotning och brandskyddskontroller</h2>
               <p>Brandskyd bababab lär mer</p>
               <Link to={"/tjanster/besiktningar"}> 
                 <Button
@@ -100,7 +161,18 @@ const TjansterPage= () => {
 
       <div className="our-culture section bg-sot text-gray-100">
           <div>
-              <h2>Övriga tjänster inom området</h2>
+          <div className='lg:hidden'> 
+      <Image 
+  src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
+  style={{
+    width: '100%', // Sätt bredden till 100% av föräldraelementet
+    height: '10%', // Definiera en fast höjd
+    objectFit: 'cover', // Klipp bilden för att täcka området
+    objectPosition: 'top' // Centrera bilden
+  }}
+/>
+</div>
+              <h2 className="mt-2 lg:mt-0">Övriga tjänster inom området</h2>
               <p>sdfkjshdfkhskdfhkjsdf läs mer</p>
               <Link to={"/tjanster/ovriga-tjanster"}> 
                 <Button
@@ -126,8 +198,8 @@ const TjansterPage= () => {
       <div className="what-we-do section bg-sot text-gray-100">
                 <div>
 <h2 className=' text-xl mb-2'>Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer?</h2>
-<ul>
-<li className='list-disc'>Stege ska vara framtagen och ev. rest.</li>
+<ul className=" pl-4">
+<li className='list-disc '>Stege ska vara framtagen och ev. rest.</li>
 <li className="list-disc">Det ska finnas godkända takskyddsanordningar så att sotaren/teknikern ska kunna gå upp på taket och arbeta säkert.</li>
 <li className='list-disc'>Du behöver inte vara hemma, men du måste ge sotaren åtkomst till din fastighet så sotaren/teknikern kan gå in och nå eldstaden inifrån. Vid brandskyddskontroll följer teknikern skorstenen  i hela sin längd och behöver även åtkomst till vinden.  Förbered gärna genom att öppna garderober, schakt och lucka till vind.</li>
 <li className='list-disc'>Är du inte hemma, meddela sotaren/teknikern om det är ok att gå in och du löst det så att hen kan komma in.</li>

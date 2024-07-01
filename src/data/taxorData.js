@@ -6,7 +6,7 @@ const taxorData = {
       content: "Grundavgiften eller inställelseavgiften skall täcka de indirekta kostnader som en förrättning medför. Exempel på dessa kostnader är transportkostnader, diarieföring, föredragningar, avgiftsdebitering. personalomkostnader, utbildning, lokalkostnader, kapitalkostnader, datadrift och administrationskostnader. Avgiften härstammar från en beräkningsgrund från 1974, senast reviderad 1987. Objektsavgift. Taxan bygger på att det första objektet vid varje besök bär den största andelen av de direkta kostnader besöket medför. Exempel på dessa kostnader är direkta personalkostnader, material och utrustning, försäkringar, förberedelser och rapportering. Tillkommande objekt vid samma besök bär en mindre del av totalkostnaden eftersom t ex förflyttningar inom fastigheten täcks av kostnaden för det första objektet."
     },
     whatWeDo: {
-      title: "TIlläggsavgifter",
+      title: "Tilläggsavgifter",
       content: "Vi är medlemmar i Sveriges Skorstensfejarmästares Riksförbund och har avtal att utföras sotningstjänster i Eksjö och Västerviks kommuner. Vår främsta uppgift är att förebygga bränder i samhället och det gör vi genom lagstadgad sotning och brandskyddskontroll enligt LSO, Lagen om skydd mot olyckor."
     },
     howWeStandOut: {

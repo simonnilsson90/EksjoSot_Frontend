@@ -9,16 +9,16 @@ const KontaktPage = () => {
     <div className="min-h-screen bg-cover bg-fixed" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)` }}>
     <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10">
       
-      <div className="rounded-lg text-white p-6 mx-6 space-y-2 bg-sot" >
+      <div className=" text-white p-6 mx-6 space-y-2 bg-sot" >
         <h1 className="lg:text-4xl text-4xl border-sotOrange  border-b-2 mb-6   ">Kontakta oss</h1>
         <Card >
           <CardContent>
-            <div className=" lg:flex lg:space-x-10 lg:mr-20 ">
+            <div className=" lg:flex lg:space-x-20 lg:mr-24 ">
 <div id="kundtjast ">
 <h2 className="text-lg  ">Kundtjänst</h2>
   <p>I kundtjänsten arbetar</p>
   <p>Agnetha, Emma och Isolde.</p>
-  <p>tel. 010 – 410 25 60</p>
+  <p className=" whitespace-nowrap">tel. 010 – 410 25 60</p>
   <p>epost: info@eksjosot.se</p>
   </div>
   <div id="male">
