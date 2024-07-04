@@ -4,121 +4,14 @@ import Image from "mui-image";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
-/*
- <div className=" py-4 px-4 lg:flex justify-between items-center lg:mx-auto ">
 
-      <div className=" flex lg:flex-none  justify-between items-center   ">
-
-      
-        <div className="  lg:border lg:border-white lg:rounded-full justify-between items-center">
-        <Image
-            width={110}
-            src={`${process.env.PUBLIC_URL}/eksjo-new-logo.png`}
-            sx={{
-              mr: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.1rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          />
-        </div>
-
-
-     <div>   </div> 
-<div className="text-white mr-16 lg:mr-0 ">
-  <h2>Tjänster</h2>
-  <div className=" text-sm">
-  <p>Sotning</p>
-  <p>Brandskydd</p>
-  <p>Besiktning</p>
-  <p>Övriga tjänster</p>
-  </div>
-  </div>
-</div>
-
-
-<div className=" flex mt-4 lg:mt-0  lg:border lg:border-white lg:rounded-full justify-between items-center ">
-<div className="text-white lg:mt-0 mt-1">
-  <h2>Om företaget</h2>
-  <div className=" text-sm">
-  <p>Personal</p>
-  <p>Sotningens historia</p>
-  <p>Sotarens lilla gris</p>
-  </div>
- 
-</div>
-    
-        <div>
-          <Link to={"/kontakt"}>
-       
-          <p className="text-white hover:text-gray-300 mr-10">
-            Kontakta oss
-          </p>
-          </Link>
-          <p>INFO@EKSJOSOT.SE</p>
-          <p>010 - 410 25 60</p>
-        </div>
-
-        </div>
-       
-        <div className=" flex mt-4 lg:mt-0  lg:border lg:border-white lg:rounded-full justify-between items-center">
-        <Card>
-          <CardContent>
-          <div >
-          <Image
-            width={100}
-            src={`${process.env.PUBLIC_URL}/med.png`}
-            sx={{
-              mr: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.1rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          />
-          </div>
-            
-           </CardContent>
-           </Card>
-
-           <Card>
-          <CardContent>
-           <Image
-            width={140}
-            src={`${process.env.PUBLIC_URL}/ISO.png`}
-            sx={{
-              mr: 1,
-              mt: 5,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.1rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          />
-           </CardContent>
-           </Card>
-            </div>
-         
-
-         
-            
-      </div>
-
-
-
-
-*/ 
 
 const Footer = () => {
   return (
     <div class="bg-gray-100">
     <div class="w-full mx-auto px-4 sm:px-6  bg-sot  flex-wrap flex justify-between">
         <div class="p-5">
-        <div className="  lg:border lg:border-white lg:rounded-full justify-between items-center">
+        <div className="  border border-white rounded-full justify-between items-center">
           <Link to={"/"}>
         <Image
             width={110}

@@ -27,7 +27,7 @@ function HomePage() {
               
               <p className="lg:text-4xl md:text-4xl text-xl font-bold">
                 Expert på sotning i din kommun
-                <span className="block border-b-2 border-sot mt-1"></span>
+                <span className="block lg:border-b-2 border-sot mt-1"></span>
                 <Link to={"/kontakt"}> 
                
                 <Button
@@ -54,9 +54,9 @@ function HomePage() {
 
           <div style={{ backgroundColor: "#2b2f32" }} className=" lg:mt-72 mt-12 lg:mx-5 w-full lg:w-2/5 lg:ml-0 pl-4 pt-4 pb-4 pr-14  text-gray-100 lg:text-3xl text-xl font-semibold">
             <h2 className="border-b-2 border-sot">Våra tjänster</h2>
-            <ul className="lg:text-lg text-sm  mt-2 space-y-1">
-              <li className="flex whitespace-nowrap  "><p className=" my-auto  mt-1"></p> <p></p>Rengöring av eldstäder, imkanaler och fläktar</li>
-              <li className="flex whitespace-nowrap  "><p className=" my-auto  mt-1"></p> <p></p> Besiktningar vid överlåtelse, nyinstallationer, status</li>
+            <ul className="lg:text-lg text-sm  mt-2 space-y-1 list-disc pl-5">
+              <li className=" ">Rengöring av eldstäder, imkanaler och fläktar</li>
+              <li className="  "> Besiktningar vid överlåtelse, nyinstallationer, status</li>
               
               <li> Sotning och brandskyddskontroller</li>
               <li> Övriga tjänster inom området</li>

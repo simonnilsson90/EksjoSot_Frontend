@@ -1,6 +1,6 @@
 import React from 'react';
 import './aboutUs.css';
-import Footer from "../components/footer/FooterComponent";
+
 import { useEffect } from 'react';
 
 import LayoutComponent from '../components/layout';
@@ -31,7 +31,7 @@ const SotningPage  = () => {
         <div className="lg:bg-gradient-to-b lg:from-black/70 lg:via-transparent lg:to-transparent lg:min-h-screen pt-10">
 
 <LayoutComponent
-title={"Sotning."}
+title={"Sotning"}
 text1={"Sotning innebär att brännbara sotbeläggningar tas bort i sådan omfattning att risken för skorstensbrand och skadeverkningarna vid en skorstensbrand minimeras. Vid sotning av eldstäder och rökkanaler innebär detta att alla ytor som rökgaserna passerar rengörs."}
 bild1={ <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover  '/> }
 text2={"Hur ofta sotning ska göras bestäms av kommunen. I varje kommun finns det lokala föreskrifter för rengöring (sotning). Imkanalen, köksfläktens anslutning till skorstenen/ ventilationssystemet i bostadshus, omfattas inte längre av kravet på sotning. Trots detta behöver imkanalen rengöras med jämna mellanrum, om inte annat av funktionsmässiga skäl. Ansvaret för rengöring av imkanalen ligger på fastighetsägaren."}

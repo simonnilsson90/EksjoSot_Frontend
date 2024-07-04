@@ -33,13 +33,9 @@ const TaxorPage = () => {
    
     <LayoutComponent
      title="Sotningstaxa"
-     text1={<div>
-      <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>{taxorData.whatWeDo.title}</h2>
-        <p className="">Vi är medlemmar i Sveriges Skorstensfejarmästares Riksförbund och har avtal att utföras sotningstjänster i Eksjö och Västerviks kommuner. </p>
-       <p>Vår främsta uppgift är att förebygga bränder i samhället och det gör vi genom lagstadgad sotning och brandskyddskontroll enligt LSO, Lagen om skydd mot olyckor.</p>
-        </div>}
+    
 
-        bild1={<img src={`${process.env.PUBLIC_URL}/riks.png`} className='object-cover py-2  '
+        bild1={<img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover py-2  '
                                     />  }
 
                                     text2={ <div>

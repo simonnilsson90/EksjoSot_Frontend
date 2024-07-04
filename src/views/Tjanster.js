@@ -36,14 +36,14 @@ const TjansterPage= () => {
          
   
   
-      <div className="  p-4     text-white  lg:px-0  space-y-2 lg:mt-5 lg:mx-24  "  >
-      <h1 className="lg:text-4xl text-4xl border-sotOrange lg:border-none lg:border-b-0  border-b-2 text-start ">Tjänster</h1>
+      <div className="  p-4     text-white  lg:px-0  space-y-2 lg:mt-28 lg:mx-60  "  >
+      <h1 className="lg:text-5xl text-4xl border-sotOrange lg:border-none lg:border-b-0  border-b-2 text-start ">Tjänster</h1>
       <p className=" lg:text-2xl  text-start">Vi gör inte mer än absolut nödvändigt, men vi gör det bra</p>
   </div>
  
-  <div className="content-grid lg:mt-12 lg:mx-20 mx-auto  ">
+  <div className="content-grid lg:mt-12 lg:mx-56 mx-auto  ">
     
-      <div className="  section bg-sot text-gray-100">
+      <div className="  section bg-sot text-gray-100 ">
 
 
 
