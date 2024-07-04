@@ -7,14 +7,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Image } from 'mui-image';
 import { Link } from 'react-router-dom';  
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import { FaRegUser } from "react-icons/fa";
+
 
 /*
 npm run build
@@ -28,7 +25,7 @@ const pages = [
   { name: 'Taxor', link: '/taxor' },
   { name: 'Om oss', link: '/om' },
   { name: 'Hållbarhet', link: '/hallbarhet' },
-  { name: 'Besiktningar', link: '/tjanster/besiktningar' },
+  { name: 'Kontakt', link: '/kontakt' },
 //  { name: 'Boka', link: '/boka' },
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

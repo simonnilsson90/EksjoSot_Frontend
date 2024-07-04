@@ -1,45 +1,50 @@
 import React from 'react';
-
-import besiktningarData from '../data/besiktningarData';
 import './aboutUs.css';
 import Footer from "../components/footer/FooterComponent";
+import { useEffect } from 'react';
+
+import LayoutComponent from '../components/layout';
 
 const SotningPage  = () => {
-    return (
-        <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
-        <div className=" bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen  pt-10"> 
+    useEffect(() => {
+      const updateBackground = () => {
+          const element = document.getElementById('background-element');
+          if (window.innerWidth >= 1024) { // 1024px motsvarar 'lg' i Tailwind CSS
+              element.style.backgroundImage = `url(${process.env.PUBLIC_URL}/chimneys.jpg)`;
+              element.classList.add('bg-cover', 'bg-fixed');
+          } else {
+              element.style.backgroundImage = 'none';
+              element.classList.remove('bg-cover', 'bg-fixed');
+          }
+      };
     
-        <div className="  rounded-xl   text-white p-6 mx-5 space-y-2 " style={{backgroundColor: "#322E2B"}} >
-        <h1 className="lg:text-4xl text-4xl">Sotning/rengöring och brandskyddskontroll enligt LSO, Lagen om skydd mot olyckor.</h1>
-        <p className=" lg:text-2xl  text-center">En anläggning/eldstad ska regelbundet både rengöras (sotas) och brandskyddskontrolleras.</p>
-    </div>
+      updateBackground(); // Kör en gång vid laddning
+      window.addEventListener('resize', updateBackground); // Lägg till eventlyssnare för att hantera förändringar i storlek
+      
+      return () => {
+        window.removeEventListener('resize', updateBackground); // Ta bort eventlyssnaren vid nedmontering
+    };
+    }, []);
+    
+      return (
+        <div id="background-element" className="min-h-screen bg-sot">
+        <div className="lg:bg-gradient-to-b lg:from-black/70 lg:via-transparent lg:to-transparent lg:min-h-screen pt-10">
+
+<LayoutComponent
+title={"Sotning."}
+text1={"Sotning innebär att brännbara sotbeläggningar tas bort i sådan omfattning att risken för skorstensbrand och skadeverkningarna vid en skorstensbrand minimeras. Vid sotning av eldstäder och rökkanaler innebär detta att alla ytor som rökgaserna passerar rengörs."}
+bild1={ <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover  '/> }
+text2={"Hur ofta sotning ska göras bestäms av kommunen. I varje kommun finns det lokala föreskrifter för rengöring (sotning). Imkanalen, köksfläktens anslutning till skorstenen/ ventilationssystemet i bostadshus, omfattas inte längre av kravet på sotning. Trots detta behöver imkanalen rengöras med jämna mellanrum, om inte annat av funktionsmässiga skäl. Ansvaret för rengöring av imkanalen ligger på fastighetsägaren."}
+bild2={ <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover  '/> }
+text3={"Säkerheten på ditt tak är viktig för oss. Du som fastighetsägare har ansvar för att de säkerhetsanordningar som finns föreskrivet i lag finns på olats och är väl underhållna. Läs mer här →"}
+text4={"Numera kan vi också i vissa fall sota din rökkanal underifrån- Läs mer om stavsotning här →"}
+/>
 
 
-        <div className="content-grid">
-  
-            <div className="what-we-do section bg-sot text-gray-100">
-                <div>
-<h2></h2>
-                    <p>En anläggning/eldstad ska regelbundet både rengöras (sotas) och brandskyddskontrolleras.
-Brandskyddskontrollen görs för att se så anläggningen är brandsäker, d.v.s. upptäcka eventuella fel och brister hos anläggningen så att skador på människor, egendom och miljö kan undvikas.
 
-Brandskyddskontrollen kan jämföras med besiktningen av bilen. Med en viss regelbundenhet ska man få reda på om bilen är körduglig. Samma syfte fyller brandskyddskontrollen när det gäller eldstaden och skorstenen. </p>
-                </div>
-            </div>
 
-            <div className="how-we-stand-out section bg-sot text-gray-100">
-                <div>
-                    <h2></h2>
-                    <p>  Brandskyddskontrollen får endast utföras av kommunen eller av en entreprenör/företag som kommunen har bestämt, i detta fall Sotning & Ventilation i Eksjö AB. Hur ofta kontrollen ska göras har Myndigheten för samhällsskydd och beredskap (MSB) beslutat. Hur ofta (fristen) en anläggning/eldstad ska kontrolleras beror på hur den ser ut och hur den används. Normalt sker brandskyddskontroll vart 3:e eller vart 6:e år. Entreprenören har ett register på alla eldstäder och kontaktar ("budar") ägaren när det är dags för kontroll. En eldstad måste vara kontrollerad för att få användas. Brandskyddskontrollen innefattar eldningsanläggning med rökgångar och angränsande byggnadsdetaljer samt skyddsanordningar på tak.</p>
-                </div>
-            </div>
-           
-
-            
-
-         
-        </div>
-        <Footer />
+    
+        
     </div>
     </div>
     );

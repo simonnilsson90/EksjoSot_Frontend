@@ -36,12 +36,12 @@ const TjansterPage= () => {
          
   
   
-      <div className="     text-white px-12  space-y-2 lg:mt-5  "  >
+      <div className="  p-4     text-white  lg:px-0  space-y-2 lg:mt-5 lg:mx-24  "  >
       <h1 className="lg:text-4xl text-4xl border-sotOrange lg:border-none lg:border-b-0  border-b-2 text-start ">Tjänster</h1>
       <p className=" lg:text-2xl  text-start">Vi gör inte mer än absolut nödvändigt, men vi gör det bra</p>
   </div>
  
-  <div className="content-grid lg:mt-12 lg:mx-9 mx-auto  ">
+  <div className="content-grid lg:mt-12 lg:mx-20 mx-auto  ">
     
       <div className="  section bg-sot text-gray-100">
 
@@ -61,7 +61,7 @@ const TjansterPage= () => {
 
       
               <h2 className="mt-2 lg:mt-0">Sotning/rengöring</h2>
-              <p>Rengöring är viktigt bla bala sfff</p>
+              <p>Huvudanledningen till att rengöra eldstaden, skorstenen och imkanaler är att förhindra brand. Vid sotning tas brandfarlig beläggning bort för att minska risken för soteld. Rengöring av eldstäder och rökkanaler innebär att alla ytor som kommit i kontakt med rökgasen rengörs från lösa brännbara beläggningar. Rengöringen görs vanligen med en viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
               <Link to={"/tjanster/sotning/rengorning"}> 
                 <Button
                   variant="contained"
@@ -79,7 +79,7 @@ const TjansterPage= () => {
                  
                   }}
                 >
-                 Läs mer
+                 Läs mer →
                 </Button>
                 </Link>
           
@@ -116,7 +116,7 @@ const TjansterPage= () => {
                     
                   }}
                 >
-                 Läs mer
+                    Läs mer →
                 </Button>
                 </Link>
           </div>
@@ -153,7 +153,7 @@ const TjansterPage= () => {
                     borderRadius: "0.5rem"
                   }}
                 >
-                 Läs mer
+                    Läs mer →
                 </Button>
                 </Link>
           </div>
@@ -190,7 +190,7 @@ const TjansterPage= () => {
                     borderRadius: "0.5rem"
                   }}
                 >
-                 Läs mer
+                   Läs mer →
                 </Button>
                 </Link>
           </div>
