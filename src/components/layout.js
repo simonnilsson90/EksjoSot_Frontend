@@ -90,3 +90,13 @@ const LayoutComponent = ({ title, pretext, text1, text2, text3, text4, text5, te
 }
 
 export default LayoutComponent;
+
+
+/*
+
+ { name: 'Alla tjänster', link: '/tjanster' },
+      { name: 'Sotning', link: '/tjanster/sotning/rengorning' },
+      { name: 'Besiktningar', link: '/tjanster/besiktningar' },
+      { name: 'Övriga tjänster', link: '/tjanster/ovrigatjanster' },
+
+*/

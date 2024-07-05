@@ -11,57 +11,27 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Image } from 'mui-image';
 import { Link } from 'react-router-dom';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const pages = [
-  {
-    name: 'Tjänster',
-    link: '/tjanster',
-    subLinks: [
-      { name: 'Alla tjänster', link: '/tjanster' },
-      { name: 'Sotning', link: '/tjanster/sotning/rengorning' },
-      { name: 'Besiktningar', link: '/tjanster/besiktningar' },
-      { name: 'Övriga tjänster', link: '/tjanster/ovrigatjanster' },
-    ],
-  },
   { name: 'Taxor', link: '/taxor' },
   { name: 'Om oss', link: '/om' },
   { name: 'Hållbarhet', link: '/hallbarhet' },
   { name: 'Kontakt', link: '/kontakt' },
 ];
 
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const [anchorElServices, setAnchorElServices] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
+    console.log('Opening menu:', event.currentTarget);
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleOpenServicesMenu = (event) => {
-    setAnchorElServices(event.currentTarget);
-  };
-
   const handleCloseNavMenu = () => {
+    console.log('Closing menu');
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
-  const handleCloseServicesMenu = () => {
-    // Stäng menyn
-    setAnchorElServices(null);
-  };
-/* */
   return (
     <AppBar
       sx={{
@@ -74,7 +44,7 @@ function NavBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to="/">
-            <Image className='border border-white rounded-full invisible lg:visible lg:w-9'
+            <Image
               width={65}
               src={`${process.env.PUBLIC_URL}/eksjo-new-logo.png`}
               sx={{
@@ -123,66 +93,73 @@ function NavBar() {
               <MenuIcon />
             </IconButton>
             <Menu
-  id="menu-appbar"
-  className=' '
-  anchorEl={anchorElNav}
-  anchorOrigin={{
-    vertical: 'bottom',
-    horizontal: 'left',
-  }}
-  keepMounted
-  transformOrigin={{
-    vertical: 'top',
-    horizontal: 'left',
-  }}
-  open={Boolean(anchorElNav)}
-  onClose={handleCloseNavMenu}
-  sx={{ 
-    display: { xs: 'block', md: 'none' },
-    '.MuiMenu-paper': {
-      width: '200px', // Justera denna bredd så att den matchar
-      left: 'calc(50% - 100px)', // Centrera menyn relativt till AppBarens bredd
-    },
-  }}
->
-  {pages.map((page) =>
-    page.subLinks ? (
-      <MenuItem
-  key={page.name}
-  onMouseEnter={handleOpenServicesMenu}
-  onMouseLeave={handleCloseServicesMenu}
-  sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}
->
-  <Typography textAlign="center">
-    {page.name}
-  </Typography>
-  <ArrowDropDownIcon
-    sx={{
-      marginLeft: '-10px', // Justera efter behov
-      '.MuiSvgIcon-root': {
-        marginLeft: '-10px', // Specifik stil för MuiSvgIcon-root om det behövs
-      },
-    }}
-  />
-</MenuItem>
-
-    
-    ) : (
-      <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-        <Typography textAlign="center">
-          <Link to={page.link} style={{ textDecoration: 'none', color: 'inherit' }}>
-            {page.name}
-          </Link>
-        </Typography>
-      </MenuItem>
-    )
-  )}
-</Menu>
-
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              <Box id="days" className="mx-auto flex items-center justify-center lg:invisible md:visible mb-2 ">
+                <div className="group relative cursor-pointer ">
+                  <div className="flex items-center justify-between space-x-5 bg-white px-4">
+                    <p className="menu-hover  text-base font-medium text-inherit lg:mx-4">
+                      Tjänster
+                    </p>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+                    <Link to={'/tjanster'}>
+                      <a className="my-2 block border-b border-gray-100 py-1 text-gray-500 hover:text-black md:mx-2">
+                        Alla tjänster
+                      </a>
+                    </Link>
+                    <Link to={'/tjanster/sotning/rengorning'}>
+                      <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Sotning
+                      </a>
+                    </Link>
+                    <Link to={'/tjanster/besiktningar'}>
+                      <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Besiktningar
+                      </a>
+                    </Link>
+                    <Link to={'/tjanster/besiktningar'}>
+                      <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Övriga tjänster
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </Box>
+              {pages.map((page) => (
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                    <Link to={page.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      {page.name}
+                    </Link>
+                  </Typography>
+                </MenuItem>
+              ))}
+            </Menu>
           </Box>
 
           <Link to="/">
-            <Image className='border border-white rounded-full'
+            <Image
               width={50}
               src={`${process.env.PUBLIC_URL}/eksjo-new-logo.png`}
               sx={{
@@ -222,69 +199,42 @@ function NavBar() {
               Eksjö AB
             </Typography>
           </Link>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) =>
-              page.subLinks ? (
-                <Box
-                  key={page.name}
-                  onMouseEnter={handleOpenServicesMenu}
-                  onMouseLeave={handleCloseServicesMenu}
-                  sx={{ position: 'relative' }}
-                >
-                  <Button
-                    sx={{ my: 2, color: 'white', display: 'flex', alignItems: 'center' }}
-                    endIcon={<ArrowDropDownIcon />}
-                  >
-                    {page.name}
-                  </Button>
-                  <Menu
-  id="menu-services"
-  anchorEl={anchorElServices}
-  anchorOrigin={{
-    vertical: 'bottom',
-    horizontal: 'left',
-  }}
-  keepMounted
-  transformOrigin={{
-    vertical: 'top',
-    horizontal: 'left',
-  }}
-  open={Boolean(anchorElServices)}
-  onClose={handleCloseServicesMenu}
-  className='ml-16  lg:ml-0 mt-8 lg:mt-0'
-  sx={{
-   
-    '.MuiMenu-paper': {
-      width: '200px', // Använd samma bredd som för hamburgermenyn
-      left: 'calc(50% - 100px)', // Centrera menyn relativt till AppBarens bredd
-    },
-  }}
->
-  {pages.find(page => page.name === 'Tjänster')?.subLinks.map((subLink) => (
-    <MenuItem key={subLink.name} onClick={handleCloseServicesMenu}>
-      <Typography textAlign="center">
-        <Link to={subLink.link} style={{ textDecoration: 'none', color: 'inherit' }}>
-          {subLink.name}
-        </Link>
-      </Typography>
-    </MenuItem>
-  ))}
-</Menu>
-
-                </Box>
-              ) : (
-                <Button
-                  key={page.name}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
-                >
-                  <Link to={page.link} style={{ textDecoration: 'none', color: 'inherit' }}>
-                    {page.name}
+          <Box id="days" className="mx-auto flex items-center justify-center invisible lg:visible mr-2 ">
+            <div className="group relative cursor-pointer py-2">
+              <div className="flex items-center justify-between">
+                <a className="menu-hover my-2 py-2 text-xs font-semibold text-white">
+                  TJÄNSTER
+                </a>
+                <span className="px-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </span>
+              </div>
+              <div className=" lg:w-40 invisible absolute z-50 flex w-full flex-col bg-white mr-4 text-gray-800 shadow-xl group-hover:visible">
+                <Link to={'/tjanster'} className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                  Alla tjänster
+                </Link>
+                <Link to={'/tjanster/sotning/rengorning'} className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                  Sotning
                   </Link>
-                </Button>
-              )
-            )}
+                <Link to={'/tjanster/besiktningar'} className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                  Besiktningar
+                  </Link>
+                  <Link to={'/tjanster/besiktningar'} className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                  Övriga tjänster
+                  </Link>
+              </div>
+            </div>
+          </Box>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            {pages.map((page) => (
+              <Button key={page.name} onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+                <Link to={page.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  {page.name}
+                </Link>
+              </Button>
+            ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

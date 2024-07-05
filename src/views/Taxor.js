@@ -33,16 +33,9 @@ const TaxorPage = () => {
    
     <LayoutComponent
      title="Sotningstaxa"
-    
-
-        bild1={<img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover py-2  '
-                                    />  }
-
-                                    text2={ <div>
-                                      <h2 className=' text-2xl mb-2 mt-4 '>Länkar till respektive kommun:</h2>
-                                     
-                            
-                                          <Link  to={"https://eksjo.se/bo-miljo-och-trafik/ditt-boende/brandskyddskontroll-och-rengoring-sotning"}>
+     text1={ <div>
+     <h2 className=' text-2xl mb-2 mt-4 '>Länkar till respektive kommun:</h2>
+                                     <Link  to={"https://eksjo.se/bo-miljo-och-trafik/ditt-boende/brandskyddskontroll-och-rengoring-sotning"}>
                                           <div className=" flex ">
                                           <h2 className=" pr-2">Eksjö</h2>
                                           <ArrowForwardIcon className=" text-sotOrange mb-1 " > </ArrowForwardIcon>
@@ -56,6 +49,8 @@ const TaxorPage = () => {
                                           </Link>
                                          
                                       </div>}
+                                        bild1={<img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover py-2  '
+                                        />  }
     />
         
 
