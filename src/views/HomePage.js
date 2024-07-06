@@ -16,10 +16,10 @@ npm run deploy
 function HomePage() {
   return (
 <div className="min-h-screen bg-cover bg-fixed lg:bg-left-top bg-top   " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimney-sweep.jpg)` }} >
-<div className="bg-gradient-to-b from-black/60 to-black/80 min-h-screen">
+<div className="bg-gradient-to-b lg:from-black/20 lg:to-black/60 from-black/20 to-black/50 min-h-screen">
 
    
-        <div className="flex flex-col md:items-center items-center lg:items-start lg:pl-12 lg:pr-4 pt-36 mb-4">
+        <div className="flex flex-col md:items-center items-center lg:items-start lg:pl-12 lg:pr-4 pt-32 mb-4">
           <div className="text-center md:text-center lg:text-left lg:absolute lg:right-12 lg:top-48">
             <span className="text-3xl lg:text-6xl md:text-5xl text-white">
               <p className="font-semibold">Välkommen till EksjöSot</p>
@@ -53,7 +53,7 @@ function HomePage() {
             </span>
           </div>
 
-          <div  className=" lg:mt-56 mt-4 lg:mx-5 w-full lg:w-2/5 lg:ml-0 pl-4 pt-4 pb-4 pr-14  text-white lg:text-3xl text-xl font-semibold">
+          <div  className=" lg:mt-56 mt-4 lg:mx-5 w-full lg:w-2/5 lg:ml-0 pl-10 pt-4 pb-4 mx-auto pr-10  text-white lg:text-3xl text-xl font-semibold">
             <h2 className="border-b-2 border-sot">Våra tjänster</h2>
             <ul className="lg:text-lg text-sm  mt-2 space-y-1 list-disc pl-5">
               <li className=" ">Rengöring av eldstäder, imkanaler och fläktar</li>
