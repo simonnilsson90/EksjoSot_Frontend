@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Image } from 'mui-image';
 import { Link } from 'react-router-dom';
+import './navbarComponent.css';
 
 const pages = [
   { name: 'Taxor', link: '/taxor' },
@@ -108,9 +109,13 @@ function NavBar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
+                '.MuiPaper-root': { // Lägger till denna rad
+                  borderRadius: 0, // Sätter borderRadius till 0 för att ta bort runda hörnor
+                },
+            
               }}
             >
-              <Box id="days" className="mx-auto flex items-center justify-center lg:invisible md:visible mb-2 ">
+              <Box id="tjanster" className="mx-auto flex items-center justify-center lg:invisible md:visible mb-2  ">
                 <div className="group relative cursor-pointer ">
                   <div className="flex items-center justify-between space-x-5 bg-white px-4">
                     <p className="menu-hover  text-base font-medium text-inherit lg:mx-4">
@@ -122,24 +127,24 @@ function NavBar() {
                       </svg>
                     </span>
                   </div>
-                  <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+                  <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4  shadow-xl group-hover:visible">
                     <Link to={'/tjanster'}>
-                      <a className="my-2 block border-b border-gray-100 py-1 text-gray-500 hover:text-black md:mx-2">
+                      <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-700 hover:text-black md:mx-2">
                         Alla tjänster
                       </a>
                     </Link>
                     <Link to={'/tjanster/sotning/rengorning'}>
-                      <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                      <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-700 hover:text-black md:mx-2">
                         Sotning
                       </a>
                     </Link>
                     <Link to={'/tjanster/besiktningar'}>
-                      <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                      <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-700 hover:text-black md:mx-2">
                         Besiktningar
                       </a>
                     </Link>
                     <Link to={'/tjanster/besiktningar'}>
-                      <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                      <a className="my-2 block border-b border-gray-100 pb-2 font-semibold text-gray-700 hover:text-black md:mx-2">
                         Övriga tjänster
                       </a>
                     </Link>
@@ -211,8 +216,8 @@ function NavBar() {
                   </svg>
                 </span>
               </div>
-              <div className=" lg:w-40 invisible absolute z-50 flex w-full flex-col bg-white mr-4 text-gray-800 shadow-xl group-hover:visible">
-                <Link to={'/tjanster'} className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+              <div className=" lg:w-40 invisible absolute z-50 flex w-full flex-col bg-white mr-4 text-black shadow-xl group-hover:visible">
+                <Link to={'/tjanster'} className="my-2 block border-b border-gray-100 py-1 font-semibold text-sot hover:text-black md:mx-2">
                   Alla tjänster
                 </Link>
                 <Link to={'/tjanster/sotning/rengorning'} className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
