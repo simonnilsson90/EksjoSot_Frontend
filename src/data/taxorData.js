@@ -1,5 +1,5 @@
 const taxorData = {
-    title: "Sotningstan",
+    title: "Sotningstaxa",
     description: "Sotningsavgiften är en kommunal avgift beslutad med stöd av Lagen om skydd mot olyckor (3 kap 6 §). Avgiften är uppdelad i tre delmoment: 1) grundavgift, 2) objektsavgift3) ev. tilläggsavgifter. Taxan förutsätter att fördelning av avgifter skall ske så att alla kommunmedlemmar som befinner sig i motsvarande läge skall betala samma avgifter. Det kallas likställighetsprincipen och är en del av kommunallagen (2 kap 3 §).",
     vision: {
       title: "grundavgift",

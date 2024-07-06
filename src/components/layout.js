@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+
 import Footer from "../components/footer/FooterComponent";
-import Image from 'mui-image';
 import '../views/aboutUs.css';
 
 const LayoutComponent = ({ title, pretext, text1, text2, text3, text4, text5, text6,  bild1, bild2, bild3, bild4, bild5, bild6 }) => {
@@ -90,3 +89,13 @@ const LayoutComponent = ({ title, pretext, text1, text2, text3, text4, text5, te
 }
 
 export default LayoutComponent;
+
+
+/*
+
+ { name: 'Alla tjänster', link: '/tjanster' },
+      { name: 'Sotning', link: '/tjanster/sotning/rengorning' },
+      { name: 'Besiktningar', link: '/tjanster/besiktningar' },
+      { name: 'Övriga tjänster', link: '/tjanster/ovrigatjanster' },
+
+*/
