@@ -64,6 +64,7 @@ function NavBar() {
 /* */
   return (
     <AppBar
+    className=' lg:border-none border-b border-gray-500'
       sx={{
         backgroundColor: '#2b2f32 !important;',
         paddingTop: '1rem',

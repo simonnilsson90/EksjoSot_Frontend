@@ -11,10 +11,13 @@
 }
 
 
+/* 
 
 .bg-sot {
-  background-color: #2b2f32;
+  background-color: #2b2f32  !important;
 }
+*/
+
 
 .bg-sot-orange {
   background-color: rgb(224, 95, 51) !important;
