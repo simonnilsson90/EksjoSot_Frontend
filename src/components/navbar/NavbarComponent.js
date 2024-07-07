@@ -12,292 +12,129 @@ import MenuItem from '@mui/material/MenuItem';
 import { Image } from 'mui-image';
 import { Link } from 'react-router-dom';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { NavigateBeforeRounded } from '@mui/icons-material';
 
-const pages = [
-  {
-    name: 'Tjänster',
-    link: '/tjanster',
-    subLinks: [
-      { name: 'Alla tjänster', link: '/tjanster' },
-      { name: 'Sotning', link: '/tjanster/sotning/rengorning' },
-      { name: 'Besiktningar', link: '/tjanster/besiktningar' },
-      { name: 'Övriga tjänster', link: '/tjanster/ovrigatjanster' },
-    ],
-  },
-  { name: 'Taxor', link: '/taxor' },
-  { name: 'Om oss', link: '/om' },
-  { name: 'Hållbarhet', link: '/hallbarhet' },
-  { name: 'Kontakt', link: '/kontakt' },
-];
-
+import { useState } from "react";
+import {
+  PaperAirplaneIcon,
+  MoonIcon,
+  SunIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 
 
 function NavBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const [anchorElServices, setAnchorElServices] = React.useState(null);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
+  const closeMenu = () => {
+    setToggleMenu(false);
   };
 
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleOpenServicesMenu = (event) => {
-    setAnchorElServices(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
-  const handleCloseServicesMenu = () => {
-    // Stäng menyn
-    setAnchorElServices(null);
-  };
-/* */
   return (
-    <AppBar
-    className=' lg:border-none border-b border-gray-500'
-      sx={{
-        backgroundColor: '#2b2f32 !important;',
-        paddingTop: '1rem',
-        paddingBottom: '1rem',
-      }}
-      position="static"
-    >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Link to="/">
-            <Image className='border border-white rounded-full invisible lg:visible lg:w-9'
-              width={65}
-              src={`${process.env.PUBLIC_URL}/eksjo-new-logo.png`}
-              sx={{
-                mr: 1,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.1rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            />
-          </Link>
-          <Link to="/">
-            <Typography
-              variant="h8"
-              noWrap
-              component="a"
-              sx={{
-                ml: 2,
-                mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.1rem',
-                color: 'inherit',
-                textDecoration: 'none',
-                lineHeight: 1.2,
-              }}
-            >
-              Sotning &<br />
-              Ventilation<br />
-              Eksjö AB
-            </Typography>
-          </Link>
+    <div className="app bg-sot text-white">
+      <nav>
+        <div className="max-w-7xl mx-auto">
+          <div className="flex mx-auto justify-between w-5/6 ">
+            {/* Primary menu and logo */}
+            <div className="flex items-center gap-16 my-4">
+              {/* logo */}
+              
+                <div className=' flex '> 
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-  id="menu-appbar"
-  className=' '
-  anchorEl={anchorElNav}
-  anchorOrigin={{
-    vertical: 'bottom',
-    horizontal: 'left',
-  }}
-  keepMounted
-  transformOrigin={{
-    vertical: 'top',
-    horizontal: 'left',
-  }}
-  open={Boolean(anchorElNav)}
-  onClose={handleCloseNavMenu}
-  sx={{ 
-    display: { xs: 'block', md: 'none'  },
-    '.MuiMenu-paper': {
-      width: '200px', // Justera denna bredd så att den matchar
-      left: 'calc(50% - 100px)', // Centrera menyn relativt till AppBarens bredd
-      borderRadius: 0, 
-    },
-  }}
->
-  {pages.map((page) =>
-    page.subLinks ? (
-      <MenuItem
-  key={page.name}
-  onMouseEnter={handleOpenServicesMenu}
-  onMouseLeave={handleCloseServicesMenu}
-  sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}
->
-  <Typography textAlign="center">
-    {page.name}
-  </Typography>
-  <ArrowDropDownIcon
-    sx={{
-      marginLeft: '-10px', // Justera efter behov
-      '.MuiSvgIcon-root': {
-        marginLeft: '-10px', // Specifik stil för MuiSvgIcon-root om det behövs
-      },
-    }}
-  />
-</MenuItem>
-
-    
-    ) : (
-      <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-        <Typography textAlign="center">
-          <Link to={page.link} style={{ textDecoration: 'none', color: 'inherit' }}>
-            {page.name}
-          </Link>
-        </Typography>
-      </MenuItem>
-    )
-  )}
-</Menu>
-
-          </Box>
-
-          <Link to="/">
-            <Image className='border border-white rounded-full'
-              width={50}
-              src={`${process.env.PUBLIC_URL}/eksjo-new-logo.png`}
-              sx={{
-                borderRadius: '100%',
-                borderColor: 'grey.100',
-                mr: 2,
-                display: { xs: 'flex', md: 'none' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.0rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            />
-          </Link>
-          <Link to="/">
-            <Typography
-              variant="h8"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                ml: 2,
-                display: { xs: 'flex', md: 'none' },
-                flexGrow: 1,
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.1rem',
-                color: 'inherit',
-                textDecoration: 'none',
-                lineHeight: 1.2,
-              }}
-            >
-              Sotning &<br />
-              Ventilation<br />
-              Eksjö AB
-            </Typography>
-          </Link>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) =>
-              page.subLinks ? (
-                <Box
-                  key={page.name}
-                  onMouseEnter={handleOpenServicesMenu}
-                  onMouseLeave={handleCloseServicesMenu}
-                  sx={{ position: 'relative' }}
-                >
-                  <Button
-                    sx={{ my: 2, color: 'white', display: 'flex', alignItems: 'center' }}
-                    endIcon={<ArrowDropDownIcon />}
-                  >
-                    {page.name}
-                  </Button>
-                  <Menu
                 
-  id="menu-services"
-  anchorEl={anchorElServices}
-  anchorOrigin={{
-    vertical: 'bottom',
-    horizontal: 'left',
-    borderRadius: 0, 
-  }}
-  keepMounted
-  transformOrigin={{
-    vertical: 'top',
-    horizontal: 'left',
-    borderRadius: 0, 
-  }}
-  open={Boolean(anchorElServices)}
-  onClose={handleCloseServicesMenu}
-  className='ml-16  mt-24 rounded-none'
-  sx={{
-   
-    '.MuiMenu-paper': {
-      width: '200px', // Använd samma bredd som för hamburgermenyn
-      left: 'calc(50% - 100px)', // Centrera menyn relativt till AppBarens bredd
-    },
-    borderRadius: 0, 
-  }}
->
-  {pages.find(page => page.name === 'Tjänster')?.subLinks.map((subLink) => (
-    <MenuItem key={subLink.name} onClick={handleCloseServicesMenu}>
-      <Typography textAlign="center">
-        <Link to={subLink.link} style={{ textDecoration: 'none', color: 'inherit' }}>
-          {subLink.name}
+              <Link className='mr-4' to="/">
+          <Image className='border border-white rounded-full  lg:w-9 '
+            width={65}
+            src={`${process.env.PUBLIC_URL}/eksjo-new-logo.png`}
+            sx={{
+              mr: 1,
+              display: {  md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.1rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          />
         </Link>
-      </Typography>
-    </MenuItem>
-  ))}
-</Menu>
-
-                </Box>
-              ) : (
-                <Button
-                  key={page.name}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
-                >
-                  <Link to={page.link} style={{ textDecoration: 'none', color: 'inherit' }}>
-                    {page.name}
-                  </Link>
-                </Button>
-              )
-            )}
-          </Box>
-
-         
-        </Toolbar>
-      </Container>
-    </AppBar>
+        <Link to="/">
+          <Typography
+            variant="h8"
+            noWrap
+            component="a"
+            sx={{
+           mt:1,
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.1rem',
+              color: 'inherit',
+              textDecoration: 'none',
+              lineHeight: 1.2,
+            }}
+          >
+            Sotning &<br />
+            Ventilation<br />
+            I Eksjö AB
+          </Typography>
+        </Link>
+        </div>
+            
+              {/* primary */}
+              <div className="hidden lg:flex gap-8 ">
+              <Link className=' hover:border-b-2 border-orange-600'  to={"/"}>Hem</Link>
+              <Link  className=' hover:border-b-2 border-orange-600' to="/tjanster">Tjänster</Link >
+              <Link className='hover:border-b-4 border-orange-600 pl-2' to="/taxor" onClick={closeMenu}>Taxor</Link>
+                <Link className=' hover:border-b-2 border-orange-600'  to={"/om"}>Om oss</Link>
+                <Link className=' hover:border-b-2 border-orange-600'  to={"/kontakt"}>Kontakta oss</Link>
+                <Link className=' hover:border-b-2 border-orange-600'  to={"/hallbarhet"}>Hållbarhet</Link>
+              </div>
+            </div>
+            {/* secondary */}
+            <div className="flex gap-6">
+              <div className="hidden xs:flex items-center gap-10">
+                <div className="hidden lg:flex items-center gap-2">
+                  <MoonIcon className="h-6 w-6" />
+                  <SunIcon className="h-6 w-6" />
+                </div>
+                <div>
+                  <button className="rounded-full border-solid border-2 border-gray-300 py-2 px-4 hover:bg-gray-700 hover:text-gray-100">
+                    Free Trial
+                  </button>
+                </div>
+              </div>
+              {/* Mobile navigation toggle */}
+              <div className="lg:hidden flex items-center">
+                <button onClick={() => setToggleMenu(!toggleMenu)}>
+                  <Bars3Icon className="h-6" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Mobilnavigation */}
+        <div
+          className={`fixed z-40 w-full bg-sot overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 ${
+            !toggleMenu ? "h-0" : "h-full"
+          }`}
+        >
+          <div className="px-8">
+            <div className="flex flex-col gap-8 font-bold tracking-wider">
+              <Link className='hover:border-b-4 border-orange-600 mt-4 ' to={"/"} onClick={closeMenu}>Hem</Link>
+              <Link className='hover:border-b-4 border-orange-600 ' to="/taxor" onClick={closeMenu}>Taxor</Link>
+              <Link className='hover:border-b-4 border-orange-600 ' to="/tjanster" onClick={closeMenu}>Tjänster</Link>
+              <Link className='hover:border-b-4 border-orange-600 ' to={"/om"} onClick={closeMenu}>Om oss</Link>
+              <Link className='hover:border-b-4 border-orange-600 ' to={"/kontakt"} onClick={closeMenu}>Kontakta oss</Link>
+              <Link className='hover:border-b-4 border-orange-600 ' to={"/hallbarhet"} onClick={closeMenu}>Hållbarhet</Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
   );
 }
 
 export default NavBar;
+

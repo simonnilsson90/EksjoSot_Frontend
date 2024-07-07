@@ -1,12 +1,12 @@
 {
   "homepage": "https://simonnilsson90.github.io/EksjoSot_Frontend",
-
   "name": "theeveryonestore",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.24.7",
     "@emotion/react": "^11.11.4",
+    "@heroicons/react": "^2.1.4",
     "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.15.15",
     "@mui/x-charts": "^7.1.0",
@@ -63,5 +63,4 @@
   "resolutions": {
     "react": "^18.2.0"
   }
-  
 }
