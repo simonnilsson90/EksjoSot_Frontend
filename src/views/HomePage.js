@@ -19,8 +19,8 @@ function HomePage() {
 <div className="bg-gradient-to-b lg:from-black/20 lg:to-black/60 from-black/20 to-black/50 min-h-screen">
 
    
-        <div className="flex flex-col md:items-center items-center lg:items-start lg:pl-12 lg:pr-4 pt-32 mb-4">
-          <div className="text-center md:text-center lg:text-left lg:absolute lg:right-12 lg:mt-10">
+        <div className="flex flex-col md:items-center items-center lg:items-start lg:pl-12 lg:pr-4 pt-32 ">
+          <div className="text-center md:text-center lg:text-left lg:absolute lg:right-12 ">
             <span className="text-3xl lg:text-6xl md:text-5xl text-white">
               <p className="font-semibold">Välkommen till EksjöSot</p>
           

@@ -25,7 +25,7 @@ const HallbarhetPage = () => {
     }, []);
     return (
         <div id="background-element" className="min-h-screen bg-sot">
-            <div className="lg:bg-gradient-to-b lg:from-black/70 lg:via-transparent lg:to-transparent lg:min-h-screen pt-10">
+            <div className="lg:bg-gradient-to-b lg:from-black/70 lg:via-transparent lg:to-transparent lg:min-h-screen pt-10 ">
         <LayoutComponent 
             title="Hållbarhet" 
             pretext={

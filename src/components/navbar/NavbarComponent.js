@@ -32,6 +32,7 @@ function NavBar() {
   };
 
   return (
+    <div>
     <div className="app bg-sot text-white">
       <nav>
         <div className="max-w-7xl mx-auto">
@@ -59,26 +60,7 @@ function NavBar() {
           />
         </Link>
         <Link to="/">
-          <Typography
-            variant="h8"
-            noWrap
-            component="a"
-            sx={{
-           mt:1,
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.1rem',
-              color: 'inherit',
-              textDecoration: 'none',
-              lineHeight: 1.2,
-            }}
-          >
-            Sotning &<br />
-            Ventilation<br />
-            I Eksjö AB
-          </Typography>
+         
         </Link>
         </div>
             
@@ -132,6 +114,23 @@ function NavBar() {
           </div>
         </div>
       </nav>
+    </div>
+    <div className=' bg-white w-full lg:px-20   justify-between   pt-2 '>
+      <div className='w-5/6 flex mx-auto justify-between'>
+
+      
+      <p className=' '>
+      Sotning &<br />
+            Ventilation<br />
+            I Eksjö AB
+      </p>
+
+      <img src={`${process.env.PUBLIC_URL}/ISO.png`} className="h-16 w-auto pt-2" />
+
+
+      <img src={`${process.env.PUBLIC_URL}/riks.png`}  className=' h-20 w-auto  pb-2  '/>
+     </div>
+     </div>
     </div>
   );
 }
