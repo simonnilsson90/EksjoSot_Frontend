@@ -109,7 +109,7 @@ function NavBar() {
       <p className=' '>
       Sotning &<br />
             Ventilation<br />
-            I Eksjö AB
+            i Eksjö AB
       </p>
 
       <img src={`${process.env.PUBLIC_URL}/ISO.png`} className="h-16 w-auto pt-2" />
