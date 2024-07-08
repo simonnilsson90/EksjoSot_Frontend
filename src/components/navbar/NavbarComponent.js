@@ -1,26 +1,13 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
 import { Image } from 'mui-image';
-import { Link } from 'react-router-dom';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import { NavigateBeforeRounded } from '@mui/icons-material';
-
+import { Link } from 'react-router-dom'
 import { useState } from "react";
 import {
-  PaperAirplaneIcon,
+  
   MoonIcon,
   SunIcon,
   Bars3Icon,
-  XMarkIcon,
+  
 } from "@heroicons/react/24/outline";
 
 
@@ -79,7 +66,7 @@ function NavBar() {
               <div className="hidden xs:flex items-center gap-10">
                 <div className="hidden lg:flex items-center gap-2">
                   <MoonIcon className="h-6 w-6" />
-                  <SunIcon className="h-6 w-6" />
+                  <SunIcon className="h-6 w-6 bg-pink-700" />
                 </div>
                 <div>
                   <button className="rounded-full border-solid border-2 border-gray-300 py-2 px-4 hover:bg-gray-700 hover:text-gray-100">

@@ -5,8 +5,12 @@ module.exports = {
       extend: {
         backgroundColor: {
           'sot': '#2b2f32',
+          'sotOrange': 'rgba(224, 95, 51, var(--tw-border-opacity))',
         } 
            }
     },
     plugins: [],
   }
+
+
+
