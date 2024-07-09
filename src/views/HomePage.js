@@ -16,7 +16,7 @@ npm run deploy
 function HomePage() {
   return (
 <div className="min-h-screen bg-cover bg-fixed lg:bg-center bg-bottom  " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimney-sweep.jpg)` }} >
-<div className="bg-gradient-to-b lg:from-black/20 lg:to-black/60 from-black/20 to-black/50 min-h-screen">
+<div className="bg-gradient-to-b lg:from-black/5 lg:to-black/60 from-black/5 to-black/40 min-h-screen">
 
    
         <div className="flex flex-col md:items-center items-center lg:items-start lg:pl-12 lg:pr-4 pt-32 ">

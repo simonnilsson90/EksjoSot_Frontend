@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { useEffect } from 'react';
 import Image from "mui-image";
-import { TECollapse } from "tw-elements-react";
+  // import { TECollapse } from "tw-elements-react";
 import { useState } from "react";
+import Accordion from "../components/Accordion";
 
 /*
 
@@ -55,8 +56,8 @@ const TjansterPage= () => {
             <div className="flex flex-col gap-4 mb-10 pb-10 lg:w-full md:w-full lg:mb-16 md:mb-16 lg:mt-10 md:mt-10 lg:flex-row md:flex-row lg:flex-wrap md:flex-wrap">
                 <div className="text-white mx-4 lg:mt-10 md:mt-10 lg:w-5/6 md:w-5/6 lg:mx-auto md:mx-auto">
                     <h1 className="text-4xl text-start pb-2 lg:pb-0 md:pb-0 lg:border-none md:border-none lg:text-7xl md:text-7xl border-sotOrange border-b-2">Tjänster</h1>
-                    <div className="hidden lg:block md:block mt-4 mx-2 lg:text-2xl md:text-2xl lg:text-start md:text-start lg:mt-40 md:mt-40 lg:ml-80 md:ml-56">
-                    Vi gör inte mer än absolut nödvändigt, men vi gör det bra
+                    <div className="hidden lg:block md:block mt-4 mx-2 lg:text-2xl md:text-2xl lg:text-start md:text-start lg:mt-32 md:mt-40 lg:ml-80 md:ml-56 lg:pl-96">
+                    Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området.
                     </div>
                 </div>
                 <div className="section lg:bg-sot md:bg-sot bg-white text-black lg:mx-0 md:mx-0 mx-4 lg:mt-48 md:mt-48 lg:flex md:flex">
@@ -248,18 +249,53 @@ const TjansterPage= () => {
                         <div> 
                         </div>
                         
-                         <div className=" lg:text-white md:text-white">
-                       
-                        <div className="mt-4 mx-4">
+                         <div className="  mt-4 mr-4 container mx-auto ">
+                         <Accordion
+        title="Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer?"
+        content={ <ul className=" px-8 text-black">
+          <li className='list-disc '>Stege ska vara framtagen och ev. rest.</li>
+          <li className="list-disc">Det ska finnas godkända takskyddsanordningar så att sotaren/teknikern ska kunna gå upp på taket och arbeta säkert.</li>
+          <li className='list-disc'>Du behöver inte vara hemma, men du måste ge sotaren åtkomst till din fastighet så sotaren/teknikern kan gå in och nå eldstaden inifrån. Vid brandskyddskontroll följer teknikern skorstenen  i hela sin längd och behöver även åtkomst till vinden.  Förbered gärna genom att öppna garderober, schakt och lucka till vind.</li>
+          <li className='list-disc'>Är du inte hemma, meddela sotaren/teknikern om det är ok att gå in och du löst det så att hen kan komma in.</li>
+          <li className='list-disc'>Invändigt: Det är viktigt att det inte finns föremål runt eldstaden som är i vägen för sotaren. Ta bort mattorna och flytta undan möblerna och ta bort andra ömtåliga saker.  Arbetet måste utföras i en bra arbetsmiljö. Normalt sett ska det inte komma in sot, men det finns alltid en risk att det kommer ut en del ändå.</li>
+          <li className='list-disc'>Ha ett kärl tillgängligt som sotaren kan tömma sotet i. Det ska vara ett rymligt metallkärl med lock och sedan någon form av skyffel till det.</li>
+          <li className='list-disc'>Har du saker du är rädd om som befinner sig i närheten kan du lägga över ex. med plast eller tidningar.</li>
+          <li className='list-disc'>Under vintern är det viktigt att du ser till att takstegen inte är täckt med snö och att vägen fram till markstegen är skottad och halkfri.</li>
+          
+                      </ul>}
+      />
+              
+    </div>
+
+            </div>
+                        </div>
+                    
+               
+           
+            <div className='w-full'>
+                <Footer />
+            </div>
+        </div>
+       
+    </div>
+    </div>
+    );
+  }
+  
+  export default TjansterPage;
+  
+  /*
+
+          <div className="mt-4 mx-2">
                  
-                        <div id="accordionExample">
-        <div className=" border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
-          <h2 className="mb-0" id="headingOne">
+                        <div id="accordionExample ">
+        <div className=" border   dark:border-neutral-600 dark:bg-neutral-800">
+          <h2 className="mb-0 " id="headingOne">
             <button
               className={`${
                 activeElement === "element1" &&
                 `text-primary [box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:!text-primary-400 dark:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]`
-              } group relative flex w-full items-center  border-0 bg-white px-5 py-4 text-left  text-black text-xl transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white`}
+              }  flex items-center  px-2   text-left  text-black text-xl transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white`}
               type="button"
               onClick={() => handleClick("element1")}
               aria-expanded="true"
@@ -279,7 +315,7 @@ const TjansterPage= () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="h-6 w-6"
+                  className="h-6 w-6 pr-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -312,26 +348,9 @@ const TjansterPage= () => {
       </div>
      
       </div>
-    </div>
 
-            </div>
-                        </div>
-                    
-               
-           
-            <div className='w-full'>
-                <Footer />
-            </div>
-        </div>
-       
-    </div>
-    </div>
-    );
-  }
-  
-  export default TjansterPage;
-  
-  /*
+
+
        <Accordion 
   sx={{
     marginTop: "1rem",
