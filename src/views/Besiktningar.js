@@ -25,7 +25,7 @@ const BesiktningarPage  = () => {
         text6={ <div> <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>{besiktningarData.whyChooseUs.title}</h2>  {besiktningarData.whyChooseUs.content}  </div> }
         bild6={ <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover  '/> }
         />
-        <Footer />
+
     </div>
     </div>
     );

@@ -7,7 +7,7 @@ const HallbarhetPage = () => {
     useEffect(() => {
         const updateBackground = () => {
             const element = document.getElementById('background-element');
-            if (window.innerWidth >= 1024) {
+            if (window.innerWidth >= 768) {
                 element.style.backgroundImage = `url(${process.env.PUBLIC_URL}/chimneys.jpg)`;
                 element.classList.add('bg-cover', 'bg-fixed');
             } else {

@@ -24,6 +24,7 @@ import KontaktPage from "./views/Kontakt";
 import OvrigaTjansterPage from "./views/ovriga-tjanster";
 import SotningPage from "./views/sotning";
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>

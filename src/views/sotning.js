@@ -9,7 +9,7 @@ const SotningPage  = () => {
     useEffect(() => {
       const updateBackground = () => {
           const element = document.getElementById('background-element');
-          if (window.innerWidth >= 1024) { // 1024px motsvarar 'lg' i Tailwind CSS
+          if (window.innerWidth >= 768) { // 1024px motsvarar 'lg' i Tailwind CSS
               element.style.backgroundImage = `url(${process.env.PUBLIC_URL}/chimneys.jpg)`;
               element.classList.add('bg-cover', 'bg-fixed');
           } else {
@@ -28,7 +28,8 @@ const SotningPage  = () => {
     
       return (
         <div id="background-element" className="min-h-screen bg-sot">
-        <div className="lg:bg-gradient-to-b lg:from-black/70 lg:via-transparent lg:to-transparent lg:min-h-screen pt-10">
+      <div className="lg:bg-gradient-to-b lg:from-black/70 lg:via-transparent lg:to-transparent lg:min-h-screen
+        md:bg-gradient-to-b md:from-black/70 md:via-transparent md:to-transparent md:min-h-screen pt-10 ">
 
 <LayoutComponent
 title={"Sotning"}
