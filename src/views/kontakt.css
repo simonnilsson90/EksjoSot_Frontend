@@ -88,3 +88,14 @@
   
 
   */
+
+
+  .custom-background {
+    background-position: bottom;
+  }
+  
+  @media (min-width: 1024px) {
+    .custom-background {
+      background-position: center bottom;
+    }
+  }

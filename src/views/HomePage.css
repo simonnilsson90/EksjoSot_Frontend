@@ -25,3 +25,22 @@
   color: rgb(224, 95, 51) !important;
 }
 
+.custom-background {
+  background-image: url('/public/chimney-sweep-small.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
+@media (min-width: 640px) {
+  .custom-background {
+    background-image: url('/public/chimney-sweep.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-background {
+    background-position: center center;
+  }
+}

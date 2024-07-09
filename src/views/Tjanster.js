@@ -60,9 +60,9 @@ const TjansterPage= () => {
                     Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området.
                     </div>
                 </div>
-                <div className="section lg:bg-sot md:bg-sot bg-white text-black lg:mx-0 md:mx-0 mx-4 lg:mt-48 md:mt-48 lg:flex md:flex">
-                    <div className='mt-4 mx-2 text-2xl lg:text-start md:text-start lg:mt-36 md:mt-36 lg:ml-40 md:ml-40 lg:hidden md:hidden'>   Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området. </div>
-                    <div className="lg:bg-white md:bg-white lg:m-4 md:m-4 ">
+                <div className="section bg-sot  text-white lg:mx-0 md:mx-0 mx-4 lg:mt-48 md:mt-48 lg:flex md:flex">
+                    <div className='mt-4 mx-2 text-xl lg:text-start md:text-start lg:mt-36 md:mt-36 lg:ml-40 md:ml-40 lg:hidden md:hidden mb-4 lg:mb-0'>   Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området. </div>
+                    <div className=" lg:m-4 md:m-4 ">
                 
                       <div className=' mb-8 lg:flex lg:flex-row-reverse'>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                             
@@ -77,7 +77,7 @@ const TjansterPage= () => {
 />
 </div>
                             <p className='mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-2'> 
-                            <h2 className="mt-2 lg:mt-0 text-2xl">Sotning/rengöring</h2>
+                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5">Sotning/rengöring</h2>
               <p>Huvudanledningen till att rengöra eldstaden, skorstenen och imkanaler är att förhindra brand. Vid sotning tas brandfarlig beläggning bort för att minska risken för soteld. Rengöring av eldstäder och rökkanaler innebär att alla ytor som kommit i kontakt med rökgasen rengörs från lösa brännbara beläggningar. Rengöringen görs vanligen med en viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
               <Link to={"/tjanster/sotning/rengorning"}> 
                 <Button
@@ -112,7 +112,7 @@ const TjansterPage= () => {
 />
 </div>
                             <p className='mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-2'> 
-                            <h2 className="mt-2 lg:mt-0 text-2xl">Besiktningar vid överlåtelse, nyinstallationer, status</h2>
+                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5">Besiktningar vid överlåtelse, nyinstallationer, status</h2>
                             <p>khasdkfgaskdhfkjasdf ndsflk j njf njsn jnjksnfdjksdn njksnfdjn jksnf jksndf j</p>
               <Link to={"/tjanster/sotning/rengorning"}> 
                 <Button
@@ -149,7 +149,7 @@ const TjansterPage= () => {
 />
 </div>
                             <p className='mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-2'> 
-                            <h2 className="mt-2 lg:mt-0 text-2xl">Sotning och brandskyddskontroller</h2>
+                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5">Sotning och brandskyddskontroller</h2>
               <p>lkasdfklsdflkr äasdlfsaldöfrt för att mintakt med bsdkfjsdlflsdfen viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
               <Link to={"/tjanster/sotning/rengorning"}> 
                 <Button
@@ -173,39 +173,8 @@ const TjansterPage= () => {
                         </div>
 
                         <div className=' mb-8 lg:flex lg:flex-row-reverse'>
-                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                             
-      <Image  className=""
- src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
-  style={{
-    width: '100%', // Sätt bredden till 100% av föräldraelementet
-    height: '10%', // Definiera en fast höjd
-    objectFit: 'cover', // Klipp bilden för att täcka området
-    objectPosition: 'top' // Centrera bilden
-  }}
-/>
-</div>
-                            <p className='mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-2'> 
-                            <h2 className="mt-2 lg:mt-0 text-2xl">Sotning och brandskyddskontroller</h2>
-              <p>lkasdfklsdflkr äasdlfsaldöfrt för att mintakt med bsdkfjsdlflsdfen viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
-              <Link to={"/tjanster/sotning/rengorning"}> 
-                <Button
-                  variant="contained"
-                  sx={{
-                    marginTop: "1rem",
-                    textTransform: "none",
-                    width: "10rem",
-                    color: "white",
-                    marginBottom: "2px",
-                    backgroundColor: "rgb(224, 95, 51)",
-                    border: "0px",
-                    fontSize: "1.5rem",
-                    lineHeight: "2rem",
-                    textDecoration: "none"    
-                  }}
-                >
-                 Läs mer →
-                </Button>
-                </Link></p>
+                          
+                          
                         </div>
 
                         <div className=' mb-8 lg:flex lg:flex-row-reverse'>
@@ -221,7 +190,7 @@ const TjansterPage= () => {
 />
 </div>
                             <p className='mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-2'> 
-                            <h2 className="mt-2 lg:mt-0 text-2xl">Övriga tjänster inom området</h2>
+                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5">Övriga tjänster inom området</h2>
               <p>lkasdfklsdflkr äasdlfsaldöfrt för att mintakt med bsdkfjsdlflsdfen viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
               <Link to={"/tjanster/ovriga-tjanster"}> 
                 <Button

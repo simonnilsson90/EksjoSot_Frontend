@@ -45,6 +45,7 @@ bild1={ <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-co
 text2={<div>
   <p className='font-semibold'>Säkerheten på ditt tak är viktig för oss. Du som fastighetsägare har ansvar för att de säkerhetsanordningar som finns föreskrivet i lag finns på plats och är väl underhållna. </p>
    
+   <div className=' mb-10' > 
   <Link to={"/tjanster"}> 
                 <Button
                   variant="contained"
@@ -53,17 +54,18 @@ text2={<div>
                     textTransform: "none",
                     width: "20rem",
                     color: "white",
-                    marginBottom: "16px",
+                    marginBottom: "8px",
                     backgroundColor: "rgb(224, 95, 51)",
                     border: "0px",
                     fontSize: "1.5rem",
                     lineHeight: "2rem",
-                    textDecoration: "none"    
+                    borderRadius: "0rem"  
                   }}
                 >
                  Mer om säkerhet →
                 </Button>
                 </Link>
+                </div>
                 <p className=' font-semibold'>Numera kan vi också i vissa fall sota din rökkanal underifrån.</p>
   <Link to={"/tjanster"}> 
                 <Button
@@ -78,7 +80,7 @@ text2={<div>
                     border: "0px",
                     fontSize: "1.5rem",
                     lineHeight: "2rem",
-                    textDecoration: "none"    
+                    borderRadius: "0rem"  
                   }}
                 >
                  Mer om stavsotning →

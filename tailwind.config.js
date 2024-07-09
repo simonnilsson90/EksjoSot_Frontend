@@ -4,7 +4,7 @@ module.exports = {
     theme: {
       extend: {
         backgroundColor: {
-          'sot': '#2b2f32',
+          'sot': ' #1e2224',
           'sotOrange': 'rgba(224, 95, 51, var(--tw-border-opacity))',
         } 
            }
