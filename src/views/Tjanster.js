@@ -60,11 +60,11 @@ const TjansterPage= () => {
                     Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området.
                     </div>
                 </div>
-                <div className="section bg-sot  text-white lg:mx-0 md:mx-0 mx-4 lg:mt-48 md:mt-48 lg:flex md:flex">
-                    <div className='mt-4  text-xl lg:text-start md:text-start lg:mt-36 md:mt-36 lg:ml-40 md:ml-40 lg:hidden md:hidden mb-4 lg:mb-0'>   Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området. </div>
+                <div className="section bg-sot  text-white lg:mx-0 md:mx-0  lg:mt-48 md:mt-48 lg:flex md:flex">
+                    <div className='mt-4  text-xl lg:text-start md:text-start lg:mt-36 md:mt-36 lg:ml-40 md:ml-40 lg:hidden md:hidden mb-4 lg:mb-0 mx-4'>   Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området. </div>
                     <div className="   ">
                 
-                      <div className=' bg-pink-700  lg:flex lg:flex-row-reverse'>
+                      <div className='   lg:flex lg:flex-row-reverse'>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                             
       <Image  className=" bg-yellow-700"
  src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
@@ -76,8 +76,8 @@ const TjansterPage= () => {
   }}
 />
 </div>
-                            <p className=' bg-blue-700 mb-2 lg:mb-0 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full'> 
-                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5">Sotning/rengöring</h2>
+                            <p className='  mb-2 lg:mb-0 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4'> 
+                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5 ">Sotning/rengöring</h2>
               <p>Huvudanledningen till att rengöra eldstaden, skorstenen och imkanaler är att förhindra brand. Vid sotning tas brandfarlig beläggning bort för att minska risken för soteld. Rengöring av eldstäder och rökkanaler innebär att alla ytor som kommit i kontakt med rökgasen rengörs från lösa brännbara beläggningar. Rengöringen görs vanligen med en viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
               <Link to={"/tjanster/sotning/rengorning"}> 
                 <Button
@@ -99,7 +99,7 @@ const TjansterPage= () => {
                 </Button>
                 </Link></p>
                         </div>
-                        <div className=' mb-8 lg:mb-0 lg:flex bg-yellow-300 '>
+                        <div className=' mb-8 lg:mb-0 lg:flex bg-sotSecondary pb-2 lg:pb-0 md:pb-0'>
                             <div className=' flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                           
       <Image  className=" "
  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`}
@@ -111,7 +111,7 @@ const TjansterPage= () => {
   }}
 />
 </div>
-                            <p className=' bg-pink-400 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-2 lg:mx-0'> 
+                            <p className=' mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4 lg:mx-0 '> 
                             <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5">Besiktningar vid överlåtelse, nyinstallationer, status</h2>
                             <p>khasdkfgaskdhfkjasdf ndsflk j njf njsn jnjksnfdjksdn njksnfdjn jksnf jksndf j</p>
               <Link to={"/tjanster/sotning/rengorning"}> 
@@ -148,7 +148,7 @@ const TjansterPage= () => {
   }}
 />
 </div>
-                            <p className='mb-2 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full '> 
+                            <p className='mb-2 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4 '> 
                             <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5 lg:mb-0">Sotning och brandskyddskontroller</h2>
               <p>lkasdfklsdflkr äasdlfsaldöfrt för att mintakt med bsdkfjsdlflsdfen viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
               <Link to={"/tjanster/sotning/rengorning"}> 
@@ -177,7 +177,7 @@ const TjansterPage= () => {
                           
                         </div>
 
-                        <div className=' mb-8 lg:flex '>
+                        <div className=' mb-8 lg:flex bg-sotSecondary pb-1 lg:pb-0 md:pb-0 '>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                             
       <Image  className=""
  src={`${process.env.PUBLIC_URL}/feet.jpg`}
@@ -189,7 +189,7 @@ const TjansterPage= () => {
   }}
 />
 </div>
-                            <p className='mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-2 lg:mx-0'> 
+                            <p className='mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4 lg:mx-0 '> 
                             <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5">Övriga tjänster inom området</h2>
               <p>lkasdfklsdflkr äasdlfsaldöfrt för att mintakt med bsdkfjsdlflsdfen viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
               <Link to={"/tjanster/ovriga-tjanster"}> 
@@ -218,7 +218,7 @@ const TjansterPage= () => {
                         <div> 
                         </div>
                         
-                         <div className="  mt-4 mx-4 container  ">
+                         <div className="  mt-4 mx-4 container pr-4 lg:pr-0  ">
                          <Accordion
         title="Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer?"
         content={ <ul className=" px-8 text-black">
