@@ -63,22 +63,24 @@ const TjansterPage= () => {
                 <div className="section bg-sot  text-white lg:mx-0 md:mx-0  lg:mt-48 md:mt-48 lg:flex md:flex">
                     <div className='mt-4  text-xl lg:text-start md:text-start lg:mt-36 md:mt-36 lg:ml-40 md:ml-40 lg:hidden md:hidden mb-4 lg:mb-0 mx-4'>   Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området. </div>
                     <div className="   ">
-                
-                      <div className='   lg:flex lg:flex-row-reverse'>
+
+                    <div className=' mb-8 lg:mb-0 lg:flex lg:flex-row-reverse lg:mx-0'>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                             
-      <Image  className=" bg-yellow-700"
+      <Image  className=""
  src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
   style={{
     width: '100%', // Sätt bredden till 100% av föräldraelementet
     height: '10%', // Definiera en fast höjd
     objectFit: 'cover', // Klipp bilden för att täcka området
     objectPosition: 'top' // Centrera bilden
-  }}
+}}
 />
 </div>
-                            <p className='  mb-2 lg:mb-0 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4'> 
-                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5 ">Sotning/rengöring</h2>
-              <p>Huvudanledningen till att rengöra eldstaden, skorstenen och imkanaler är att förhindra brand. Vid sotning tas brandfarlig beläggning bort för att minska risken för soteld. Rengöring av eldstäder och rökkanaler innebär att alla ytor som kommit i kontakt med rökgasen rengörs från lösa brännbara beläggningar. Rengöringen görs vanligen med en viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
+                            <p className='mb-2 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4 lg:mx-0 '> 
+                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5 lg:mb-0">Sotning/rengöring</h2>
+                            <p>Huvudanledningen till att rengöra eldstaden, skorstenen och imkanaler är att förhindra brand. Vid sotning tas brandfarlig beläggning bort för att minska risken för soteld. 
+              
+                </p>
               <Link to={"/tjanster/sotning/rengorning"}> 
                 <Button
                   variant="contained"
@@ -87,19 +89,20 @@ const TjansterPage= () => {
                     textTransform: "none",
                     width: "10rem",
                     color: "white",
-                   
-                    backgroundColor: "rgb(224, 95, 51)",
+                    marginBottom: "2px",
                     border: "0px",
                     fontSize: "1.5rem",
                     lineHeight: "2rem",
-                    textDecoration: "none"    
+                    borderRadius: "0rem"    
                   }}
                 >
                  Läs mer →
                 </Button>
                 </Link></p>
                         </div>
-                        <div className=' mb-8 lg:mb-0 lg:flex bg-sotSecondary pb-2 lg:pb-0 md:pb-0'>
+                
+                      
+                        <div className='  lg:mb-0 lg:flex bg-sotSecondary pb-2 lg:pb-0 md:pb-0'>
                             <div className=' flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                           
       <Image  className=" "
  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`}
@@ -123,11 +126,10 @@ const TjansterPage= () => {
                     width: "10rem",
                     color: "white",
                     marginBottom: "2px",
-                    backgroundColor: "rgb(224, 95, 51)",
                     border: "0px",
                     fontSize: "1.5rem",
                     lineHeight: "2rem",
-                    textDecoration: "none"
+                    borderRadius: "0rem" 
                  
                   }}
                 >
@@ -136,7 +138,7 @@ const TjansterPage= () => {
                 </Link></p>
                         </div>
 
-                        <div className=' mb-8 lg:mb-0 lg:flex lg:flex-row-reverse'>
+                        <div className=' mb-8 lg:mb-0 lg:flex lg:flex-row-reverse lg:mx-0'>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                             
       <Image  className=""
  src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
@@ -145,10 +147,10 @@ const TjansterPage= () => {
     height: '10%', // Definiera en fast höjd
     objectFit: 'cover', // Klipp bilden för att täcka området
     objectPosition: 'top' // Centrera bilden
-  }}
+}}
 />
 </div>
-                            <p className='mb-2 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4 '> 
+                            <p className='mb-2 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4 lg:mx-0 '> 
                             <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5 lg:mb-0">Sotning och brandskyddskontroller</h2>
               <p>lkasdfklsdflkr äasdlfsaldöfrt för att mintakt med bsdkfjsdlflsdfen viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
               <Link to={"/tjanster/sotning/rengorning"}> 
@@ -160,11 +162,10 @@ const TjansterPage= () => {
                     width: "10rem",
                     color: "white",
                     marginBottom: "2px",
-                    backgroundColor: "rgb(224, 95, 51)",
                     border: "0px",
                     fontSize: "1.5rem",
                     lineHeight: "2rem",
-                    textDecoration: "none"    
+                    borderRadius: "0rem"    
                   }}
                 >
                  Läs mer →
@@ -177,7 +178,7 @@ const TjansterPage= () => {
                           
                         </div>
 
-                        <div className=' mb-8 lg:flex bg-sotSecondary pb-1 lg:pb-0 md:pb-0 '>
+                        <div className='  lg:flex bg-sotSecondary pb-1 lg:pb-0 md:pb-0 lg:mx-0 '>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                             
       <Image  className=""
  src={`${process.env.PUBLIC_URL}/feet.jpg`}
@@ -189,7 +190,7 @@ const TjansterPage= () => {
   }}
 />
 </div>
-                            <p className='mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4 lg:mx-0 '> 
+                            <p className=' mt-2  md:p-4 lg:w-1/2 md:w-full mx-4 lg:mx-0 '> 
                             <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5">Övriga tjänster inom området</h2>
               <p>lkasdfklsdflkr äasdlfsaldöfrt för att mintakt med bsdkfjsdlflsdfen viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
               <Link to={"/tjanster/ovriga-tjanster"}> 
@@ -201,11 +202,10 @@ const TjansterPage= () => {
                     width: "10rem",
                     color: "white",
                     marginBottom: "2px",
-                    backgroundColor: "rgb(224, 95, 51)",
                     border: "0px",
                     fontSize: "1.5rem",
                     lineHeight: "2rem",
-                    textDecoration: "none"    
+                    borderRadius: "0rem" 
                   }}
                 >
                  Läs mer →
@@ -218,7 +218,7 @@ const TjansterPage= () => {
                         <div> 
                         </div>
                         
-                         <div className="  mt-4 mx-4 container pr-4 lg:pr-0  ">
+                         <div className="  mt-4 mx-4  pr-4 lg:pr-0 lg:w-1/2  ">
                          <Accordion
         title="Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer?"
         content={ <ul className=" px-8 text-black">
