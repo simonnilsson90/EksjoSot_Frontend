@@ -91,12 +91,12 @@ function NavBar() {
         >
           <div className="px-8">
             <div className="flex flex-col gap-8 font-bold tracking-wider">
-              <Link className='hover:border-b-4 border-orange-600 mt-4 ' to={"/"} onClick={closeMenu}>Hem</Link>
-              <Link className='hover:border-b-4 border-orange-600 ' to="/taxor" onClick={closeMenu}>Taxor</Link>
-              <Link className='hover:border-b-4 border-orange-600 ' to="/tjanster" onClick={closeMenu}>Tjänster</Link>
-              <Link className='hover:border-b-4 border-orange-600 ' to={"/om"} onClick={closeMenu}>Om oss</Link>
-              <Link className='hover:border-b-4 border-orange-600 ' to={"/kontakt"} onClick={closeMenu}>Kontakta oss</Link>
-              <Link className='hover:border-b-4 border-orange-600 ' to={"/hallbarhet"} onClick={closeMenu}>Hållbarhet</Link>
+              <Link className='hover:border-b-4 border-yellow-500 mt-4 ' to={"/"} onClick={closeMenu}>Hem</Link>
+              <Link className='hover:border-b-4 border-yellow-500' to="/tjanster" onClick={closeMenu}>Tjänster</Link>
+              <Link className='hover:border-b-4 border-yellow-500' to="/taxor" onClick={closeMenu}>Taxor</Link>
+              <Link className='hover:border-b-4 border-yellow-500 ' to={"/om"} onClick={closeMenu}>Om oss</Link>
+              <Link className='hover:border-b-4 border-yellow-500 ' to={"/kontakt"} onClick={closeMenu}>Kontakta oss</Link>
+              <Link className='hover:border-b-4 border-yellow-500 ' to={"/hallbarhet"} onClick={closeMenu}>Hållbarhet</Link>
             </div>
           </div>
         </div>
