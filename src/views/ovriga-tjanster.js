@@ -34,30 +34,30 @@ const OvrigaTjansterPage= () => {
     <LayoutComponent 
     title={tjansterData.title}
     pretext={tjansterData.description}
-    text1={<div>
-        <h2 className="lg:text-2xl lg:mb-3">{tjansterData.whatWeDo.title}</h2>
+    text1={<div className=" pb-4 lg:pb-0 md:pb-0">
+        <h2 className="lg:text-2xl text-xl font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.whatWeDo.title}</h2>
         <p>{tjansterData.whatWeDo.content}</p>
     </div>}
     bild1={<img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover  '/>}
-    text2={<div>
-        <h2 className="lg:text-2xl lg:mb-3">{tjansterData.ourCulture.title}</h2>
+    text2={<div className=" pb-4 lg:pb-0 md:pb-0">
+       <h2 className="lg:text-2xl text-xl font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.ourCulture.title}</h2>
         <p>{tjansterData.ourCulture.content}</p></div>}
         bild2={<img src={`${process.env.PUBLIC_URL}/fireplace.jpg`} className='object-cover  '/>}
-        text3={<div>
-            <h2 className="lg:text-2xl lg:mb-3">{tjansterData.communityOutreach.title}</h2>
+        text3={<div className=" pb-4 lg:pb-0 md:pb-0">
+           <h2 className="lg:text-2xl text-xl font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.communityOutreach.title}</h2>
             <p>{tjansterData.communityOutreach.content}</p></div>}
             bild3={<img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover  '/>}
           
-                text4={<div>
-                    <h2 className="lg:text-2xl lg:mb-3">{tjansterData.vision.title}</h2>
+                text4={<div className=" pb-4 lg:pb-0 md:pb-0">
+                    <h2 className="lg:text-2xl text-xl font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.vision.title}</h2>
                     <p>{tjansterData.vision.content}</p></div>}
                      bild4={<img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover  '/>}
                    
                    
                    
                    
-                   text5={<div>
-                        <h2 className="lg:text-2xl lg:mb-3">{tjansterData.howWeStandOut.title}</h2>
+                   text5={<div className=" pb-4 lg:pb-0 md:pb-0">
+                       <h2 className="lg:text-2xl text-xl font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.howWeStandOut.title}</h2>
                         <p>{tjansterData.howWeStandOut.content}</p></div>}
                          bild5={<img src={`${process.env.PUBLIC_URL}/stork.jpg`} className='object-cover  '/>}
 
@@ -72,63 +72,4 @@ const OvrigaTjansterPage= () => {
   }
   
   export default OvrigaTjansterPage;
-  /* 
-  <div className="min-h-screen bg-cover bg-fixed " style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/sot-2.jpeg)` }} >
-        <div className=" bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen  pt-10"> 
-    
-        <div className="  rounded-xl   text-white p-6 mx-5 space-y-2 " style={{backgroundColor: "#322E2B"}} >
-        <h1 className="lg:text-4xl text-4xl">{tjansterData.title}</h1>
-        <p className=" lg:text-2xl  text-center">{tjansterData.description}</p>
-    </div>
-
-  <div className="content-grid ">
-      <div className="vision section bg-sot text-gray-100">
-          <div>
-              <h2>{tjansterData.vision.title}</h2>
-              <p>{tjansterData.vision.content}</p>
-          </div>
-      </div>
-
-      <div className="what-we-do section bg-sot text-gray-100">
-          <div>
-              <h2>{tjansterData.whatWeDo.title}</h2>
-              <p>{tjansterData.whatWeDo.content}</p>
-          </div>
-      </div>
-
-      <div className="how-we-stand-out section bg-sot text-gray-100">
-          <div>
-              <h2>{tjansterData.howWeStandOut.title}</h2>
-              <ul className="elegant-list">
-                  {tjansterData.howWeStandOut.items}
-              </ul>
-          </div>
-      </div>
-
-      <div className="our-culture section bg-sot text-gray-100">
-          <div>
-              <h2>{tjansterData.ourCulture.title}</h2>
-              <p>{tjansterData.ourCulture.content}</p>
-          </div>
-      </div>
-
-      <div className="community-outreach section bg-sot text-gray-100">
-          <div>
-              <h2>{tjansterData.communityOutreach.title}</h2>
-              <p>{tjansterData.communityOutreach.content}</p>
-          </div>
-      </div>
-
-      <div className="why-choose-us section bg-sot text-gray-100">
-          <div>
-              <h2>{tjansterData.whyChooseUs.title}</h2>
-              <p>{tjansterData.whyChooseUs.content}</p>
-          </div>
-      </div>
-
-  </div>
-  <Footer/>
-</div>
-</div>
-  
-  */
+ 
