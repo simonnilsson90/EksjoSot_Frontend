@@ -62,10 +62,10 @@ const TjansterPage= () => {
                 </div>
                 <div className="section bg-sot  text-white lg:mx-0 md:mx-0  lg:mt-48 md:mt-48 lg:flex md:flex">
                     <div className='mt-4  text-xl lg:text-start md:text-start lg:mt-36 md:mt-36 lg:ml-40 md:ml-40 lg:hidden md:hidden mb-4 lg:mb-0 mx-4'>   Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området. </div>
-                    <div className="   ">
+                    <div className=" bg-yellow-500 lg:w-1/2   ">
 
-                    <div className=' mb-8 lg:mb-0 lg:flex lg:flex-row-reverse lg:mx-0'>
-                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                             
+                    <div className=' mb-8 lg:mb-0 lg:flex  lg:mx-0'>
+                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full lg:hidden'>                             
       <Image  className=""
  src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
   style={{
@@ -103,7 +103,7 @@ const TjansterPage= () => {
                 
                       
                         <div className='  lg:mb-0 lg:flex bg-sotSecondary pb-2 lg:pb-0 md:pb-0'>
-                            <div className=' flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                           
+                            <div className=' flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full lg:hidden'>                           
       <Image  className=" "
  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`}
   style={{
@@ -138,8 +138,8 @@ const TjansterPage= () => {
                 </Link></p>
                         </div>
 
-                        <div className=' mb-8 lg:mb-0 lg:flex lg:flex-row-reverse lg:mx-0'>
-                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                             
+                        <div className=' mb-8 lg:mb-0 lg:flex  lg:mx-0'>
+                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full lg:hidden'>                             
       <Image  className=""
  src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
   style={{
@@ -179,7 +179,7 @@ const TjansterPage= () => {
                         </div>
 
                         <div className='  lg:flex bg-sotSecondary pb-1 lg:pb-0 md:pb-0 lg:mx-0 '>
-                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full'>                             
+                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full lg:hidden'>                             
       <Image  className=""
  src={`${process.env.PUBLIC_URL}/feet.jpg`}
   style={{
@@ -215,12 +215,11 @@ const TjansterPage= () => {
 
                      
                         </div>
-                        <div> 
-                        </div>
-                        
-                         <div className="  mt-4 mx-4  pr-4 lg:pr-0 lg:w-1/2  ">
+                       
+                         <div className="   mt-2   pr-4 lg:pr-0 lg:w-1/2  ">
                          <Accordion
-        title="Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer?"
+                         
+        title={<div className=" lg:text-2xl ">Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer? </div>}
         content={ <ul className=" px-8 text-black">
           <li className='list-disc '>Stege ska vara framtagen och ev. rest.</li>
           <li className="list-disc">Det ska finnas godkända takskyddsanordningar så att sotaren/teknikern ska kunna gå upp på taket och arbeta säkert.</li>
@@ -233,6 +232,28 @@ const TjansterPage= () => {
           
                       </ul>}
       />
+             <div className=' justify-center image-container w-full   hidden lg:block md:block'>                           
+      <Image  className=" "
+ src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`}
+  style={{
+    width: '100%', // Sätt bredden till 100% av föräldraelementet
+    height: '10%', // Definiera en fast höjd
+    objectFit: 'cover', // Klipp bilden för att täcka området
+    objectPosition: 'top' // Centrera bilden
+  }}
+/>
+</div>
+<div className=' justify-center image-container w-full   hidden lg:block md:block'>                           
+      <Image  className=" "
+ src={`${process.env.PUBLIC_URL}/feet.jpg`}
+  style={{
+    width: '100%', // Sätt bredden till 100% av föräldraelementet
+    height: '10%', // Definiera en fast höjd
+    objectFit: 'cover', // Klipp bilden för att täcka området
+    objectPosition: 'top' // Centrera bilden
+  }}
+/>
+</div>
               
     </div>
 

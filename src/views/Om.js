@@ -33,10 +33,12 @@ const OmPage  = () => {
 
      <LayoutComponent
      title={aboutUsData.title}
+     pretext="Vi finns i Eksjö och Västervik och här i dessa kommuner ansvarar vi för den lagstadgade sotningen och brandskyddskontrollen på uppdrag av kommunerna."
      text1={aboutUsData.vision.content}
      bild1={ <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover  '/> }
      text2={aboutUsData.whatWeDo.content}
      bild2={<img src={`${process.env.PUBLIC_URL}/riks.png`} className='object-cover py-2  '/>}
+    
      
      />
        
