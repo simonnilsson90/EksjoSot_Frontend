@@ -62,7 +62,7 @@ const TjansterPage= () => {
                 </div>
                 <div className="section bg-sot  text-white lg:mx-0 md:mx-0  lg:mt-48 md:mt-48 lg:flex md:flex">
                     <div className='mt-4  text-xl lg:text-start md:text-start lg:mt-36 md:mt-36 lg:ml-40 md:ml-40 lg:hidden md:hidden mb-4 lg:mb-0 mx-4'>   Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området. </div>
-                    <div className=" bg-yellow-500 lg:w-1/2   ">
+                    <div className=" bg-sotSecondary lg:w-1/2   ">
 
                     <div className=' mb-8 lg:mb-0 lg:flex  lg:mx-0'>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full lg:hidden'>                             

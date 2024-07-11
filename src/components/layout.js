@@ -12,13 +12,13 @@ const LayoutComponent = ({ title, pretext, text1, text2, text3, text4, text5, te
                     </div>
                 </div>
                 <div className="section bg-sot  text-white lg:mx-0 md:mx-0  lg:mt-48 md:mt-48">
-                    <div className='mt-4 p-4 lg:text-2xl md:text-2xl text-2xl lg:text-start md:text-start lg:mt-36 md:mt-36 lg:ml-40 md:ml-40 lg:hidden md:hidden  lg:pb-0 md:pb-0 bg-yellow-500'> {pretext} </div>
+                    <div className='mt-4 p-4 lg:text-2xl md:text-2xl text-2xl lg:text-start md:text-start lg:mt-36 md:mt-36 lg:ml-40 md:ml-40 lg:hidden md:hidden  lg:pb-0 md:pb-0 '> {pretext} </div>
                     <div className="  ">
                         <div className='lg:flex md:flex lg:flex-row-reverse md:flex-row-reverse bg-sotSecondary lg:bg-none md:bg-none '>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white'> {bild1} </div>
                             <p className=' lg:p-4 md:p-4 py-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0 '>{text1}</p>
                         </div>
-                        <div className='lg:flex md:flex lg:flex-row md:flex-row bg-yellow-500 '>
+                        <div className='lg:flex md:flex lg:flex-row md:flex-row bg-sotSecondary  '>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white'> {bild2} </div>
                             <p className=' py-4  lg:w-1/2 md:w-1/2 lg:pl-10 md:pl-10  mx-4 lg:mx-0 md:mx-0  '>{text2}</p>
                         </div>
@@ -26,7 +26,7 @@ const LayoutComponent = ({ title, pretext, text1, text2, text3, text4, text5, te
                             <div className='flex justify-center image-container w-full lg:h- md:h-1/3 lg:w-1/2 md:w-1/2 bg-white'> {bild3} </div>
                             <p className=' py-4  mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0'>{text3}</p>
                         </div>
-                        <div className='lg:flex md:flex lg:flex-row md:flex-row bg-yellow-500'>
+                        <div className='lg:flex md:flex lg:flex-row md:flex-row bg-sotSecondary '>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white'> {bild4} </div>
                             <p className=' py-4  lg:p-4 md:p-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0  '>{text4}</p>
                         </div>
@@ -34,7 +34,7 @@ const LayoutComponent = ({ title, pretext, text1, text2, text3, text4, text5, te
                             <div className='flex justify-center image-container w-full lg:h- md:h-1/3 lg:w-1/2 md:w-1/2 bg-white'> {bild5} </div>
                             <p className='py-4  mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0 '>{text5}</p>
                         </div>
-                        <div className='lg:flex md:flex lg:flex-row md:flex-row bg-yellow-500 '>
+                        <div className='lg:flex md:flex lg:flex-row md:flex-row bg-sotSecondary  '>
                             <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white'> {bild6} </div>
                             <p className='py-4  lg:w-1/2 md:w-1/2 lg:pl-10 md:pl-10  mx-4 lg:mx-0 md:mx-0  '>{text6}</p>
                         </div>
