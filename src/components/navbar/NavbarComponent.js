@@ -53,12 +53,12 @@ function NavBar() {
             
               {/* primary */}
               <div className="hidden lg:flex gap-8 ">
-              <Link className=' hover:border-b-2 border-orange-600'  to={"/"}>Hem</Link>
-              <Link  className=' hover:border-b-2 border-orange-600' to="/tjanster">Tjänster</Link >
-              <Link className='hover:border-b-4 border-orange-600 pl-2' to="/taxor" onClick={closeMenu}>Taxor</Link>
-                <Link className=' hover:border-b-2 border-orange-600'  to={"/om"}>Om oss</Link>
-                <Link className=' hover:border-b-2 border-orange-600'  to={"/kontakt"}>Kontakta oss</Link>
-                <Link className=' hover:border-b-2 border-orange-600'  to={"/hallbarhet"}>Hållbarhet</Link>
+              <Link className=' hover:border-b-2 border-yellow-500'  to={"/"}>Hem</Link>
+              <Link  className=' hover:border-b-2 border-yellow-500' to="/tjanster">Tjänster</Link >
+              <Link className='hover:border-b-4 border-yellow-500 pl-2' to="/taxor" onClick={closeMenu}>Taxor</Link>
+                <Link className=' hover:border-b-2 border-yellow-500'  to={"/om"}>Om oss</Link>
+                <Link className=' hover:border-b-2 border-yellow-500'  to={"/kontakt"}>Kontakta oss</Link>
+                <Link className=' hover:border-b-2border-yellow-500'  to={"/hallbarhet"}>Hållbarhet</Link>
               </div>
             </div>
             {/* secondary */}

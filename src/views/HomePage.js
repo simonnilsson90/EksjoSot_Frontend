@@ -24,7 +24,7 @@ function HomePage() {
               <p className="lg:text-4xl md:text-4xl text-xl font-bold">
                 <p>Expert på sotning</p>
                 <p>i din kommun</p>
-                <span className="block lg:border-b-2 border-sot mt-1"></span>
+                <span className="block lg:border-b-2 border-yellow-500 mt-1"></span>
                 <Link to={"/kontakt"}> 
                   <Button
                     variant="contained"
@@ -34,6 +34,7 @@ function HomePage() {
                       width: "14rem",
                       color: "white",
                       marginBottom: "2px",
+                      backgroundColor: "#1e2224",
                       border: "0px",
                       fontSize: "1.5rem",
                       lineHeight: "2rem",
@@ -47,7 +48,7 @@ function HomePage() {
             </span>
           </div>
           <div className="lg:mt-56 mt-4 lg:mx-5 w-full lg:w-2/5 lg:ml-0 pl-10 pt-4 pb-4 mx-auto pr-10 text-white lg:text-3xl text-xl font-semibold">
-            <h2 className="border-b-2 border-sot">Våra tjänster</h2>
+            <h2 className="border-b-2 border-yellow-500">Våra tjänster</h2>
             <ul className="lg:text-lg text-sm mt-2 space-y-1 list-disc pl-5">
               <li>Rengöring av eldstäder, imkanaler och fläktar</li>
               <li>Besiktningar vid överlåtelse, nyinstallationer, status</li>
