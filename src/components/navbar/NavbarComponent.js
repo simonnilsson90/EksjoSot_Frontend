@@ -53,12 +53,12 @@ function NavBar() {
             
               {/* primary */}
               <div className="hidden lg:flex gap-8 ">
-              <Link className=' hover:border-b-2 border-yellow-500'  to={"/"}>Hem</Link>
-              <Link  className=' hover:border-b-2 border-yellow-500' to="/tjanster">Tjänster</Link >
-              <Link className='hover:border-b-4 border-yellow-500 pl-2' to="/taxor" onClick={closeMenu}>Taxor</Link>
-                <Link className=' hover:border-b-2 border-yellow-500'  to={"/om"}>Om oss</Link>
-                <Link className=' hover:border-b-2 border-yellow-500'  to={"/kontakt"}>Kontakta oss</Link>
-                <Link className=' hover:border-b-2border-yellow-500'  to={"/hallbarhet"}>Hållbarhet</Link>
+              <Link className=' hover:border-b-2 border-sotOrange'  to={"/"}>Hem</Link>
+              <Link  className=' hover:border-b-2 border-sotOrange' to="/tjanster">Tjänster</Link >
+              <Link className='hover:border-b-2 border-sotOrange pl-2' to="/taxor" onClick={closeMenu}>Taxor</Link>
+                <Link className=' hover:border-b-2 border-sotOrange'  to={"/om"}>Om oss</Link>
+                <Link className=' hover:border-b-2 border-sotOrange'  to={"/kontakt"}>Kontakta oss</Link>
+                <Link className=' hover:border-b-2 border-sotOrange'  to={"/hallbarhet"}>Hållbarhet</Link>
               </div>
             </div>
             {/* secondary */}
@@ -91,12 +91,12 @@ function NavBar() {
         >
           <div className="px-8">
             <div className="flex flex-col gap-8 font-bold tracking-wider">
-              <Link className='hover:border-b-4 border-yellow-500 mt-4 ' to={"/"} onClick={closeMenu}>Hem</Link>
-              <Link className='hover:border-b-4 border-yellow-500' to="/tjanster" onClick={closeMenu}>Tjänster</Link>
-              <Link className='hover:border-b-4 border-yellow-500' to="/taxor" onClick={closeMenu}>Taxor</Link>
-              <Link className='hover:border-b-4 border-yellow-500 ' to={"/om"} onClick={closeMenu}>Om oss</Link>
-              <Link className='hover:border-b-4 border-yellow-500 ' to={"/kontakt"} onClick={closeMenu}>Kontakta oss</Link>
-              <Link className='hover:border-b-4 border-yellow-500 ' to={"/hallbarhet"} onClick={closeMenu}>Hållbarhet</Link>
+              <Link className='hover:border-b-2 border-sotOrange mt-4 ' to={"/"} onClick={closeMenu}>Hem</Link>
+              <Link className='hover:border-b-2 border-sotOrange' to="/tjanster" onClick={closeMenu}>Tjänster</Link>
+              <Link className='hover:border-b-2 border-sotOrange' to="/taxor" onClick={closeMenu}>Taxor</Link>
+              <Link className='hover:border-b-2 border-sotOrange ' to={"/om"} onClick={closeMenu}>Om oss</Link>
+              <Link className='hover:border-b-2 border-sotOrange ' to={"/kontakt"} onClick={closeMenu}>Kontakta oss</Link>
+              <Link className='hover:border-b-2 border-sotOrange ' to={"/hallbarhet"} onClick={closeMenu}>Hållbarhet</Link>
             </div>
           </div>
         </div>

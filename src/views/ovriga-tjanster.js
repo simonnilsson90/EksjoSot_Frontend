@@ -1,38 +1,28 @@
 import React from "react";
 import LayoutComponent from '../components/layout';
 import './aboutUs.css';
-import { useEffect } from 'react';
+
 
 import tjansterData from "../data/ovriga-tjansterData";
 
 
 const OvrigaTjansterPage= () => {
     
-    useEffect(() => {
-        const updateBackground = () => {
-            const element = document.getElementById('background-element');
-            if (window.innerWidth >= 768) {
-                element.style.backgroundImage = `url(${process.env.PUBLIC_URL}/chimney-day.jpg)`;
-                element.classList.add('bg-cover', 'bg-fixed');
-            } else {
-                element.style.backgroundImage = 'none';
-                element.classList.remove('bg-cover', 'bg-fixed');
-            }
-        };
-
-        updateBackground();
-        window.addEventListener('resize', updateBackground);
-
-        return () => {
-            window.removeEventListener('resize', updateBackground);
-        };
-    }, []);
+   
     return (
-        <div id="background-element" className="min-h-screen bg-sot">
-        <div className="lg:bg-gradient-to-b lg:from-black/70 lg:via-transparent lg:to-transparent lg:min-h-screen
-        md:bg-gradient-to-b md:from-black/70 md:via-transparent md:to-transparent md:min-h-screen pt-10 ">
-    <LayoutComponent 
-    title={tjansterData.title}
+        <div 
+        id="background-element" 
+        className="min-h-screen bg-cover bg-fixed" 
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)` }}
+      >
+        <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10 ">
+          <LayoutComponent
+            title={
+                <div className=" lg:flex md:flex " >
+<p className=" lg:mr-3 md:mr-3">Övriga</p>
+<p>Tjänster</p>
+                </div>
+            }
     pretext={tjansterData.description}
     text1={<div className=" pb-4 lg:pb-0 md:pb-0">
         <h2 className="text-2xl  font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.whatWeDo.title}</h2>
