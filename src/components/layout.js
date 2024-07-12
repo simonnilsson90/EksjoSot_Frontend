@@ -11,35 +11,35 @@ const LayoutComponent = ({ title, pretext, text1, text2, text3, text4, text5, te
                         {pretext}
                     </div>
                 </div>
-                <div className="section bg-sot  text-white lg:mx-0 md:mx-0  lg:mt-48 md:mt-48 mt-28">
-                <div className='    text-xl  font-light lg:hidden md:hidden  lg:pb-0 md:pb-0 italic '> {pretext} </div>
+                <div className="section bg-black  text-white lg:mx-0 md:mx-0  lg:mt-48 md:mt-48 mt-28">
+                <div className='    text-lg p-4 lg:p-0 md:p-0  font-light lg:hidden md:hidden  lg:pb-0 md:pb-0  '> {pretext} </div>
                     <div className="  ">
 
 
-                        
-                        <div className='lg:flex md:flex lg:flex-row-reverse md:flex-row-reverse bg-sotSecondary lg:bg-none md:bg-none '>
+
+                        <div className='lg:flex md:flex lg:flex-row-reverse md:flex-row-reverse bg-white lg:bg-sot md:bg-sot lg:bg-none md:bg-none '>
                             <div className=' justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white lg:block md:block hidden'> {bild1} </div>
-                            <p className=' lg:p-4 md:p-4 py-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg '>{text1}</p>
+                            <p className=' lg:p-4 md:p-4 py-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg text-black lg:text-white md:text-white '>{text1}</p>
                         </div>
-                        <div className='lg:flex md:flex lg:flex-row md:flex-row bg-sot  '>
-                            <div className=' justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white lg:block md:block hidden'> {bild2} </div>
-                            <p className=' py-4  lg:w-1/2 md:w-1/2 lg:pl-10 md:pl-10  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg  '>{text2}</p>
+                        <div className='lg:flex md:flex lg:flex-row md:flex-row bg-white lg:bg-sotSecondary md:bg-sotSecondary lg:bg-none md:bg-none '>
+                            <div className=' justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white lg:bg-sotSecondary md:bg-sotSecondary lg:block md:block hidden'> {bild2} </div>
+                            <p className=' py-4  lg:w-1/2 md:w-1/2 lg:pl-10 md:pl-10  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg text-black lg:text-white md:text-white    '>{text2}</p>
                         </div>
-                        <div className='lg:flex md:flex lg:flex-row-reverse md:flex-row-reverse bg-sotSecondary lg:bg-none md:bg-none '>
-                            <div className=' justify-center image-container w-full lg:h- md:h-1/3 lg:w-1/2 md:w-1/2 bg-white lg:block md:block hidden'> {bild3} </div>
-                            <p className=' py-4  mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg'>{text3}</p>
+                        <div className='lg:flex md:flex lg:flex-row-reverse md:flex-row-reverse bg-white lg:bg-sot md:bg-sot lg:bg-none md:bg-none '>
+                            <div className=' justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white lg:block md:block hidden'> {bild3} </div>
+                            <p className=' lg:p-4 md:p-4 py-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg text-black lg:text-white md:text-white  '>{text3}</p>
                         </div>
                         <div className='lg:flex md:flex lg:flex-row md:flex-row bg-sot '>
-                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white'> {bild4} </div>
-                            <p className=' py-4  lg:p-4 md:p-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg  '>{text4}</p>
+                            <div className=' justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white lg:bg-sotSecondary md:bg-sotSecondary lg:block md:block hidden'> {bild4} </div>
+                            <p className=' py-4  lg:p-4 md:p-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg text-black lg:text-white md:text-white   '>{text4}</p>
                         </div>
                         <div className='lg:flex md:flex lg:flex-row-reverse md:flex-row-reverse mb-4 bg-sotSecondary lg:bg-none md:bg-none'>
                             <div className='flex justify-center image-container w-full lg:h- md:h-1/3 lg:w-1/2 md:w-1/2 bg-white'> {bild5} </div>
-                            <p className='py-4  mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg '>{text5}</p>
+                            <p className='py-4  mb-2 mt-2 lg:p-4 md:p-4 lg:w-1/2 md:w-1/2  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg text-black lg:text-white md:text-white  '>{text5}</p>
                         </div>
                         <div className='lg:flex md:flex lg:flex-row md:flex-row bg-sot '>
-                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white'> {bild6} </div>
-                            <p className='py-4  lg:w-1/2 md:w-1/2 lg:pl-10 md:pl-10  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg  '>{text6}</p>
+                            <div className=' justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-1/2 bg-white lg:bg-sotSecondary md:bg-sotSecondary lg:block md:block hidden'> {bild6} </div>
+                            <p className='py-4  lg:w-1/2 md:w-1/2 lg:pl-10 md:pl-10  mx-4 lg:mx-0 md:mx-0 lg:text-xl md:text-lg text-black lg:text-white md:text-white   '>{text6}</p>
                         </div>
                     </div>
                 </div>

@@ -60,105 +60,30 @@ const TjansterPage= () => {
                     Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området.
                     </div>
                 </div>
-                <div className="section bg-sot  text-white lg:mx-0 md:mx-0  lg:mt-48 md:mt-48 lg:flex md:flex">
-                    <div className='mt-4  text-xl lg:text-start md:text-start lg:mt-36 md:mt-36 lg:ml-40 md:ml-40 lg:hidden md:hidden mb-4 lg:mb-0 mx-4'>   Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området. </div>
-                    <div className=" bg-sotSecondary lg:w-1/2   ">
-
-
-                    <div className=' mb-8 lg:mb-0 lg:flex  lg:mx-0'>
-                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full lg:hidden h-1/2'>                             
-      <Image  className="  "
- src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
-  style={{
-    width: '100%', // Sätt bredden till 100% av föräldraelementet
-    height: '10%', // Definiera en fast höjd
-    objectFit: 'cover', // Klipp bilden för att täcka området
-    objectPosition: 'top' // Centrera bilden
-}}
-/>
-</div>
-                            <p className='mb-2 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4 lg:mx-0 '> 
-                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5 lg:mb-0">Sotning/rengöring</h2>
-                            <p>Huvudanledningen till att rengöra eldstaden, skorstenen och imkanaler är att förhindra brand. Vid sotning tas brandfarlig beläggning bort för att minska risken för soteld. 
-              
-                </p>
-              <Link to={"/tjanster/sotning/rengorning"}> 
-                <Button
-                  variant="contained"
-                  sx={{
-                    marginTop: "1rem",
-                    textTransform: "none",
-                    width: "10rem",
-                    color: "white",
-                    marginBottom: "2px",
-                    border: "0px",
-                    fontSize: "1.5rem",
-                    lineHeight: "2rem",
-                    borderRadius: "0rem"    
-                  }}
-                >
-                 Läs mer →
-                </Button>
-                </Link></p>
-                        </div>
                 
-                      
-                        <div className='  lg:mb-0 lg:flex bg-sotSecondary pb-2 lg:pb-0 md:pb-0'>
-                            <div className=' flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full lg:hidden'>                           
-      <Image  className=" "
- src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`}
-  style={{
-    width: '100%', // Sätt bredden till 100% av föräldraelementet
-    height: '10%', // Definiera en fast höjd
-    objectFit: 'cover', // Klipp bilden för att täcka området
-    objectPosition: 'top' // Centrera bilden
-  }}
-/>
-</div>
-                            <p className=' mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4 lg:mx-0 '> 
-                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5">Besiktningar vid överlåtelse, nyinstallationer, status</h2>
-                            <p>khasdkfgaskdhfkjasdf ndsflk j njf njsn jnjksnfdjksdn njksnfdjn jksnf jksndf j</p>
-              <Link to={"/tjanster/sotning/rengorning"}> 
-                <Button
-                  variant="contained"
-                  sx={{
-                    marginTop: "1rem",
-                    textTransform: "none",
-                    width: "10rem",
-                    color: "white",
-                    marginBottom: "2px",
-                    border: "0px",
-                    fontSize: "1.5rem",
-                    lineHeight: "2rem",
-                    borderRadius: "0rem" 
-                 
-                  }}
-                >
-                 Läs mer →
-                </Button>
-                </Link></p>
-                        </div>
+                <div className="section bg-sot text-white lg:mx-0 md:mx-0  lg:mt-48 md:mt-48  ">
 
-                        <div className=' mb-8 lg:mb-0 lg:flex  lg:mx-0'>
-                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full lg:hidden'>                             
-      <Image  className=""
- src={`${process.env.PUBLIC_URL}/chimneys.jpg`}
-  style={{
-    width: '100%', // Sätt bredden till 100% av föräldraelementet
-    height: '10%', // Definiera en fast höjd
-    objectFit: 'cover', // Klipp bilden för att täcka området
-    objectPosition: 'top' // Centrera bilden
-}}
-/>
-</div>
-                            <p className='mb-2 mt-2 lg:mt-0 lg:p-4 md:p-4 lg:w-1/2 md:w-full mx-4 lg:mx-0 '> 
-                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5 lg:mb-0">Sotning och brandskyddskontroller</h2>
-              <p>lkasdfklsdflkr äasdlfsaldöfrt för att mintakt med bsdkfjsdlflsdfen viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
-              <Link to={"/tjanster/sotning/rengorning"}> 
+                  <div className=" align-middle justify-center lg:flex md:flex">  
+                 
+
+
+
+  
+
+<div class="max-w-sm  overflow-hidden shadow-lg bg-white m-4">
+<img class="w-full "  src={`${process.env.PUBLIC_URL}/chimneys-small.jpg`} alt="Sunset in the mountains" />
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2 text-gray-800">Sotning/rengöring</div>
+    <p class="text-gray-700 text-base">
+    Huvudanledningen till att rengöra eldstaden, skorstenen och imkanaler är att förhindra brand. Vid sotning tas brandfarlig beläggning bort för att minska risken för soteld. 
+    </p>
+  </div>
+  <div class="px-6 pb-2">
+  <Link to={"/tjanster/sotning/rengorning"}> 
                 <Button
                   variant="contained"
                   sx={{
-                    marginTop: "1rem",
+                    
                     textTransform: "none",
                     width: "10rem",
                     color: "white",
@@ -171,34 +96,61 @@ const TjansterPage= () => {
                 >
                  Läs mer →
                 </Button>
-                </Link></p>
-                        </div>
-
-                        <div className='  lg:flex lg:flex-row-reverse'>
-                          
-                          
-                        </div>
-
-                        <div className='  lg:flex bg-sotSecondary pb-1 lg:pb-0 md:pb-0 lg:mx-0 '>
-                            <div className='flex justify-center image-container w-full lg:h-1/3 md:h-1/3 lg:w-1/2 md:w-full lg:hidden'>                             
-      <Image  className=""
- src={`${process.env.PUBLIC_URL}/feet.jpg`}
-  style={{
-    width: '100%', // Sätt bredden till 100% av föräldraelementet
-    height: '10%', // Definiera en fast höjd
-    objectFit: 'cover', // Klipp bilden för att täcka området
-    objectPosition: 'top' // Centrera bilden
-  }}
-/>
+                </Link>
+  </div>
 </div>
-                            <p className=' mt-2  md:p-4 lg:w-1/2 md:w-full mx-4 lg:mx-0 '> 
-                            <h2 className="mt-2 lg:mt-0 lg:text-3xl md:text-3xl text-xl font-semibold mb-5">Övriga tjänster inom området</h2>
-              <p>lkasdfklsdflkr äasdlfsaldöfrt för att mintakt med bsdkfjsdlflsdfen viska, av stål eller liknande material. Redskapet förs genom rökkanaler och skrapar bort beläggningen.</p>
-              <Link to={"/tjanster/ovriga-tjanster"}> 
+
+<div class="max-w-sm  overflow-hidden shadow-lg bg-white m-4">
+<img class="w-full "  src={`${process.env.PUBLIC_URL}/chimneys-small.jpg`} alt="Sunset in the mountains" />
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2 text-gray-800">Sotning/rengöring</div>
+    <p class="text-gray-700 text-base">
+    Besiktningar innebär att en sotare eller brandskyddstekniker kontrollerar att skorstenen är i gott skick och att den fungerar som den ska. 
+    </p>
+  </div>
+  <div class="px-6 pb-6">
+  <Link to={"/tjanster/sotning/rengorning"}> 
                 <Button
                   variant="contained"
                   sx={{
-                    marginTop: "1rem",
+                    
+                    textTransform: "none",
+                    width: "10rem",
+                    color: "white",
+                   marginTop: "16px",
+                    border: "0px",
+                    fontSize: "1.5rem",
+                    lineHeight: "2rem",
+                    borderRadius: "0rem"    
+                  }}
+                >
+                 Läs mer →
+                </Button>
+                </Link>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="max-w-sm  overflow-hidden shadow-lg bg-white m-4">
+<img class="w-full "  src={`${process.env.PUBLIC_URL}/chimneys-small.jpg`} alt="Sunset in the mountains" />
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2 text-gray-800">Sotning/rengöring</div>
+    <p class="text-gray-700 text-base">
+    Huvudanledningen till att rengöra eldstaden, skorstenen och imkanaler är att förhindra brand. Vid sotning tas brandfarlig beläggning bort för att minska risken för soteld. 
+    </p>
+  </div>
+  <div class="px-6 pb-2">
+  <Link to={"/tjanster/sotning/rengorning"}> 
+                <Button
+                  variant="contained"
+                  sx={{
+                    
                     textTransform: "none",
                     width: "10rem",
                     color: "white",
@@ -206,57 +158,73 @@ const TjansterPage= () => {
                     border: "0px",
                     fontSize: "1.5rem",
                     lineHeight: "2rem",
-                    borderRadius: "0rem" 
+                    borderRadius: "0rem"    
                   }}
                 >
                  Läs mer →
                 </Button>
-                </Link></p>
-                        </div>
+                </Link>
+  </div>
+</div>
 
-                     
-                        </div>
-                       
-                         <div className="   mt-2   pr-4 lg:pr-0 lg:w-1/2  ">
-                         <Accordion
+
+</div>
+
+<div className=" lg:flex md:flex lg:mx-24 md:mx-20 ">
+
+
+
+<div class="max-w-sm overflow-hidden shadow-lg bg-white m-4">
+  <img class="w-full "  src={`${process.env.PUBLIC_URL}/chimneys-small.jpg`} alt="Sunset in the mountains" />
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2 text-gray-800">Övriga tjänster</div>
+    <p class="text-gray-700 text-base">
+    Besiktningar innebär att en sotare eller brandskyddstekniker kontrollerar att skorstenen är i gott skick och att den fungerar som den ska. 
+    </p>
+  </div>
+  <div class="px-6 pb-2">
+  <Link to={"/tjanster/ovriga-tjanster"}> 
+                <Button
+                  variant="contained"
+                  sx={{
+                    
+                    textTransform: "none",
+                    width: "10rem",
+                    color: "white",
+                    marginBottom: "2px",
+                    border: "0px",
+                    fontSize: "1.5rem",
+                    lineHeight: "2rem",
+                    borderRadius: "0rem"    
+                  }}
+                >
+                 Läs mer →
+                </Button>
+                </Link>
+  </div>
+</div>
+
+<div className=" bg-sotSecondary"> 
+<Accordion 
                          
-        title={<div className=" lg:text-2xl ">Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer? </div>}
-        content={ <ul className=" px-8 text-black">
-          <li className='list-disc '>Stege ska vara framtagen och ev. rest.</li>
-          <li className="list-disc">Det ska finnas godkända takskyddsanordningar så att sotaren/teknikern ska kunna gå upp på taket och arbeta säkert.</li>
-          <li className='list-disc'>Du behöver inte vara hemma, men du måste ge sotaren åtkomst till din fastighet så sotaren/teknikern kan gå in och nå eldstaden inifrån. Vid brandskyddskontroll följer teknikern skorstenen  i hela sin längd och behöver även åtkomst till vinden.  Förbered gärna genom att öppna garderober, schakt och lucka till vind.</li>
-          <li className='list-disc'>Är du inte hemma, meddela sotaren/teknikern om det är ok att gå in och du löst det så att hen kan komma in.</li>
-          <li className='list-disc'>Invändigt: Det är viktigt att det inte finns föremål runt eldstaden som är i vägen för sotaren. Ta bort mattorna och flytta undan möblerna och ta bort andra ömtåliga saker.  Arbetet måste utföras i en bra arbetsmiljö. Normalt sett ska det inte komma in sot, men det finns alltid en risk att det kommer ut en del ändå.</li>
-          <li className='list-disc'>Ha ett kärl tillgängligt som sotaren kan tömma sotet i. Det ska vara ett rymligt metallkärl med lock och sedan någon form av skyffel till det.</li>
-          <li className='list-disc'>Har du saker du är rädd om som befinner sig i närheten kan du lägga över ex. med plast eller tidningar.</li>
-          <li className='list-disc'>Under vintern är det viktigt att du ser till att takstegen inte är täckt med snö och att vägen fram till markstegen är skottad och halkfri.</li>
-          
-                      </ul>}
-      />
-             <div className=' justify-center image-container w-full   hidden lg:block md:block'>                           
-      <Image  className=" "
- src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`}
-  style={{
-    width: '100%', // Sätt bredden till 100% av föräldraelementet
-    height: '10%', // Definiera en fast höjd
-    objectFit: 'cover', // Klipp bilden för att täcka området
-    objectPosition: 'top' // Centrera bilden
-  }}
-/>
+                         title={<div className=" bg-sotSecondary lg:text-2xl ">Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer? </div>}
+                         content={ <ul className=" px-8 text-black">
+                           <li className='list-disc '>Stege ska vara framtagen och ev. rest.</li>
+                           <li className="list-disc">Det ska finnas godkända takskyddsanordningar så att sotaren/teknikern ska kunna gå upp på taket och arbeta säkert.</li>
+                           <li className='list-disc'>Du behöver inte vara hemma, men du måste ge sotaren åtkomst till din fastighet så sotaren/teknikern kan gå in och nå eldstaden inifrån. Vid brandskyddskontroll följer teknikern skorstenen  i hela sin längd och behöver även åtkomst till vinden.  Förbered gärna genom att öppna garderober, schakt och lucka till vind.</li>
+                           <li className='list-disc'>Är du inte hemma, meddela sotaren/teknikern om det är ok att gå in och du löst det så att hen kan komma in.</li>
+                           <li className='list-disc'>Invändigt: Det är viktigt att det inte finns föremål runt eldstaden som är i vägen för sotaren. Ta bort mattorna och flytta undan möblerna och ta bort andra ömtåliga saker.  Arbetet måste utföras i en bra arbetsmiljö. Normalt sett ska det inte komma in sot, men det finns alltid en risk att det kommer ut en del ändå.</li>
+                           <li className='list-disc'>Ha ett kärl tillgängligt som sotaren kan tömma sotet i. Det ska vara ett rymligt metallkärl med lock och sedan någon form av skyffel till det.</li>
+                           <li className='list-disc'>Har du saker du är rädd om som befinner sig i närheten kan du lägga över ex. med plast eller tidningar.</li>
+                           <li className='list-disc'>Under vintern är det viktigt att du ser till att takstegen inte är täckt med snö och att vägen fram till markstegen är skottad och halkfri.</li>
+                           
+                                       </ul>}
+                       />
+                       </div>
 </div>
-<div className=' justify-center image-container w-full   hidden lg:block md:block'>                           
-      <Image  className=" "
- src={`${process.env.PUBLIC_URL}/feet.jpg`}
-  style={{
-    width: '100%', // Sätt bredden till 100% av föräldraelementet
-    height: '10%', // Definiera en fast höjd
-    objectFit: 'cover', // Klipp bilden för att täcka området
-    objectPosition: 'top' // Centrera bilden
-  }}
-/>
-</div>
-              
-    </div>
+
+
+                  
 
             </div>
                         </div>
