@@ -8,11 +8,17 @@ import Button from '@mui/material/Button';
 
 const SotningPage = () => {
   return (
-    <div 
-        id="background-element" 
-        className="min-h-screen bg-cover bg-fixed" 
-        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)` }}
-      >
+<div
+  id="background-element"
+  className="lg:min-h-screen md:min-h-screen h-screen relative bg-cover bg-center md:bg-top md:bg-fixed lg:bg-fixed"
+  style={{
+    backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)`,
+    backgroundPosition: 'right top', // Default position för större skärmar
+    '@media (max-width: 768px)': {
+      backgroundPosition: 'right bottom', // Position för mindre skärmar
+    },
+  }}
+>
         <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10 ">
         <LayoutComponent
           title={"Sotning"}

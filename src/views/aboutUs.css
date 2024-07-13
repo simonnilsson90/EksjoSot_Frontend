@@ -135,3 +135,22 @@
 }
 
 
+
+
+
+
+
+#background-element {
+  background-image: url('/public/chimneys.jpg');
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed; /* Används endast för större skärmar */
+}
+
+/* Media query för mindre skärmar (mindre än 768px) */
+@media (max-width: 767px) {
+  #background-element {
+      background-image: url('/public/chimney-xs.jpg');
+      background-attachment: scroll; /* Används för mindre skärmar */
+  }
+}

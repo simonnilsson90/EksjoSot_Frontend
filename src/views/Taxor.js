@@ -2,37 +2,28 @@ import React from 'react';
 
 import LayoutComponent from '../components/layout';
 import './aboutUs.css';
-import { useEffect } from 'react';
+
 
 import { Link } from 'react-router-dom';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 const TaxorPage  = () => {
-  useEffect(() => {
-    const updateBackground = () => {
-        const element = document.getElementById('background-element');
-        if (window.innerWidth >= 768) { // 1024px motsvarar 'lg' i Tailwind CSS
-            element.style.backgroundImage = `url(${process.env.PUBLIC_URL}/chimneys.jpg)`;
-            element.classList.add('bg-cover', 'bg-fixed');
-        } else {
-            element.style.backgroundImage = 'none';
-            element.classList.remove('bg-cover', 'bg-fixed');
-        }
-    };
   
-    updateBackground(); // Kör en gång vid laddning
-    window.addEventListener('resize', updateBackground); // Lägg till eventlyssnare för att hantera förändringar i storlek
-    
-    return () => {
-      window.removeEventListener('resize', updateBackground); // Ta bort eventlyssnaren vid nedmontering
-  };
-  }, []);
   
     return (
-      <div id="background-element" className="min-h-screen bg-sot">
-      <div className="lg:bg-gradient-to-b lg:from-black/70 lg:via-transparent lg:to-transparent lg:min-h-screen
-        md:bg-gradient-to-b md:from-black/70 md:via-transparent md:to-transparent md:min-h-screen pt-10 ">
+      <div
+      id="background-element"
+      className="lg:min-h-screen md:min-h-screen h-screen relative bg-cover bg-center md:bg-top md:bg-fixed lg:bg-fixed"
+      style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)`,
+        backgroundPosition: 'right top', // Default position för större skärmar
+        '@media (max-width: 768px)': {
+          backgroundPosition: 'right bottom', // Position för mindre skärmar
+        },
+      }}
+    >
+      <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10 ">
 
      <LayoutComponent
 

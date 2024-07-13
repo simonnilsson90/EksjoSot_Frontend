@@ -13,13 +13,13 @@ const Accordion = ({ title, content }) => {
       <div className=" ">
         <button
           onClick={toggleAccordion}
-          className="flex justify-between items-center w-full px-4 py-2 text-left bg-sot  focus:outline-none"
+          className="flex justify-between items-center w-full  py-2 text-left lg:bg-sot bg-white  focus:outline-none border-gray-600 border-2 lg:border-sotlg:border-2"
         >
-          <span className="font-medium ">{title}</span>
-          <span>
+          <span className="font-medium px-2 ">{title}</span>
+          <span className=' pr-4'>
             {isOpen ? (
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 pr-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -55,7 +55,7 @@ const Accordion = ({ title, content }) => {
           style={{ maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : '0px' }}
           className={`overflow-hidden transition-max-height duration-700 ease-in-out`}
         >
-          <div className="px-8 py-2 bg-white">
+          <div className=" py-2 lg:bg-white lg:text-black md:bg-white md:text-black">
             {content}
           </div>
         </div>
