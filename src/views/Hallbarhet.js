@@ -10,7 +10,7 @@ const HallbarhetPage = () => {
       id="background-element"
       className="lg:min-h-screen md:min-h-screen h-screen relative bg-cover bg-center md:bg-top md:bg-fixed lg:bg-fixed"
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/fireplace.jpg)`,
         backgroundPosition: 'right top', // Default position för större skärmar
         '@media (max-width: 768px)': {
           backgroundPosition: 'right bottom', // Position för mindre skärmar

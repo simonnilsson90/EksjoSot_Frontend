@@ -13,14 +13,18 @@ const Accordion = ({ title, content }) => {
       <div className=" ">
         <button
           onClick={toggleAccordion}
-          className="flex justify-between items-center w-full  py-2 text-left lg:bg-sot bg-white  focus:outline-none border-gray-600 border-2 lg:border-sotlg:border-2"
+          className="flex justify-between items-center w-full  py-2 text-left bg-sot  focus:outline-none border-gray-600 border-2 lg:border-sotlg:border-2"
         >
-          <span className="font-medium px-2 ">{title}</span>
-          <span className=' pr-4'>
+          <span className="font-medium px-2 text-white ">{title}</span>
+          <span className=' pr-4 text-white'>
             {isOpen ? (
+              <div className=' '>
+
+          
               <svg
-                className="w-6 h-6 pr-4"
+                className="w-6 h-6 pr-4 "
                 fill="none"
+                
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,6 +36,7 @@ const Accordion = ({ title, content }) => {
                   d="M5 15l7-7 7 7"
                 ></path>
               </svg>
+              </div>
             ) : (
               <svg
                 className="w-6 h-6"
