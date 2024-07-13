@@ -24,8 +24,8 @@ const OmPage  = () => {
 
      <LayoutComponent
       title={
-        <div className=" lg:flex md:flex " >
-<p className=" lg:mr-3 md:mr-3">Om</p>
+        <div className=" flex " >
+<p className=" lg:mr-3 md:mr-3 mr-2">Om</p>
 <p>oss</p>
         </div>
     }
