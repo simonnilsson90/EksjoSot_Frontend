@@ -58,7 +58,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className=" md:bottom-0 md:absolute">
+      <div className="">
       <Footer/>
       </div>
       
