@@ -66,9 +66,9 @@ const TjansterPage= () => {
                 <div id="parent " className=" lg:flex md:flex lg:mt-4 md:mt-4">   
 
                   <div>  
-                  <div className=" align-middle justify-center lg:flex md:flex  ">  
-                 
-<div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12">
+                  <div className=" align-middle justify-center lg:flex md:flex   ">  
+      <div className=" m-4">         
+<div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
 <img class="w-full "  src={`${process.env.PUBLIC_URL}/fireplace.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2 text-gray-800">Sotning/rengöring</div>
@@ -97,12 +97,13 @@ const TjansterPage= () => {
                 </Link>
   </div>
 </div>
+</div>   
 
 
 
 
-
-<div class="max-w-sm  overflow-hidden shadow-lg bg-white m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12">
+<div className=" m-4">         
+<div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
 <img class="w-full "  src={`${process.env.PUBLIC_URL}/fireplace.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2 text-gray-800">Besiktningar</div>
@@ -131,6 +132,7 @@ const TjansterPage= () => {
                 </Link>
   </div>
 </div>
+</div>
 
 
 </div>
@@ -139,7 +141,8 @@ const TjansterPage= () => {
 
 
 
-<div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12">
+<div className=" m-4">         
+<div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
   <img class="w-full "  src={`${process.env.PUBLIC_URL}/chimneys-small.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2 text-gray-800">Brandskyddskontroll</div>
@@ -168,10 +171,12 @@ const TjansterPage= () => {
                 </Link>
   </div>
 </div>
+</div>
 
 
 
-<div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12">
+<div className=" m-4">         
+<div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
   <img class="w-full "  src={`${process.env.PUBLIC_URL}/chimneys-small.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2 text-gray-800">Övriga tjänster</div>
@@ -200,12 +205,13 @@ const TjansterPage= () => {
                 </Link>
   </div>
 </div>
+</div>
 
 
 
 </div> 
 </div>
-<div className="   lg:w-1/3 lg:mr-8 lg:mt-4 md:mr-4 md:mt-4 lg:mb-11 md:mb-11  ">
+<div className="   lg:w-1/3 lg:mr-8 lg:mt-8 md:mr-4 md:mt-4 lg:mb-20 md:mb-11  ">
 
 
 <div
