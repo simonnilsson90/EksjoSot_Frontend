@@ -19,7 +19,7 @@ const KontaktPage = () => {
 
 <LayoutComponent
 title={<div className=" flex">   
-<p className=" lg:mr-3 md:mr-3">Kontakta</p>
+<p className=" lg:mr-3 md:mr-3 mr-2">Kontakta</p>
 <p>oss</p>
 </div> }
 pretext={"Kundtjänsten svarar i telefon mellan kl 7.00 till 16.00 varje vardag. Om du vill ändra eller omboka en tid är det bäst att du kontaktar sotaren direkt, eftersom han har bättre kontroll på lediga tider."}
