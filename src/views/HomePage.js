@@ -19,7 +19,7 @@ function HomePage() {
       <div className="bg-gradient-to-b lg:from-black/5 lg:to-black/60 from-black/5 to-black/40 min-h-screen">
         <div className="flex flex-col md:items-center items-center lg:items-start lg:pl-12 lg:pr-4 pt-32 ">
           <div className="text-center md:text-center lg:text-left lg:absolute lg:right-12 ">
-            <span className="text-3xl lg:text-6xl md:text-5xl text-white">
+            <span className="text-4xl lg:text-6xl md:text-5xl text-white">
               <p className="font-semibold">Välkommen till EksjöSot</p>
               <p className="lg:text-4xl md:text-4xl text-xl font-bold">
                 <p>Expert på sotning</p>

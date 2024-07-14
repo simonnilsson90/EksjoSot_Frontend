@@ -209,7 +209,7 @@ const TjansterPage= () => {
 
 
 <div
-  className="bg-cover h-full lg:h-1/2 md:h-1/2 relative mx-4 lg:mx-0 md:mx-0 pb-20 lg:pb-0 md:pb-0"
+  className="bg-cover h-full lg:h-1/2 md:h-1/2 relative mx-4 lg:mx-0 md:mx-0 pb-20 lg:pb-0 md:pb-0 "
   style={{
     backgroundImage: `url(${process.env.PUBLIC_URL}/chimney-sweep.jpg)`,
     backgroundPosition: 'center',
