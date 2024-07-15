@@ -61,7 +61,7 @@ const TjansterPage= () => {
                     </div>
                 </div>
                
-                <div className="section bg-sot text-white lg:mx-0 md:mx-0   lg:mt-48 md:mt-48 w-full  ">
+                <div className="section bg-sot text-white lg:mx-0 md:mx-0   lg:mt-8 md:mt-8 w-full  ">
                 
                 <div id="parent " className=" lg:flex md:flex lg:mt-4 md:mt-4">   
 

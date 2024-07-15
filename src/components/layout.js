@@ -11,14 +11,14 @@ const LayoutComponent = ({ title, pretext, sections }) => {
                         {pretext}
                     </div>
                 </div>
-                <div className="section bg-black text-white lg:mx-0 md:mx-0 md:mt-0 mt-28 lg:mt-0">
+                <div className="section bg-black text-white lg:mx-0 md:mx-0 md:mt-4 mt-28 lg:mt-4">
                     <div className='text-lg p-4 lg:p-0 md:p-0 font-light lg:hidden md:hidden lg:pb-0 md:pb-0'>
                         {pretext}
                     </div>
                     <div>
                         {sections.map((section, index) => (
                             (section.text && section.bild) && (
-                                <div className={`lg:flex md:flex ${index % 2 === 0 ? 'lg:flex-row md:flex-row' : 'lg:flex-row-reverse md:flex-row-reverse'} ${index % 2 === 0 ? 'lg:bg-sot md:bg-sot' : 'lg:bg-sotSecondary md:bg-sotSecondary'} bg-white lg:bg-none md:bg-none`} key={index}>
+                                <div className={`lg:flex md:flex ${index % 2 === 0 ? 'lg:flex-row-reverse md:flex-row-reverse' : 'lg:flex-row md:flex-row'  } ${index % 2 === 0 ? 'lg:bg-sot md:bg-sot' : 'lg:bg-sotSecondary md:bg-sotSecondary'} bg-white lg:bg-none md:bg-none`} key={index}>
                                     <div className='justify-center image-container w-full lg:h-1/3 md:h-full lg:w-1/2 md:w-1/2 bg-white lg:block md:block hidden'>
                                         {section.bild}
                                     </div>
