@@ -2,7 +2,7 @@ import React from 'react';
 import LayoutComponent from '../components/layout';
 import besiktningarData from '../data/besiktningarData';
 import './aboutUs.css';
-import Footer from "../components/footer/FooterComponent";
+
 
 const BesiktningarPage = () => {
   const sections = [
@@ -13,7 +13,7 @@ const BesiktningarPage = () => {
           {besiktningarData.vision.content}
         </div>
       ),
-      bild: <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover' />
+      bild: <img src={`${process.env.PUBLIC_URL}/istockphoto4.jpg`} className='object-cover' />
     },
     {
       text: (
@@ -22,7 +22,7 @@ const BesiktningarPage = () => {
           {besiktningarData.whatWeDo.content}
         </div>
       ),
-      bild: <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover' />
+      bild: <img src={`${process.env.PUBLIC_URL}/istockphoto2.jpg`} className='object-cover' />
     },
     {
       text: (
@@ -31,7 +31,7 @@ const BesiktningarPage = () => {
           {besiktningarData.howWeStandOut.content}
         </div>
       ),
-      bild: <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover' />
+      bild: <img src={`${process.env.PUBLIC_URL}/istockphoto1.jpg`} className='object-cover' />
     },
     {
       text: (
@@ -63,7 +63,7 @@ const BesiktningarPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-cover bg-fixed" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)` }}>
+    <div className="min-h-screen bg-cover bg-fixed" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/istockphoto3.jpg)` }}>
       <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10">
         <LayoutComponent
           title={besiktningarData.title}

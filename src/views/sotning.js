@@ -21,12 +21,12 @@ const SotningPage = () => {
             <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10">
                 <LayoutComponent
                     title="Sotning"
-                    pretext=" Vår mångåriga erfarenhet och kompetens inom sotning gör att vi kan erbjuda dig en trygg och säker sotning av din eldstad. "
+                    pretext=" Vår mångåriga erfarenhet och kompetens inom sotning gör att vi kan erbjuda dig en trygg och säker hantering av din eldstad. "
                     sections={[
                         {
                             text: (
                                 <div>
-                                    <h2 className='text-3xl mb-2 font-semibold'>Eldstäder och rök</h2>
+                                    <h2 className='text-3xl mb-2 font-semibold lg:border-b md:border-b border-sotOrange'>Eldstäder och rök</h2>
                                     <p className='mb-4'>
                                         Vid sotning av eldstäder och rökkanaler innebär detta att alla ytor som rökgaserna passerar rengörs. Sotning innebär att brännbara sotbeläggningar tas bort i sådan omfattning att risken för skorstensbrand 
                                         och skadeverkningarna vid en skorstensbrand minimeras.
@@ -38,7 +38,7 @@ const SotningPage = () => {
                         {
                             text: (
                                 <div>
-                                    <h2 className='text-3xl mb-2 font-semibold'>Bestämmelser</h2>
+                                   <h2 className='text-3xl mb-2 font-semibold lg:border-b md:border-b border-sotOrange'>Bestämmelser</h2>
                                     <p>
                                         Hur ofta sotning ska göras bestäms av kommunen. I varje kommun finns det lokala föreskrifter för rengöring (sotning). Imkanalen, köksfläktens anslutning till skorstenen/ ventilationssystemet i bostadshus, omfattas inte längre av kravet på sotning.
                                         Trots detta behöver imkanalen rengöras med jämna mellanrum, om inte annat av funktionsmässiga skäl. Ansvaret för rengöring av imkanalen ligger på fastighetsägaren.
@@ -50,8 +50,8 @@ const SotningPage = () => {
                         {
                             text: (
                                 <div>
-                                    <h2 className='text-3xl mb-2 font-semibold'>Säkerhet</h2>
-                                    <p className='italic'>
+                                    <h2 className='text-3xl mb-2 font-semibold lg:border-b md:border-b border-sotOrange'>Säkerhet</h2>
+                                    <p className=''>
                                         Säkerheten på ditt tak är viktig för oss. Du som fastighetsägare har ansvar för att de säkerhetsanordningar som finns föreskrivet i lag finns på plats och är väl underhållna.
                                     </p>
                                     <div className='lg:mb-20 md:mb-16 mb-10'>

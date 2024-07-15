@@ -4,15 +4,15 @@ import '../views/aboutUs.css';
 const LayoutComponent = ({ title, pretext, sections }) => {
     return (
         <div>
-            <div className="flex flex-col gap-4 lg:w-full md:w-full lg:mb-16 md:mb-16 lg:mt-10 md:mt-10 mt-20 lg:flex-row md:flex-row lg:flex-wrap md:flex-wrap">
-                <div className="text-white mx-auto lg:mt-10 md:mt-10 md:w-5/6 lg:mx-auto md:mx-auto">
-                    <h1 className="text-4xl text-start pb-2 lg:pb-0 md:pb-0 lg:border-none md:border-none lg:text-7xl md:text-7xl border-sotOrange border-b-2">{title}</h1>
-                    <div className="hidden lg:block text-start md:block mt-4 mx-2 lg:text-2xl md:text-2xl lg:mt-32 md:mt-40 md:w-1/2 lg:w-1/2 lg:ml-auto md:ml-auto lg:pl-8">
-                        {pretext}
-                    </div>
-                </div>
-                <div className="section bg-black text-white lg:mx-0 md:mx-0 md:mt-4 mt-28 lg:mt-4">
-                    <div className='text-lg p-4 lg:p-0 md:p-0 font-light lg:hidden md:hidden lg:pb-0 md:pb-0'>
+            <div className="flex flex-col gap-4 lg:w-full md:w-full lg:mb-0 md:mb-16 lg:mt-10 md:mt-10 mt-20 lg:flex-row md:flex-row lg:flex-wrap md:flex-wrap">
+            <div className="text-white mx-auto lg:mt-20 md:mt-20   flex justify-center items-center">
+    <h1 className="text-4xl text-center pb-2 lg:pt-10 md:pt-10 lg:border-none md:border-none lg:text-7xl md:text-7xl border-sotOrange border-b-2">
+        {title}
+    </h1>
+</div>
+
+                <div className=" bg-sot text-white   md:mt-32 mt-28 lg:mt-48  lg:mx-auto md:mx-auto">
+                    <div className='text-lg p-4  md:p-0 font-light    lg:text lg:text-4xl md:text-2xl lg:font-light md:font-light lg:px-20 md:px-20 lg:pb-32 md:pb-10 lg:pt-10 md:pt-8 '>
                         {pretext}
                     </div>
                     <div>

@@ -8,6 +8,11 @@ module.exports = {
               'sotOrange': 'rgba(224, 95, 51, var(--tw-border-opacity))',
               'sotSecondary': '#353C40',
           },
+          borderColor: {
+              'sot': '#1e2224',
+              'sotOrange': 'rgba(224, 95, 51, var(--tw-border-opacity))',
+              'sotSecondary': '#353C40',
+          },
       },
   },
   plugins: [

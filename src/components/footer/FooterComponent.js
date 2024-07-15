@@ -38,8 +38,8 @@ const Footer = () => {
 </div>
 
            
-            <a class="my-3 block text-gray-100" href="/#">Brandskyddskontroll <span class="text-teal-600 text-xs p-1"></span>
-            </a>
+            <Link to={"/tjanster/brandskyddskontroll"} class="my-3 block text-gray-100" >Brandskyddskontroll <span class="text-teal-600 text-xs p-1"></span>
+            </Link>
             <div className="my-3 block text-gray-100" >
 <Link  to={"/tjanster/besiktningar"}> 
 <p>Besiktningar</p>

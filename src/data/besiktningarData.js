@@ -1,6 +1,6 @@
 const besiktningarData = {
     title: "Besiktningar",
-    description: "Det här är de olika typer av besiktningar som vi utför. Observera att besiktningar och inspektioner inte berättigar till ROT-avdrag. Välj ut den besiktningstyp som är aktuell för dig och klicka på “läs mer” för att komma till rätt sida.",
+    description: "Vi erbjuder en rad olika typer av besiktningar. Observera att besiktningar och inspektioner inte berättigar till ROT-avdrag. Välj ut den besiktningstyp som är aktuell för dig och klicka på “läs mer” för att komma till rätt sida.",
     vision: {
       title: "Installationsbesiktning",
       content: "För att vara säker på att installationen är brandsäker och rätt utförd bör Du beställa en besiktning av nyinstallerad eldstad och skorsten av skorstensfejarmästaren. Han kontrollerar att installationsanvisningarna har följts och att det inte finns några otätheter i skorstenen. Vid installation av eldstad eller skorsten krävs ofta en bygganmälan till kommunens byggnadsnämnd. Läs mer "

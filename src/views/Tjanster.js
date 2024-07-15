@@ -46,14 +46,14 @@ const TjansterPage= () => {
                 <div className="    lg:mx-20  md:mr-4 md:mt-4  ">
 <div  className="bg-cover h-full  relative mx-4 lg:mx-0 md:mx-0  lg:pb-0 md:pb-0 "
   >
-    <div className="  lg:text-4xl md:text-2xl lg:text-start md:text-start  md:mt-4 mx-auto lg:px-4 md:px-4 lg:font-light md:font-light mt-4">
+    <div className="  lg:text-4xl md:text-2xl lg:text-start md:text-start  md:mt-4 mx-auto lg:px-20  md:px-4 lg:font-light md:font-light mt-4">
                     Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området.
                     </div>
   
   <div>
   
   </div>
-  <div className="relative mt-6 lg:mt-12 lg:mx-4 md:mx-4">
+  <div className="relative mt-6 lg:mt-12 lg:mx-20 md:mx-4 border border-white">
     <Accordion
       title={<div className="lg:text-xl ">Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer?</div>}
       content={
@@ -74,12 +74,12 @@ const TjansterPage= () => {
 </div> 
 
                   <div>  
-                  <div className=" align-middle justify-center lg:flex md:flex lg:bg-sot md:bg-sotlg:mt-2 lg:mx-20   ">   
+                  <div className=" align-middle justify-center lg:flex md:flex lg:bg-sot md:bg-sot lg:mt-2 lg:mx-20   ">   
 
 
 
 <div className=" m-4">         
-<div class="lg:max-w-lg md:max-w-md max-w-sm section    overflow-hidden shadow-lg bg-white  m-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
+<div class="lg:max-w-lg md:max-w-md max-w-sm section    overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
 
 
 <img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} alt="Sunset in the mountains" />
@@ -120,7 +120,7 @@ const TjansterPage= () => {
 
 
 <div className=" m-4">         
-<div class="lg:max-w-lg md:max-w-md max-w-sm section    overflow-hidden shadow-lg bg-white  m-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
+<div class="lg:max-w-lg md:max-w-md max-w-sm section    overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
 <img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
   <div class=" text-xl lg:text-3xl font-medium mb-2 text-gray-800">Besiktningar</div>
