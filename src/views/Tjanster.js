@@ -69,7 +69,7 @@ const TjansterPage= () => {
                   <div className=" align-middle justify-center lg:flex md:flex   ">  
       <div className=" m-4">         
 <div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
-<img class="w-full "  src={`${process.env.PUBLIC_URL}/fireplace.jpg`} alt="Sunset in the mountains" />
+<img class="w-full "  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2 text-gray-800">Sotning/rengöring</div>
     <p class="text-gray-700 text-base">
@@ -104,7 +104,7 @@ const TjansterPage= () => {
 
 <div className=" m-4">         
 <div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
-<img class="w-full "  src={`${process.env.PUBLIC_URL}/fireplace.jpg`} alt="Sunset in the mountains" />
+<img class="w-full "  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2 text-gray-800">Besiktningar</div>
     <p class="text-gray-700 text-base">
@@ -112,7 +112,7 @@ const TjansterPage= () => {
     </p>
   </div>
   <div class="px-6 pb-2">
-  <Link to={"/tjanster/sotning/rengorning"}> 
+  <Link to={"/tjanster/besiktningar"}> 
                 <Button
                   variant="contained"
                   sx={{
@@ -143,7 +143,7 @@ const TjansterPage= () => {
 
 <div className=" m-4">         
 <div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
-  <img class="w-full "  src={`${process.env.PUBLIC_URL}/chimneys-small.jpg`} alt="Sunset in the mountains" />
+  <img class="w-full "  src={`${process.env.PUBLIC_URL}/chimneys.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2 text-gray-800">Brandskyddskontroll</div>
     <p class="text-gray-700 text-base">
@@ -151,7 +151,7 @@ const TjansterPage= () => {
     </p>
   </div>
   <div class="px-6 pb-2">
-  <Link to={"/tjanster/ovriga-tjanster"}> 
+  <Link to={"/tjanster/brandskyddskontroll"}> 
                 <Button
                   variant="contained"
                   sx={{
@@ -177,7 +177,7 @@ const TjansterPage= () => {
 
 <div className=" m-4">         
 <div class="max-w-sm  overflow-hidden shadow-lg bg-white  m-4 lg:mt-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
-  <img class="w-full "  src={`${process.env.PUBLIC_URL}/chimneys-small.jpg`} alt="Sunset in the mountains" />
+  <img class="w-full "  src={`${process.env.PUBLIC_URL}/chimneys.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2 text-gray-800">Övriga tjänster</div>
     <p class="text-gray-700 text-base">
