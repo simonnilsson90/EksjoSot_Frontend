@@ -33,27 +33,27 @@ const TjansterPage= () => {
       <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10  ">
 
       
-            <div className="flex flex-col align-middle  lg:w-full md:w-full lg:mt-32   md:mt-10 lg:flex-row md:flex-row lg:flex-wrap md:flex-wrap">
+            <div className="flex flex-col align-middle  lg:w-full md:w-full lg:mt-32   md:mt-10 lg:flex-row md:flex-row lg:flex-wrap md:flex-wrap ">
             <div className="text-white mx-4 lg:my-10 md:mt-10 mt-12 lg:mx-auto md:mx-auto flex items-center justify-center h-full">
     <h1 className=" text-4xl text-start pb-2 lg:pb-10 lg:mb-10 md:pb-0 lg:border-none md:border-none lg:text-7xl md:text-7xl border-sotOrange border-b-2">Tjänster</h1>
 </div>
 
                
-                <div className=" bg-sot text-white lg:mx-0 md:mx-0   md:mt-20 w-full mt-20   ">
+                <div className="  text-white lg:mx-0 md:mx-0   md:mt-20 w-full mt-20  bg-sot lg:px-32 md:px-16   ">
                 
                 <div id="parent " className="  lg:mt-10 md:mt-4">   
                 
-                <div className="    lg:mx-20  md:mr-4 md:mt-4  ">
-<div  className="bg-cover h-full  relative mx-4 lg:mx-0 md:mx-0  lg:pb-0 md:pb-0 "
+                <div className="     md:mt-4  ">
+<div  className="bg-cover h-full  relative mx-4 lg:mx-0    lg:pb-0 md:pb-0 "
   >
-    <div className="  lg:text-4xl md:text-2xl lg:text-start md:text-start  md:mt-4 mx-auto lg:px-20  md:px-4 lg:font-light md:font-light mt-4">
+    <div className="  lg:text-4xl md:text-2xl lg:text-start md:text-start  md:mt-4 mx-auto lg:px-0  lg:font-light md:font-light mt-4">
                     Vi erbjuder sotning, rengöring, besiktningar vid överlåtelse, nyinstallationer, status och andra tjänster inom området.
                     </div>
   
   <div>
   
   </div>
-  <div className="relative mt-6 lg:mt-12 lg:mx-20 md:mx-4 border border-white">
+  <div className="relative mt-6 lg:mt-12   border border-white">
     <Accordion
       title={<div className="lg:text-xl ">Vad ska jag tänka på innan sotaren/brandskyddsteknikern kommer?</div>}
       content={
@@ -74,12 +74,13 @@ const TjansterPage= () => {
 </div> 
 
                   <div>  
-                  <div className=" align-middle justify-center lg:flex md:flex lg:bg-sot md:bg-sot lg:mt-2 lg:mx-20   ">   
+                
+                  <div className="  lg:flex md:flex lg:bg-sot md:bg-sot lg:mt-2 justify-between     ">   
 
 
 
-<div className=" m-4">         
-<div class="lg:max-w-lg md:max-w-md max-w-sm section    overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
+                  <div className="  m-4 lg:m-0 md:m-0 lg:end-0">         
+                  <div class=" lg:max-w-lg md:max-w-lg    overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
 
 
 <img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} alt="Sunset in the mountains" />
@@ -113,14 +114,8 @@ const TjansterPage= () => {
 </div>   
 
 
-
-
-
-
-
-
-<div className=" m-4">         
-<div class="lg:max-w-lg md:max-w-md max-w-sm section    overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
+<div className="  m-4 lg:m-0 md:m-0 lg:end-0">         
+<div class=" lg:max-w-lg md:max-w-lg    overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
 <img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
   <div class=" text-xl lg:text-3xl font-medium mb-2 text-gray-800">Besiktningar</div>
@@ -154,12 +149,12 @@ const TjansterPage= () => {
 
 </div>
 
-<div className=" align-middle justify-center lg:flex md:flex lg:bg-sot  md:bg-sot  lg:mx-20   ">   
+<div className=" align-middle lg:flex md:flex lg:bg-sot  md:bg-sot justify-between      ">   
 
 
 
-<div className=" m-4">         
-<div class="lg:max-w-lg md:max-w-md max-w-sm section    overflow-hidden shadow-lg bg-white  m-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
+<div className=" m-4 lg:m-0 md:m-0">          
+<div class=" lg:max-w-lg md:max-w-lg    overflow-hidden shadow-lg bg-white  m-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
   <img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/chimneys.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
   <div class=" text-xl lg:text-3xl font-medium mb-2 text-gray-800">Brandskyddskontroll</div>
@@ -192,8 +187,8 @@ const TjansterPage= () => {
 
 
 
-<div className=" m-4">         
-<div class="lg:max-w-lg md:max-w-md max-w-sm section   overflow-hidden shadow-lg bg-white  m-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
+<div className=" m-4 lg:m-0 md:m-0">          
+<div class=" lg:max-w-lg md:max-w-lg   overflow-hidden shadow-lg bg-white  m-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
   <img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/chimneys.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
   <div class=" text-xl lg:text-3xl font-medium mb-2 text-gray-800">Övriga tjänster</div>
