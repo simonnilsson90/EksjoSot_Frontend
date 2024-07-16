@@ -4,6 +4,7 @@ import Accordion from '../components/Accordion';
 import { Link } from 'react-router-dom';
 import LayoutComponent from '../components/layout';
 import Button from '@mui/material/Button';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const SotningPage = () => {
     return (
@@ -22,15 +23,24 @@ const SotningPage = () => {
                 <LayoutComponent
                     title="Sotning"
                     pretext=" Vår mångåriga erfarenhet och kompetens inom sotning gör att vi kan erbjuda dig en trygg och säker hantering av din eldstad. "
+                    back={<Link className='flex items-center  '
+                       
+                        to={"/tjanster"}>
+                              <ArrowBackIcon/>
+                            <p className=' '>Tjänster</p>
+                           
+                             </Link>
+                            }
                     sections={[
                         {
                             text: (
                                 <div>
                                     <h2 className='text-3xl mb-2 font-semibold lg:border-b md:border-b border-sotOrange'>Eldstäder och rök</h2>
-                                    <p className='mb-4'>
+                                    <p className=''>
                                         Vid sotning av eldstäder och rökkanaler innebär detta att alla ytor som rökgaserna passerar rengörs. Sotning innebär att brännbara sotbeläggningar tas bort i sådan omfattning att risken för skorstensbrand 
                                         och skadeverkningarna vid en skorstensbrand minimeras.
                                     </p>
+                                    
                                 </div>
                             ),
                             bild: <img src={`${process.env.PUBLIC_URL}/istockphoto1.jpg`} className='object-cover' />
