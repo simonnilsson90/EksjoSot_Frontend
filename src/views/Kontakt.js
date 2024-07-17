@@ -7,29 +7,29 @@ const KontaktPage = () => {
     {
       text: (
         <div>
-          <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>Kundtjänst</h2>
+          <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Kundtjänst</h2>
           <p>I kundtjänsten arbetar Agnetha, Emma och Isolde.</p>
           <p className="whitespace-nowrap">tel. 010 – 410 25 60</p>
           <p>epost: info@eksjosot.se</p>
         </div>
       ),
-      bild: <img src={`${process.env.PUBLIC_URL}/chimney-day.jpg`} className='object-cover' />
+      bild: <img src={`${process.env.PUBLIC_URL}/istockphoto-kundtjanst.jpg`} className='object-cover' />
     },
     {
       text: (
         <div>
-          <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>Emanuel Nattvarg</h2>
+          <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Emanuel Nattvarg</h2>
           <p>Emanuel är brandskydds-kontrollant och besiktningsman.</p>
           <p>tel: 010 – 410 25 72</p>
           <p>epost: emanuel@eksjosot.se</p>
         </div>
       ),
-      bild: <img src={`${process.env.PUBLIC_URL}/fireplace.jpg`} className='object-cover' />
+      bild: <img src={`${process.env.PUBLIC_URL}/istockphoto2.jpg`} className='object-cover' />
     },
     {
       text: (
         <div>
-          <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>Torbjörn Levin Forssg</h2>
+          <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Torbjörn Levin Forssg</h2>
           <p>Torbjörn arbetar med sotning och besiktningar.</p>
           <p>tel: 010 – 410 25 73</p>
           <p>epost: torbjorn@eksjosot.se</p>

@@ -12,7 +12,7 @@ const OmPage = () => {
           {aboutUsData.vision.content}
         </div>
       ),
-      bild: <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover' />
+      bild: <img src={`${process.env.PUBLIC_URL}/istockphoto2.jpg`} className='object-cover' />
     },
     {
       text: (
@@ -21,13 +21,17 @@ const OmPage = () => {
           {aboutUsData.whatWeDo.content}
         </div>
       ),
-      bild: <img src={`${process.env.PUBLIC_URL}/riks.png`} className='object-cover py-2' />
+      bild:(
+        <div className='bg-white p-4 flex justify-center items-center mx-auto'>
+        <img src={`${process.env.PUBLIC_URL}/riks.png`} className='object-cover ' />
+    </div>
+      ) 
     },
     // Lägg till fler sektioner här om det behövs
   ];
 
   return (
-    <div className="min-h-screen bg-cover bg-fixed bg-center lg:bg-top md:bg-top" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/istockphoto2.jpg)` }}>
+    <div className="min-h-screen bg-cover bg-fixed bg-center lg:bg-top md:bg-top" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/chimneys.jpg)` }}>
       <div className="bg-gradient-to-b from-black/70 via-transparent to-transparent min-h-screen pt-10">
         <LayoutComponent
           title={
