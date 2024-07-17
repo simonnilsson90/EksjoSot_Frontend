@@ -15,19 +15,27 @@ const LayoutComponent = ({ title, pretext, sections, back }) => {
                     <div className=' flex items-center  text-lg p-4 md:p-0 font-light  lg:text-4xl md:text-2xl lg:font-light md:font-light lg:px-20 md:px-20 lg:py-20 md:py-14   '>
                         {pretext}
                     </div>
-                    <div className="lg:hidden md:hidden w-24 bg-sotOrange mx-4 mb-4">
-                        {back}
-                    </div>
+                    
 
                     <div>
+
+                    
                         {sections.map((section, index) => (
                             (section.text && section.bild) && (
-                                <div className={`lg:flex md:flex ${index % 2 === 0 ? 'lg:flex-row-reverse md:flex-row-reverse' : 'lg:flex-row md:flex-row'} ${index % 2 === 0 ? 'lg:bg-sotSecondary md:bg-sotSecondary' : 'lg:bg-sot md:bg-sot'} bg-white lg:bg-none md:bg-none`} key={index}>
+                                
+                                <div className={`lg:flex md:flex  ${index % 2 === 0 ? 'lg:flex-row-reverse md:flex-row-reverse' : 'lg:flex-row md:flex-row'} ${index % 2 === 0 ? 'lg:bg-sotSecondary md:bg-sotSecondary' : 'lg:bg-sot md:bg-sot'} bg-white lg:bg-none md:bg-none`} key={index}>
+                                  
                                     <div className='justify-center image-container w-full lg:h-1/3 md:h-full lg:w-1/2 md:w-1/2 bg-white lg:block md:block hidden'>
                                         {section.bild}
                                     </div>
-                                    <div className="flex items-center lg:w-1/2 md:w-1/2 mx-4 lg:mx-0 md:mx-0 py-4 lg:p-6 md:py-1 md:px-2">
+                                    
+                                     <div className="flex items-center lg:w-1/2 md:w-1/2 mx-4 lg:mx-0 md:mx-0 py-4 lg:p-6 md:py-1 md:px-2">
+                                   
                                         <p className={`lg:text-base  md:text-sm text-black lg:text-white md:text-white`}>
+                                        <div className="lg:hidden md:hidden w-20 bg-sotOrange  mb-4 pr-2 mt-2">
+                        {back}
+                    </div>
+                                 
                                             {section.text}
                                         </p>
                                     </div>

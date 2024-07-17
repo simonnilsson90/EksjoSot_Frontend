@@ -26,8 +26,8 @@ const SotningPage = () => {
                     back={<Link className='flex items-center  '
                        
                         to={"/tjanster"}>
-                              <ArrowBackIcon/>
-                            <p className=' '>Tjänster</p>
+                              <ArrowBackIcon className=''/>
+                            <p className=' text-sm '>Tjänster</p>
                            
                              </Link>
                             }
@@ -53,6 +53,7 @@ const SotningPage = () => {
                                         Hur ofta sotning ska göras bestäms av kommunen. I varje kommun finns det lokala föreskrifter för rengöring (sotning). Imkanalen, köksfläktens anslutning till skorstenen/ ventilationssystemet i bostadshus, omfattas inte längre av kravet på sotning.
                                         Trots detta behöver imkanalen rengöras med jämna mellanrum, om inte annat av funktionsmässiga skäl. Ansvaret för rengöring av imkanalen ligger på fastighetsägaren.
                                     </p>
+                                    <img src={`${process.env.PUBLIC_URL}/istockphoto2.jpg`} className=' lg:hidden md:hidden object-cover mt-4' />
                                 </div>
                             ),
                             bild: <img src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} className='object-cover' />
