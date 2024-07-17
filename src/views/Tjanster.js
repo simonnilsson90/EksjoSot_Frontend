@@ -83,7 +83,7 @@ const TjansterPage= () => {
                   <div class=" lg:max-w-lg md:max-w-lg max-w-sm    overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
 
 
-<img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} alt="Sunset in the mountains" />
+<img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/sotredskap.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
     <div class=" text-xl lg:text-3xl font-medium mb-2 text-gray-800">Sotning/rengöring</div>
     <p class="text-gray-700 text-base">
