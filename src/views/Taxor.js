@@ -27,20 +27,25 @@ const TaxorPage = () => {
                                 <div>
                                     <h2 className='text-2xl mb-2 mt-4'>Länkar till respektive kommun:</h2>
                                     <Link to={"https://eksjo.se/bo-miljo-och-trafik/ditt-boende/brandskyddskontroll-och-rengoring-sotning"}>
-                                        <div className="flex">
-                                            <h2 className="pr-2">Eksjö</h2>
-                                            <ArrowForwardIcon className="text-sotOrange mb-1" />
+                                        <div className="flex ">
+                                      
+                                            <h2 className="pr-2 mb-2 ">Eksjö</h2>
+                                            <ArrowForwardIcon className="text-sotOrange " />
                                         </div>
                                     </Link>
                                     <Link to={"https://www.vastervik.se/Bygga-bo-och-miljo/Brandskydd-sotning/Sotning/"}>
-                                        <div className="flex">
-                                            <h2>Västervik</h2>
+                                        <div className="flex ">
+                                    
+                                            <h2 className=' mb-2 '>Västervik</h2>
                                             <ArrowForwardIcon className="text-sotOrange" />
                                         </div>
                                     </Link>
                                 </div>
                             ),
-                            bild: <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover' />
+                            bild:(<div className=' py-10  flex items-center justify-center lg:gap-x-10  md:gap-4'>
+                                <img src={`${process.env.PUBLIC_URL}/eksjo.svg`} className='  my-4 lg:h-40 md:h-28' />
+                                <img src={`${process.env.PUBLIC_URL}/vastervik.jpg`} className='py-2 lg:h-40 md:h-28' />
+                                                           </div>)
                         },
                         // Lägg till fler sektioner här om det behövs
                     ]}

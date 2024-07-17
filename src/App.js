@@ -24,6 +24,7 @@ import KontaktPage from "./views/Kontakt";
 import OvrigaTjansterPage from "./views/ovriga-tjanster";
 import SotningPage from "./views/sotning";
 import BrandskyddskontrollPage from "./views/Brandskyddskontroll";
+import InstallationsbesiktningPage from "./views/Installationsbesiktning";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,6 +36,7 @@ const router = createBrowserRouter(
         <Route path="kontakt" element={<KontaktPage />} />
         <Route path="boka" element={<BokaPage />} />
         <Route path="tjanster/besiktningar" element={<BesiktningarPage />} />
+        <Route path="/installationsbesiktning" element={<InstallationsbesiktningPage />} />
         <Route path="tjanster/brandskyddskontroll" element={<BrandskyddskontrollPage/>} />
         <Route path="tjanster/sotning/rengorning" element={<SotningPage />} />
         <Route path="myAccount" element={<MyAccount />} />

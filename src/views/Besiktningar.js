@@ -12,6 +12,7 @@ const BesiktningarPage = () => {
         <div>
           <h2 className='text-2xl lg:text-5xl lg:mb-6   mb-2 mt-4 lg:mt-0'>{besiktningarData.vision.title}</h2>
           {besiktningarData.vision.content}
+          <Link to={"/installationsbesiktning"}> Läs mer ▶️ </Link>
         </div>
       ),
       bild: <img src={`${process.env.PUBLIC_URL}/istockphoto4.jpg`} className='object-cover' />

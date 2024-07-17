@@ -61,16 +61,16 @@ const SotningPage = () => {
                         {
                             text: (
                                 <div>
-                                    <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Säkerhet</h2>
+                                    <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-1 lg:mt-0'>Säkerhet</h2>
                                     <p className=''>
                                         Säkerheten på ditt tak är viktig för oss. Du som fastighetsägare har ansvar för att de säkerhetsanordningar som finns föreskrivet i lag finns på plats och är väl underhållna.
                                     </p>
-                                    <div className='lg:mb-6 md:mb-4 mb-10'>
+                                    <div className='lg:mb-6 md:mb-0 mb-2'>
                                         <Link to={"/tjanster"}>
                                             <Button
                                                 variant="contained"
                                                 sx={{
-                                                    marginTop: "1rem",
+                                                   
                                                     textTransform: "none",
                                                     width: "20rem",
                                                     color: "white",
@@ -93,7 +93,7 @@ const SotningPage = () => {
                                         <Button
                                             variant="contained"
                                             sx={{
-                                                marginTop: "1rem",
+                                                
                                                 textTransform: "none",
                                                 width: "20rem",
                                                 color: "white",

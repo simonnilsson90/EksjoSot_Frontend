@@ -61,7 +61,7 @@ const Accordion = ({ title, content }) => {
           style={{ maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : '0px' }}
           className={`overflow-hidden transition-max-height duration-700 ease-in-out`}
         >
-          <div className="  lg:bg-white lg:text-black md:bg-white md:text-black">
+          <div className=" px-2  lg:bg-white lg:text-black md:bg-white md:text-black">
             {content}
           </div>
         </div>
