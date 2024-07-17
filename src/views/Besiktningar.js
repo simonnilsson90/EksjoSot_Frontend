@@ -2,7 +2,8 @@ import React from 'react';
 import LayoutComponent from '../components/layout';
 import besiktningarData from '../data/besiktningarData';
 import './aboutUs.css';
-
+import { Link } from 'react-router-dom';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const BesiktningarPage = () => {
   const sections = [
@@ -68,6 +69,14 @@ const BesiktningarPage = () => {
         <LayoutComponent
           title={besiktningarData.title}
           pretext={besiktningarData.description}
+          back={<Link className='flex items-center  '
+                       
+            to={"/tjanster"}>
+                  <ArrowBackIcon className=''/>
+                <p className=' text-sm '>Tjänster</p>
+               
+                 </Link>
+                }
           sections={sections}
         />
       </div>

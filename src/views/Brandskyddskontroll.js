@@ -2,6 +2,8 @@ import React from "react";
 import './aboutUs.css';
 import LayoutComponent from '../components/layout';
 import Accordion from "../components/Accordion";
+import { Link } from 'react-router-dom';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const BrandskyddskontrollPage = () => { 
   return (
@@ -21,6 +23,14 @@ const BrandskyddskontrollPage = () => {
         <LayoutComponent
           title={"Brandskyddskontroll"}
           pretext={"Brandskyddskontrollen säkerställer att din skorsten och eldstad uppfyller alla säkerhetskrav och fungerar korrekt, vilket förebygger brandolyckor i ditt hem."}
+          back={<Link className='flex items-center  '
+                       
+            to={"/tjanster"}>
+                  <ArrowBackIcon className=''/>
+                <p className=' text-sm '>Tjänster</p>
+               
+                 </Link>
+                }
           sections={[
             {
 

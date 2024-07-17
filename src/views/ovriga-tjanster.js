@@ -3,6 +3,8 @@ import LayoutComponent from '../components/layout';
 import './aboutUs.css';
 import Accordion from "../components/Accordion";
 import tjansterData from "../data/ovriga-tjansterData";
+import { Link } from 'react-router-dom';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const OvrigaTjansterPage = () => {
   const sections = [
@@ -27,9 +29,10 @@ const OvrigaTjansterPage = () => {
     {
       text: (
         <div className="pb-4 lg:pb-0 md:pb-0">
+          <img  src={`${process.env.PUBLIC_URL}/fireplace.jpg`} className='object-cover lg:hidden md:hidden' />
           <h2 className="text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0">{tjansterData.communityOutreach.title}</h2>
           <p className="mb-2">Om du funderar på att installera en braskamin i befintlig skorsten eller ska nyinstallera en eldstad kan det vara bra att fråga sotaren först.</p>
-          <div className="bg-sot"> 
+          <div className="bg-sotSecondary"> 
             <Accordion
               title="Läs mer"
               content={
@@ -60,6 +63,8 @@ const OvrigaTjansterPage = () => {
     {
       text: (
         <div className="pb-4 lg:pb-0 md:pb-0">
+<img src={`${process.env.PUBLIC_URL}/stork.jpg`} className='object-cover lg:hidden md:hidden' />
+
           <h2 className="text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0">{tjansterData.howWeStandOut.title}</h2>
           <p>{tjansterData.howWeStandOut.content}</p>
         </div>
@@ -89,6 +94,14 @@ const OvrigaTjansterPage = () => {
             </div>
           }
           pretext={tjansterData.description}
+          back={<Link className='flex items-center  '
+                       
+            to={"/tjanster"}>
+                  <ArrowBackIcon className=''/>
+                <p className=' text-sm '>Tjänster</p>
+               
+                 </Link>
+                }
           sections={sections}
         />
       </div>
