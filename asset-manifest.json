@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EksjoSot_Frontend/static/css/main.12c249f5.css",
-    "main.js": "/EksjoSot_Frontend/static/js/main.2a5709c2.js",
+    "main.js": "/EksjoSot_Frontend/static/js/main.c6b2a439.js",
     "static/js/453.c83dfc0c.chunk.js": "/EksjoSot_Frontend/static/js/453.c83dfc0c.chunk.js",
     "static/media/chimneys.jpg": "/EksjoSot_Frontend/static/media/chimneys.a9fd25eeec82045f9e42.jpg",
     "static/media/chimney-sweep.jpg": "/EksjoSot_Frontend/static/media/chimney-sweep.a09b6dd8bc05c4647267.jpg",
@@ -11,11 +11,11 @@
     "static/media/chimney-xs.jpg": "/EksjoSot_Frontend/static/media/chimney-xs.44c0759afc09c25661e2.jpg",
     "index.html": "/EksjoSot_Frontend/index.html",
     "main.12c249f5.css.map": "/EksjoSot_Frontend/static/css/main.12c249f5.css.map",
-    "main.2a5709c2.js.map": "/EksjoSot_Frontend/static/js/main.2a5709c2.js.map",
+    "main.c6b2a439.js.map": "/EksjoSot_Frontend/static/js/main.c6b2a439.js.map",
     "453.c83dfc0c.chunk.js.map": "/EksjoSot_Frontend/static/js/453.c83dfc0c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12c249f5.css",
-    "static/js/main.2a5709c2.js"
+    "static/js/main.c6b2a439.js"
   ]
 }
