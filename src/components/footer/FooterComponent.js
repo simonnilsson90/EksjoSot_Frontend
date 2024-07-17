@@ -62,8 +62,11 @@ const Footer = () => {
 <p>Personal</p>
 </Link>
 </div>
-            <a class="my-3 block text-gray-100" href="/#">Sotingens historia <span class="text-gray-100 text-xs p-1"></span>
-            </a>
+<div>
+<Link class="my-3 block text-gray-100" to={"/sotningens-historia"}>Sotingens historia <span class="text-gray-100 text-xs p-1"></span>
+</Link>
+</div>
+           
             <a class="my-3 block text-gray-100" href="/#">Sotarens lilla gris <span class="text-gray-100 text-xs p-1"></span>
             </a>
         </div>
