@@ -23,12 +23,19 @@ const BrandskyddskontrollPage = () => {
           pretext={"Brandskyddskontrollen säkerställer att din skorsten och eldstad uppfyller alla säkerhetskrav och fungerar korrekt, vilket förebygger brandolyckor i ditt hem."}
           sections={[
             {
-              text: "Den 1 januari 2004 ersattes den tidigare ”sotningslagen” med den nya lagen (2003:778) om skydd mot olyckor. Liksom tidigare lagstiftning (räddningstjänstlagen 1986:1102) anges det att kommunen i brandförebyggande syfte ansvarar för att sotning och brandskyddskontroll utförs.",
+
+              text: (
+                <div>
+                  <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Lagstiftning</h2>
+                  <p>Den 1 januari 2004 ersattes den tidigare ”sotningslagen” med den nya lagen (2003:778) om skydd mot olyckor. Liksom tidigare lagstiftning (räddningstjänstlagen 1986:1102) anges det att kommunen i brandförebyggande syfte ansvarar för att sotning och brandskyddskontroll utförs.</p>
+                </div>
+              ) ,
               bild: <img src={`${process.env.PUBLIC_URL}/chimney-day.jpg`} className='object-cover' />
             },
             {
               text: (
                 <div>
+                  <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Vem får utföra brandskyddskontroll?</h2>
                   <p>Brandskyddskontrollen får endast utföras av den som är utsedd av kommunen och som har behörighet att utföra brandskyddskontroll.</p>
                   <div className="lg:mr-4 md:mr-4 mt-2">
                     <Accordion
@@ -43,7 +50,8 @@ const BrandskyddskontrollPage = () => {
             {
               text: (
                 <div>
-                  <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>Anläggningen ska kontrolleras mot bakgrund av hur följande faktorer påverkar brandskyddet:</h2>
+                  <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Anläggning</h2>
+                 <p>Anläggningen ska kontrolleras mot bakgrund av hur följande faktorer påverkar brandskyddet:</p>
                   <ul className="list-disc ml-6">
                     <li>Sotbildning och beläggningar.</li>
                     <li>Skador eller förändringar av det tekniska utförandet.</li>
@@ -58,8 +66,9 @@ const BrandskyddskontrollPage = () => {
             {
               text: (
                 <div>
-                  <h2 className=' mb-2 mt-4 lg:mt-0'>Brandskyddskontrollen innefattar hela värmeanläggningen samt taket och takskydds-anordningarna. Den som utför kontrollen måste därför ha tillträde till alla de delar av huset som skorstenen passerar.</h2>
-                  <p>Läs mer om taksäkerhet här ▶️</p>
+                  <h2 className=' text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Taksäkerhet</h2>
+                  <p>Brandskyddskontrollen innefattar hela värmeanläggningen samt taket och takskydds-anordningarna. 
+                  Den som utför kontrollen måste därför ha tillträde till alla de delar av huset som skorstenen passerar. Läs mer om taksäkerhet här ▶️</p>
                 </div>
               ),
               bild: <img src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} className='object-cover' />

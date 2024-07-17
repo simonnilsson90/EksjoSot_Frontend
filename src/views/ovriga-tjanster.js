@@ -9,7 +9,7 @@ const OvrigaTjansterPage = () => {
     {
       text: (
         <div className="pb-4 lg:pb-0 md:pb-0">
-          <h2 className="text-2xl font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.whatWeDo.title}</h2>
+          <h2 className="text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0">{tjansterData.whatWeDo.title}</h2>
           <p>{tjansterData.whatWeDo.content}</p>
         </div>
       ),
@@ -18,7 +18,7 @@ const OvrigaTjansterPage = () => {
     {
       text: (
         <div className="pb-4 lg:pb-0 md:pb-0">
-          <h2 className="text-2xl font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.ourCulture.title}</h2>
+          <h2 className="text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0">{tjansterData.ourCulture.title}</h2>
           <p>{tjansterData.ourCulture.content}</p>
         </div>
       ),
@@ -27,7 +27,7 @@ const OvrigaTjansterPage = () => {
     {
       text: (
         <div className="pb-4 lg:pb-0 md:pb-0">
-          <h2 className="text-2xl font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.communityOutreach.title}</h2>
+          <h2 className="text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0">{tjansterData.communityOutreach.title}</h2>
           <p className="mb-2">Om du funderar på att installera en braskamin i befintlig skorsten eller ska nyinstallera en eldstad kan det vara bra att fråga sotaren först.</p>
           <div className="bg-sot"> 
             <Accordion
@@ -51,7 +51,7 @@ const OvrigaTjansterPage = () => {
     {
       text: (
         <div className="pb-4 lg:pb-0 md:pb-0">
-          <h2 className="text-2xl font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.vision.title}</h2>
+          <h2 className="text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0">{tjansterData.vision.title}</h2>
           <p>{tjansterData.vision.content}</p>
         </div>
       ),
@@ -60,7 +60,7 @@ const OvrigaTjansterPage = () => {
     {
       text: (
         <div className="pb-4 lg:pb-0 md:pb-0">
-          <h2 className="text-2xl font-semibold lg:mb-3 py-4 lg:p-0">{tjansterData.howWeStandOut.title}</h2>
+          <h2 className="text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0">{tjansterData.howWeStandOut.title}</h2>
           <p>{tjansterData.howWeStandOut.content}</p>
         </div>
       ),

@@ -75,12 +75,12 @@ const TjansterPage= () => {
 
                   <div>  
                 
-                  <div className="  lg:flex md:flex lg:bg-sot md:bg-sot lg:mt-2 justify-between     ">   
+                  <div className="  lg:flex md:flex lg:bg-sot md:bg-sot lg:mt-2 justify-between gap-x-2     ">   
 
 
 
                   <div className="  m-4 lg:m-0 md:m-0 lg:end-0">         
-                  <div class=" lg:max-w-lg md:max-w-lg    overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
+                  <div class=" lg:max-w-lg md:max-w-lg max-w-sm    overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
 
 
 <img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} alt="Sunset in the mountains" />
@@ -115,7 +115,7 @@ const TjansterPage= () => {
 
 
 <div className="  m-4 lg:m-0 md:m-0 lg:end-0">         
-<div class=" lg:max-w-lg md:max-w-lg    overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
+<div class=" lg:max-w-lg md:max-w-lg max-w-sm     overflow-hidden shadow-lg bg-white  m-4 lg:mb-2 md:mt-4 md:mb-12 mx-auto">
 <img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/sunrise-smoke.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
   <div class=" text-xl lg:text-3xl font-medium mb-2 text-gray-800">Besiktningar</div>
@@ -149,12 +149,12 @@ const TjansterPage= () => {
 
 </div>
 
-<div className=" align-middle lg:flex md:flex lg:bg-sot  md:bg-sot justify-between      ">   
+<div className=" align-middle lg:flex md:flex lg:bg-sot  md:bg-sot justify-between gap-x-2      ">   
 
 
 
 <div className=" m-4 lg:m-0 md:m-0">          
-<div class=" lg:max-w-lg md:max-w-lg    overflow-hidden shadow-lg bg-white  m-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
+<div class=" lg:max-w-lg md:max-w-lg max-w-sm     overflow-hidden shadow-lg bg-white  m-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
   <img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/chimneys.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
   <div class=" text-xl lg:text-3xl font-medium mb-2 text-gray-800">Brandskyddskontroll</div>
@@ -188,7 +188,7 @@ const TjansterPage= () => {
 
 
 <div className=" m-4 lg:m-0 md:m-0">          
-<div class=" lg:max-w-lg md:max-w-lg   overflow-hidden shadow-lg bg-white  m-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
+<div class=" lg:max-w-lg md:max-w-lg max-w-sm    overflow-hidden shadow-lg bg-white  m-4 lg:mb-12 md:mt-4 md:mb-12 mx-auto">
   <img class="w-full lg:hidden md:hidden "  src={`${process.env.PUBLIC_URL}/chimneys.jpg`} alt="Sunset in the mountains" />
   <div class="px-6 py-4">
   <div class=" text-xl lg:text-3xl font-medium mb-2 text-gray-800">Övriga tjänster</div>

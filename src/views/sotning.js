@@ -35,7 +35,7 @@ const SotningPage = () => {
                         {
                             text: (
                                 <div>
-                                    <h2 className='text-3xl mb-2 font-semibold lg:border-b md:border-b border-sotOrange'>Eldstäder och rök</h2>
+                                    <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Eldstäder och rök</h2>
                                     <p className=''>
                                         Vid sotning av eldstäder och rökkanaler innebär detta att alla ytor som rökgaserna passerar rengörs. Sotning innebär att brännbara sotbeläggningar tas bort i sådan omfattning att risken för skorstensbrand 
                                         och skadeverkningarna vid en skorstensbrand minimeras.
@@ -48,7 +48,7 @@ const SotningPage = () => {
                         {
                             text: (
                                 <div>
-                                   <h2 className='text-3xl mb-2 font-semibold lg:border-b md:border-b border-sotOrange'>Bestämmelser</h2>
+                                   <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Bestämmelser</h2>
                                     <p>
                                         Hur ofta sotning ska göras bestäms av kommunen. I varje kommun finns det lokala föreskrifter för rengöring (sotning). Imkanalen, köksfläktens anslutning till skorstenen/ ventilationssystemet i bostadshus, omfattas inte längre av kravet på sotning.
                                         Trots detta behöver imkanalen rengöras med jämna mellanrum, om inte annat av funktionsmässiga skäl. Ansvaret för rengöring av imkanalen ligger på fastighetsägaren.
@@ -60,11 +60,11 @@ const SotningPage = () => {
                         {
                             text: (
                                 <div>
-                                    <h2 className='text-3xl mb-2 font-semibold lg:border-b md:border-b border-sotOrange'>Säkerhet</h2>
+                                    <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>Säkerhet</h2>
                                     <p className=''>
                                         Säkerheten på ditt tak är viktig för oss. Du som fastighetsägare har ansvar för att de säkerhetsanordningar som finns föreskrivet i lag finns på plats och är väl underhållna.
                                     </p>
-                                    <div className='lg:mb-20 md:mb-16 mb-10'>
+                                    <div className='lg:mb-6 md:mb-4 mb-10'>
                                         <Link to={"/tjanster"}>
                                             <Button
                                                 variant="contained"
@@ -74,7 +74,7 @@ const SotningPage = () => {
                                                     width: "20rem",
                                                     color: "white",
                                                     marginBottom: "8px",
-                                                    backgroundColor: "#353C40",
+                                                    
                                                     border: "0px",
                                                     fontSize: "1.5rem",
                                                     lineHeight: "2rem",
@@ -97,7 +97,7 @@ const SotningPage = () => {
                                                 width: "20rem",
                                                 color: "white",
                                                 marginBottom: "2px",
-                                                backgroundColor: "#353C40",
+                                             
                                                 border: "0px",
                                                 fontSize: "1.5rem",
                                                 lineHeight: "2rem",

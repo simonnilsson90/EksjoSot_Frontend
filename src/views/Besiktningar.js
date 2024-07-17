@@ -9,7 +9,7 @@ const BesiktningarPage = () => {
     {
       text: (
         <div>
-          <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>{besiktningarData.vision.title}</h2>
+          <h2 className='text-2xl lg:text-5xl lg:mb-6   mb-2 mt-4 lg:mt-0'>{besiktningarData.vision.title}</h2>
           {besiktningarData.vision.content}
         </div>
       ),
@@ -18,8 +18,8 @@ const BesiktningarPage = () => {
     {
       text: (
         <div>
-          <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>{besiktningarData.whatWeDo.title}</h2>
-          {besiktningarData.whatWeDo.content}
+          <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>{besiktningarData.whatWeDo.title}</h2>
+        <p> {besiktningarData.whatWeDo.content} </p>  
         </div>
       ),
       bild: <img src={`${process.env.PUBLIC_URL}/istockphoto2.jpg`} className='object-cover' />
@@ -27,8 +27,8 @@ const BesiktningarPage = () => {
     {
       text: (
         <div>
-          <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>{besiktningarData.howWeStandOut.title}</h2>
-          {besiktningarData.howWeStandOut.content}
+          <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>{besiktningarData.howWeStandOut.title}</h2>
+      <p>{besiktningarData.howWeStandOut.content} </p>    
         </div>
       ),
       bild: <img src={`${process.env.PUBLIC_URL}/istockphoto1.jpg`} className='object-cover' />
@@ -36,8 +36,8 @@ const BesiktningarPage = () => {
     {
       text: (
         <div>
-          <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>{besiktningarData.ourCulture.title}</h2>
-          {besiktningarData.ourCulture.content}
+          <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>{besiktningarData.ourCulture.title}</h2>
+          <p>  {besiktningarData.ourCulture.content}  </p> 
         </div>
       ),
       bild: <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover' />
@@ -45,8 +45,8 @@ const BesiktningarPage = () => {
     {
       text: (
         <div>
-          <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>{besiktningarData.communityOutreach.title}</h2>
-          {besiktningarData.communityOutreach.content}
+          <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>{besiktningarData.communityOutreach.title}</h2>
+           <p> {besiktningarData.communityOutreach.content}  </p> 
         </div>
       ),
       bild: <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover' />
@@ -54,8 +54,8 @@ const BesiktningarPage = () => {
     {
       text: (
         <div>
-          <h2 className='text-2xl mb-2 mt-4 lg:mt-0'>{besiktningarData.whyChooseUs.title}</h2>
-          {besiktningarData.whyChooseUs.content}
+          <h2 className='text-2xl lg:text-5xl  lg:mb-6   mb-2 mt-4 lg:mt-0'>{besiktningarData.whyChooseUs.title}</h2>
+            <p>{besiktningarData.whyChooseUs.content}  </p> 
         </div>
       ),
       bild: <img src={`${process.env.PUBLIC_URL}/chimneys.jpg`} className='object-cover' />
