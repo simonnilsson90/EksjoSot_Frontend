@@ -1,6 +1,6 @@
 const tjansterData = {
     title: "Övriga Tjänster",
-    description: "Vi på sotningsdistriktet kan göra så mycket mer än bara sota och utföra besiktningar. Det finns några andra tjänster du kan beställa från oss:",
+    description: "Vi på EksjöSot kan göra så mycket mer än bara sota och utföra besiktningar. Det finns några andra tjänster du kan beställa från oss:",
     vision: {
       title: "Extrasotning på tur",
       content: "Den lagstadgade sotningen utförs endast i brandförebyggande syfte, däremellan kan värmepannor och lokaleldstäder behöva rengöras oftare och mer ingående för bästa effektuttag, vilket ofta leder till missförstånd om den lagstadgade sotningens omfattning. Extrasotning på tur innebär att vi lägger in en sotning nästa gång någon av våra sotare är i ditt område. Du får då en avisering cirka 10 dagar innan vi kommer att besöka ditt hus. Det kan då ta 10 – 15 veckor innan vi passerar ditt område nästa gång. Denna sotning kostar lika mycket som en ordinarie sotning."
